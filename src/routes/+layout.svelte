@@ -143,11 +143,11 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   footer .footer-links-container li {
     display: inline;
     font-size: 14px;
-    color: var(--blue);
+    color: var(--green);
   }
 
   footer .footer-links-container ul a {
-    color: var(--blue);
+    color: var(--green);
     text-decoration: none;
   }
   
@@ -236,7 +236,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   .oc-nav-container li a {
     display: inline-block;
     width: 100%;
-    color: var(--blue);
+    color: var(--green);
     padding: 0.3em;
     opacity: 1;
     text-decoration: none;
@@ -253,7 +253,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
   }
 
   .nav-btn span {
-    background-color: var(--blue);
+    background-color: var(--green);
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);
@@ -293,7 +293,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    background-color: var(--blue);
+    background-color: var(--green);
   }
 
   .call-to-action-btn {
@@ -307,11 +307,11 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     border-radius: 7px;
     margin: auto 1.5em auto auto;
     color: white;
-    background-color: var(--blue);
+    background-color: var(--green);
   }
 
   .call-to-action-btn-dt:hover {
-    background-image: linear-gradient(to right, var(--blue), var(--green))
+    background-image: linear-gradient(to right, var(--green), var(--blue))
   }
   
   .call-to-action-btn-dt a {
