@@ -1,2 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div>
+  <h2>The small business ERP toolbox</h2>
+  <p>A cloud-based, easy-to-use ERP system built for small businesses and offered at a small business price.</p>
+</div>
