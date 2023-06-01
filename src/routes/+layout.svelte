@@ -1,7 +1,7 @@
 <nav class="desktop-nav">
 
   <div class="nav-logo-container" style="position: relative">
-    <a href="/"><img class="logo" src="{logo}" alt="FullVue" width="250px" height="50px"></a>
+    <a href="/"><img class="logo" src="{logo}" alt="FullVue logo" width="250px" height="50px"></a>
     <h1 style="font-size: 6px; z-index: -1; display: inline; position: absolute; left: 0; top: 0; color: white;">Foundational Technologies LLC (FoundTech)</h1>
   </div>
 
@@ -29,7 +29,7 @@
     </button>
 
     <div class="nav-logo-container">
-      <img class="logo" src={logo} alt="FullVue" width="250" height="50"/>
+      <img class="logo" src={logo} alt="FullVue logo" width="250" height="50"/>
     </div>
 
     <div class="call-to-action-btn">
@@ -66,7 +66,7 @@
 
 <footer>
   <div class="footer-logo-container">
-    <img class="logo" src={logo} alt="FullVue" />
+    <img class="logo" src={logo} alt="FullVue logo" />
     <p>Copyright Foundational Technologies { yearDate }, all rights reserved.</p>
   </div>
 
