@@ -15,7 +15,7 @@
       <div class="module-icons">
         <details class="module">
           <summary>
-            <div>
+            <div class="css-is-garbage-and-makes-no-sense">
               <div class="module-title"><h2>Core</h2></div>
               <div class="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="core-icon">
@@ -33,7 +33,7 @@
         </details>
         <details class="module">
           <summary>
-            <div>
+            <div class="css-is-garbage-and-makes-no-sense">
               <div class="module-title"><h2>Road</h2></div>  
               <div class="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="road-icon">
@@ -51,7 +51,7 @@
         </details>
         <details class="module">
           <summary>
-            <div>
+            <div class="css-is-garbage-and-makes-no-sense">
               <div class="module-title"><h2>Payroll</h2></div>
               <div class="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="payroll-icon">
@@ -69,7 +69,7 @@
         </details>
         <details class="module">
           <summary>
-            <div >
+            <div class="css-is-garbage-and-makes-no-sense">
               <div class="module-title"><h2>Sales</h2></div>
               <div class="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="sales-icon">
@@ -87,7 +87,7 @@
         </details>
         <details class="module">
           <summary>
-            <div>
+            <div class="css-is-garbage-and-makes-no-sense">
               <div class="module-title"><h2>Purchasing</h2></div>
               <div class="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="purchasing-icon">
@@ -105,7 +105,7 @@
         </details>
         <details class="module">
           <summary>
-            <div>
+            <div class="css-is-garbage-and-makes-no-sense">
               <div class="module-title"><h2>Invoicing</h2></div>
               <div class="circle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="invoicing-icon">
@@ -174,16 +174,21 @@
 
   .module-icons {
     width: 100%;
+    margin: 3rem 0;
   }
 
-  .module summary div {
+  .module summary {
+    list-style: none;
+  }
+
+  .module summary .css-is-garbage-and-makes-no-sense {
     width: 100%;
     height: 115px;
     display: flex;
     align-items: center;
   }
   
-  .module-title, .circle {
+  .module summary .css-is-garbage-and-makes-no-sense .module-title,.module summary .css-is-garbage-and-makes-no-sense .circle {
     width: 50%;
   }
   
@@ -193,7 +198,7 @@
     color: #37364499;
   }
 
-  .module:nth-child(odd) summary div {
+  .module:nth-child(even) summary .css-is-garbage-and-makes-no-sense {
     flex-direction: row-reverse;
     justify-self: flex-end;
     & .module-title {
@@ -210,7 +215,7 @@
     }
   }
   
-  .module:nth-child(even) summary div{
+  .module:nth-child(odd) summary .css-is-garbage-and-makes-no-sense {
     flex-direction: row;
     & .module-title {
       text-align: center;
@@ -226,7 +231,7 @@
     }
   }
 
-  .module summary div .circle {
+  .module summary .css-is-garbage-and-makes-no-sense .circle {
     width: 100px;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -241,15 +246,15 @@
   }
 
   .module:hover {
-    & .circle {
+    & summary .css-is-garbage-and-makes-no-sense .circle {
       width: 115px;
       border-width: 7px;
       box-shadow: 6px 6px 5px 5px #999999;
     }
-    & .module-title {
+    & summary .css-is-garbage-and-makes-no-sense .module-title {
       border-width: 7px;
     }
-    & .module-title h2 {
+    & summary .css-is-garbage-and-makes-no-sense .module-title h2 {
       font-size: 2rem;
     }
   }
