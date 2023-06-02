@@ -182,6 +182,10 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     gap: 10%;
     width: 100%;
   }
+
+  .dt-nav-container {
+    margin: auto 0 auto auto;
+  }
   
   .desktop-nav .dt-nav-container ul {
     display: flex;
@@ -305,7 +309,7 @@ const keyboardToggle = (/** @type {{ key: string; }} */ event) => {
     font-size: 16px;
     font-weight: bold;
     border-radius: 7px;
-    margin: auto 1.5em auto auto;
+    margin: auto 1.5em auto 0;
     color: white;
     background-color: var(--green);
   }
