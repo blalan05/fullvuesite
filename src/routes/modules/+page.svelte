@@ -1,14 +1,15 @@
 
 <article>
-  <section>
+  <section class="cta_header">
     <h1>FullVue</h1>
     <h2>Small Business Toolbox</h2>
-    <h3>Full of Tools</h3>
+    <h3>Many Tools for your Business</h3>
+    <a href="/contact">Request a Customized Demo</a>
   </section>
   <section class="module_container">
     <div>
       <div class="module_summary">
-        <h3>Core (Jobs)</h3>
+        <h3><a href="/modules/jobs">Core (Jobs)</a></h3>
         <p>At the base of FullVue is your partners and job management:</p>
         <ul>
           <li>Employees and Customers - those you've chosen to partner with to grow your business</li>
@@ -18,6 +19,7 @@
           <li>Customizable departments to visualize workflows</li>
           <li>Cost Sheet report enlightens profit margins and profit-losses</li>
         </ul>
+        <a href="/modules/jobs">Learn More</a>
       </div>
       <div class="video_container">
         Core Demo Video
@@ -126,6 +128,22 @@
   </section>
 </article>
 <style lang=scss>
+  .cta_header {
+    text-align: center;
+    h2, h3, h4 {
+      margin: 0;
+    }
+    a {
+      display: inline-block;
+      font-size: 1.2em;
+      margin-top: 0.5em;
+      padding: 6px 14px;
+      background-color: #416a98;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  }
   .module_container {
     padding: 1em;
 

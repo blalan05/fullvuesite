@@ -2,11 +2,9 @@
   const menuItems = [
     { title: "Home", link: "/" },
     { title: "Modules", link: "/modules" },
-    { title: "Industries", link: "/" },
+    { title: "Industries", link: "/industries" },
     { title: "Pricing", link: "/pricing" },
-    { title: "About", link: "/" },
-    { title: "Webinar", link: "/" },
-    { title: "Contact", link: "/" },
+    { title: "Contact", link: "/contact" },
   ];
 
   let menuToggle
