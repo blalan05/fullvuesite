@@ -17,7 +17,7 @@
     huddleMod: false,
     payrollMod: false
   })
-  let periodMod = writable(false)
+  let periodMod = writable(true)
   let totalEst = 0
   let employeeMod = 0
 
@@ -95,7 +95,7 @@
       <option value={true}>Annual</option>
       <option value={false}>Monthly</option>
     </select>
-    <p>{ Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(totalEst) }</p>
+    <p>{ Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(!$periodMod ? (totalEst / 12) : totalEst) }</p>
     <table>
       <tr>
         <th>Sel.</th>
