@@ -3,7 +3,7 @@
     { title: "Home", link: "/" },
     { title: "Modules", link: "/modules" },
     { title: "Industries", link: "/" },
-    { title: "Pricing", link: "/" },
+    { title: "Pricing", link: "/pricing" },
     { title: "About", link: "/" },
     { title: "Webinar", link: "/" },
     { title: "Contact", link: "/" },
@@ -24,7 +24,7 @@
   <div class="navbar">
     <div class="container nav-container">
       <input class="checkbox" type="checkbox" bind:checked={openMenu} name="menuToggle" id="menuToggle" bind:this={menuToggle} />
-      <div class="hamburger-lines">
+      <div class="hamburger-lines" on:click={openMenu != openMenu}>
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
@@ -66,19 +66,18 @@
           width: 32px;
           top: 20px;
           left: 20px;
-          z-index: 5;
+          z-index: 105;
           opacity: 0;
           cursor: pointer;
         }
         .hamburger-lines {
-          display: block;
+          display: flex;
           height: 26px;
           width: 32px;
           position: absolute;
           top: 17px;
           left: 20px;
-          z-index: 2;
-          display: flex;
+          z-index: 102;
           flex-direction: column;
           justify-content: space-between;
           .line {
@@ -110,6 +109,7 @@
           flex-direction: column;
           transition: transform 0.5s ease-in-out;
           text-align: center;
+          z-index: 99;
           li {
             font-size: 1.5rem;
             font-weight: 500;
@@ -146,4 +146,14 @@
       }
     }
   }
+
+footer {
+  padding: 6px 8px;
+  background-color: #416a98;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
 </style>
