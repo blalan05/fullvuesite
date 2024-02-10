@@ -6,11 +6,25 @@
     <h3>Many Tools for your Business</h3>
     <a href="/contact">Request a Customized Demo</a>
   </section>
-  <section class="module_container">
+  <section class="modules_list">
+    <span><a href="#core">Core&nbsp;(Jobs)</a></span>
+    <span><a href="#field">Field</a></span>
+    <span><a href="#invoicing">Invoicing</a></span>
+    <span><a href="#sales">Sales</a></span>
+    <span><a href="#purchasing">Purchasing&nbsp;&&nbsp;Advanced&nbsp;Inventory</a></span>
+    <span><a href="#to-do">To-dos</a></span>
+    <span><a href="#sds">SDS</a></span>
+    <span><a href="#hr">Human&nbsp;Resources</a></span>
+    <span><a href="#payroll">Payroll</a></span>
+    <span><a href="#products">Products</a></span>
+    <span><a href="#customer-support">Customer&nbsp;Support</a></span>
+    <span><a href="#production-meeting">Production&nbsp;Meeting</a></span>
+  </section>
+  <section class="module_container" id="core">
     <h3><a href="/modules/jobs">Core (Jobs)</a></h3>
     <div class="col_container">
       <div class="video_container">
-        Core Demo Video
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div class="module_summary">
         <p>At the base of FullVue is your partners and job management:</p>
@@ -22,11 +36,13 @@
           <li>Customizable departments to visualize workflows</li>
           <li>Cost Sheet report enlightens profit margins and profit-losses</li>
         </ul>
-        <a href="/modules/jobs">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/jobs">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="field">
     <h3><a href="/modules/field">Field (Off-site Service)</a></h3>
     <div class="col_container">
       <div class="video_container">
@@ -38,11 +54,13 @@
           <li>Trip records for simplified entry</li>
           <li>Set job schedules and Communicate travel itineraries with employees</li>
         </ul>
-        <a href="/modules/field">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/field">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="invoicing">
     <h3><a href="/modules/invoicing">Invoicing</a></h3>
     <div class="col_container">
       <div class="video_container">Invoicing Demo Video</div>
@@ -52,11 +70,13 @@
           <li>Easily make adjustments to quantities, descriptions and prices.</li>
           <li>Send invoices via email and see when they've been read.</li>
         </ul>
-        <a href="/modules/invoicing">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/invoicing">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="sales">
     <h3><a href="/modules/sales">Sales</a></h3>
     <div class="col_container">
       <div class="video_container">Sales Demo Video</div>
@@ -66,11 +86,13 @@
           <li>Tools for thorough quote building and price generation.</li>
           <li>Convert signed quotes to jobs, and compare estimated vs. actual to improve future quotes.</li>
         </ul>
-        <a href="/modules/sales">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/sales">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="purchasing">
     <h3><a href="/modules/purchasing">Purchasing/Adv. Inventory</a></h3>
     <div class="col_container">
       <div class="video_container">Purchasing/Adv. Inventory Demo Video</div>
@@ -82,11 +104,13 @@
           <li>Live inventory counts</li>
           <li>Order Options (conversions for ordering count/unit and selling differences)</li>
         </ul>
-        <a href="/modules/purchasing">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/purchasing">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="to-do">
     <h3><a href="/modules/to-dos">To-dos</a></h3>
     <div class="col_container">
       <div class="video_container">To-dos Demo Video</div>
@@ -95,11 +119,13 @@
           <li>Task list for non-job related assignments</li>
           <li>Indicate task status and add notes to increase communication</li>
         </ul>
-        <a href="/modules/to-dos">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/to-dos">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="sds">
     <h3><a href="/modules/sds">SDS</a></h3>
     <div class="col_container">
       <div class="video_container">SDS Demo Video</div>
@@ -108,11 +134,13 @@
           <li>Store Safety Data Sheets in the app</li>
           <li>More accessible, searchable and easier to keep up-to-date</li>
         </ul>
-        <a href="/modules/sds">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/sds">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="hr">
     <h3><a href="/modules/hr">Human Resources</a></h3>
     <div class="col_container">
       <div class="video_container">Human Resources Demo Video</div>
@@ -122,11 +150,13 @@
           <li>Pay Rates and Employee Performance Reviews</li>
           <li>Document Kudos Reports and Write-ups so they can be addressed timely</li>
         </ul>
-        <a href="/modules/hr">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/hr">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="payroll">
     <h3><a href="/modules/payroll">Payroll</a></h3>
     <div class="col_container">
       <div class="video_container">Payroll Demo Video</div>
@@ -136,11 +166,13 @@
           <li>Monitor Employee Absence Requests, and accured hours time</li>
           <li>Generate hours for pay periods.</li>
         </ul>
-        <a href="/modules/payroll">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/payroll">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="products">
     <h3><a href="/modules/products">Products</a></h3>
     <div class="col_container">
       <div class="video_container">Products Demo Video</div>
@@ -149,11 +181,13 @@
           <li>Document sold products and specifications</li>
           <li>Easily locate part data to facilitate repairs</li>
         </ul>
-        <a href="/modules/products">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/products">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="customer-support">
     <h3><a href="/modules/support">Customer Support</a></h3>
     <div class="col_container">
       <div class="video_container">Customer Support Demo Video</div>
@@ -162,11 +196,13 @@
           <li>Extend the product module and track customer issues and solutions</li>
           <li>Track time and parts shipped for billing or cost tracking</li>
         </ul>
-        <a href="/modules/support">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/support">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="module_container">
+  <section class="module_container" id="production-meeting">
     <h3><a href="/modules/production-meeting">Production Meeting</a></h3>
     <div class="col_container">
       <div class="video_container">Production Meeting Demo Video</div>
@@ -174,7 +210,9 @@
         <ul>
           <li>Improve communication before, during, and after regular meetings.</li>
         </ul>
-        <a href="/modules/production-meeting">Learn More</a>
+        <div class="learn_more_container">
+          <a href="/modules/production-meeting">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
@@ -187,7 +225,7 @@
 <style lang=scss>
   .cta_header {
     text-align: center;
-    h2, h3, h4 {
+    h2, h3 {
       margin: 0;
     }
     a {
@@ -199,6 +237,23 @@
       color: white;
       text-decoration: none;
       border-radius: 4px;
+    }
+  }
+  .modules_list {
+    width: 100%;
+    padding-top: 2em;
+    span {
+      display: inline-block;
+      margin: 1em 4px;
+      a {
+        background: #416a98;
+        color: white;
+        box-shadow: #5c5c5c 2px 3px 4px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 1.5em;
+        padding: 12px 1.25em;
+      }
     }
   }
   .module_container {
@@ -223,16 +278,18 @@
       width: 100%;
       .module_summary {
         width: 100%;
-        
-        a {
-          display: inline-block;
-          font-size: 1.2em;
-          margin-top: 0.5em;
-          padding: 6px 14px;
-          background-color: #416a98;
-          color: white;
-          text-decoration: none;
-          border-radius: 4px;
+        .learn_more_container {
+          text-align: center;
+          a {
+            display: inline-block;
+            font-size: 1.2em;
+            margin-top: 0.5em;
+            padding: 6px 14px;
+            background-color: #416a98;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+          }
         }
       }
       .video_container {
@@ -274,6 +331,10 @@
   }
 
   @media screen and (min-width: 920px) {
+    .modules_list {
+      max-width: 920px;
+      margin: auto;
+    }
     .module_container {
       max-width: 920px;
       margin: 2em auto;
@@ -284,6 +345,9 @@
   }
 
   @media screen and (min-width: 1200px) {
+    .modules_list {
+      max-width: 1200px;
+    }
     .module_container {
       max-width: 1200px;
     }

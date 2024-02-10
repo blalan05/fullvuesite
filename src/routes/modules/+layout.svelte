@@ -11,6 +11,8 @@
 <article>
   <slot></slot>
 </article>
+
+<a href="#top" class="btt">Top</a>
 <style lang="scss">
   nav.breadcrumb {
     padding: 1em;
@@ -21,5 +23,14 @@
         text-decoration: none;
       }
     }
+  }
+  .btt {
+    background: #416a98;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 1em 1em;
   }
 </style>

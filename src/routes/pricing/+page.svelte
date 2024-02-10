@@ -104,7 +104,7 @@
       </tr>
       <tr>
         <td>
-          <input type="checkbox" bind:checked={$selModules.coreMod} />
+          <input type="checkbox" bind:checked={$selModules.coreMod} disabled />
         </td>
         <td style="text-align: center">Core</td>
         <td>Customers and Job Management</td>
@@ -195,6 +195,10 @@
   </section>
 </article>
 <style lang="scss">
+  article {
+    width: 100%;
+    padding: 12px;
+  }
   .pricing_header {
     padding: 0 16px;
   }
@@ -220,6 +224,18 @@
       color: white;
       text-decoration: none;
       border-radius: 4px;
+    }
+  }
+  @media screen and (min-width: 920px) {
+    article {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    article {
+      max-width: 1200px;
+      margin: 0 auto;
     }
   }
 </style>
