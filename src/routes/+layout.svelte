@@ -48,6 +48,7 @@
   }
 
   .mobileNav {
+    z-index: 97;
     position: sticky;
     top: 0;
     background-color: white;
