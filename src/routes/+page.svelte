@@ -9,6 +9,8 @@
   let carousel2;
   
   const goToItem = (/** @type {{ detail: any; }} */ event) => { carousel.goTo(event.detail)}
+
+  let vidDialog, oneDialog, twoDialog
 </script>
 <article>
   <section class="header_container">
@@ -28,17 +30,17 @@
     <h3>Take a look at what is in the toolbox</h3>
     {#if browser}
       <div class="viewer">
-        <Carousel bind:this={carousel} dots={false} arrows={false}>
-          <div class="vid">Vid</div>
-          <div class="ssone">One</div>
-          <div class="sstwo">Two</div>
+        <Carousel bind:this={carousel} dots={false} arrows={false} swiping={false}>
+          <div class="vid" on:click={vidDialog.showModal()}>Vid</div>
+          <div class="ssone" on:click={oneDialog.showModal()}>One</div>
+          <div class="sstwo" on:click={twoDialog.showModal()}>Two</div>
         </Carousel>
       </div>
       <div class="thumbs">
         <Carousel bind:this={carousel2} dots={false} particlesToShow={3} on:pageChange={goToItem}>
-          <div class="vid">Vid</div>
-          <div class="ssone">One</div>
-          <div class="sstwo">Two</div>
+          <div class="vid" on:click={carousel.goTo(0)}>Vid</div>
+          <div class="ssone" on:click={carousel.goTo(1)}>One</div>
+          <div class="sstwo" on:click={carousel.goTo(2)}>Two</div>
         </Carousel>
       </div>
     {/if}
@@ -71,6 +73,24 @@
     <a href="/contact" title="Contact Us" class="cta_contact">Schedule Today</a>
   </section>
 </article>
+<dialog bind:this={vidDialog}>
+  <div style="text-align: right">
+    <button on:click={vidDialog.close()}>X</button>
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nG3_eaMSI2w?si=vrMpg_uMHDMeW0wa" title="FullVue Overview" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</dialog>
+<dialog bind:this={oneDialog}>
+  <div style="text-align: right">
+    <button on:click={oneDialog.close()}>X</button>
+  </div>
+  
+</dialog>
+<dialog bind:this={twoDialog}>
+  <div style="text-align: right">
+    <button on:click={twoDialog.close()}>X</button>
+  </div>
+
+</dialog>
 
 <style lang="scss">
   h1 {
@@ -84,6 +104,9 @@
     position: relative;
     min-height: 480px;
     text-align: center;
+    h2 {
+      margin-top: 8px;
+    }
     .cta_pricing {
       display: inline-block;
       font-size: 1.2em;
@@ -136,33 +159,36 @@
       padding: 0 16px;
     }
     .viewer {
-        .vid, .ssone, .sstwo {
-          font-size: 2em;
-          width: 90%;
-          aspect-ratio: 16/9;
-          background: #416a98;
-          color: white;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+      aspect-ratio: 16/9;
+      max-height: 90vh;
+      margin: auto;
+      .vid, .ssone, .sstwo {
+        font-size: 2em;
+        aspect-ratio: 16/9;
+        width: 90%;
+        background: #416a98;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
-    .thumbs {
-      margin-top: 8px;
-      .vid, .ssone, .sstwo {
-          font-size: 1.6em;
-          width: 90%;
-          aspect-ratio: 16/9;
-          background: #416a98;
-          color: white;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 3px 4px;
-        }
+  }
+  .thumbs {
+    margin-top: 8px;
+    .vid, .ssone, .sstwo {
+        font-size: 1.6em;
+        width: 90%;
+        aspect-ratio: 16/9;
+        background: #416a98;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px 4px;
+      }
     }
   .puns_container {
     padding: 2em 16px;
@@ -198,5 +224,39 @@
       text-decoration: none;
       border-radius: 4px;
     }
+  }
+  @media screen and (min-width: 420px) {
+    .header_container {
+      min-height: 540px;
+      max-width: 480px;
+      margin: auto;
+      .pc_demo_container {
+        max-width: 640px;
+      }
+      .mobile_demo_container {
+        max-width: 240px;
+        right: 5%;
+      }
+    }
+    .tagline_container {
+      padding: 5.5em 8px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .header_container {
+      min-height: 648px;
+      max-width: 1024px;
+      .pc_demo_container {
+        left: 5%;
+      }
+    }
+    .keywords_container {
+      max-width: 640px;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: 900px) {
+
   }
 </style>
