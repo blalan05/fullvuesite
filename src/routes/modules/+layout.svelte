@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/stores'
 </script>
 {#if $page.data.pageTitle}
 <nav class="breadcrumb">
@@ -8,12 +8,15 @@
   <li>{$page.data.pageTitle}</li>
 </nav>
 {/if}
-<article>
+<article id="top">
   <slot></slot>
 </article>
 
 <a href="#top" class="btt">Top</a>
 <style lang="scss">
+  article {
+    padding: 0 12px;
+  }
   nav.breadcrumb {
     padding: 1em;
     li {
@@ -32,5 +35,24 @@
     bottom: 1em;
     right: 1em;
     padding: 1em 1em;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: 920px) {
+    nav {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    article {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    nav {
+      max-width: 1200px;
+    }
+    article {
+      max-width: 1200px;
+    }
   }
 </style>

@@ -11,3 +11,15 @@
     </div>
   </div>
 </section>
+<style lang="scss">
+  .module_container {
+    width: 100%;
+    h3 {
+      margin-top: 0;
+    }
+    .video_container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+  }
+</style>
