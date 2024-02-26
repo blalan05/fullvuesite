@@ -81,7 +81,9 @@
 <section class="module_container" id="sales">
   <h3><a href="/modules/sales">Sales</a></h3>
   <div class="col_container">
-    <div class="video_container">Sales Demo Video</div>
+    <div class="video_container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="module_summary">
       <ul>
         <li>Improve your sales record-keeping and team communication with Opportunities and Details</li>
@@ -128,7 +130,7 @@
   </div>
 </section>
 <section class="module_container" id="sds">
-  <h3><a href="/modules/sds">SDS</a></h3>
+  <h3><a href="/modules/sds">Safety Data Sheets</a></h3>
   <div class="col_container">
     <div class="video_container">SDS Demo Video</div>
     <div class="module_summary">
@@ -243,7 +245,7 @@
   .modules_list {
     width: 100%;
     padding: 2em 12px 0 12px;
-
+    text-align: center;
     span {
       display: inline-block;
       margin: 1em 3px;
@@ -281,6 +283,7 @@
       width: 100%;
       .module_summary {
         width: 100%;
+        padding-right: 1em;
         .learn_more_container {
           text-align: center;
           a {

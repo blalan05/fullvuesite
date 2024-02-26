@@ -38,6 +38,9 @@
           <div class="sstwo">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+          <div class="ssthree">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </Carousel>
       </div>
       <div class="thumbs">
@@ -45,6 +48,7 @@
           <div class="vid" on:click={carousel.goTo(0)}></div>
           <div class="ssone" on:click={carousel.goTo(1)}></div>
           <div class="sstwo" on:click={carousel.goTo(2)}></div>
+          <div class="ssthree" on:click={carousel.goTo(3)}></div>
         </Carousel>
       </div>
     {/if}
@@ -173,6 +177,10 @@
     }
     .sstwo {
       background: url('$lib/field.webp');
+      background-size: cover;
+    }
+    .ssthree {
+      background: url('$lib/sales.webp');
       background-size: cover;
     }
   }

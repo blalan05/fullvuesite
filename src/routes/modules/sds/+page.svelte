@@ -1,5 +1,5 @@
 <section class="module_container">
-  <h3>SDS</h3>
+  <h3>Safety Data Sheets</h3>
   <div class="col_container">
     <div class="video_container">SDS Demo Video</div>
     <div class="module_summary">

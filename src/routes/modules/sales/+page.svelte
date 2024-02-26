@@ -1,7 +1,9 @@
 <section class="module_container">
   <h3>Sales</h3>
   <div class="col_container">
-    <div class="video_container">Sales Demo Video</div>
+    <div class="video_container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="module_summary">
       <ul>
         <li>Improve your sales record-keeping and team communication with Opportunities and Details</li>
