@@ -4,7 +4,8 @@
     <p>Reach out to us if you have questions or would like to schedule a customized demo!</p>
   </section>
   <section>
-    <form>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
       <div>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required autocomplete="name" />
