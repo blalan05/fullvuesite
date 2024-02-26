@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Analytics from "$lib/analytics.svelte";
+
   const menuItems = [
     { title: "Home", link: "/" },
     { title: "Modules", link: "/modules" },
@@ -11,7 +13,7 @@
   let openMenu = false
   const closeMenu = () => openMenu = false
 </script>
-
+<Analytics />
 <nav class="mainNav">
   {#each menuItems as item}
     <li><a href={item.link} title={item.title}>{item.title}</a></li>
