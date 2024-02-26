@@ -1,10 +1,11 @@
 {
-	"name": "fullvuesite-2",
-	"version": "0.0.1",
+	"name": "fullvuesite",
+	"version": "1.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"postbuild": "yarn svelte-sitemap --domain https://fullvue.io",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -21,9 +22,11 @@
 		"eslint-plugin-svelte": "^2.35.0",
 		"lodash": "^4.17.21",
 		"sass": "^1.70.0",
+		"super-sitemap": "^0.14.14",
 		"svelte": "^4.0.0",
 		"svelte-carousel": "^1.0.25",
 		"svelte-check": "^3.6.0",
+		"svelte-sitemap": "^2.6.0",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"vite": "^5.0.3"
