@@ -6,7 +6,7 @@
       <li><a href="/industries/manufacturing">Manufacturing</a></li>
       <li>Construction</li>
       <li>Carpentry</li>
-      <li>Remodelling Services</li>
+      <li>Remodeling Services</li>
       <li>Handy-man</li>
       <li>Catering</li>
       <li>HVAC</li>
@@ -23,7 +23,8 @@
       <li>Landscaping</li>
       <li>Excavating</li>
       <li>Plowing</li>
-      <li>Windows</li>
+      <li>Window Installation</li>
+      <li>Window Cleaning</li>
       <li>Rental Management</li>
       <li>Print Shop</li>
       <li>Media Companies</li>
@@ -31,7 +32,7 @@
       <li>Pet Care</li>
       <li>Crane</li>
       <li>Business Colleges</li>
-      <li>Property management</li>
+      <li>Property Management</li>
       <li>Roofing</li>
       <li>Sign Shop</li>
       <li>Moving Services</li>

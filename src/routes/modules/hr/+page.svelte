@@ -6,7 +6,7 @@
       <ul>
         <li>Benefits</li>
         <li>Pay Rates and Employee Performance Reviews</li>
-        <li>Document Kudos Reports and Write-ups so they can be addressed timely</li>
+        <li>Document kudos reports and write-ups so they can be addressed timely</li>
       </ul>
     </div>
   </div>

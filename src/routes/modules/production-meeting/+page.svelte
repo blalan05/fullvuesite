@@ -4,7 +4,7 @@
     <div class="video_container">Production Meeting Demo Video</div>
     <div class="module_summary">
       <ul>
-        <li>Improve communication before, during, and after regular meetings.</li>
+        <li>Improve communication before, during, and after regular meetings</li>
       </ul>
     </div>
   </div>

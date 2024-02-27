@@ -4,9 +4,9 @@
     <div class="video_container">Invoicing Demo Video</div>
     <div class="module_summary">
       <ul>
-        <li>Quickly build an invoice from the recorded job data.</li>
-        <li>Easily make adjustments to quantities, descriptions and prices.</li>
-        <li>Send invoices via email and see when they've been read.</li>
+        <li>Quickly build an invoice from the recorded job data</li>
+        <li>Easily make adjustments to quantities, descriptions and prices</li>
+        <li>Send invoices via email and see when they've been read</li>
       </ul>
     </div>
   </div>

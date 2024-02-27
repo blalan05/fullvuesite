@@ -4,9 +4,9 @@
     <div class="video_container">Payroll Demo Video</div>
     <div class="module_summary">
       <ul>
-        <li>Communication Employee's punches and notes about adjustments to payroll clerk</li>
-        <li>Monitor Employee Absence Requests, and accured hours time</li>
-        <li>Generate hours for pay periods.</li>
+        <li>Generate hours for pay periods</li>
+        <li>Communicate to payroll clerk about employee's time punches and notes about adjustments</li>
+        <li>Monitor employee absence requests, and accured hours</li>
       </ul>
     </div>
   </div>

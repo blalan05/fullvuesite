@@ -221,7 +221,7 @@
   </div>
 </section>
 <section class="cta_bottom">
-  <h3>Learn</h3>
+  <h3>Learn More</h3>
   <p></p>
   <a href="/pricing" title="Get Pricing">Get Pricing</a>
 </section>

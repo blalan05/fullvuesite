@@ -10,6 +10,12 @@
   
   const goToItem = (/** @type {{ detail: any; }} */ event) => { carousel.goTo(event.detail)}
 </script>
+<svelte:head>
+  <title>Small Business Tools | FullVue</title>
+  <meta name="description" content="Cloud software for small businesses offering tools for job tracking and management, sales, and invoicing/billing." />
+  <meta name="keywords" content="Small Business, Cloud, Software, System, Program, App, Tools, ERP, CRM, Service, Billing, Invoicing, Management, Tracking, Sales" />
+</svelte:head>
+
 <article>
   <section class="header_container">
     <h1>FullVue</h1>
@@ -19,7 +25,7 @@
     <div class="mobile_demo_container"></div>
   </section>
   <section class="tagline_container">
-    <p class="tagline">Tools built to help you maximize your profits and improve effiency.</p>
+    <p class="tagline">Tools built to help you maximize your profits and improve efficiency</p>
   </section>
   <section class="keywords_container">
     <p>In our toolbox, you will find tools for time and materials tracking, sales visibility, streamlined invoicing, up-to-date inventory counts, essential employee administration and more!</p>
@@ -60,7 +66,7 @@
       <li><em>Hit</em> your cash flow goals</li>
       <li><em>Measure</em> employee's effiency</li>
       <li><em>Turn</em> completed jobs into invoices <em>faster</em></li>
-      <li><em>Tighten</em> down on wasted time.</li>
+      <li><em>Tighten</em> down on wasted time</li>
       <li><em>Drill</em></li>
       <li><em>Connect</em></li>
       <li><em>File</em> away</li>

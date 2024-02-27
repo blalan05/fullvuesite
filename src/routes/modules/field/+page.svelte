@@ -7,8 +7,8 @@
     <div class="module_summary">
       <ul>
         <li>Log mileage as job data</li>
-        <li>Trip records for simplified entry</li>
-        <li>Set job schedules and Communicate travel itineraries with employees</li>
+        <li>Simplify entry for Trip records</li>
+        <li>Set job schedules and communicate travel itineraries with employees</li>
       </ul>
     </div>
   </div>

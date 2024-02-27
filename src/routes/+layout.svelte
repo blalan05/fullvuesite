@@ -1,5 +1,6 @@
 <script lang="ts">
-    import Analytics from "$lib/analytics.svelte";
+  import Analytics from "$lib/analytics.svelte";
+	import { page } from '$app/stores'
 
   const menuItems = [
     { title: "Home", link: "/" },
@@ -13,6 +14,12 @@
   let openMenu = false
   const closeMenu = () => openMenu = false
 </script>
+
+<svelte:head>
+  <title>{ $page.data.metaTitle }</title>
+  <meta name="description" content={ $page.data.metaDescription } />
+  <meta name="keywords" content={ $page.data.metaKeywords } />
+</svelte:head>
 <Analytics />
 <nav class="mainNav">
   {#each menuItems as item}
