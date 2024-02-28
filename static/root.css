@@ -17,6 +17,10 @@
   }
   
   /* Remove default margin in favour of better control in authored CSS */
+  body {
+    background-color: rgba(35,35,35,.9);
+    color: white;
+  }
   body, h1, h2, h3, h4, p,
   figure, blockquote, dl, dd {
     margin-block-end: 0;

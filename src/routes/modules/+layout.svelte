@@ -32,7 +32,7 @@
     color: white;
     text-decoration: none;
     position: fixed;
-    bottom: 1em;
+    bottom: 3em;
     right: 1em;
     padding: 1em 1em;
     border-radius: 5px;

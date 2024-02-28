@@ -22,14 +22,17 @@
 </svelte:head>
 <Analytics />
 <nav class="mainNav">
-  {#each menuItems as item}
-    <li><a href={item.link} title={item.title}>{item.title}</a></li>
-  {/each}
+  <ul>
+    {#each menuItems as item}
+      <li><a href={item.link} title={item.title}>{item.title}</a></li>
+    {/each}
+  </ul>
 </nav>
 
 <nav class="mobileNav">
   <div class="navbar">
     <div class="container nav-container">
+      <label for="menuToggle" style="display: none"/>
       <input class="checkbox" type="checkbox" bind:checked={openMenu} name="menuToggle" id="menuToggle" bind:this={menuToggle} />
       <div class="hamburger-lines" on:click={openMenu != openMenu}>
         <span class="line line1"></span>
@@ -60,7 +63,7 @@
     z-index: 97;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #416a98;
     .navbar {
       width: 100%;
       box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
@@ -97,7 +100,7 @@
               height: 4px;
               width: 100%;
               border-radius: 10px;
-              background: #0e2431;
+              background: #fff;
               &.line1 {
                 transform-origin: 0% 0%;
                 transition: transform 0.4s ease-in-out;
@@ -113,7 +116,7 @@
           }
           .menu-items {
             padding: 320px 0 18px 0;
-            background: white;
+            background: #416a98;
             box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
             width: 100%;
             transform: translate(-150%);
@@ -128,7 +131,7 @@
               list-style: none;
               a {
                 text-decoration: none;
-                color: #0e2431;
+                color: #fff;
                 font-weight: 500;
                 font-size: 1.2rem;
                 padding: 0.7rem;
@@ -161,6 +164,8 @@
   }
 
 footer {
+  position: sticky;
+  bottom: 0;
   padding: 6px 8px;
   background-color: #416a98;
   color: white;

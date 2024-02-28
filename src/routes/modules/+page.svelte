@@ -26,7 +26,7 @@
   <h3><a href="/modules/jobs">Core (Jobs)</a></h3>
   <div class="col_container">
     <div class="video_container">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
       <p>At the base of FullVue is your partners and job management:</p>
@@ -48,7 +48,7 @@
   <h3><a href="/modules/field">Field (Off-site Service)</a></h3>
   <div class="col_container">
     <div class="video_container">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
       <ul>
@@ -82,7 +82,7 @@
   <h3><a href="/modules/sales">Sales</a></h3>
   <div class="col_container">
     <div class="video_container">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
       <ul>
@@ -252,7 +252,7 @@
       a {
         background: #416a98;
         color: white;
-        box-shadow: #5c5c5c 2px 3px 4px;
+        box-shadow: #1b1b1b 2px 3px 4px;
         text-decoration: none;
         font-weight: bold;
         border-radius: 1.5em;
@@ -263,16 +263,17 @@
   .module_container {
     width: 90vw;
     padding: 1em;
-    box-shadow: #5c5c5c 2px 3px 7px 3px;
+    box-shadow: #1b1b1b 2px 3px 7px 3px;
     margin: 2em auto;
     border-radius: 12px;
+    background-color: #343B44;
     h3 {
       text-align: center;
       margin-top: 0;
       margin-bottom: 12px;
       a {
         text-decoration: none;
-        color: black;
+        color: #fff;
       }
     }
     .col_container {

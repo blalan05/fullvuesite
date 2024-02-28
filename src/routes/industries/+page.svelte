@@ -45,6 +45,9 @@
   article {
     width: 100%;
     padding: 12px;
+    a {
+      color: white
+    }
   }
 
   @media screen and (min-width: 600px) {

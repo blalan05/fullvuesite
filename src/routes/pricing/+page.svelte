@@ -213,6 +213,11 @@
     padding: 0 12px;
   }
   .pricing_form {
+    background-color: #343B44;
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: #1b1b1b 2px 3px 7px 3px;
     .inputWrapper {
       padding: 12px 0;
       label {
@@ -230,7 +235,7 @@
         height: 40px;
         line-height: 24px;
         padding: 7px 8px;
-        color: rgb(8, 9, 10);
+        color: white;
         box-shadow: none;
         :focus{
             background-color: #fff;
@@ -342,7 +347,7 @@
     height: var(--checkbox-height);
     width: var(--checkbox-height);
     background-color: transparent;
-    border: calc(var(--checkbox-height) * .1) solid #000;
+    border: calc(var(--checkbox-height) * .1) solid #fff;
     border-radius: 5px;
     position: relative;
     display: inline-block;
