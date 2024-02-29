@@ -1,5 +1,8 @@
 export function load() {
   return {
-    pageTitle: 'Payroll'
+    pageTitle: 'Payroll',
+    metaTitle: 'Payroll Module | FullVue',
+    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
+    metaKeywords: ''
   }
 }

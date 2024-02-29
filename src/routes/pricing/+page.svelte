@@ -78,6 +78,7 @@
 </script>
 <article>
   <section class="pricing_header">
+    <h1>FullVue</h1>
     <h2>Pricing</h2>
     <h3>A Small Business Tool Should Be Priced For Small Businesses</h3>
     <p>We understand that the majority of small businesses can't afford the medium and large businesses tools priced in the 5 or 6 figure range.</p>

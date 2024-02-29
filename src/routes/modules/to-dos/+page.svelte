@@ -1,4 +1,5 @@
 <section class="module_container">
+  <h1>FullVue</h1>
   <h3>To-dos</h3>
   <div class="col_container">
     <div class="video_container">To-dos Demo Video</div>

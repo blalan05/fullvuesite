@@ -1,5 +1,6 @@
 <article>
   <section>
+    <h1>FullVue</h1>
     <h2>Manufacturing</h2>
     <p>
       There are lots of reasons that Manufacturing companies should use FullVue.

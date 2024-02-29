@@ -1,4 +1,5 @@
 <section class="module_container">
+  <h1>FullVue</h1>
   <h3>Safety Data Sheets</h3>
   <div class="col_container">
     <div class="video_container">SDS Demo Video</div>

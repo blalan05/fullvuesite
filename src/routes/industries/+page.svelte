@@ -1,7 +1,8 @@
 <article>
   <section>
+    <h1>FullVue</h1>
     <h2>Industries</h2>
-    <h3>FullVue can be customized to fit many industries</h3>
+    <h3>Small business software that can be customized to fit many industries</h3>
     <ul>
       <li><a href="/industries/manufacturing">Manufacturing</a></li>
       <li>Construction</li>

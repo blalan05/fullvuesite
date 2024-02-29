@@ -52,7 +52,13 @@
   <slot />
 </main>
 
-<footer>FullVue developed by <a href="https://foundtechsolutions.com" title="Foundational Technologies LLC">FoundTech</a> Copyright &copy; {Intl.DateTimeFormat('en-us', { year: 'numeric'}).format(new Date())} </footer>
+<footer>
+  FullVue developed by <a href="https://foundtechsolutions.com" title="Foundational Technologies LLC">FoundTech</a>
+  Copyright &copy; {Intl.DateTimeFormat('en-us', { year: 'numeric'}).format(new Date())}
+  <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
+  <a href="/termsofuse" title="Terms of Use" class="ml-2">Terms of Use</a>
+
+</footer>
 
 <style lang="scss">
   .mainNav {
@@ -166,12 +172,17 @@
 footer {
   position: sticky;
   bottom: 0;
+  text-align: right;
   padding: 6px 8px;
   background-color: #416a98;
   color: white;
   a {
     color: white;
     text-decoration: none;
+    &.ml-2 {
+      display: inline-block;
+      margin-left: 2em;
+    }
   }
 }
 </style>

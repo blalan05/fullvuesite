@@ -1,5 +1,6 @@
 <article>
   <section>
+    <h1>FullVue</h1>
     <h2>Contact Us</h2>
     <p>Reach out to us if you have questions or would like to schedule a customized demo!</p>
   </section>
