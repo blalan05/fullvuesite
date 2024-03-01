@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { writable } from 'svelte/store';
-  import { watch } from '$lib/watch'
+  import { writable } from "svelte/store";
+  import { watch } from "$lib/watch";
 
-  let employeeCount = writable(10)
+  let employeeCount = writable(10);
   let selModules = writable({
     coreMod: true,
     fieldMod: false,
@@ -15,67 +15,80 @@
     productMod: false,
     supportMod: false,
     huddleMod: false,
-    payrollMod: false
-  })
-  let periodMod = writable(true)
-  let totalEst = 0
-  let employeeMod = 0
+    payrollMod: false,
+  });
+  let periodMod = writable(true);
+  let totalEst = 0;
+  let moduleCost = [];
+  let rateIncrease = [];
 
   watch([employeeCount, selModules, periodMod], ([$count, $mods, $period]) => {
-    totalEst = 0
-    employeeMod = 0
+    moduleCost = [];
+    rateIncrease = [];
+    totalEst = 0;
     if ($mods.coreMod) {
-      totalEst += 1500
-      employeeMod += 0.2
+      moduleCost.push(1500);
+      rateIncrease.push(0.03);
     }
     if ($mods.fieldMod) {
-      totalEst += 200
-      employeeMod += 0.1
+      moduleCost.push(200);
+      rateIncrease.push(0.05);
     }
     if ($mods.invoiceMod) {
-      totalEst += 400
-      employeeMod += 0.2
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
     }
     if ($mods.salesMod) {
-      totalEst += 400
-      employeeMod += 0.2
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
     }
     if ($mods.purchasingMod) {
-      totalEst += 400
-      employeeMod += 0.2
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
     }
     if ($mods.todosMod) {
-      totalEst += 0
-      employeeMod += 0
+      moduleCost.push(0);
+      rateIncrease.push(0);
     }
     if ($mods.sdsMod) {
-      totalEst += 50
-      employeeMod += 0.05
+      moduleCost.push(50);
+      rateIncrease.push(0.1);
     }
     if ($mods.hrMod) {
-      totalEst += 200
-      employeeMod += 0.1
+      moduleCost.push(200);
+      rateIncrease.push(0.1);
     }
     if ($mods.productMod) {
-      totalEst += 200
-      employeeMod += 0.1
+      moduleCost.push(200);
+      rateIncrease.push(0.04);
     }
     if ($mods.supportMod) {
-      totalEst += 150
-      employeeMod += 0.05
+      moduleCost.push(150);
+      rateIncrease.push(0.05);
     }
     if ($mods.huddleMod) {
-      totalEst += 150
-      employeeMod += 0.05
+      moduleCost.push(150);
+      rateIncrease.push(0.04);
     }
     if ($mods.payrollMod) {
-      totalEst += 400
-      employeeMod += 0.1
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
     }
-    totalEst += $count > 10 ? (60 * employeeMod * $count) : 0
-    totalEst += !$period ? totalEst * 0.15 : 0
-  })
+    if ($count > 10) {
+      for (let i = 0; i < moduleCost.length; i++) {
+        let singleModule = moduleCost[i];
+        singleModule += moduleCost[i] * rateIncrease[i] * ($count - 10);
+        totalEst += singleModule;
+      }
+    } else {
+      for (let i = 0; i < moduleCost.length; i++) {
+        totalEst += moduleCost[i];
+      }
+    }
+    totalEst = !$period ? totalEst * 0.125 + totalEst : totalEst;
+  });
 </script>
+
 <article>
   <section class="pricing_header">
     <h1>FullVue</h1>
@@ -87,7 +100,16 @@
   <section class="pricing_form">
     <div class="inputWrapper">
       <label for="employeeCount">Number of Employees:</label>
-      <input type="number" bind:value={$employeeCount} id="employeeCount" max="50" min="10" step="5" inputmode="numeric" pattern="\d*" />
+      <input
+        type="number"
+        bind:value={$employeeCount}
+        id="employeeCount"
+        max="50"
+        min="10"
+        step="5"
+        inputmode="numeric"
+        pattern="\d*"
+      />
     </div>
     <div class="inputWrapper">
       <label for="period">Subscription Term:</label>
@@ -96,7 +118,12 @@
         <option value={false}>Monthly</option>
       </select>
     </div>
-    <p class="pricingTotal"><strong>Total: </strong>{ Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(!$periodMod ? (totalEst / 12) : totalEst) }</p>
+    <p class="pricingTotal">
+      <strong>Total: </strong>{Intl.NumberFormat("en-us", {
+        style: "currency",
+        currency: "USD",
+      }).format(!$periodMod ? totalEst / 12 : totalEst)}
+    </p>
     <hr />
     <table class="pricingTable">
       <tr>
@@ -208,6 +235,7 @@
     <a href="/contact" title="Contact Us" class="cta_contact">Schedule Today</a>
   </section>
 </article>
+
 <style lang="scss">
   article {
     width: 100%;
@@ -227,7 +255,8 @@
         min-width: 90px;
         font-weight: bold;
       }
-      input, select {
+      input,
+      select {
         min-width: 260px;
         border-radius: 5px;
         background: rgb(249, 250, 250);
@@ -238,10 +267,10 @@
         padding: 7px 8px;
         color: white;
         box-shadow: none;
-        :focus{
-            background-color: #fff;
-            border-color: #3b49df;
-            box-shadow: 1px 1px 0 #3b49df;
+        :focus {
+          background-color: #fff;
+          border-color: #3b49df;
+          box-shadow: 1px 1px 0 #3b49df;
         }
       }
     }
@@ -340,7 +369,7 @@
     }
   }
 
-  .checkbox-wrapper input[type=checkbox] {
+  .checkbox-wrapper input[type="checkbox"] {
     display: none;
   }
 
@@ -368,7 +397,7 @@
     box-sizing: border-box;
     position: absolute;
     height: 0;
-    width: calc(var(--checkbox-height) * .2);
+    width: calc(var(--checkbox-height) * 0.2);
     background-color: #34b93d;
     display: inline-block;
     -moz-transform-origin: left top;
@@ -383,9 +412,10 @@
     transition: opacity ease 0.5;
   }
   .checkbox-wrapper .check-box::before {
-    top: calc(var(--checkbox-height) * .72);
-    left: calc(var(--checkbox-height) * .41);
-    box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+    top: calc(var(--checkbox-height) * 0.72);
+    left: calc(var(--checkbox-height) * 0.41);
+    box-shadow: 0 0 0 calc(var(--checkbox-height) * 0.05)
+      var(--background-color);
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
@@ -393,8 +423,8 @@
     transform: rotate(-135deg);
   }
   .checkbox-wrapper .check-box::after {
-    top: calc(var(--checkbox-height) * .37);
-    left: calc(var(--checkbox-height) * .05);
+    top: calc(var(--checkbox-height) * 0.37);
+    left: calc(var(--checkbox-height) * 0.05);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -402,17 +432,17 @@
     transform: rotate(-45deg);
   }
 
-  .checkbox-wrapper input[type=checkbox]:checked + .check-box {
+  .checkbox-wrapper input[type="checkbox"]:checked + .check-box {
     border-color: #34b93d;
   }
-  .checkbox-wrapper input[type=checkbox]:checked + .check-box::after {
+  .checkbox-wrapper input[type="checkbox"]:checked + .check-box::after {
     height: calc(var(--checkbox-height) / 2);
     -moz-animation: dothabottomcheck 0.2s ease 0s forwards;
     -o-animation: dothabottomcheck 0.2s ease 0s forwards;
     -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
     animation: dothabottomcheck 0.2s ease 0s forwards;
   }
-  .checkbox-wrapper input[type=checkbox]:checked + .check-box::before {
+  .checkbox-wrapper input[type="checkbox"]:checked + .check-box::before {
     height: calc(var(--checkbox-height) * 1.2);
     -moz-animation: dothatopcheck 0.4s ease 0s forwards;
     -o-animation: dothatopcheck 0.4s ease 0s forwards;
