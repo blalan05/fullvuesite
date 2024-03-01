@@ -54,10 +54,9 @@
 
 <footer>
   FullVue developed by <a href="https://foundtechsolutions.com" title="Foundational Technologies LLC">FoundTech</a>
-  Copyright &copy; {Intl.DateTimeFormat('en-us', { year: 'numeric'}).format(new Date())}
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
   <a href="/termsofuse" title="Terms of Use" class="ml-2">Terms of Use</a>
-
+  <span style="display: inline-block" class="ml-2">Copyright &copy; {Intl.DateTimeFormat('en-us', { year: 'numeric'}).format(new Date())}</span>
 </footer>
 
 <style lang="scss">

@@ -65,7 +65,9 @@
 <section class="module_container" id="invoicing">
   <h3><a href="/modules/invoicing">Invoicing</a></h3>
   <div class="col_container">
-    <div class="video_container">Invoicing Demo Video</div>
+    <div class="video_container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EOlB8r5srIU?si=xedSZUsqgaLJ7v1z&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="module_summary">
       <ul>
         <li>Quickly build an invoice from the recorded job data.</li>
@@ -117,7 +119,9 @@
 <section class="module_container" id="to-do">
   <h3><a href="/modules/to-dos">To-dos</a></h3>
   <div class="col_container">
-    <div class="video_container">To-dos Demo Video</div>
+    <div class="video_container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nyDg2QXozTw?si=wqSU8g93QwvN_Kx4&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="module_summary">
       <ul>
         <li>Task list for non-job related assignments</li>
@@ -132,7 +136,9 @@
 <section class="module_container" id="sds">
   <h3><a href="/modules/sds">Safety Data Sheets</a></h3>
   <div class="col_container">
-    <div class="video_container">SDS Demo Video</div>
+    <div class="video_container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jg24D6ihl7s?si=5o81yhqNLj3bSPNk&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="module_summary">
       <ul>
         <li>Store Safety Data Sheets in the app</li>

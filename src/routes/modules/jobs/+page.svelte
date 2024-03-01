@@ -23,9 +23,11 @@
 </section>
 <section>
   <h4>Related Modules</h4>
-  <a href="/modules/field">Field</a>
-  <a href="/modules/invoicing">Invoicing</a>
-  <a href="/modules/payroll">Payroll</a>
+  <div class="related">
+    <a href="/modules/field">Field</a>
+    <a href="/modules/invoicing">Invoicing</a>
+    <a href="/modules/payroll">Payroll</a>
+  </div>
 </section>
 <style lang="scss">
   .module_container {
@@ -33,6 +35,14 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+    }
+  }
+  .related {
+    display: flex;
+    a {
+      display: inline-block;
+      width: 100%;
+      color: white;
     }
   }
 </style>

@@ -265,7 +265,6 @@
         height: 40px;
         line-height: 24px;
         padding: 7px 8px;
-        color: white;
         box-shadow: none;
         :focus {
           background-color: #fff;
