@@ -83,10 +83,10 @@
       <li><em>Measure</em> employee's effiency</li>
       <li><em>Turn</em> completed jobs into invoices <em>faster</em></li>
       <li><em>Tighten</em> down on wasted time</li>
-      <li><em>Drill</em></li>
-      <li><em>Connect</em></li>
-      <li><em>File</em> away</li>
-      <li><em>Cut</em></li>
+      <li><em>Drill</em> into what makes you money</li>
+      <li><em>Connect</em> employee's hours to invoice lines</li>
+      <li><em>File</em> down on inefficient meetings</li>
+      <li><em>Cut</em> large projects in to managable tasks</li>
       <li><em>Trim</em></li>
       <li><em>Bore</em></li>
       <li><em>Reduce leaks</em></li>
