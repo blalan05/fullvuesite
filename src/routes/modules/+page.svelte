@@ -16,6 +16,7 @@
   <span><a href="#payroll">Payroll</a></span>
   <span><a href="#products">Products</a></span>
   <span><a href="#customer-support">Customer&nbsp;Support</a></span>
+  <span><a href="#production-meeting">Production Meeting</a></span>
   <h4>Coming Soon:</h4>
   <span><a href="#point-of-sale">Point&nbsp;of&nbsp;Sale</a></span>
   <span><a href="#equipment">Equipment</a></span>
@@ -101,7 +102,7 @@
 <section class="module_container" id="purchasing">
   <h3><a href="/modules/purchasing">Purchasing/Adv. Inventory</a></h3>
   <div class="col_container">
-    <div class="video_container">Purchasing/Adv. Inventory Demo Video</div>
+    <div class="video_container purchasing"></div>
     <div class="module_summary">
       <ul>
         <li>Create Purchase Orders to submit to Vendors</li>
@@ -153,7 +154,7 @@
 <section class="module_container" id="hr">
   <h3><a href="/modules/hr">Human Resources</a></h3>
   <div class="col_container">
-    <div class="video_container">Human Resources Demo Video</div>
+    <div class="video_container hr"></div>
     <div class="module_summary">
       <ul>
         <li>Benefits</li>
@@ -169,7 +170,7 @@
 <section class="module_container" id="payroll">
   <h3><a href="/modules/payroll">Payroll</a></h3>
   <div class="col_container">
-    <div class="video_container">Payroll Demo Video</div>
+    <div class="video_container payroll"></div>
     <div class="module_summary">
       <ul>
         <li>Communication Employee's punches and notes about adjustments to payroll clerk</li>
@@ -215,7 +216,7 @@
 <section class="module_container" id="production-meeting">
   <h3><a href="/modules/production-meeting">Production Meeting</a></h3>
   <div class="col_container">
-    <div class="video_container">Production Meeting Demo Video</div>
+    <div class="video_container production-meeting"></div>
     <div class="module_summary">
       <ul>
         <li>Improve communication before, during, and after regular meetings.</li>
@@ -317,6 +318,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &.purchasing {
+          background: url('$lib/purchasing.webp');
+          background-size: cover;
+        }
+        &.hr {
+          background: url('$lib/hr.webp');
+          background-size: cover;
+        }
+        &.payroll {
+          background: url('$lib/payroll.webp');
+          background-size: cover;
+        }
+        &.production-meeting {
+          background: url('$lib/production_meeting.webp');
+          background-size: cover;
+        }
       }
     }
   }

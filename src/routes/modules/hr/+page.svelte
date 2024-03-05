@@ -2,7 +2,7 @@
   <h1>FullVue</h1>
   <h3>Human Resources</h3>
   <div class="col_container">
-    <div class="video_container">Human Resources Demo Video</div>
+    <div class="video_container"></div>
     <div class="module_summary">
       <ul>
         <li>Benefits</li>
@@ -21,6 +21,8 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+      background: url('$lib/hr.webp');
+      background-size: cover;
     }
   }
 </style>

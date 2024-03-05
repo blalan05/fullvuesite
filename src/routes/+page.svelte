@@ -42,6 +42,20 @@
           <div class="ssthree">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+          <div class="ssfour">
+          </div>
+          <div class="ssfive">
+          </div>
+          <div class="sssix">
+          </div>
+          <div class="ssseven">
+          </div>
+          <div class="sseight">
+          </div>
+          <div class="ssnine">
+          </div>
+          <div class="ssten">
+          </div>
         </Carousel>
       </div>
       <div class="thumbs">
@@ -50,6 +64,13 @@
           <div class="ssone" on:click={carousel.goTo(1)}></div>
           <div class="sstwo" on:click={carousel.goTo(2)}></div>
           <div class="ssthree" on:click={carousel.goTo(3)}></div>
+          <div class="ssfour" on:click={carousel.goTo(4)}></div>
+          <div class="ssfive" on:click={carousel.goTo(5)}></div>
+          <div class="sssix" on:click={carousel.goTo(6)}></div>
+          <div class="ssseven" on:click={carousel.goTo(7)}></div>
+          <div class="sseight" on:click={carousel.goTo(8)}></div>
+          <div class="ssnine" on:click={carousel.goTo(9)}></div>
+          <div class="ssten" on:click={carousel.goTo(10)}></div>
         </Carousel>
       </div>
     {/if}
@@ -153,16 +174,44 @@
       aspect-ratio: 16/9;
       max-height: 90vh;
       margin: auto;
-      .vid, .ssone, .sstwo {
+      .vid, .ssone, .sstwo, .ssthree, .ssfour, .ssfive, .sssix, .ssseven, .sseight, .ssnine, .ssten {
         font-size: 2em;
         aspect-ratio: 16/9;
         width: 90%;
       }
+      .ssfour {
+      background: url('$lib/purchasing.webp');
+      background-size: cover;
+    }
+    .ssfive {
+      background: url('$lib/invoicing.webp');
+      background-size: cover;
+    }
+    .sssix {
+      background: url('$lib/hr.webp');
+      background-size: cover;
+    }
+    .ssseven {
+      background: url('$lib/payroll.webp');
+      background-size: cover;
+    }
+    .sseight {
+      background: url('$lib/sds.webp');
+      background-size: cover;
+    }
+    .ssnine {
+      background: url('$lib/to-dos.webp');
+      background-size: cover;
+    }
+    .ssten {
+      background: url('$lib/production_meeting.webp');
+      background-size: cover;
+    }
     }
   }
   .thumbs {
     margin-top: 8px;
-    .vid, .ssone, .sstwo {
+    .vid, .ssone, .sstwo, .ssthree, .ssfour, .ssfive, .sssix, .ssseven, .sseight, .ssnine, .ssten  {
       font-size: 1.6em;
       width: 90%;
       aspect-ratio: 16/9;
@@ -184,6 +233,35 @@
       background: url('$lib/sales.webp');
       background-size: cover;
     }
+    .ssfour {
+      background: url('$lib/purchasing.webp');
+      background-size: cover;
+    }
+    .ssfive {
+      background: url('$lib/invoicing.webp');
+      background-size: cover;
+    }
+    .sssix {
+      background: url('$lib/hr.webp');
+      background-size: cover;
+    }
+    .ssseven {
+      background: url('$lib/payroll.webp');
+      background-size: cover;
+    }
+    .sseight {
+      background: url('$lib/sds.webp');
+      background-size: cover;
+    }
+    .ssnine {
+      background: url('$lib/to-dos.webp');
+      background-size: cover;
+    }
+    .ssten {
+      background: url('$lib/production_meeting.webp');
+      background-size: cover;
+    }
+
   }
   .puns_container {
     padding: 2em 16px;
