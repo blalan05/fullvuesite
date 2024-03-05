@@ -2,6 +2,8 @@
   // @ts-ignore
   import Carousel from 'svelte-carousel'
   import { browser } from '$app/environment'
+
+  import logo from '$lib/logo.png';
   /**
      * @type {{ goTo: (arg0: any) => void; }}
      */
@@ -13,9 +15,10 @@
 
 <article>
   <section class="header_container">
-    <h1>FullVue</h1>
-    <h2>Small Business Toolbox</h2>
+    <img src={ logo } alt="FullVue Logo" />
     <a href="/pricing" title="Get Pricing Now" class="cta_pricing">Get Pricing Now</a>
+    <h1 style="font-size: 0.1em">FullVue</h1>
+    <h2 style="font-size: 0.1em">Small Business Toolbox</h2>
     <div class="pc_demo_container"></div>
     <div class="mobile_demo_container"></div>
   </section>
@@ -99,7 +102,7 @@
   </section>
   <section class="cta_bottom">
     <h3>Setup a customized demo today!</h3>
-    <p>We can customized our software to your business lickety-split and show you how you can grow your small business</p>
+    <p>We can customize our software to your business lickety-split and show you how you can grow your small business</p>
     <a href="/contact" title="Contact Us" class="cta_contact">Schedule Today</a>
   </section>
 </article>
@@ -118,6 +121,11 @@
     text-align: center;
     h2 {
       margin-top: 8px;
+    }
+    img {
+      margin: 1em auto;
+      width: 60%;
+      max-width: 360px;
     }
     .cta_pricing {
       display: inline-block;
@@ -320,6 +328,10 @@
     .header_container {
       min-height: 648px;
       max-width: 1024px;
+      img {
+        width: 50%;
+        max-width: 320px;
+      }
       .pc_demo_container {
         left: 5%;
       }

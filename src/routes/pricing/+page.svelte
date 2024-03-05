@@ -241,6 +241,9 @@
     width: 100%;
     padding: 0 12px;
   }
+  .pricing_header {
+    text-align: center;
+  }
   .pricing_form {
     background-color: #343B44;
     margin-top: 1.5em;
@@ -474,6 +477,12 @@
     article {
       max-width: 920px;
       margin: 0 auto;
+    }
+    .pricing_form {
+      .inputWrapper {
+        width: 50%;
+        float: left;
+      }
     }
   }
   @media screen and (min-width: 1200px) {

@@ -4,6 +4,7 @@
 
   const menuItems = [
     { title: "Home", link: "/" },
+    { title: 'What is ERP?', link: '/erp' },
     { title: "Modules", link: "/modules" },
     { title: "Industries", link: "/industries" },
     { title: "Pricing", link: "/pricing" },

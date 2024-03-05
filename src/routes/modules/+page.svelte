@@ -30,14 +30,14 @@
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
-      <p>At the base of FullVue is your partners and job management:</p>
+      <p>At the base of FullVue are your partners and job management:</p>
       <ul>
-        <li>Employees and Customers - those you've chosen to partner with to grow your business</li>
+        <li>Employees and Customers</li>
         <li>Customer connections and locations (addresses and Lat/Lng markers)</li>
-        <li>Group Customers in Industries</li>
+        <li>Group customers in Industries</li>
         <li>Log time, materials and additional <em>extras</em></li>
         <li>Customizable departments to visualize workflows</li>
-        <li>Cost Sheet report enlightens profit margins and profit-losses</li>
+        <li>Cost Sheet report shows profit margins and profit losses</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/jobs">Learn More</a>
@@ -54,7 +54,7 @@
     <div class="module_summary">
       <ul>
         <li>Log mileage as job data</li>
-        <li>Trip records for simplified entry</li>
+        <li>Simplify entry for Trip records</li>
         <li>Set job schedules and Communicate travel itineraries with employees</li>
       </ul>
       <div class="learn_more_container">
@@ -71,9 +71,9 @@
     </div>
     <div class="module_summary">
       <ul>
-        <li>Quickly build an invoice from the recorded job data.</li>
-        <li>Easily make adjustments to quantities, descriptions and prices.</li>
-        <li>Send invoices via email and see when they've been read.</li>
+        <li>Quickly build an invoice from the recorded job data</li>
+        <li>Easily make adjustments to quantities, descriptions and prices</li>
+        <li>Send invoices via email and see when they've been read</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/invoicing">Learn More</a>
@@ -90,8 +90,8 @@
     <div class="module_summary">
       <ul>
         <li>Improve your sales record-keeping and team communication with Opportunities and Details</li>
-        <li>Tools for thorough quote building and price generation.</li>
-        <li>Convert signed quotes to jobs, and compare estimated vs. actual to improve future quotes.</li>
+        <li>Tools for thorough quote building and price generation</li>
+        <li>Convert signed quotes to jobs, and compare estimated vs. actual to improve future quotes</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/sales">Learn More</a>
@@ -100,12 +100,12 @@
   </div>
 </section>
 <section class="module_container" id="purchasing">
-  <h3><a href="/modules/purchasing">Purchasing/Adv. Inventory</a></h3>
+  <h3><a href="/modules/purchasing">Purchasing & Advanced Inventory</a></h3>
   <div class="col_container">
     <div class="video_container purchasing"></div>
     <div class="module_summary">
       <ul>
-        <li>Create Purchase Orders to submit to Vendors</li>
+        <li>Create purchase orders to submit to vendors</li>
         <li>Track submitted, approved, received, and completed purchase orders</li>
         <li>Track bills and payments</li>
         <li>Live inventory counts</li>
@@ -159,7 +159,7 @@
       <ul>
         <li>Benefits</li>
         <li>Pay Rates and Employee Performance Reviews</li>
-        <li>Document Kudos Reports and Write-ups so they can be addressed timely</li>
+        <li>Document kudos reports and write-ups so they can be addressed timely</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/hr">Learn More</a>
@@ -173,9 +173,9 @@
     <div class="video_container payroll"></div>
     <div class="module_summary">
       <ul>
-        <li>Communication Employee's punches and notes about adjustments to payroll clerk</li>
-        <li>Monitor Employee Absence Requests, and accured hours time</li>
-        <li>Generate hours for pay periods.</li>
+        <li>Generate hours for pay periods</li>
+        <li>Communicate to payroll clerk about employee's time punches and notes about adjustments</li>
+        <li>Monitor Employee absence requests, and accured hours</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/payroll">Learn More</a>
@@ -219,7 +219,7 @@
     <div class="video_container production-meeting"></div>
     <div class="module_summary">
       <ul>
-        <li>Improve communication before, during, and after regular meetings.</li>
+        <li>Improve communication before, during, and after regular meetings</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/production-meeting">Learn More</a>

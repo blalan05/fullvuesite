@@ -9,17 +9,26 @@
       <li>Construction</li>
       <li>Crane & Rigging Services</li>
       <li>Carpentry</li>
+      <li>Cabinetry</li>
+      <li>HVAC</li>
+      <li>Window Cleaning</li>
+      <li>Commercial Cleaning Services</li>
+    </ul>
+    <ul>
       <li>Remodeling Services</li>
       <li>Handy-man</li>
-      <li>HVAC</li>
-      <li>Electrical</li>
       <li>Plumbing</li>
       <li>Painting</li>
       <li>Roofing</li>
+      <li>Heating & Coooling</li>
       <li>Window/Door Installation</li>
-      <li>Window Cleaning</li>
+      <li>Chiminey Maintaineance</li>
+      <li>Fireplace Services</li>
+      <li>Pest Control</li>
+      <li>Electrical</li>
       <li>Appliance Repair</li>
-      <li>Cleaning Services</li>
+      <li>Garage Door Installation/Maintaineance</li>
+      <li>Home Cleaning Services</li>
     </ul>
     <ul>
       <li>Tree Cutting Service</li>
@@ -34,10 +43,10 @@
       <li>Detail Shops</li>
       <li>Vehicle Audio</li>
       <li>Vehicle Tinting</li>
+      <li>Small Engine Repair</li>
     </ul>
     <ul>
-      <li>Property Management</li>
-      <li>Rental Management</li>
+      <li>Property/Rental Management</li>
       <li>Print Shop</li>
       <li>Media Companies</li>
       <li>Sign Shop</li>
@@ -57,6 +66,9 @@
   article {
     width: 100%;
     padding: 12px;
+    h1, h2, h3 {
+      text-align: center;
+    }
     a {
       color: white
     }
