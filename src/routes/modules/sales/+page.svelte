@@ -93,7 +93,7 @@
         }
       }
       .module.products .module_background {
-        background: url('$lib/products.webp');
+        // background: url('$lib/products.webp');
         background-size: cover;
       }
       .module.invoicing .module_background {
