@@ -153,7 +153,7 @@
           <label for="invoicingMod" class="check-box">
         </td>
         <td class="nameCol">Invoicing</td>
-        <td class="descCol">Generating invoices and tracking payments</td>
+        <td class="descCol">Generate invoices and track payments</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -161,7 +161,7 @@
           <label for="salesMod" class="check-box">
         </td>
         <td class="nameCol">Sales</td>
-        <td class="descCol">Tracking Sales Opportunities and build and send quotes</td>
+        <td class="descCol">Track Sales Opportunities, and build and send quotes</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -169,7 +169,7 @@
           <label for="purchasingMod" class="check-box">
         </td>
         <td class="nameCol">Purchasing & Adv. Inventory</td>
-        <td class="descCol">Generating purchase orders and tracking inventory</td>
+        <td class="descCol">Generate purchase orders and track inventory</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -185,7 +185,7 @@
           <label for="sdsMod" class="check-box">
         </td>
         <td class="nameCol">SDS</td>
-        <td class="descCol">Stores and provides improved accessibility to Safety Data Sheets</td>
+        <td class="descCol">Store and provide improved accessibility to Safety Data Sheets</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -193,7 +193,7 @@
           <label for="hrMod" class="check-box">
         </td>
         <td class="nameCol">Human Resources</td>
-        <td class="descCol">Extends the core tools for managing employees and their benefits, reviews and reports</td>
+        <td class="descCol">Extends Core Tools to manage employees and their benefits, reviews and reports</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -201,7 +201,7 @@
           <label for="payrollMod" class="check-box">
         </td>
         <td class="nameCol">Payroll</td>
-        <td class="descCol">Tracks employee's absence requests and hours, and generates reports for submitting to Payroll provider</td>
+        <td class="descCol">Track employees' absence requests and hours, and generates reports for submitting to payroll provider</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -209,7 +209,7 @@
           <label for="productMod" class="check-box">
         </td>
         <td class="nameCol">Products</td>
-        <td class="descCol">Maintains detailed infomation about your products</td>
+        <td class="descCol">Maintain detailed infomation about your products</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -217,7 +217,7 @@
           <label for="supportMod" class="check-box">
         </td>
         <td class="nameCol">Customer Support</td>
-        <td class="descCol">Extends the Product Module to include troubleshooting discussions, and tracking time/parts to be billed</td>
+        <td class="descCol">Extend the Product Module to include troubleshooting discussions, and link time/parts to be billed</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -225,7 +225,7 @@
           <label for="huddleMod" class="check-box">
         </td>
         <td class="nameCol">Production Meeting</td>
-        <td class="descCol">Improves communication before, during and after your regular meetings</td>
+        <td class="descCol">Improve communication before, during and after your regular meetings</td>
       </tr>
     </table>
   </section>
@@ -288,6 +288,10 @@
         font-size: 1.2em;
         min-height: 1.5em;
         border-bottom: 1px solid #000;
+        th {
+          text-align: left;
+          padding: 0 1em; 
+        }
         td {
           word-break: break-word;
         }

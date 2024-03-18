@@ -363,7 +363,7 @@
 
   @media screen and (min-width: 920px) {
     .modules_list {
-      max-width: 920px;
+      max-width: 640px;
       margin: auto;
     }
     .module_container {
@@ -377,7 +377,7 @@
 
   @media screen and (min-width: 1200px) {
     .modules_list {
-      max-width: 1200px;
+      max-width: 640px;
     }
     .module_container {
       max-width: 1200px;
