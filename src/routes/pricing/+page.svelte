@@ -16,6 +16,8 @@
     supportMod: false,
     huddleMod: false,
     payrollMod: false,
+    itmod: false,
+    equipmod: false,
   });
   let periodMod = writable(true);
   let totalEst = 0;
@@ -74,6 +76,14 @@
       moduleCost.push(400);
       rateIncrease.push(0.05);
     }
+    if ($mods.itmod) {
+      moduleCost.push(50);
+      rateIncrease.push(0.1);
+    }
+    if ($mods.equipmod) {
+      moduleCost.push(150);
+      rateIncrease.push(0.02);
+    }
     if ($count > 10) {
       for (let i = 0; i < moduleCost.length; i++) {
         let singleModule = moduleCost[i];
@@ -94,8 +104,14 @@
     <h1>FullVue</h1>
     <h2>Pricing</h2>
     <h3>A Small Business Tool Should Be Priced For Small Businesses</h3>
-    <p>We understand that the majority of small businesses can't afford the medium and large businesses tools priced in the 5 or 6 figure range.</p>
-    <p>Our pricing is based on the modules you choose, employee count, and subscription length.</p>
+    <p>
+      We understand that the majority of small businesses can't afford the
+      medium and large businesses tools priced in the 5 or 6 figure range.
+    </p>
+    <p>
+      Our pricing is based on the modules you choose, employee count, and
+      subscription length.
+    </p>
   </section>
   <section class="pricing_form">
     <div class="inputWrapper">
@@ -133,105 +149,196 @@
       </tr>
       <tr>
         <td class="checkbox-wrapper" style="padding-top: 12px">
-          <input type="checkbox" id="coreMod" bind:checked={$selModules.coreMod} disabled />
-          <label for="coreMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="coreMod"
+            bind:checked={$selModules.coreMod}
+            disabled
+          />
+          <label for="coreMod" class="check-box"> </label></td
+        >
         <td class="nameCol" style="padding-top: 12px;">Core</td>
-        <td class="descCol" style="padding-top: 12px">Customer and Job Management</td>
+        <td class="descCol" style="padding-top: 12px"
+          >Customer and Job Management</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="fieldMod" bind:checked={$selModules.fieldMod} />
-          <label for="fieldMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="fieldMod"
+            bind:checked={$selModules.fieldMod}
+          />
+          <label for="fieldMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Field</td>
         <td class="descCol">Additional Field Service features</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="invoicingMod" bind:checked={$selModules.invoiceMod} />
-          <label for="invoicingMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="invoicingMod"
+            bind:checked={$selModules.invoiceMod}
+          />
+          <label for="invoicingMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Invoicing</td>
         <td class="descCol">Generate invoices and track payments</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="salesMod" bind:checked={$selModules.salesMod} />
-          <label for="salesMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="salesMod"
+            bind:checked={$selModules.salesMod}
+          />
+          <label for="salesMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Sales</td>
-        <td class="descCol">Track Sales Opportunities, and build and send quotes</td>
+        <td class="descCol"
+          >Track Sales Opportunities, and build and send quotes</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="purchasingMod" bind:checked={$selModules.purchasingMod} />
-          <label for="purchasingMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="purchasingMod"
+            bind:checked={$selModules.purchasingMod}
+          />
+          <label for="purchasingMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Purchasing & Adv. Inventory</td>
         <td class="descCol">Generate purchase orders and track inventory</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="todoMod" bind:checked={$selModules.todosMod} />
-          <label for="todoMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="todoMod"
+            bind:checked={$selModules.todosMod}
+          />
+          <label for="todoMod" class="check-box"> </label></td
+        >
         <td class="nameCol">To-dos</td>
         <td class="descCol">Communicate and document non-job related tasks</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="sdsMod" bind:checked={$selModules.sdsMod} />
-          <label for="sdsMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="sdsMod"
+            bind:checked={$selModules.sdsMod}
+          />
+          <label for="sdsMod" class="check-box"> </label></td
+        >
         <td class="nameCol">SDS</td>
-        <td class="descCol">Store and provide improved accessibility to Safety Data Sheets</td>
+        <td class="descCol"
+          >Store and provide improved accessibility to Safety Data Sheets</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
           <input type="checkbox" id="hrMod" bind:checked={$selModules.hrMod} />
-          <label for="hrMod" class="check-box">
-        </td>
+          <label for="hrMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Human Resources</td>
-        <td class="descCol">Extends Core Tools to manage employees and their benefits, reviews and reports</td>
+        <td class="descCol"
+          >Extends Core Tools to manage employees and their benefits, reviews
+          and reports</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="payrollMod" bind:checked={$selModules.payrollMod} />
-          <label for="payrollMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="payrollMod"
+            bind:checked={$selModules.payrollMod}
+          />
+          <label for="payrollMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Payroll</td>
-        <td class="descCol">Track employees' absence requests and hours, and generates reports for submitting to payroll provider</td>
+        <td class="descCol"
+          >Track employees' absence requests and hours, and generates reports
+          for submitting to payroll provider</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="productMod" bind:checked={$selModules.productMod} />
-          <label for="productMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="productMod"
+            bind:checked={$selModules.productMod}
+          />
+          <label for="productMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Products</td>
-        <td class="descCol">Maintain detailed infomation about your products</td>
+        <td class="descCol">Maintain detailed infomation about your products</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="supportMod" bind:checked={$selModules.supportMod} />
-          <label for="supportMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="supportMod"
+            bind:checked={$selModules.supportMod}
+          />
+          <label for="supportMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Customer Support</td>
-        <td class="descCol">Extend the Product Module to include troubleshooting discussions, and link time/parts to be billed</td>
+        <td class="descCol"
+          >Extend the Product Module to include troubleshooting discussions, and
+          link time/parts to be billed</td
+        >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="huddleMod" bind:checked={$selModules.huddleMod} />
-          <label for="huddleMod" class="check-box">
-        </td>
+          <input
+            type="checkbox"
+            id="huddleMod"
+            bind:checked={$selModules.huddleMod}
+          />
+          <label for="huddleMod" class="check-box"> </label></td
+        >
         <td class="nameCol">Production Meeting</td>
-        <td class="descCol">Improve communication before, during and after your regular meetings</td>
+        <td class="descCol"
+          >Improve communication before, during and after your regular meetings</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="equipmod"
+            bind:checked={$selModules.equipmod}
+          />
+          <label for="equipmod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Equipment</td>
+        <td class="descCol"
+          >Tracking Tools, Machines and Vehicles (Assignments, Costs and Usage)</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input type="checkbox" id="itmod" bind:checked={$selModules.itmod} />
+          <label for="itmod" class="check-box"> </label></td
+        >
+        <td class="nameCol">IT Database</td>
+        <td class="descCol"
+          >Document devices (PC, Tablets, Phones, Printers, etc.), internal
+          components and software</td
+        >
       </tr>
     </table>
   </section>
   <section class="cta_bottom">
     <h3>Set up a customized demo today!</h3>
-    <p>We can customized our software to your business lickety-split and show you how you can grow your small business</p>
+    <p>
+      We can customized our software to your business lickety-split and show you
+      how you can grow your small business
+    </p>
     <a href="/contact" title="Contact Us" class="cta_contact">Schedule Today</a>
   </section>
 </article>
@@ -245,7 +352,7 @@
     text-align: center;
   }
   .pricing_form {
-    background-color: #343B44;
+    background-color: #343b44;
     margin-top: 1.5em;
     padding: 1em;
     border-radius: 1em;
@@ -290,7 +397,7 @@
         border-bottom: 1px solid #000;
         th {
           text-align: left;
-          padding: 0 1em; 
+          padding: 0 1em;
         }
         td {
           word-break: break-word;
@@ -383,7 +490,7 @@
     height: var(--checkbox-height);
     width: var(--checkbox-height);
     background-color: transparent;
-    border: calc(var(--checkbox-height) * .1) solid #fff;
+    border: calc(var(--checkbox-height) * 0.1) solid #fff;
     border-radius: 5px;
     position: relative;
     display: inline-block;
