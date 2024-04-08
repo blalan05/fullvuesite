@@ -16,18 +16,18 @@
     </ul>
     <ul>
       <li>Remodeling Services</li>
-      <li>Handy-man</li>
+      <li>Handyman</li>
       <li>Plumbing</li>
       <li>Painting</li>
       <li>Roofing</li>
-      <li>Heating & Coooling</li>
+      <li>Heating & Cooling</li>
       <li>Window/Door Installation</li>
-      <li>Chiminey Maintaineance</li>
+      <li>Chimney Maintenance</li>
       <li>Fireplace Services</li>
       <li>Pest Control</li>
       <li>Electrical</li>
       <li>Appliance Repair</li>
-      <li>Garage Door Installation/Maintaineance</li>
+      <li>Garage Door Installation/Maintenance</li>
       <li>Home Cleaning Services</li>
     </ul>
     <ul>
