@@ -17,11 +17,11 @@
   <span><a href="#products">Products</a></span>
   <span><a href="#customer-support">Customer&nbsp;Support</a></span>
   <span><a href="#production-meeting">Production Meeting</a></span>
+  <span><a href="#equipment">Equipment</a></span>
+  <span><a href="#it-database">IT Database</a></span>
   <h4>Coming Soon:</h4>
   <span><a href="#point-of-sale">Point&nbsp;of&nbsp;Sale</a></span>
-  <span><a href="#equipment">Equipment</a></span>
   <span><a href="#rental">Rental</a></span>
-  <span><a href="#it-database">IT Database</a></span>
 </section>
 <section class="module_container" id="core">
   <h3><a href="/modules/jobs">Core (Jobs)</a></h3>
@@ -223,6 +223,35 @@
       </ul>
       <div class="learn_more_container">
         <a href="/modules/production-meeting">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="module_container" id="equipment">
+  <h3><a href="/modules/equipment">Equipment</a></h3>
+  <div class="col_container">
+    <div class="video_container equipment"></div>
+    <div class="module_summary">
+      <ul>
+        <li>Tracking Tools, Machines and Vehicles (Assignments, Costs and Usage)</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/equipment">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="module_container" id="it-database">
+  <h3><a href="/modules/it-database">IT Database</a></h3>
+  <div class="col_container">
+    <div class="video_container it-database"></div>
+    <div class="module_summary">
+      <ul>
+        <li>Document devices (PC, Tablets, Phones, Printers, etc.), internal
+          components and software</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/it-database">Learn More</a>
       </div>
     </div>
   </div>
