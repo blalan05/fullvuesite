@@ -78,28 +78,6 @@
       </div>
     {/if}
   </section>
-  <section class="puns_container">
-    <h3>Beware scrolling further</h3>
-    <h4>Bad Puns below!</h4>
-    <ul>
-      <li><em>Hit</em> your cash flow goals</li>
-      <li><em>Measure</em> employee's effiency</li>
-      <li><em>Turn</em> completed jobs into invoices <em>faster</em></li>
-      <li><em>Tighten</em> down on wasted time</li>
-      <li><em>Drill</em> into what makes you money</li>
-      <li><em>Connect</em> employee's hours to invoice lines</li>
-      <li><em>File</em> down on inefficient meetings</li>
-      <li><em>Cut</em> large projects in to managable tasks</li>
-      <li><em>Trim</em></li>
-      <li><em>Bore</em></li>
-      <li><em>Reduce leaks</em></li>
-      <li><em>Tape</em></li>
-      <li><em>Fix</em></li>
-      <li><em>Hammer</em></li>
-      <li><em>Prune</em></li>
-      <li><em>Chop</em></li>
-    </ul>
-  </section>
   <section class="cta_bottom">
     <h3>Setup a customized demo today!</h3>
     <p>We can customize our software to your business lickety-split and show you how you can grow your small business</p>
