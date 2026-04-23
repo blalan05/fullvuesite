@@ -82,6 +82,8 @@
     
     <p>Please note that, as defined under certain U.S. state data privacy laws, “sharing” also relates to
     providing personal data to third parties for personalized advertising purposes.</p>
+
+    <p>All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
     
     <h3>How to Access and Control Your Personal Data</h3>
     

@@ -48,6 +48,7 @@
       <li>Make available to the Customer all information necessary to demonstrate compliance with the Data Protection Legislation, allow for and contribute reasonably to audits, including inspections, conducted or mandated by the Customer</li>
       <li>Permanently delete all copies of the Customer&rsquo;s database in possession of FoundTech, or return such data, at the Customer&rsquo;s choice, upon termination of this Agreement, subject to the delays specified in FoundTech&rsquo;s Privacy Policy</li>
     </ol>
+    <p>All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
     <p>In the event that either Party fails to fulfill any of its obligations arising herein, and if such breach has not been remedied within 30 calendar days from the written notice of such breach, this Agreement may be terminated immediately by the non-breaching Party.</p>
     <p>Further, FoundTech may terminate the Agreement immediately in the event the Customer fails to pay the applicable fees for the Services within 14 calendar days following the due date specified on the corresponding invoice, and after minimum 3 reminders.</p>
     <h3>Disclaimer of Warranties</h3>
