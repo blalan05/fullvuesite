@@ -190,6 +190,24 @@
     measures to ensure that this information is securely processed, stored and preserved from data
     loss and unauthorized access.</p>
 
+    <h3>Text Messaging (SMS) Consent and Compliance</h3>
+
+    <p>When you provide your phone number and give verbal or in-person consent to receive text messages from FoundTech or FullVue, you agree to receive SMS communications such as appointment reminders, service updates, and account notifications. Consent to receive text messages is not a condition of any purchase.</p>
+
+    <p><strong>Opt-In:</strong> Customers opt in to receive SMS messages by providing verbal or in-person consent to a FoundTech or FullVue representative. By opting in, you acknowledge and agree to receive text messages at the phone number you provide.</p>
+
+    <p><strong>Opt-Out:</strong> You may opt out of receiving text messages at any time by replying <strong>STOP</strong> to any message you receive from us. After sending STOP, you will receive one final confirmation message and no further messages will be sent. You may also contact us at <a href="mailto:support@foundtech.io">support@foundtech.io</a> to request removal.</p>
+
+    <p><strong>Help:</strong> For assistance, reply <strong>HELP</strong> to any message from us, or contact us at <a href="mailto:support@foundtech.io">support@foundtech.io</a>.</p>
+
+    <p><strong>Message Frequency:</strong> Message frequency varies based on your account activity and preferences.</p>
+
+    <p><strong>Message &amp; Data Rates:</strong> Message and data rates may apply depending on your mobile carrier and plan.</p>
+
+    <p><strong>No Sharing of SMS Opt-In Data:</strong> We do not sell, rent, or share your SMS opt-in consent or phone number with third parties for their marketing purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+
+    <p><strong>Supported Carriers:</strong> Major U.S. carriers are supported. Carrier support for SMS programs may vary.</p>
+
     <h3>Policy Updates</h3>
     
     <p>We may update this Privacy Policy from time to time, in order to clarify it, to reflect any changes
