@@ -1,8 +1,8 @@
 export function load() {
   return {
     pageTitle: 'Equipment',
-    metaTitle: 'Equipment Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    metaTitle: 'Equipment tracking module | Fullvue',
+    metaDescription:
+      'Register vehicles and tools with assignments, utilization, and cost signals suited to trades-heavy operators.',
+  };
 }

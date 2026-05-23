@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving painting companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the painting industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Painting contractor operations software | Fullvue',
+    metaDescription:
+      'Coordinate repaint crews, coatings purchasing with SDS visibility, subcontract spends, schedules, and invoicing documented per job.',
+    metaKeywords: '',
+  };
 }

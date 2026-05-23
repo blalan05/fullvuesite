@@ -1,88 +1,209 @@
-<article>
-  <section>
-    <h1>FullVue</h1>
-    <h2>A technology foundation to support your business</h2>
-    <h3>What is ERP software?</h3>
-    <p>In the fast-paced world of small businesses, efficiency is king. Juggling complex production processes, inventory management, and ever-changing customer demands can feel like an uphill battle. That's where Enterprise Resource Planning (ERP) software comes in as a game-changer, streamlining your operations and propelling your small business forward.</p>
-    
-    <p>But what exactly are the benefits of using FullVue ERP software in your small business? Let's dive into the key advantages that can transform your organization:</p>
-    <ul>
-      <li>Supercharge efficiency: Say goodbye to siloed information and manual processes. FullVue integrates all your departments, from production and inventory to finance and sales, into a single, centralized platform. This real-time data visibility allows for optimized production scheduling, improved resource allocation, and faster decision-making, leading to significant productivity gains.</li>
-      
-      <li>Inventory mastery: No more stockouts or overstocking headaches. FullVue provides robust inventory management tools, giving you accurate insights into material levels, supplier performance, and demand forecasts. This empowers you to optimize purchasing, minimize waste, and ensure on-time product delivery, keeping your customers happy.</li>
+<article class="erp-page">
+  <header class="erp-hero fv-card">
+    <h1>What ERP means for operators like you</h1>
+    <p class="lead fv-muted">
+      “ERP” (enterprise resource planning) is simply shared software for running the business: customers, jobs,
+      schedules, bills, inventory, time, and HR records live together instead of in separate spreadsheets and apps.
+    </p>
+  </header>
 
-      <li>Financial foresight, not hindsight: Gain clarity into your financial health. FullVue integrates all your financial data, from purchasing and production costs to sales and invoicing, providing accurate and insightful reports. This empowers you to make data-driven financial decisions, optimize investments, and maximize profitability.</li>
-      
-      <li>Happy employees, happy business: Empower your workforce with the right tools. FullVue simplifies workflows, automates tasks, and facilitates collaboration across departments. This translates to happier, more productive employees, and ultimately, a stronger organizational culture.</li>
-      
-      <li>Scalability for growth: As your small business expands, your FullVue system should too. The FullVue ERP solution is highly scalable, adapting to your evolving needs and accommodating future growth. This ensures you have the technology foundation to support your ambitious goals.</li>
-    </ul>
-    
-    <p>Implementing an ERP system might seem like a complex undertaking, but the benefits are undeniable. By streamlining operations, boosting efficiency, and providing data-driven insights, FullVue ERP can be the key to propelling your small business to new heights. So, are you ready to take control and achieve operational excellence?</p>
+  <section class="erp-section erp-section--problem fv-card">
+    <h2>The problem ERP solves</h2>
+    <p>
+      Small and mid-sized operators often stitch together a CRM, a scheduling tool, spreadsheets for job costing, a
+      separate inventory or PO system, and something else for payroll. Data is re-typed, reports disagree, and nobody
+      has one trustworthy picture of margin or backlog.
+    </p>
+    <p>
+      Fullvue is built for owners and GMs who sell work, dispatch crews (or run a shop floor), buy parts, invoice
+      customers, and manage people—in parallel.
+    </p>
   </section>
-    <section class="cta">
-    <h3>Find out how FullVue can be customized for your small business</h3>
-    <a href="/contact">Get a Demo</a>
+
+  <section class="erp-pillars" aria-labelledby="erp-pillars-heading">
+    <h2 id="erp-pillars-heading" class="pillars-intro">What stays inside Fullvue</h2>
+    <p class="pillars-lead fv-muted">
+      Modules mirror how work actually flows—pick depth where you leak time or dollars, tighten the rest later.
+    </p>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <h3>Sales</h3>
+        <p class="fv-muted">
+          Opportunities, quotes (including customer-facing quote signing where you use it).
+        </p>
+      </div>
+      <div class="pillar">
+        <h3>Jobs &amp; field</h3>
+        <p class="fv-muted">Jobs, schedules, road sheets, time and materials tied to work.</p>
+      </div>
+      <div class="pillar">
+        <h3>Cash side</h3>
+        <p class="fv-muted">Invoicing aligned with jobs and sales.</p>
+      </div>
+      <div class="pillar">
+        <h3>Purchasing &amp; inventory</h3>
+        <p class="fv-muted">POs, vendors, bills, stock tied to operations.</p>
+      </div>
+      <div class="pillar">
+        <h3>People</h3>
+        <p class="fv-muted">
+          HR records, time punches, payroll-oriented reporting alongside job time.
+        </p>
+      </div>
+      <div class="pillar">
+        <h3>Operations depth</h3>
+        <p class="fv-muted">
+          Support tickets, equipment registers, SDS storage, production meetings, to-dos, and IT asset tracking—pick
+          what matches your business.
+        </p>
+      </div>
+    </div>
+    <p class="fv-muted pillars-footnote">
+      Granular permissions control what each role sees in navigation—useful as you grow without losing control.
+    </p>
+  </section>
+
+  <section class="erp-section erp-section--alt fv-card">
+    <h2>Accounting and QuickBooks Online</h2>
+    <p>
+      Fullvue is positioned around running operations day-to-day. For organizations that keep their books in
+      <strong>QuickBooks Online</strong>, Fullvue supports connecting that accounting layer—for example pushing invoices
+      and bills—so finance stays where your accountant expects it while work stays connected to jobs.
+    </p>
+  </section>
+
+  <section class="erp-section fv-card">
+    <h2>Is implementing ERP worth it?</h2>
+    <p>
+      Moving off spreadsheets takes effort. The payoff is fewer disputes about job cost, faster invoicing after work is
+      done, tighter purchasing, and clearer labor visibility when punches relate back to jobs you actually ran.
+    </p>
+    <p>If that matches where your team is stuck, it’s worth mapping modules to how you operate—starting where you leak time or margin.</p>
+  </section>
+
+  <section class="cta fv-card">
+    <h2>See Fullvue against your workflows</h2>
+    <p class="fv-muted">Walk through quotes → jobs → field → billing → purchasing with your terminology.</p>
+    <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
   </section>
 </article>
+
 <style lang="scss">
-  article {
-    line-height: 1.6;
-    text-align: justify;
-    width: 100%;
-    max-width: 100ch;
-    padding: 12px 1em;
-    h1, h2, h3 {
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      font-size: 2.2em;
-      margin-top: 0.5em;
-    }
+  .erp-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--fv-space-5, 24px);
+    padding-bottom: var(--fv-space-4, 16px);
+  }
+
+  .erp-hero,
+  .erp-section,
+  .cta {
+    padding: var(--fv-space-5, 24px);
+  }
+
+  .erp-section--problem {
+    border-left: 3px solid rgba(92, 142, 196, 0.65);
+  }
+
+  .erp-section--alt {
+    border-left: 3px solid rgba(180, 140, 220, 0.45);
+  }
+
+  .erp-hero h1 {
+    margin: 0 0 var(--fv-space-3, 12px);
+    text-align: center;
+  }
+
+  .lead {
+    margin: 0;
+    text-align: center;
+    max-width: 65ch;
+    margin-inline: auto;
+    font-size: 1.05rem;
+  }
+
+  .erp-section h2 {
+    margin: 0 0 var(--fv-space-3, 12px);
+    font-size: 1.35rem;
+  }
+
+  .erp-section p {
+    margin: 0 0 var(--fv-space-3, 12px);
+    max-width: 72ch;
+    text-align: left;
+    hyphens: none;
+  }
+
+  .erp-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .erp-pillars {
+    padding: var(--fv-space-2, 8px) 0;
+  }
+
+  .pillars-intro {
+    margin: 0 0 var(--fv-space-2, 8px);
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .pillars-lead {
+    margin: 0 auto var(--fv-space-4, 16px);
+    max-width: 56ch;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .pillar-grid {
+    display: grid;
+    gap: var(--fv-space-3, 12px);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .pillar {
+    position: relative;
+    padding: var(--fv-space-4, 16px);
+    border-radius: var(--fv-radius-md, 10px);
+    background: linear-gradient(
+      145deg,
+      rgba(92, 142, 196, 0.1),
+      rgba(18, 20, 26, 0.55)
+    );
+    border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.085));
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+
     h3 {
-      margin-top: 1.8em;
+      margin: 0 0 var(--fv-space-2, 8px);
+      font-size: 1.05rem;
     }
-    li {
-      margin-bottom: 0.75em;
-    }
-    a {
-      color: white
-    }
-    .cta {
-      text-align: center;
-      margin-bottom: 1em;
-      h3 {
-        margin-bottom: 0.75em;
-      }
-      a {
-        display: inline-block;
-        font-size: 1.2em;
-        margin-top: 0.5em;
-        padding: 6px 14px;
-        background-color: #416a98;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-      }
+
+    p {
+      margin: 0;
+      font-size: 0.925rem;
+      line-height: 1.55;
     }
   }
 
-  @media screen and (min-width: 600px) {
-    article {
-      margin: 0 auto;
-    }
+  .pillars-footnote {
+    margin: var(--fv-space-4, 16px) 0 0;
+    max-width: 72ch;
+    margin-inline: auto;
+    text-align: center;
+    font-size: 0.95rem;
   }
-  @media screen and (min-width: 920px) {
-    article {
-      margin: 0 auto;
+
+  .cta {
+    text-align: center;
+
+    h2 {
+      margin-bottom: var(--fv-space-2, 8px);
     }
-  }
-  @media screen and (min-width: 1200px) {
-    article {
-      margin: 0 auto;
+
+    p {
+      margin: 0 auto var(--fv-space-4, 16px);
+      max-width: 52ch;
     }
   }
 </style>

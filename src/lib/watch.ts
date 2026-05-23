@@ -1,7 +1,9 @@
 import { onDestroy } from 'svelte';
-import { derived, type Subscriber } from 'svelte/store';
+import { derived } from 'svelte/store';
+import type { Readable } from 'svelte/store';
 
-export function watch(deps: any, fn: Subscriber<unknown>) {
-	const unsubscribe = derived(deps, values => values).subscribe(fn);
+/** Run `fn` whenever the tuple of store values changes; cleans up on destroy. */
+export function watch(stores: Readable<unknown>[], fn: (values: unknown[]) => void): void {
+	const unsubscribe = derived(stores, (values) => values).subscribe(fn);
 	onDestroy(unsubscribe);
 }

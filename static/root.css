@@ -1,93 +1,293 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-  
-  /* Reset */
-  /* Box sizing rules */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lexend:wght@450;550;650&display=swap');
+
+:root {
+  --fv-bg-page: #171a1f;
+  --fv-bg-elevated: #1e232b;
+  --fv-bg-card: #262c36;
+  --fv-bg-card-shine: linear-gradient(
+    155deg,
+    rgba(90, 140, 195, 0.12) 0%,
+    rgba(38, 44, 54, 0.98) 38%,
+    rgba(38, 44, 54, 0.98) 62%,
+    rgba(65, 106, 152, 0.08) 100%
+  );
+  --fv-border: rgba(255, 255, 255, 0.085);
+  --fv-border-strong: rgba(255, 255, 255, 0.16);
+  --fv-text: #f4f6f8;
+  --fv-text-muted: #b0b8c4;
+  --fv-accent: #416a98;
+  --fv-accent-hover: #5c8ec4;
+  --fv-accent-muted: rgba(65, 106, 152, 0.42);
+  --fv-glow-accent: rgba(92, 142, 196, 0.22);
+  --fv-focus-ring: #9ec0e8;
+  --fv-radius-sm: 6px;
+  --fv-radius-md: 10px;
+  --fv-radius-lg: 14px;
+  --fv-space-1: 4px;
+  --fv-space-2: 8px;
+  --fv-space-3: 12px;
+  --fv-space-4: 16px;
+  --fv-space-5: 24px;
+  --fv-space-6: 32px;
+  --fv-space-7: 48px;
+  --fv-max-content: 1120px;
+  --fv-font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --fv-font-display: 'Lexend', var(--fv-font-body);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--fv-bg-page);
+  background-image:
+    radial-gradient(ellipse 85% 55% at 15% -5%, rgba(65, 106, 152, 0.18), transparent 45%),
+    radial-gradient(ellipse 70% 50% at 95% 15%, rgba(120, 90, 180, 0.07), transparent 42%),
+    radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      var(--fv-accent-muted),
+      transparent 55%
+    );
+  color: var(--fv-text);
+  font-family: var(--fv-font-body);
+  font-size: 16px;
+  min-height: 100vh;
+  line-height: 1.55;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.15;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fv-font-display);
+  font-weight: 550;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: var(--fv-accent-hover);
+}
+
+a:not([class]):hover {
+  color: #c5daf4;
+}
+
+:focus-visible {
+  outline: 2px solid var(--fv-focus-ring);
+  outline-offset: 3px;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+main.site-main {
+  max-width: var(--fv-max-content);
+  margin: 0 auto;
+  padding: var(--fv-space-5) var(--fv-space-4) calc(var(--fv-space-7) + 48px);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main.site-main {
+    padding-left: var(--fv-space-5);
+    padding-right: var(--fv-space-5);
   }
-  
-  /* Prevent font size inflation */
-  html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    scroll-behavior: smooth;
+}
+
+.fv-muted {
+  color: var(--fv-text-muted);
+}
+
+.fv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--fv-space-2);
+  padding: 0.55rem 1.15rem;
+  font-family: var(--fv-font-display);
+  font-weight: 550;
+  font-size: 0.95rem;
+  border-radius: var(--fv-radius-sm);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.fv-btn--primary {
+  background: linear-gradient(180deg, #4f7aad 0%, var(--fv-accent) 100%);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.12) inset,
+    0 4px 14px rgba(0, 0, 0, 0.35),
+    0 0 24px rgba(65, 106, 152, 0.35);
+}
+
+.fv-btn--primary:hover {
+  background: linear-gradient(180deg, #6090c4 0%, #4f7aad 100%);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14) inset,
+    0 8px 22px rgba(0, 0, 0, 0.4),
+    0 0 32px rgba(65, 106, 152, 0.45);
+}
+
+.fv-btn--primary:active {
+  transform: translateY(0);
+}
+
+.fv-btn--ghost {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fv-text);
+  border-color: var(--fv-border-strong);
+  backdrop-filter: blur(8px);
+}
+
+.fv-btn--ghost:hover {
+  border-color: var(--fv-accent-hover);
+  color: var(--fv-text);
+  background: rgba(65, 106, 152, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fv-btn--primary:hover {
+    transform: none;
   }
-  
-  /* Remove default margin in favour of better control in authored CSS */
-  body {
-    background-color: rgba(35,35,35,.9);
-    color: white;
-  }
-  body, h1, h2, h3, h4, p,
-  figure, blockquote, dl, dd {
-    margin-block-end: 0;
-  }
-  
-  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-  ul[role='list'],
-  ol[role='list'] {
-    list-style: none;
-  }
-  
-  /* Set core body defaults */
-  body {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
-    min-height: 100vh;
-    line-height: 1.5;
-    margin: 0;
-  }
-  
-  /* Set shorter line heights on headings and interactive elements */
-  h1, h2, h3, h4,
-  button, input, label {
-    line-height: 1.1;
-  }
-  
-  /* Balance text wrapping on headings */
-  h1, h2,
-  h3, h4 {
-    text-wrap: balance;
-  }
-  h1 {
-    font-size: 2.8em;
-  }
-  h2 {
-    font-size: 2.3em;
-  }
-  h3 {
-    font-size: 1.8em;
-  }
-  
-  /* A elements that don't have a class get default styles */
-  a:not([class]) {
-    text-decoration-skip-ink: auto;
-    color: currentColor;
-  }
-  
-  /* Make images easier to work with */
-  img,
-  picture {
-    max-width: 100%;
-    display: block;
-  }
-  
-  /* Inherit fonts for inputs and buttons */
-  input, button,
-  textarea, select {
-    font: inherit;
-  }
-  
-  /* Make sure textareas without a rows attribute are not tiny */
-  textarea:not([rows]) {
-    min-height: 10em;
-  }
-  
-  /* Anything that has been anchored to should have extra scroll margin */
-  :target {
-    scroll-margin-block: 5ex;
-  }
-  /* end reset */
+}
+
+.fv-card {
+  position: relative;
+  background: var(--fv-bg-card-shine);
+  border: 1px solid var(--fv-border);
+  border-radius: var(--fv-radius-lg);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 16px 48px rgba(0, 0, 0, 0.42),
+    0 0 100px -40px var(--fv-glow-accent);
+}
+
+/* Subtle top edge light */
+.fv-card::after {
+  content: '';
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 0;
+  height: 1px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(140, 180, 228, 0.45),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.fv-field {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--fv-radius-sm);
+  background: rgba(12, 14, 18, 0.55);
+  border: 1px solid var(--fv-border-strong);
+  color: var(--fv-text);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.fv-field::placeholder {
+  color: rgba(180, 190, 204, 0.55);
+}
+
+.fv-field:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.fv-field:focus {
+  outline: none;
+  border-color: var(--fv-accent-hover);
+  box-shadow: 0 0 0 3px rgba(65, 106, 152, 0.28);
+  background: rgba(12, 14, 18, 0.75);
+}

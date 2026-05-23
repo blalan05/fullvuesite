@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving machine shop companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the machine shop industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Machine shop job costing software | Fullvue',
+    metaDescription:
+      'Align CNC and manual machining quotes with logged labor, tooling-linked purchasing, inventory moves, and invoices grounded in shop reality.',
+    metaKeywords: '',
+  };
 }

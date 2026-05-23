@@ -1,12 +1,11 @@
 <section class="module_container">
-  <h1>FullVue</h1>
-  <h3>Core (Jobs)</h3>
+    <h1>Core (Jobs)</h1>
   <div>
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
-      <p>At the base of FullVue are your partners and job management:</p>
+      <p>At the base of Fullvue are your partners and job management:</p>
       <ul>
         <li>Employees and customers</li>
         <li>Customer connections and locations (addresses and Lat/Lng markers)</li>

@@ -1,8 +1,8 @@
 export function load() {
   return {
     pageTitle: 'Core (Jobs)',
-    metaTitle: 'Jobs Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    metaTitle: 'Jobs & Core module | Fullvue',
+    metaDescription:
+      'Centralize customers, locations, labor, materials, departments, and margin views so invoicing and purchasing trace back to real jobs.',
+  };
 }

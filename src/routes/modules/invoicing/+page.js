@@ -1,8 +1,8 @@
 export function load() {
   return {
     pageTitle: 'Invoicing',
-    metaTitle: 'Invoicing Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    metaTitle: 'Invoicing & AR module | Fullvue',
+    metaDescription:
+      'Bill from recorded job data, refine line items, email invoices with delivery visibility, and sync billing workflows toward QuickBooks Online.',
+  };
 }

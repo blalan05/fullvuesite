@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving garage door companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the garage door industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Garage door service & install software | Fullvue',
+    metaDescription:
+      'Coordinate installs and break-fix routes, inventory, purchasing, and invoicing so springs and operators stop disappearing from margins.',
+    metaKeywords: '',
+  };
 }

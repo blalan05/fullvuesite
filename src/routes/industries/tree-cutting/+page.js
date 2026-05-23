@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving tree cutting companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the tree cutting industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Tree service operations software | Fullvue',
+    metaDescription:
+      'Coordinate arbor crews, equipment assignments, hazardous removals, purchasing, subcontract spends, schedules, and invoicing grounded in logged work.',
+    metaKeywords: '',
+  };
 }

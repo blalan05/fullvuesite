@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving window cleaning companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the window cleaning industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Commercial window cleaning software | Fullvue',
+    metaDescription:
+      'Manage swing-stage contracts with recurring jobs, documented meetings, purchasing for supplies, crew time validation, and invoicing aligned to scopes.',
+    metaKeywords: '',
+  };
 }

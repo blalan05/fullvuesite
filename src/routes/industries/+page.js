@@ -1,8 +1,10 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving many industries | FullVue',
-    metaDescription: 'Customizable software for small busineses in many industries, like manufacturing and services.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Industries Fullvue serves | Fullvue',
+    metaDescription:
+      'Explore how trades, field services, fabrication shops, and specialty contractors run quotes, jobs, schedules, invoicing, and purchasing in Fullvue—with QuickBooks Online sync.',
+    metaKeywords:
+      'ERP for contractors, field service software, trades ERP, HVAC software, plumbing operations, landscaping operations',
+  };
 }

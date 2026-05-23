@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving landscaping companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the landscaping industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Landscaping operations software | Fullvue',
+    metaDescription:
+      'Coordinate landscape crews, schedules, bulk purchases, subcontract spends, and invoicing so phases and maintenance contracts stay profitable.',
+    metaKeywords: '',
+  };
 }

@@ -1,8 +1,10 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Find your price | FullVue',
-    metaDescription: 'Use our calculator to find your price to better management, workflows, sales and invoicing, you\'ll find it to be priced for the small businesses budget.',
-    metaKeywords: 'Affordable price, Small Business, Midsize, App, Cloud, Management, Billing, Invoicing'
-  }
+    metaTitle: 'Pricing calculator | Fullvue',
+    metaKeywords:
+      'ERP pricing, modular software pricing, job costing software cost, field service software pricing',
+    metaDescription:
+      'Estimate Fullvue pricing by modules, employee count, and annual vs monthly billing—built for operators who want breadth without enterprise sticker shock.',
+  };
 }

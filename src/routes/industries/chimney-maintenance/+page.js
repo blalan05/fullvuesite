@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving chimney maintenance companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the chimney maintenance industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Chimney maintenance contractor software | Fullvue',
+    metaDescription:
+      'Schedule chimney inspections and repairs with jobs, field workflows, purchasing, and invoicing anchored to each customer location.',
+    metaKeywords: '',
+  };
 }

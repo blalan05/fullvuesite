@@ -1,8 +1,8 @@
 export function load() {
   return {
-    pageTitle: 'Human Resource',
-    metaTitle: 'HR Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    pageTitle: 'Human Resources',
+    metaTitle: 'Human Resources module | Fullvue',
+    metaDescription:
+      'Centralize HR records—benefits, reviews, recognition, and discipline timelines—without burying critical notes in email threads.',
+  };
 }

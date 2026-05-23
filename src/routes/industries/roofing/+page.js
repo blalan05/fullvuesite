@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving roofing companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the roofing industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Roofing contractor operations software | Fullvue',
+    metaDescription:
+      'Storm or organic roofing workflows benefit from jobs linking supplements, dumpsters, subs, crew logs, purchasing, and invoices customers recognize.',
+    metaKeywords: '',
+  };
 }
