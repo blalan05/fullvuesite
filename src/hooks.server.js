@@ -4,11 +4,12 @@ export async function handle({ event, resolve }) {
 	const hostname = host.split(':')[0];
 	const localHost =
 		hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.localhost');
+	const marketingHost = hostname === 'fullvue.io' || hostname === 'www.fullvue.io';
+	const launcherQuery =
+		event.url.searchParams.has('app') || event.url.searchParams.get('signedOut') === '1';
 
 	event.locals.isAppLauncher =
-		hostname.startsWith('app.') ||
-		(localHost &&
-			(event.url.searchParams.has('app') || event.url.searchParams.get('signedOut') === '1'));
+		hostname.startsWith('app.') || (launcherQuery && (localHost || marketingHost));
 
 	if (event.locals.isAppLauncher) {
 		const { pathname } = event.url;

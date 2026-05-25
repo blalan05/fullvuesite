@@ -1,4 +1,6 @@
 {
+  "packageId": "io.fullvue.app",
+  "host": "app.fullvue.io",
   "id": "/",
   "name": "FullVue",
   "short_name": "FullVue",
@@ -32,5 +34,11 @@
       "type": "image/png",
       "purpose": "maskable"
     }
+  ],
+  "additionalTrustedOrigins": [
+    "sale1.fullvue.io",
+    "fullbrew.fullvue.io",
+    "foundtech.fullvue.io",
+    "bosstables.fullvue.io"
   ]
 }
