@@ -1,3 +1,13 @@
+/** @param {URL} url */
+function hasLauncherQuery(url) {
+	try {
+		return url.searchParams.has('app') || url.searchParams.get('signedOut') === '1';
+	} catch {
+		// searchParams are unavailable while prerendering static pages.
+		return false;
+	}
+}
+
 /** @type {import('@sveltejs/kit').Handle} */
 export async function handle({ event, resolve }) {
 	const host = event.request.headers.get('host') ?? '';
@@ -5,8 +15,7 @@ export async function handle({ event, resolve }) {
 	const localHost =
 		hostname === 'localhost' || hostname === '127.0.0.1' || hostname.endsWith('.localhost');
 	const marketingHost = hostname === 'fullvue.io' || hostname === 'www.fullvue.io';
-	const launcherQuery =
-		event.url.searchParams.has('app') || event.url.searchParams.get('signedOut') === '1';
+	const launcherQuery = hasLauncherQuery(event.url);
 
 	event.locals.isAppLauncher =
 		hostname.startsWith('app.') || (launcherQuery && (localHost || marketingHost));
