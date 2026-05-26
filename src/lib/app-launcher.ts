@@ -41,7 +41,7 @@ export function tenantUrl(slug: string): string {
 		throw new Error('Invalid tenant');
 	}
 
-	return `https://${slug}.${TENANT_DOMAIN}/`;
+	return `https://${slug}.${TENANT_DOMAIN}/login`;
 }
 
 export function rememberTenant(slug: string, name?: string): void {
