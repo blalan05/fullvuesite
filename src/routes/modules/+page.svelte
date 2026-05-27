@@ -2,8 +2,8 @@
   <p class="eyebrow">Module overview</p>
   <h1>Pick the areas that match how you operate</h1>
   <p class="lead fv-muted">
-    Fullvue connects sales, jobs, field execution, billing, purchasing, inventory, and workforce tools in one permissioned
-    system—without forcing you to buy capabilities you will not use.
+    Fullvue connects sales, jobs, field execution, billing, purchasing, inventory, counter/POS, assets, rentals,
+    messaging, and workforce tools in one permissioned system—without forcing you to buy capabilities you will not use.
   </p>
   <div class="hub-actions">
     <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
@@ -40,6 +40,7 @@
       <div class="jump-links">
         <a href="#hr">HR</a>
         <a href="#payroll">Payroll &amp; time</a>
+        <a href="#attendance">Attendance</a>
       </div>
     </div>
     <div class="jump-group">
@@ -49,14 +50,16 @@
         <a href="#production-meeting">Production meetings</a>
         <a href="#customer-support">Support</a>
         <a href="#products">Products</a>
+        <a href="#tether">Tether</a>
+        <a href="#planner">Planner</a>
       </div>
     </div>
     <div class="jump-group">
       <span class="jump-label">Assets &amp; compliance</span>
       <div class="jump-links">
-        <a href="#equipment">Equipment</a>
+        <a href="#assets">Assets</a>
+        <a href="#rentals">Rentals</a>
         <a href="#sds">SDS</a>
-        <a href="#it-database">IT Database</a>
       </div>
     </div>
   </div>
@@ -66,7 +69,7 @@
   <h2><a href="/modules/jobs">Core (Jobs)</a></h2>
   <p class="problem"><strong>Pain:</strong> Job detail, labor, materials, and customer context live in different places.</p>
   <p class="solution">
-    <strong>Outcome:</strong> One job record anchors customers, locations, time and materials, departments, and profitability views like cost sheets—so invoicing and purchasing trace back to real work.
+    <strong>Outcome:</strong> One job record anchors customers, locations, time and materials, departments, and profitability views like cost sheets—so invoicing and purchasing trace back to real work. Invited customers can use the portal for jobs, billing, quotes, rentals, and chat where you enable it.
   </p>
   <div class="col_container">
     <div class="video_container">
@@ -100,7 +103,7 @@
   <h2><a href="/modules/field">Field (off-site service)</a></h2>
   <p class="problem"><strong>Pain:</strong> Dispatch and field staff do not see the same schedule and job context.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Field flows add mileage and trip data, simplified travel entry, and schedules you can line up with crews on the road.
+    <strong>Outcome:</strong> Field flows add road sheets, job schedules, in-house views, and audit-ready states—mileage and trip data crews can follow on the road.
   </p>
   <div class="col_container">
     <div class="video_container">
@@ -116,9 +119,9 @@
     </div>
     <div class="module_summary">
       <ul>
-        <li>Log mileage against job records</li>
-        <li>Streamlined trip entry for repeated routes</li>
-        <li>Job schedules plus travel itineraries crews can follow</li>
+        <li>Road sheets and job schedules crews can follow</li>
+        <li>In-house job views separate shop work from field routes</li>
+        <li>Log mileage and streamline trip entry on job records</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/field" class="fv-btn fv-btn--primary">Learn more</a>
@@ -179,7 +182,7 @@
     <div class="module_summary">
       <ul>
         <li>Opportunity tracking with structured detail</li>
-        <li>Quote builders that reflect how you price work</li>
+        <li>Quote builders and customer-facing quote signing links</li>
         <li>Convert accepted quotes into jobs for downstream billing</li>
       </ul>
       <div class="learn_more_container">
@@ -373,58 +376,130 @@
   </div>
 </section>
 
-<section class="module_container" id="equipment">
-  <h2><a href="/modules/equipment">Equipment</a></h2>
-  <p class="problem"><strong>Pain:</strong> Trucks and specialty tools disappear from preventive maintenance schedules.</p>
+<section class="module_container" id="assets">
+  <h2><a href="/modules/assets">Assets</a></h2>
+  <p class="problem"><strong>Pain:</strong> Fleet tools, shop equipment, laptops, and software licenses live in separate registers—or nowhere at all.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Registers for vehicles and assets with assignments and usage signals suited to trades-heavy fleets.
+    <strong>Outcome:</strong> One unified asset register for equipment, devices, components, and software—with assignments, costs, attachments, and links between records.
   </p>
   <div class="col_container">
-    <div class="video_container equipment"></div>
+    <div class="video_container assets"></div>
     <div class="module_summary">
       <ul>
-        <li>Track assignments and utilization costs across fleets</li>
+        <li>Shop and fleet equipment with assignments and utilization</li>
+        <li>Devices, components, and software in the same module</li>
+        <li>Configurable asset types and ties to Rentals when enabled</li>
       </ul>
       <div class="learn_more_container">
-        <a href="/modules/equipment" class="fv-btn fv-btn--primary">Learn more</a>
+        <a href="/modules/assets" class="fv-btn fv-btn--primary">Learn more</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="module_container" id="it-database">
-  <h2><a href="/modules/it-database">IT Database</a></h2>
-  <p class="problem"><strong>Pain:</strong> Nobody knows which laptops are still under warranty.</p>
+<section class="module_container" id="rentals">
+  <h2><a href="/modules/rentals">Rentals</a></h2>
+  <p class="problem"><strong>Pain:</strong> Rental reservations and returns do not connect to the assets you bill or dispatch.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Lightweight IT asset tracking—devices, internals, software installs—for operators large enough to feel IT sprawl but too lean for giant ITSM suites.
+    <strong>Outcome:</strong> Reservations, checkout, and returns tie to rentable asset types—aligned with jobs and customer visibility in the portal.
   </p>
   <div class="col_container">
-    <div class="video_container it-database"></div>
+    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Rentals dashboard.</span></div>
     <div class="module_summary">
       <ul>
-        <li>Document PCs, printers, handhelds, and related components</li>
-        <li>Software inventories tied to ownership</li>
+        <li>Rental reservations and checkout workflows</li>
+        <li>Returns tracking against rented assets</li>
+        <li>Connected to Assets categories you mark as rentable</li>
       </ul>
       <div class="learn_more_container">
-        <a href="/modules/it-database" class="fv-btn fv-btn--primary">Learn more</a>
+        <a href="/modules/rentals" class="fv-btn fv-btn--primary">Learn more</a>
       </div>
     </div>
   </div>
 </section>
 
 <section class="module_container" id="point-of-sale">
-  <h2>Counter / Point of Sale</h2>
+  <h2><a href="/modules/counter">Counter / Point of sale</a></h2>
   <p class="problem"><strong>Pain:</strong> Counter sales and memberships sit outside the job software your crews already use.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Fullvue includes Counter/POS-style flows—register-oriented dashboards, promotions, memberships,
-    loyalty, punch cards, promo codes, fees, and stored value—alongside traditional sales and job permissions. Ask us how to
-    enable the Counter areas that fit your rollout.
+    <strong>Outcome:</strong> Register-oriented dashboards, promotions, memberships, loyalty, punch cards, promo codes, fees, and stored value—alongside traditional sales and job permissions.
   </p>
+  <div class="col_container">
+    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Counter or POS register.</span></div>
+    <div class="module_summary">
+      <ul>
+        <li>POS dashboard and register workflows</li>
+        <li>Promotions, memberships, loyalty, and stored value</li>
+        <li>Permissioned with the sales and job areas you already run</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/counter" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="module_container coming-soon" id="rental">
-  <h2>Rental</h2>
-  <p class="fv-muted">Still on the roadmap—tell us how rental interacts with your jobs so we can prioritize integrations.</p>
+<section class="module_container" id="tether">
+  <h2><a href="/modules/tether">Tether</a></h2>
+  <p class="problem"><strong>Pain:</strong> Decisions made in texts and email never tie back to jobs or customers.</p>
+  <p class="solution">
+    <strong>Outcome:</strong> Team channels, DMs, customer chat for staff, and personal notes—coordination inside Fullvue instead of another chat app.
+  </p>
+  <div class="col_container">
+    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Tether channel.</span></div>
+    <div class="module_summary">
+      <ul>
+        <li>Group channels and direct messages</li>
+        <li>Customer chat for service conversations</li>
+        <li>Voice notes with optional transcription</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/tether" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module_container" id="planner">
+  <h2><a href="/modules/planner">Planner</a></h2>
+  <p class="problem"><strong>Pain:</strong> Personal calendars ignore the jobs, quotes, and todos already in your system.</p>
+  <p class="solution">
+    <strong>Outcome:</strong> Time-blocking with reminders on a calendar layered on operational items—jobs, quotes, todos—so individuals see their day in context.
+  </p>
+  <div class="col_container">
+    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Planner calendar.</span></div>
+    <div class="module_summary">
+      <ul>
+        <li>Personal schedule blocks with reminders</li>
+        <li>Layers for jobs, quotes, and todos</li>
+        <li>Complements Field schedules—not a replacement for dispatch</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/planner" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module_container" id="attendance">
+  <h2><a href="/modules/attendance">Attendance</a></h2>
+  <p class="problem"><strong>Pain:</strong> Clock punches and schedules are reconciled in spreadsheets after payroll is already wrong.</p>
+  <p class="solution">
+    <strong>Outcome:</strong> Time punches, schedules, and payroll-period attendance reporting deploy alongside HR and payroll so leadership compares punch time to job time.
+  </p>
+  <div class="col_container">
+    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—attendance or punch list.</span></div>
+    <div class="module_summary">
+      <ul>
+        <li>Quick in/out punches from navigation</li>
+        <li>Schedules and payroll-period attendance reports</li>
+        <li>Aligns with Payroll and Human Resources workflows</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/attendance" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="cta_bottom fv-card">
@@ -638,17 +713,11 @@
         background-size: cover;
       }
 
-      &.equipment {
+      &.assets {
         background:
           linear-gradient(145deg, rgba(65, 106, 152, 0.35), transparent),
           url('$lib/purchasing.webp');
         background-size: cover;
-      }
-
-      &.it-database {
-        background:
-          linear-gradient(145deg, rgba(142, 180, 224, 0.25), transparent),
-          var(--fv-bg-elevated, #252a32);
       }
     }
   }

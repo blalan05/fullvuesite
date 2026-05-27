@@ -1,8 +1,6 @@
+import { redirect } from '@sveltejs/kit';
+
+/** @type {import('./$types').PageLoad} */
 export function load() {
-  return {
-    pageTitle: 'IT Database',
-    metaTitle: 'IT asset database module | Fullvue',
-    metaDescription:
-      'Track computers, peripherals, internals, and software installs—lightweight IT asset hygiene without enterprise ITSM overhead.',
-  };
+  redirect(301, '/modules/assets');
 }

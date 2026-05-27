@@ -28,8 +28,8 @@
       <h1>Run sales, jobs, field work, billing, and purchasing in one place</h1>
       <p class="hero-lead fv-muted">
         Fullvue replaces scattered spreadsheets and disconnected tools with a single operational system—from
-        opportunities and quotes through scheduling, invoicing, inventory buying, time, and HR. Connect
-        <strong>QuickBooks Online</strong> when you want invoices and bills reflected in your accounting.
+        opportunities and quotes through scheduling, invoicing, counter/POS, inventory buying, assets, messaging, time,
+        and HR. Connect <strong>QuickBooks Online</strong> when you want invoices and bills reflected in your accounting.
       </p>
       <div class="hero-cta">
         <a href="/pricing" class="fv-btn fv-btn--primary">See pricing</a>
@@ -38,8 +38,9 @@
       <ul class="hero-points" aria-label="What Fullvue helps with">
         <li>Quote and schedule work without losing context</li>
         <li>Invoice from job data; tighten labor and materials visibility</li>
-        <li>Purchasing and inventory tied to real jobs</li>
-        <li>Role-based access so teams see only what they need</li>
+        <li>Purchasing, assets, and counter flows tied to real operations</li>
+        <li>Tether and Planner reduce coordination outside the system</li>
+        <li>Role-based permissions so teams see only what they need</li>
       </ul>
     </div>
     <div class="hero-visual">

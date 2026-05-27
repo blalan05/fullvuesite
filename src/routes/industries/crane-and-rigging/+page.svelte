@@ -12,7 +12,7 @@
   ]}
   fitBullets={[
     'Jobs consolidate customer sites, scopes, schedules, and billing context.',
-    'Equipment tracking helps attach major assets and costs to assignments.',
+    'Asset tracking helps attach major assets and costs to assignments.',
     'Time and materials logged in the field roll into defensible invoices.',
     'Purchasing covers third-party rentals, engineered components, and consumables tied to lifts.',
   ]}

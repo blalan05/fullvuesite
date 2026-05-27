@@ -37,8 +37,8 @@
         <p class="fv-muted">Jobs, schedules, road sheets, time and materials tied to work.</p>
       </div>
       <div class="pillar">
-        <h3>Cash side</h3>
-        <p class="fv-muted">Invoicing aligned with jobs and sales.</p>
+        <h3>Cash &amp; counter</h3>
+        <p class="fv-muted">Invoicing aligned with jobs and sales; Counter/POS-style selling where you need it.</p>
       </div>
       <div class="pillar">
         <h3>Purchasing &amp; inventory</h3>
@@ -53,8 +53,8 @@
       <div class="pillar">
         <h3>Operations depth</h3>
         <p class="fv-muted">
-          Support tickets, equipment registers, SDS storage, production meetings, to-dos, and IT asset tracking—pick
-          what matches your business.
+          Support tickets, unified Assets, Rentals, SDS, production meetings, to-dos, Tether messaging, and Planner
+          calendars—plus a customer portal for invited contacts. Pick what matches your business.
         </p>
       </div>
     </div>

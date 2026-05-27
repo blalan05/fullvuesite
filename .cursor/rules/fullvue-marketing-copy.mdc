@@ -1,0 +1,21 @@
+---
+description: Fullvue marketing copy — module names, voice, and ERP-aligned claims
+globs: src/routes/**/*.{svelte,js},fullvue-io-marketing-agent.md
+alwaysApply: false
+---
+
+# Fullvue marketing copy
+
+Read **fullvue-io-marketing-agent.md** for the full brief. This repo is the fullvue.io **marketing site**; ERP paths in that doc refer to the product codebase.
+
+## Hard rules
+
+- **Assets** replaces legacy **Equipment** and **IT Database (ITDB)** — one module, slug `assets`. Do not list Equipment/ITDB as separate product modules on this site.
+- Match **module names** to the catalog in the brief (Sales, Field, Counter, Tether, Planner, Rentals, etc.).
+- **Outcome-first** copy for owners/GMs; no unsupported superlatives or invented integrations.
+- **QuickBooks Online** is the verified accounting integration; do not claim full GL replacement.
+- Industry pages may mention equipment in plain English; product/module lists must use **Assets**.
+
+## Site gaps to watch
+
+Counter/POS, Assets, Rentals, Tether, Planner, Attendance, Customer portal — flag if missing from `/modules` or pricing.

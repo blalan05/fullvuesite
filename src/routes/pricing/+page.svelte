@@ -7,6 +7,7 @@
     fieldMod: boolean;
     invoiceMod: boolean;
     salesMod: boolean;
+    counterMod: boolean;
     purchasingMod: boolean;
     todosMod: boolean;
     sdsMod: boolean;
@@ -14,9 +15,13 @@
     productMod: boolean;
     supportMod: boolean;
     huddleMod: boolean;
-    payrollMod: boolean;
-    itmod: boolean;
-    equipmod: boolean;
+    // payrollMod: boolean;
+    attendanceMod: boolean;
+    assetsMod: boolean;
+    rentalsMod: boolean;
+    tetherMod: boolean;
+    plannerMod: boolean;
+    accountingMod: boolean;
   };
 
   let employeeCount = writable(10);
@@ -25,6 +30,7 @@
     fieldMod: false,
     invoiceMod: false,
     salesMod: false,
+    counterMod: false,
     purchasingMod: false,
     todosMod: false,
     sdsMod: false,
@@ -32,9 +38,13 @@
     productMod: false,
     supportMod: false,
     huddleMod: false,
-    payrollMod: false,
-    itmod: false,
-    equipmod: false,
+    // payrollMod: false,
+    attendanceMod: false,
+    assetsMod: false,
+    rentalsMod: false,
+    tetherMod: false,
+    plannerMod: false,
+    accountingMod: false,
   });
   let periodMod = writable(true);
   let totalEst = 0;
@@ -59,6 +69,10 @@
       rateIncrease.push(0.05);
     }
     if ($mods.salesMod) {
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
+    }
+    if ($mods.counterMod) {
       moduleCost.push(400);
       rateIncrease.push(0.05);
     }
@@ -90,17 +104,33 @@
       moduleCost.push(150);
       rateIncrease.push(0.04);
     }
-    if ($mods.payrollMod) {
-      moduleCost.push(400);
+    // if ($mods.payrollMod) {
+    //   moduleCost.push(400);
+    //   rateIncrease.push(0.05);
+    // }
+    if ($mods.attendanceMod) {
+      moduleCost.push(200);
       rateIncrease.push(0.05);
     }
-    if ($mods.itmod) {
-      moduleCost.push(50);
-      rateIncrease.push(0.1);
+    if ($mods.assetsMod) {
+      moduleCost.push(200);
+      rateIncrease.push(0.05);
     }
-    if ($mods.equipmod) {
+    if ($mods.rentalsMod) {
       moduleCost.push(150);
-      rateIncrease.push(0.02);
+      rateIncrease.push(0.04);
+    }
+    if ($mods.tetherMod) {
+      moduleCost.push(150);
+      rateIncrease.push(0.04);
+    }
+    if ($mods.plannerMod) {
+      moduleCost.push(50);
+      rateIncrease.push(0.04);
+    }
+    if ($mods.accountingMod) {
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
     }
     if ($count > 10) {
       for (let i = 0; i < moduleCost.length; i++) {
@@ -123,7 +153,7 @@
     <h1>Pricing built around modules you actually need</h1>
     <p class="lead fv-muted">
       Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. Fullvue stays
-      modular—pick areas such as jobs, field service, invoicing, purchasing, payroll, and HR—then scale employee tiers as you grow.
+      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, payroll, and HR—then scale employee tiers as you grow.
     </p>
     <p class="lead fv-muted">
       Totals combine <strong>selected modules</strong>, <strong>employee count</strong> (steps of five starting at ten seats),
@@ -231,6 +261,20 @@
           >Track Sales Opportunities, and build and send quotes</td
         >
       </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="counterMod"
+            bind:checked={$selModules.counterMod}
+          />
+          <label for="counterMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Counter / POS</td>
+        <td class="descCol"
+          >Register selling, promotions, memberships, loyalty, and stored value</td
+        >
+      </tr>
       <tr class="module-group">
         <td colspan="3">Purchasing, coordination &amp; safety</td>
       </tr>
@@ -286,7 +330,7 @@
           and reports</td
         >
       </tr>
-      <tr>
+      <!-- <tr>
         <td class="checkbox-wrapper">
           <input
             type="checkbox"
@@ -300,9 +344,23 @@
           >Track employees' absence requests and hours, and generates reports
           for submitting to payroll provider</td
         >
+      </tr> -->
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="attendanceMod"
+            bind:checked={$selModules.attendanceMod}
+          />
+          <label for="attendanceMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Attendance</td>
+        <td class="descCol"
+          >Time punches, schedules, and payroll-period attendance reporting</td
+        >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Products, assets &amp; IT</td>
+        <td colspan="3">Products, assets &amp; rentals</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -350,25 +408,76 @@
         <td class="checkbox-wrapper">
           <input
             type="checkbox"
-            id="equipmod"
-            bind:checked={$selModules.equipmod}
+            id="assetsMod"
+            bind:checked={$selModules.assetsMod}
           />
-          <label for="equipmod" class="check-box"> </label></td
+          <label for="assetsMod" class="check-box"> </label></td
         >
-        <td class="nameCol">Equipment</td>
+        <td class="nameCol">Assets</td>
         <td class="descCol"
-          >Tracking Tools, Machines and Vehicles (Assignments, Costs and Usage)</td
+          >Unified register for fleet, tools, devices, components, and software</td
         >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="itmod" bind:checked={$selModules.itmod} />
-          <label for="itmod" class="check-box"> </label></td
+          <input
+            type="checkbox"
+            id="rentalsMod"
+            bind:checked={$selModules.rentalsMod}
+          />
+          <label for="rentalsMod" class="check-box"> </label></td
         >
-        <td class="nameCol">IT Database</td>
+        <td class="nameCol">Rentals</td>
         <td class="descCol"
-          >Document devices (PC, Tablets, Phones, Printers, etc.), internal
-          components and software</td
+          >Rental reservations, checkout, and returns tied to rentable assets</td
+        >
+      </tr>
+      <tr class="module-group">
+        <td colspan="3">Coordination</td>
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="tetherMod"
+            bind:checked={$selModules.tetherMod}
+          />
+          <label for="tetherMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Tether</td>
+        <td class="descCol"
+          >Team messaging, customer chat for staff, and voice notes—includes 20GB of data</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="plannerMod"
+            bind:checked={$selModules.plannerMod}
+          />
+          <label for="plannerMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Planner</td>
+        <td class="descCol"
+          >Personal calendar layered on jobs, quotes, and todos</td
+        >
+      </tr>
+      <tr class="module-group">
+        <td colspan="3">Accounting &amp; integrations</td>
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="accountingMod"
+            bind:checked={$selModules.accountingMod}
+          />
+          <label for="accountingMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Accounting</td>
+        <td class="descCol"
+          >QuickBooks Online connection and sync workflows for invoices, bills, and operational accounting data</td
         >
       </tr>
       </tbody>

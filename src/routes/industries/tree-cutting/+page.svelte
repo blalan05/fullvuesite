@@ -11,7 +11,7 @@
     'Sub arborists invoice loosely versus what homeowners approved.',
   ]}
   fitBullets={[
-    'Equipment registers tie lifts, chippers, and trucks to assignments.',
+    'Asset registers tie lifts, chippers, and trucks to assignments.',
     'Jobs bundle removals, trims, and stump scopes under customer sites.',
     'Purchasing captures fuel, rentals, and subcontract spends against tickets.',
     'Field schedules coordinate crews across hazardous zones with clearer routing.',
