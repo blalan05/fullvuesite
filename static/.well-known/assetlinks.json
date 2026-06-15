@@ -1,12 +1,16 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.query_web_declarations",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "io.fullvue.app",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_UPLOAD_KEY_SHA256",
-        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256"
+        "CA:C9:C1:1B:35:0D:9F:E0:E2:45:8B:48:03:4F:D4:50:3D:FE:5D:5F:8D:E8:40:8C:B7:AE:C6:7A:B2:52:E7:9D",
+        "57:FB:EE:6D:03:51:8B:53:5D:D0:52:51:ED:2E:CB:FD:55:8E:AA:27:AA:64:71:E6:9D:9B:08:CA:78:A3:AD:27"
       ]
     }
   }
