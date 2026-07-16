@@ -66,7 +66,7 @@
   <section class="fv-card section faq">
     <h2>Questions owners actually ask</h2>
     <h3>Is FullVue a RepairShopr alternative?</h3>
-    <p class="fv-muted">For independent computer and electronics repair shops, IT-services storefronts, and custom-PC builders — yes. We wrote an honest side-by-side at /compare/repairshopr. Two groups we're not right for: pure MSPs (FullVue has no RMM agent) and Apple-authorized providers who need GSX-integrated tooling.</p>
+    <p class="fv-muted">For independent computer and electronics repair shops, IT-services storefronts, and custom-PC builders — yes. We wrote an honest <a href="/compare/repairshopr">FullVue vs RepairShopr side-by-side</a>. Two groups we're not right for: pure MSPs (FullVue has no RMM agent) and Apple-authorized providers who need GSX-integrated tooling.</p>
     <h3>Does FullVue sync with QuickBooks?</h3>
     <p class="fv-muted">FullVue sends invoices and bills to QuickBooks Online — a one-way push, not a two-way sync. Parts, purchase orders, vendors, and counter sales live in FullVue, so there's no inventory sync to break.</p>
     <h3>Can I track customer machines, not just tickets?</h3>

@@ -54,6 +54,41 @@
     if (link === '/') return p === '/';
     return p === link || p.startsWith(`${link}/`);
   };
+
+  const SEGMENT_LABELS: Record<string, string> = {
+    modules: 'Modules',
+    industries: 'Industries',
+    compare: 'Compare',
+    integrations: 'Integrations',
+    pricing: 'Pricing',
+    erp: 'ERP',
+    contact: 'Contact',
+    company: 'Company',
+  };
+
+  const breadcrumbLd = (pathname: string) => {
+    const segments = pathname.split('/').filter(Boolean);
+    if (segments.length === 0) return null;
+    const items = [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://fullvue.io/' }];
+    let path = '';
+    for (const [i, seg] of segments.entries()) {
+      path += `/${seg}`;
+      const label =
+        SEGMENT_LABELS[seg] ??
+        seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      items.push({
+        '@type': 'ListItem',
+        position: i + 2,
+        name: label,
+        item: `https://fullvue.io${path}`,
+      });
+    }
+    return JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: items,
+    });
+  };
 </script>
 
 <svelte:head>
@@ -85,6 +120,9 @@
     <meta name="twitter:title" content={page.data.metaTitle ?? 'FullVue'} />
     <meta name="twitter:description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
     <meta name="twitter:image" content="https://fullvue.io/og-image.png" />
+    {#if breadcrumbLd(page.url.pathname)}
+      {@html `<script type="application/ld+json">${breadcrumbLd(page.url.pathname)}</${'script'}>`}
+    {/if}
     {@html `<script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org',
       '@graph': [

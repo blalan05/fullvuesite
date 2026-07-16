@@ -28,11 +28,6 @@
   </section>
 
   <section class="fv-card section">
-    <h2>Side by side</h2>
-    <p class="fv-muted">Both columns are based on public information as of July 2026 — check RepairShopr's own site for current details, and check ours by booking a demo and asking hard questions.</p>
-  </section>
-
-  <section class="fv-card section">
     <h2>The honest caveats</h2>
     <p class="fv-muted">Before you get excited, here's what FullVue does not do:</p>
     <ul>
@@ -51,6 +46,7 @@
 
   <section class="fv-card section">
     <h2>Side by side</h2>
+    <p class="fv-muted">Both columns are based on public information as of July 2026 — check RepairShopr's own site for current details, and check ours by booking a demo and asking hard questions.</p>
     <div class="compare-wrap">
       <table class="compare">
         <thead>

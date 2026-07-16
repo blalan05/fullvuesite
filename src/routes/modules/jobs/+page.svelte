@@ -43,6 +43,13 @@
     </a>
   </div>
 </section>
+<section class="industry-fits">
+  <p>
+    Shops that lean on this module: <a href="/industries/machine-shop">machine & fab shops</a>, <a href="/industries/computer-repair">computer & tech repair</a>, <a href="/industries/video-production">video production</a> — or browse
+    <a href="/industries">all industries</a>.
+  </p>
+</section>
+
 <style lang="scss">
   .module_container {
     width: 100%;

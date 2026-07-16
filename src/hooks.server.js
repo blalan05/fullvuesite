@@ -38,5 +38,11 @@ export async function handle({ event, resolve }) {
 		}
 	}
 
-	return resolve(event);
+	// Security headers must be set here: Netlify's _headers file applies only to
+	// static assets, not SSR function responses.
+	const response = await resolve(event);
+	response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+	response.headers.set('X-Frame-Options', 'SAMEORIGIN');
+	response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+	return response;
 }

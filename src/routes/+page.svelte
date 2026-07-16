@@ -48,7 +48,7 @@
       <p class="hero-lead fv-muted">
         FullVue replaces scattered spreadsheets and disconnected tools with a single operational system—from
         opportunities and quotes through scheduling, invoicing, counter/POS, inventory buying, assets, messaging, time,
-        and HR. Connect <strong>QuickBooks Online</strong> when you want invoices and bills reflected in your accounting.
+        and HR. Connect <strong><a href="/integrations/quickbooks">QuickBooks Online</a></strong> when you want invoices and bills reflected in your accounting.
       </p>
       <div class="hero-cta">
         <a href="/pricing" class="fv-btn fv-btn--primary">See pricing</a>

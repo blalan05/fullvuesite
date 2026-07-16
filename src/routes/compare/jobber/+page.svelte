@@ -1,3 +1,7 @@
+<svelte:head>
+  {@html `<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is FullVue a Jobber alternative for shops with inventory?","acceptedAnswer":{"@type":"Answer","text":"That's the exact shop we're built for. Jobber is excellent at quoting, scheduling, and invoicing residential service work; FullVue adds native inventory and purchasing (POs, receiving, vendor bills on one screen), a barcode counter for walk-in sales, and asset/rental tracking — in one system instead of add-ons."}},{"@type":"Question","name":"How does FullVue pricing compare to Jobber's?","acceptedAnswer":{"@type":"Answer","text":"Differently shaped: Jobber prices per plan tier plus $29/user beyond the included seats, with popular capabilities in $79–$99/mo add-ons. FullVue prices by team size in five-employee brackets with base prices public on our pricing page — at the 10-employee bracket the field-service bundle runs about $242/mo billed annually. Check both current pricing pages before deciding; numbers move."}},{"@type":"Question","name":"Does FullVue have a mobile app like Jobber's?","acceptedAnswer":{"@type":"Answer","text":"There's an Android app and the web app is built mobile-first for crews in the field. Honest note: Jobber's mobile apps have years more polish — if a native iOS app is a hard requirement today, that's a point in Jobber's column."}},{"@type":"Question","name":"Can I move from Jobber to FullVue without losing my data?","acceptedAnswer":{"@type":"Answer","text":"Yes — assisted migration is part of onboarding. Export your customers and jobs from Jobber, we help load them, and you run in parallel until you're ready. And your data stays exportable from FullVue forever — leaving should be a download, not a negotiation."}},{"@type":"Question","name":"Does FullVue work with QuickBooks Online?","acceptedAnswer":{"@type":"Answer","text":"Yes — a deliberate one-way push: invoices and bills go to QuickBooks Online, your books stay in QuickBooks, and there's no two-way sync to break."}}]})}</${'script'}>`}
+</svelte:head>
+
 <article class="content-page">
   <header class="hero fv-card">
     <p class="eyebrow">Compare</p>
@@ -73,6 +77,20 @@
         </tbody>
       </table>
     </div>
+  </section>
+
+  <section class="fv-card section faq">
+    <h2>Questions owners actually ask</h2>
+    <h3>Is FullVue a Jobber alternative for shops with inventory?</h3>
+    <p class="fv-muted">That's the exact shop we're built for. Jobber is excellent at quoting, scheduling, and invoicing residential service work; FullVue adds native inventory and purchasing (POs, receiving, vendor bills on one screen), a barcode counter for walk-in sales, and asset/rental tracking — in one system instead of add-ons.</p>
+    <h3>How does FullVue pricing compare to Jobber's?</h3>
+    <p class="fv-muted">Differently shaped: Jobber prices per plan tier plus $29/user beyond the included seats, with popular capabilities in $79–$99/mo add-ons. FullVue prices by team size in five-employee brackets with base prices public on our pricing page — at the 10-employee bracket the field-service bundle runs about $242/mo billed annually. Check both current pricing pages before deciding; numbers move.</p>
+    <h3>Does FullVue have a mobile app like Jobber's?</h3>
+    <p class="fv-muted">There's an Android app and the web app is built mobile-first for crews in the field. Honest note: Jobber's mobile apps have years more polish — if a native iOS app is a hard requirement today, that's a point in Jobber's column.</p>
+    <h3>Can I move from Jobber to FullVue without losing my data?</h3>
+    <p class="fv-muted">Yes — assisted migration is part of onboarding. Export your customers and jobs from Jobber, we help load them, and you run in parallel until you're ready. And your data stays exportable from FullVue forever — leaving should be a download, not a negotiation.</p>
+    <h3>Does FullVue work with QuickBooks Online?</h3>
+    <p class="fv-muted">Yes — a deliberate one-way push: invoices and bills go to QuickBooks Online, your books stay in QuickBooks, and there's no two-way sync to break. Details on the QuickBooks integration page.</p>
   </section>
 
   <section class="fv-card section">
@@ -177,4 +195,14 @@
   
 
   
+  .faq {
+    h3 {
+      margin: var(--fv-space-4, 16px) 0 var(--fv-space-2, 8px);
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
 </style>
