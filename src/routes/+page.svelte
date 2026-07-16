@@ -63,10 +63,14 @@
       </ul>
     </div>
     <div class="hero-visual">
-      <img class="hero-logo" src={logo} alt="FullVue" width="280" height="auto" />
+      <img class="hero-logo" src={logo} alt="FullVue" width="280" />
       <div class="device-stack">
-        <div class="pc_demo_container" aria-hidden="true"></div>
-        <div class="mobile_demo_container" aria-hidden="true"></div>
+        <div class="pc_demo_container">
+          <img src={laptopShot} alt="FullVue job cost sheet on a laptop showing labor, materials, and margin" loading="lazy" />
+        </div>
+        <div class="mobile_demo_container">
+          <img src={mobileShot} alt="FullVue cost sheet on a phone for crews in the field" loading="lazy" />
+        </div>
       </div>
     </div>
   </section>
@@ -218,6 +222,8 @@
   }
 
   .hero-logo {
+    position: relative;
+    z-index: 2;
     margin: 0 auto var(--fv-space-3, 12px);
     width: min(240px, 70%);
     height: auto;
@@ -234,8 +240,7 @@
     width: 88%;
     max-width: 520px;
     aspect-ratio: 16/9;
-    background: url('$lib/laptop_core_cost_sheet.webp');
-    background-size: cover;
+    overflow: hidden;
     border-radius: var(--fv-radius-md, 10px);
     border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
   }
@@ -243,15 +248,25 @@
   .mobile_demo_container {
     position: absolute;
     right: 4%;
-    bottom: -12%;
-    width: 38%;
-    max-width: 140px;
+    bottom: -10%;
+    /* Height-driven sizing: the phone can never grow taller than the
+       stack, so it overlaps the laptop's corner but not the logo above. */
+    height: 82%;
+    width: auto;
     aspect-ratio: 259/540;
-    background: url('$lib/mobile_core_cost_sheet.webp');
-    background-size: cover;
+    overflow: hidden;
     border-radius: var(--fv-radius-md, 10px);
     border: 1px solid var(--fv-border-strong, rgba(255, 255, 255, 0.14));
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .pc_demo_container img,
+  .mobile_demo_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    display: block;
   }
 
   .strip {
@@ -427,7 +442,7 @@
     }
 
     .mobile_demo_container {
-      max-width: 180px;
+      height: 84%;
     }
   }
 </style>
