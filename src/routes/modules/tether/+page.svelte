@@ -29,12 +29,6 @@
       margin-bottom: var(--fv-space-4, 16px);
     }
 
-    .video_container {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: var(--fv-radius-md, 10px);
-      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
-    }
+    
   }
 </style>

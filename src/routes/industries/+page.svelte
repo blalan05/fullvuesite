@@ -28,7 +28,17 @@
         'Tie estimates and POs to shop work so labor and materials roll up to invoices customers recognize—not stale spreadsheets.',
       links: [
         { href: '/industries/manufacturing', label: 'Manufacturing' },
-        { href: '/industries/machine-shop', label: 'Machine shop' },
+        { href: '/industries/machine-shop', label: 'Machine & fab shops' },
+      ],
+    },
+    {
+      title: 'Shops, counters & studios',
+      accent: 'rgb(140, 193, 82)',
+      intro:
+        'Businesses that fix, build, and rent — bench work, counter sales, parts inventory, client gear, and invoicing in one system.',
+      links: [
+        { href: '/industries/computer-repair', label: 'Computer & tech repair' },
+        { href: '/industries/video-production', label: 'Video production' },
       ],
     },
     {

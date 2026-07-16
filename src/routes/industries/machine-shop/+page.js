@@ -1,9 +1,7 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Machine shop job costing software | FullVue',
-    metaDescription:
-      'Align CNC and manual machining quotes with logged labor, tooling-linked purchasing, inventory moves, and invoices grounded in shop reality.',
-    metaKeywords: '',
+    metaTitle: "Job Shop Software for Machine & Fab Shops | FullVue",
+    metaDescription: "Job shop software for CNC, fab, and welding shops: quote with material and machine time, log actuals on the floor, and invoice what the job really cost.",
   };
 }

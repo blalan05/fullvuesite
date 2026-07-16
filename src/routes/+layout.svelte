@@ -183,6 +183,10 @@
   FullVue developed by
   <a href="https://foundtechsolutions.com" title="Foundational Technologies LLC">FoundTech</a>
   <span class="ml-2">— veteran-owned, built in Appleton, WI</span>
+  <a href="/company" title="About the company" class="ml-2">Company</a>
+  <a href="/integrations/quickbooks" title="QuickBooks Online integration" class="ml-2">QuickBooks</a>
+  <a href="/compare/jobber" title="FullVue vs Jobber" class="ml-2">vs Jobber</a>
+  <a href="/compare/repairshopr" title="FullVue vs RepairShopr" class="ml-2">vs RepairShopr</a>
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
   <a href="/termsofuse" title="Terms of Use" class="ml-2">Terms of Use</a>
   <span class="ml-2 copyright"

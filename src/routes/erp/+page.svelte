@@ -1,6 +1,6 @@
 <article class="erp-page">
   <header class="erp-hero fv-card">
-    <h1>What ERP means for operators like you</h1>
+    <h1>Do you need an ERP? What one costs at small-business scale</h1>
     <p class="lead fv-muted">
       “ERP” (enterprise resource planning) is simply shared software for running the business: customers, jobs,
       schedules, bills, inventory, time, and HR records live together instead of in separate spreadsheets and apps.
@@ -79,6 +79,25 @@
       done, tighter purchasing, and clearer labor visibility when punches relate back to jobs you actually ran.
     </p>
     <p>If that matches where your team is stuck, it’s worth mapping modules to how you operate—starting where you leak time or margin.</p>
+  </section>
+
+  <section class="erp-section fv-card">
+    <h2>What this actually costs at your size</h2>
+    <p>
+      The reason “ERP” scares small operators is the price tag attached to the word — per-user licenses,
+      implementation consultants, and quotes that only show up after a discovery call. FullVue’s prices are posted
+      instead: Core starts at $1,500 per year, the Field Service bundle runs about $242 per month billed annually,
+      and the Full Suite — every module — is about $433 per month billed annually (month-to-month runs 12.5% more).
+      Pricing steps in five-employee brackets rather than per-seat licenses, so a growing crew doesn’t mean a
+      renegotiated contract.
+    </p>
+    <p>
+      Start with the <a href="/pricing">pricing page</a> — base prices and bracket math are visible, no email gate.
+      Then pick modules on the <a href="/modules">modules page</a> for the places you’re leaking time or margin:
+      most shops begin with quotes, jobs, time, and invoicing, and add purchasing, inventory, or counter sales when
+      they’re ready. And if reading isn’t the fastest way to decide, <a href="/contact">schedule a walkthrough</a> —
+      we’ll run your actual workflow through it, end to end.
+    </p>
   </section>
 
   <section class="cta fv-card">

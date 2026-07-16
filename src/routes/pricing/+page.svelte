@@ -533,6 +533,52 @@
 </article>
 
 <style lang="scss">
+  .bundles {
+      padding: var(--fv-space-5, 24px);
+
+      h2 {
+        margin: 0 0 var(--fv-space-2, 8px);
+        font-size: 1.35rem;
+      }
+
+      .bundles-note {
+        margin: 0 0 var(--fv-space-4, 16px);
+        max-width: 68ch;
+      }
+
+      .bundle-grid {
+        display: grid;
+        gap: var(--fv-space-4, 16px);
+
+        @media (min-width: 640px) {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .bundle {
+        border: 1px solid rgba(92, 142, 196, 0.35);
+        border-radius: var(--fv-radius-lg, 14px);
+        padding: var(--fv-space-4, 16px) var(--fv-space-5, 24px);
+
+        h3 {
+          margin: 0 0 var(--fv-space-2, 8px);
+        }
+
+        p {
+          margin: 0 0 var(--fv-space-2, 8px);
+        }
+
+        .bundle-price {
+          font-size: 1.15rem;
+        }
+      }
+
+      .bundles-fineprint {
+        margin: var(--fv-space-4, 16px) 0 0;
+        font-size: 0.85rem;
+      }
+    }
+
   .pricing-page {
     width: 100%;
     padding: 0;
@@ -603,51 +649,7 @@
         min-height: 44px;
       }
     }
-    .bundles {
-      padding: var(--fv-space-5, 24px);
-
-      h2 {
-        margin: 0 0 var(--fv-space-2, 8px);
-        font-size: 1.35rem;
-      }
-
-      .bundles-note {
-        margin: 0 0 var(--fv-space-4, 16px);
-        max-width: 68ch;
-      }
-
-      .bundle-grid {
-        display: grid;
-        gap: var(--fv-space-4, 16px);
-
-        @media (min-width: 640px) {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-      .bundle {
-        border: 1px solid rgba(92, 142, 196, 0.35);
-        border-radius: var(--fv-radius-lg, 14px);
-        padding: var(--fv-space-4, 16px) var(--fv-space-5, 24px);
-
-        h3 {
-          margin: 0 0 var(--fv-space-2, 8px);
-        }
-
-        p {
-          margin: 0 0 var(--fv-space-2, 8px);
-        }
-
-        .bundle-price {
-          font-size: 1.15rem;
-        }
-      }
-
-      .bundles-fineprint {
-        margin: var(--fv-space-4, 16px) 0 0;
-        font-size: 0.85rem;
-      }
-    }
+    
 
     .billing-note {
       flex-basis: 100%;
