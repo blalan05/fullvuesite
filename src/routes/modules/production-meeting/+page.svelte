@@ -24,7 +24,7 @@
         <div class="module_overlay">Human Resources</div>
       </div>
     </a>
-    <a href="/modules/core">
+    <a href="/modules/jobs">
       <div class="module core">
         <div class="module_background"></div>
         <div class="module_overlay">Core (Jobs)</div>

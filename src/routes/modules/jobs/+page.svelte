@@ -5,7 +5,7 @@
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
-      <p>At the base of Fullvue are your partners and job management:</p>
+      <p>At the base of FullVue are your partners and job management:</p>
       <ul>
         <li>Employees and customers</li>
         <li>Customer connections and locations (addresses and Lat/Lng markers)</li>
@@ -35,10 +35,10 @@
         <div class="module_overlay">Invoicing</div>
       </div>
     </a>
-    <a href="/modules/payroll" title="Payroll Module">
+    <a href="/modules/attendance" title="Attendance Module">
       <div class="module payroll">
         <div class="module_background"></div>
-        <div class="module_overlay">Payroll</div>
+        <div class="module_overlay">Attendance</div>
       </div>
     </a>
   </div>

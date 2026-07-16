@@ -1,7 +1,7 @@
 export function load() {
   return {
     pageTitle: 'Purchasing',
-    metaTitle: 'Purchasing & inventory module | Fullvue',
+    metaTitle: 'Purchasing & inventory module | FullVue',
     metaDescription:
       'Issue POs, manage vendors and bills, and keep inventory aligned with jobs so crews bill what they truly consumed.',
   };

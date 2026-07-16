@@ -1,6 +1,6 @@
-# Fullvue feature site — agent brief (marketing copy)
+# FullVue feature site — agent brief (marketing copy)
 
-This document grounds copy in the **Fullvue ERP application** (separate product codebase). Treat it as the source of truth for **what the product actually includes**. Do not promise capabilities that are not described here unless you confirm them in the ERP codebase or with the product owner.
+This document grounds copy in the **FullVue ERP application** (separate product codebase). Treat it as the source of truth for **what the product actually includes**. Do not promise capabilities that are not described here unless you confirm them in the ERP codebase or with the product owner.
 
 **This repo** is the [fullvue.io](https://fullvue.io) marketing / feature site (SvelteKit). ERP paths below (e.g. `client/src/shared/fullVueModules.ts`) refer to the ERP repo, not files in this repo.
 
@@ -16,7 +16,7 @@ You help improve **marketing and feature-site copy**: headlines, module pages, c
 
 **Primary readers:** Owners and GMs of small and mid-sized operating businesses—especially those who run **jobs or projects**, **field crews**, **counter/retail-style selling**, and **back-office** in parallel (trades, services, distribution-light retail, mixed operations).
 
-**Core promise (fact-aligned):** Fullvue is a **unified operational system** spanning sales through cash: opportunities and quotes, jobs and scheduling, purchasing and inventory, invoicing, POS-style counter selling, support, HR/payroll/time, team messaging, personal planning, rentals, and reference data (customers, vendors, products, assets). **QuickBooks Online** can be connected for accounting sync workflows (e.g. pushing invoices/bills—implementation lives under integrations).
+**Core promise (fact-aligned):** FullVue is a **unified operational system** spanning sales through cash: opportunities and quotes, jobs and scheduling, purchasing and inventory, invoicing, POS-style counter selling, support, HR/payroll/time, team messaging, personal planning, rentals, and reference data (customers, vendors, products, assets). **QuickBooks Online** can be connected for accounting sync workflows (e.g. pushing invoices/bills—implementation lives under integrations).
 
 **Pain-led angles (use where accurate):**
 
@@ -35,7 +35,7 @@ You help improve **marketing and feature-site copy**: headlines, module pages, c
 - **Specific beats generic.** Prefer “schedule field work and invoice from the same job record” over “streamline workflows.”
 - **Outcome-first headlines.** Lead with money, time, risk, or clarity; feature names second.
 - **No filler superlatives** (“world-class,” “revolutionary”) unless backed by a concrete claim.
-- **Consistent naming:** Use **Fullvue** as the product name; match module names below when referring to product areas.
+- **Consistent naming:** Use **FullVue** as the product name; match module names below when referring to product areas.
 
 **Naming note (important):** Legacy marketing or env configs may still say **Equipment** or **IT Database (ITDB)**. In the current product these are unified under **Assets** (`assets` module slug). Do not list Equipment and ITDB as separate product modules on the marketing site.
 
@@ -91,7 +91,7 @@ Canonical deployment module slugs and display titles live in `client/src/shared/
 1. **Breadth without splitting vendors:** Same product family connects **sales → job → field schedule → invoice → purchasing/inventory** plus **counter/POS-style** capabilities—unusual compared to pure PSA or pure retail POS.
 2. **Built for operators who live in jobs:** Road sheets, schedules, audit states, and widgets around overdue/audit-ready work support **execution visibility**, not just quoting.
 3. **Workforce and job alignment:** Payroll/time features and widgets that relate **punches to job time** support labor honesty narratives (verify exact UI strings on site against product).
-4. **Accounting bridge:** QuickBooks connection for teams that want operations in Fullvue and books in QBO.
+4. **Accounting bridge:** QuickBooks connection for teams that want operations in FullVue and books in QBO.
 5. **Physical operations in one place:** Assets covers fleet/tools and IT-style devices/components/software; Rentals and SDS add rental ops and compliance hooks—use selectively by segment.
 6. **Team coordination:** Tether (messaging + customer chat) and Planner (personal calendar layered on operational data) reduce tool sprawl for shops that still live in email and texts.
 

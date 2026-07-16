@@ -1,21 +1,40 @@
 <script>
-  // @ts-ignore
-  import Carousel from 'svelte-carousel';
-  import { browser } from '$app/environment';
   import { page } from '$app/state';
   import AppLauncher from '$lib/app-launcher.svelte';
 
   import logo from '$lib/logo.png';
+  import laptopShot from '$lib/laptop_core_cost_sheet.webp';
+  import mobileShot from '$lib/mobile_core_cost_sheet.webp';
+  import coreJobs from '$lib/core-jobs.webp';
+  import coreCustomers from '$lib/core-customers.webp';
+  import fieldShot from '$lib/field.webp';
+  import salesShot from '$lib/sales.webp';
+  import purchasingShot from '$lib/purchasing.webp';
+  import invoicingShot from '$lib/invoicing.webp';
+  import hrShot from '$lib/hr.webp';
+  import sdsShot from '$lib/sds.webp';
+  import todosShot from '$lib/to-dos.webp';
+  import huddleShot from '$lib/production_meeting.webp';
 
-  /** @type {{ goTo: (arg0: number) => void }} */
-  let carousel;
-  /** @type {{ goTo: (arg0: number) => void }} */
-  let carousel2;
+  const demoVideos = [
+    { id: 'S18ptA8cySc', title: 'Jobs and core workflows' },
+    { id: 'dBojug0hTr8', title: 'Customers and CRM-style context' },
+    { id: 'jeWbM4vBzkE', title: 'Field service' },
+    { id: 'SYIZux4tCZU', title: 'Sales pipeline and quotes' }
+  ];
 
-  /** @param {{ detail: number }} event */
-  const goToItem = (event) => {
-    carousel?.goTo(event.detail);
-  };
+  const screenshots = [
+    { src: coreJobs, alt: 'FullVue jobs dashboard listing active jobs with status and customer context', caption: 'Jobs' },
+    { src: coreCustomers, alt: 'FullVue customers dashboard with contact and site details', caption: 'Customers' },
+    { src: fieldShot, alt: 'FullVue field view with road sheets and job schedule for crews', caption: 'Field' },
+    { src: salesShot, alt: 'FullVue sales pipeline with opportunities and quotes', caption: 'Sales' },
+    { src: purchasingShot, alt: 'FullVue purchase orders tied to vendors and inventory', caption: 'Purchasing' },
+    { src: invoicingShot, alt: 'FullVue invoice built from recorded job data', caption: 'Invoicing' },
+    { src: hrShot, alt: 'FullVue human resources records and reports', caption: 'HR' },
+    { src: sdsShot, alt: 'FullVue safety data sheet library with search', caption: 'SDS' },
+    { src: todosShot, alt: 'FullVue to-do lists tracking team follow-ups', caption: 'To-dos' },
+    { src: huddleShot, alt: 'FullVue production meeting view with live pipeline', caption: 'Production meetings' }
+  ];
 </script>
 
 {#if page.data.isAppLauncher}
@@ -27,7 +46,7 @@
       <p class="hero-eyebrow">Operations software for owners who run jobs, crews, and the books</p>
       <h1>Run sales, jobs, field work, billing, and purchasing in one place</h1>
       <p class="hero-lead fv-muted">
-        Fullvue replaces scattered spreadsheets and disconnected tools with a single operational system—from
+        FullVue replaces scattered spreadsheets and disconnected tools with a single operational system—from
         opportunities and quotes through scheduling, invoicing, counter/POS, inventory buying, assets, messaging, time,
         and HR. Connect <strong>QuickBooks Online</strong> when you want invoices and bills reflected in your accounting.
       </p>
@@ -35,7 +54,7 @@
         <a href="/pricing" class="fv-btn fv-btn--primary">See pricing</a>
         <a href="/contact" class="fv-btn fv-btn--ghost">Schedule a demo</a>
       </div>
-      <ul class="hero-points" aria-label="What Fullvue helps with">
+      <ul class="hero-points" aria-label="What FullVue helps with">
         <li>Quote and schedule work without losing context</li>
         <li>Invoice from job data; tighten labor and materials visibility</li>
         <li>Purchasing, assets, and counter flows tied to real operations</li>
@@ -44,7 +63,7 @@
       </ul>
     </div>
     <div class="hero-visual">
-      <img class="hero-logo" src={logo} alt="Fullvue" width="280" height="auto" />
+      <img class="hero-logo" src={logo} alt="FullVue" width="280" height="auto" />
       <div class="device-stack">
         <div class="pc_demo_container" aria-hidden="true"></div>
         <div class="mobile_demo_container" aria-hidden="true"></div>
@@ -65,82 +84,35 @@
       <h2>See the workflows your team lives in</h2>
       <p class="fv-muted">
         Short videos and product grabs across jobs, sales, field service, billing, HR, compliance, and shop-floor rhythm.
-        Drop in your own screenshots anytime—they slot right into this carousel.
       </p>
     </header>
 
-    {#if browser}
-      <div class="viewer">
-        <Carousel bind:this={carousel} dots={false} arrows={false} swiping={false}>
-          <div class="vid">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0"
-              title="Jobs and core workflows"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="ssone">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/dBojug0hTr8?si=4WbS5nHNeroPAlb1&rel=0"
-              title="Customers and CRM-style context"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="sstwo">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1&rel=0"
-              title="Field service"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="ssthree">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s&rel=0"
-              title="Sales pipeline and quotes"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="ssfour"></div>
-          <div class="ssfive"></div>
-          <div class="sssix"></div>
-          <div class="ssseven"></div>
-          <div class="sseight"></div>
-          <div class="ssnine"></div>
-          <div class="ssten"></div>
-        </Carousel>
-      </div>
-      <div class="thumbs">
-        <Carousel bind:this={carousel2} dots={false} particlesToShow={3} on:pageChange={goToItem}>
-          <div class="vid" role="button" tabindex="0" onclick={() => carousel?.goTo(0)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(0)}></div>
-          <div class="ssone" role="button" tabindex="0" onclick={() => carousel?.goTo(1)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(1)}></div>
-          <div class="sstwo" role="button" tabindex="0" onclick={() => carousel?.goTo(2)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(2)}></div>
-          <div class="ssthree" role="button" tabindex="0" onclick={() => carousel?.goTo(3)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(3)}></div>
-          <div class="ssfour" role="button" tabindex="0" onclick={() => carousel?.goTo(4)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(4)}></div>
-          <div class="ssfive" role="button" tabindex="0" onclick={() => carousel?.goTo(5)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(5)}></div>
-          <div class="sssix" role="button" tabindex="0" onclick={() => carousel?.goTo(6)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(6)}></div>
-          <div class="ssseven" role="button" tabindex="0" onclick={() => carousel?.goTo(7)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(7)}></div>
-          <div class="sseight" role="button" tabindex="0" onclick={() => carousel?.goTo(8)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(8)}></div>
-          <div class="ssnine" role="button" tabindex="0" onclick={() => carousel?.goTo(9)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(9)}></div>
-          <div class="ssten" role="button" tabindex="0" onclick={() => carousel?.goTo(10)} onkeydown={(e) => e.key === 'Enter' && carousel?.goTo(10)}></div>
-        </Carousel>
-      </div>
-    {/if}
+    <div class="video-grid">
+      {#each demoVideos as v}
+        <div class="video-cell">
+          <iframe
+            width="100%"
+            height="100%"
+            src={'https://www.youtube.com/embed/' + v.id + '?rel=0'}
+            title={v.title}
+            frameborder="0"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      {/each}
+    </div>
+
+    <div class="shot-grid">
+      {#each screenshots as shot}
+        <figure class="shot-cell">
+          <img src={shot.src} alt={shot.alt} loading="lazy" />
+          <figcaption class="fv-muted">{shot.caption}</figcaption>
+        </figure>
+      {/each}
+    </div>
+
   </section>
 
   <section class="cta_bottom fv-card">
@@ -345,6 +317,7 @@
         transparent
       );
     }
+
     .gallery-head {
       text-align: center;
       max-width: 62ch;
@@ -359,156 +332,69 @@
       }
     }
 
-    .viewer {
+    .video-grid {
+      display: grid;
+      gap: var(--fv-space-4, 16px);
+      margin-bottom: var(--fv-space-5, 24px);
+
+      @media (min-width: 720px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .video-cell {
       aspect-ratio: 16/9;
-      max-height: min(90vh, 640px);
-      margin: auto;
       border-radius: var(--fv-radius-lg, 14px);
       overflow: hidden;
       border: 1px solid var(--fv-border-strong, rgba(255, 255, 255, 0.14));
       box-shadow:
         0 0 0 1px rgba(255, 255, 255, 0.05) inset,
-        0 24px 60px rgba(0, 0, 0, 0.45),
-        0 0 80px -36px rgba(92, 142, 196, 0.35);
+        0 24px 60px rgba(0, 0, 0, 0.45);
 
-      .vid,
-      .ssone,
-      .sstwo,
-      .ssthree,
-      .ssfour,
-      .ssfive,
-      .sssix,
-      .ssseven,
-      .sseight,
-      .ssnine,
-      .ssten {
-        aspect-ratio: 16/9;
-        width: 90%;
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+    .shot-grid {
+      display: grid;
+      gap: var(--fv-space-4, 16px);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      @media (min-width: 720px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
-      .ssfour {
-        background: url('$lib/purchasing.webp');
-        background-size: cover;
+      @media (min-width: 1080px) {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+    }
+
+    .shot-cell {
+      margin: 0;
+
+      img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/10;
+        object-fit: cover;
+        object-position: top left;
+        border-radius: var(--fv-radius-md, 10px);
+        border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
       }
 
-      .ssfive {
-        background: url('$lib/invoicing.webp');
-        background-size: cover;
-      }
-
-      .sssix {
-        background: url('$lib/hr.webp');
-        background-size: cover;
-      }
-
-      .ssseven {
-        background: url('$lib/payroll.webp');
-        background-size: cover;
-      }
-
-      .sseight {
-        background: url('$lib/sds.webp');
-        background-size: cover;
-      }
-
-      .ssnine {
-        background: url('$lib/to-dos.webp');
-        background-size: cover;
-      }
-
-      .ssten {
-        background: url('$lib/production_meeting.webp');
-        background-size: cover;
+      figcaption {
+        margin-top: var(--fv-space-2, 8px);
+        font-size: 0.85rem;
+        text-align: center;
       }
     }
   }
 
-  .thumbs {
-    margin-top: var(--fv-space-3, 12px);
-
-    .vid,
-    .ssone,
-    .sstwo,
-    .ssthree,
-    .ssfour,
-    .ssfive,
-    .sssix,
-    .ssseven,
-    .sseight,
-    .ssnine,
-    .ssten {
-      cursor: pointer;
-      width: 90%;
-      aspect-ratio: 16/9;
-      margin: 3px 4px;
-      border-radius: var(--fv-radius-sm, 6px);
-      border: 2px solid transparent;
-      transition: border-color 0.15s ease;
-
-      &:focus-visible {
-        border-color: var(--fv-focus-ring, #8eb4e0);
-      }
-
-      &:hover {
-        border-color: rgba(255, 255, 255, 0.25);
-      }
-    }
-
-    .vid {
-      background: url('$lib/core-jobs.webp');
-      background-size: cover;
-    }
-
-    .ssone {
-      background: url('$lib/core-customers.webp');
-      background-size: cover;
-    }
-
-    .sstwo {
-      background: url('$lib/field.webp');
-      background-size: cover;
-    }
-
-    .ssthree {
-      background: url('$lib/sales.webp');
-      background-size: cover;
-    }
-
-    .ssfour {
-      background: url('$lib/purchasing.webp');
-      background-size: cover;
-    }
-
-    .ssfive {
-      background: url('$lib/invoicing.webp');
-      background-size: cover;
-    }
-
-    .sssix {
-      background: url('$lib/hr.webp');
-      background-size: cover;
-    }
-
-    .ssseven {
-      background: url('$lib/payroll.webp');
-      background-size: cover;
-    }
-
-    .sseight {
-      background: url('$lib/sds.webp');
-      background-size: cover;
-    }
-
-    .ssnine {
-      background: url('$lib/to-dos.webp');
-      background-size: cover;
-    }
-
-    .ssten {
-      background: url('$lib/production_meeting.webp');
-      background-size: cover;
-    }
-  }
+  
 
   .cta_bottom {
     text-align: center;

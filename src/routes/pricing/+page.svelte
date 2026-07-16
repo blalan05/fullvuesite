@@ -15,7 +15,6 @@
     productMod: boolean;
     supportMod: boolean;
     huddleMod: boolean;
-    // payrollMod: boolean;
     attendanceMod: boolean;
     assetsMod: boolean;
     rentalsMod: boolean;
@@ -38,7 +37,6 @@
     productMod: false,
     supportMod: false,
     huddleMod: false,
-    // payrollMod: false,
     attendanceMod: false,
     assetsMod: false,
     rentalsMod: false,
@@ -48,6 +46,7 @@
   });
   let periodMod = writable(true);
   let totalEst = 0;
+  let overCap = false;
   let moduleCost = [];
   let rateIncrease = [];
 
@@ -104,10 +103,6 @@
       moduleCost.push(150);
       rateIncrease.push(0.04);
     }
-    // if ($mods.payrollMod) {
-    //   moduleCost.push(400);
-    //   rateIncrease.push(0.05);
-    // }
     if ($mods.attendanceMod) {
       moduleCost.push(200);
       rateIncrease.push(0.05);
@@ -132,10 +127,16 @@
       moduleCost.push(400);
       rateIncrease.push(0.05);
     }
-    if ($count > 10) {
+    overCap = $count > 50;
+    if (overCap) return;
+
+    // Pricing steps in five-employee brackets: 11-15 prices as 15, 16-20 as 20, etc.
+    // Ten or fewer employees pay base module prices.
+    const band = Math.max(10, Math.ceil($count / 5) * 5);
+    if (band > 10) {
       for (let i = 0; i < moduleCost.length; i++) {
         let singleModule = moduleCost[i];
-        singleModule += moduleCost[i] * rateIncrease[i] * ($count - 10);
+        singleModule += moduleCost[i] * rateIncrease[i] * (band - 10);
         totalEst += singleModule;
       }
     } else {
@@ -152,31 +153,57 @@
     <p class="eyebrow">Transparent estimates</p>
     <h1>Pricing built around modules you actually need</h1>
     <p class="lead fv-muted">
-      Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. Fullvue stays
-      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, payroll, and HR—then scale employee tiers as you grow.
+      Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. FullVue stays
+      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, attendance, and HR—then scale employee tiers as you grow.
     </p>
     <p class="lead fv-muted">
       Totals combine <strong>selected modules</strong>, <strong>employee count</strong> (steps of five starting at ten seats),
       and <strong>annual vs monthly billing</strong>. Core is required because it anchors customers and jobs across the suite.
     </p>
   </section>
+
+  <section class="bundles fv-card" aria-labelledby="bundles-heading">
+    <h2 id="bundles-heading">Two popular configurations</h2>
+    <p class="fv-muted bundles-note">
+      Every price on this page is real — no demo required to see a number. Start anywhere: Core is
+      $1,500/yr (about $125/mo) and every other module adds $50&ndash;$400/yr at the 10-employee base.
+      <strong>Annual billing saves ~11% vs monthly.</strong>
+    </p>
+    <div class="bundle-grid">
+      <div class="bundle">
+        <h3>Field Service</h3>
+        <p class="bundle-mods fv-muted">Core + Field + Sales + Invoicing + Purchasing</p>
+        <p class="bundle-price"><strong>~$242/mo</strong> billed annually ($2,900/yr)</p>
+        <p class="bundle-alt fv-muted">~$272/mo billed monthly</p>
+      </div>
+      <div class="bundle">
+        <h3>Full Suite</h3>
+        <p class="bundle-mods fv-muted">Every module, including Counter/POS, Attendance, Assets, Rentals, SDS, and Tether</p>
+        <p class="bundle-price"><strong>~$433/mo</strong> billed annually ($5,200/yr)</p>
+        <p class="bundle-alt fv-muted">~$488/mo billed monthly</p>
+      </div>
+    </div>
+    <p class="fv-muted bundles-fineprint">
+      Prices shown at the 10-employee bracket; larger teams step up in five-employee brackets using the
+      per-module rates below.
+    </p>
+  </section>
   <section class="pricing_form fv-card">
     <div class="pricing-controls">
       <div class="inputWrapper">
-        <label for="employeeCount">Employees (minimum 10)</label>
+        <label for="employeeCount">Employees</label>
         <input
           type="number"
           bind:value={$employeeCount}
           id="employeeCount"
           class="fv-field"
-          max="50"
-          min="10"
+          min="1"
           step="5"
           inputmode="numeric"
           pattern="\d*"
         />
         <p class="field-hint fv-muted">
-          Above ten employees, module pricing scales using the configured uplift curve—adjust the counter to mirror how many field and office seats you fund today.
+          Ten or fewer employees pay the base module prices. Above ten, pricing steps up in five-employee brackets (11&ndash;15 prices as 15, and so on). Over 50 employees? <a href="/contact">Contact us</a> for a quote.
         </p>
       </div>
       <div class="inputWrapper">
@@ -188,19 +215,29 @@
       </div>
     </div>
     <div class="pricingTotal" role="status" aria-live="polite">
-      <span class="pricingTotal-label"
-        ><strong>{!$periodMod ? 'Estimated monthly payment' : 'Estimated annual total'}: </strong></span
-      >
-      <span class="pricingTotal-amount">{Intl.NumberFormat("en-us", {
-        style: "currency",
-        currency: "USD",
-      }).format(!$periodMod ? totalEst / 12 : totalEst)}</span>
+      {#if overCap}
+        <span class="pricingTotal-label"
+          ><strong>Teams over 50: <a href="/contact">contact us</a> for a tailored quote.</strong></span
+        >
+      {:else}
+        <span class="pricingTotal-label"
+          ><strong>{!$periodMod ? 'Estimated monthly payment' : 'Estimated annual total'}: </strong></span
+        >
+        <span class="pricingTotal-amount">{Intl.NumberFormat("en-us", {
+          style: "currency",
+          currency: "USD",
+        }).format(!$periodMod ? totalEst / 12 : totalEst)}</span>
+        <span class="billing-note fv-muted">
+          {!$periodMod ? 'Monthly billing runs 12.5% above the annual rate — switch to annual to save ~11%.' : 'Billed annually. Prefer monthly? Add 12.5%.'}
+        </span>
+      {/if}
     </div>
     <table class="pricingTable">
       <thead>
         <tr>
           <th class="pricing-table-head spacer"></th>
           <th class="pricing-table-head">Module</th>
+          <th class="pricing-table-head">Base price</th>
           <th class="pricing-table-head">Description</th>
         </tr>
       </thead>
@@ -216,12 +253,13 @@
           <label for="coreMod" class="check-box"> </label></td
         >
         <td class="nameCol" style="padding-top: 12px;">Core</td>
+        <td class="priceCol">$1,500/yr</td>
         <td class="descCol" style="padding-top: 12px"
           >Customer and Job Management</td
         >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Field service, invoicing &amp; pipeline</td>
+        <td colspan="4">Field service, invoicing &amp; pipeline</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -233,6 +271,7 @@
           <label for="fieldMod" class="check-box"> </label></td
         >
         <td class="nameCol">Field</td>
+        <td class="priceCol">+$200/yr</td>
         <td class="descCol">Additional Field Service features</td>
       </tr>
       <tr>
@@ -245,6 +284,7 @@
           <label for="invoicingMod" class="check-box"> </label></td
         >
         <td class="nameCol">Invoicing</td>
+        <td class="priceCol">+$400/yr</td>
         <td class="descCol">Generate invoices and track payments</td>
       </tr>
       <tr>
@@ -257,6 +297,7 @@
           <label for="salesMod" class="check-box"> </label></td
         >
         <td class="nameCol">Sales</td>
+        <td class="priceCol">+$400/yr</td>
         <td class="descCol"
           >Track Sales Opportunities, and build and send quotes</td
         >
@@ -271,12 +312,13 @@
           <label for="counterMod" class="check-box"> </label></td
         >
         <td class="nameCol">Counter / POS</td>
+        <td class="priceCol">+$400/yr</td>
         <td class="descCol"
           >Register selling, promotions, memberships, loyalty, and stored value</td
         >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Purchasing, coordination &amp; safety</td>
+        <td colspan="4">Purchasing, coordination &amp; safety</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -288,6 +330,7 @@
           <label for="purchasingMod" class="check-box"> </label></td
         >
         <td class="nameCol">Purchasing & Adv. Inventory</td>
+        <td class="priceCol">+$400/yr</td>
         <td class="descCol">Generate purchase orders and track inventory</td>
       </tr>
       <tr>
@@ -300,6 +343,7 @@
           <label for="todoMod" class="check-box"> </label></td
         >
         <td class="nameCol">To-dos</td>
+        <td class="priceCol">Free</td>
         <td class="descCol">Communicate and document non-job related tasks</td>
       </tr>
       <tr>
@@ -312,12 +356,13 @@
           <label for="sdsMod" class="check-box"> </label></td
         >
         <td class="nameCol">SDS</td>
+        <td class="priceCol">+$50/yr</td>
         <td class="descCol"
           >Store and provide improved accessibility to Safety Data Sheets</td
         >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Workforce</td>
+        <td colspan="4">Workforce</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -325,26 +370,12 @@
           <label for="hrMod" class="check-box"> </label></td
         >
         <td class="nameCol">Human Resources</td>
+        <td class="priceCol">+$200/yr</td>
         <td class="descCol"
           >Extends Core Tools to manage employees and their benefits, reviews
           and reports</td
         >
       </tr>
-      <!-- <tr>
-        <td class="checkbox-wrapper">
-          <input
-            type="checkbox"
-            id="payrollMod"
-            bind:checked={$selModules.payrollMod}
-          />
-          <label for="payrollMod" class="check-box"> </label></td
-        >
-        <td class="nameCol">Payroll</td>
-        <td class="descCol"
-          >Track employees' absence requests and hours, and generates reports
-          for submitting to payroll provider</td
-        >
-      </tr> -->
       <tr>
         <td class="checkbox-wrapper">
           <input
@@ -355,12 +386,13 @@
           <label for="attendanceMod" class="check-box"> </label></td
         >
         <td class="nameCol">Attendance</td>
+        <td class="priceCol">+$200/yr</td>
         <td class="descCol"
           >Time punches, schedules, and payroll-period attendance reporting</td
         >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Products, assets &amp; rentals</td>
+        <td colspan="4">Products, assets &amp; rentals</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -372,7 +404,8 @@
           <label for="productMod" class="check-box"> </label></td
         >
         <td class="nameCol">Products</td>
-        <td class="descCol">Maintain detailed infomation about your products</td
+        <td class="priceCol">+$200/yr</td>
+        <td class="descCol">Maintain detailed information about your products</td
         >
       </tr>
       <tr>
@@ -385,6 +418,7 @@
           <label for="supportMod" class="check-box"> </label></td
         >
         <td class="nameCol">Customer Support</td>
+        <td class="priceCol">+$150/yr</td>
         <td class="descCol"
           >Extend the Product Module to include troubleshooting discussions, and
           link time/parts to be billed</td
@@ -400,6 +434,7 @@
           <label for="huddleMod" class="check-box"> </label></td
         >
         <td class="nameCol">Production Meeting</td>
+        <td class="priceCol">+$150/yr</td>
         <td class="descCol"
           >Improve communication before, during and after your regular meetings</td
         >
@@ -414,6 +449,7 @@
           <label for="assetsMod" class="check-box"> </label></td
         >
         <td class="nameCol">Assets</td>
+        <td class="priceCol">+$200/yr</td>
         <td class="descCol"
           >Unified register for fleet, tools, devices, components, and software</td
         >
@@ -428,12 +464,13 @@
           <label for="rentalsMod" class="check-box"> </label></td
         >
         <td class="nameCol">Rentals</td>
+        <td class="priceCol">+$150/yr</td>
         <td class="descCol"
           >Rental reservations, checkout, and returns tied to rentable assets</td
         >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Coordination</td>
+        <td colspan="4">Coordination</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -445,6 +482,7 @@
           <label for="tetherMod" class="check-box"> </label></td
         >
         <td class="nameCol">Tether</td>
+        <td class="priceCol">+$150/yr</td>
         <td class="descCol"
           >Team messaging, customer chat for staff, and voice notes—includes 20GB of data</td
         >
@@ -459,12 +497,13 @@
           <label for="plannerMod" class="check-box"> </label></td
         >
         <td class="nameCol">Planner</td>
+        <td class="priceCol">+$50/yr</td>
         <td class="descCol"
           >Personal calendar layered on jobs, quotes, and todos</td
         >
       </tr>
       <tr class="module-group">
-        <td colspan="3">Accounting &amp; integrations</td>
+        <td colspan="4">Accounting &amp; integrations</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -476,8 +515,9 @@
           <label for="accountingMod" class="check-box"> </label></td
         >
         <td class="nameCol">Accounting</td>
+        <td class="priceCol">+$400/yr</td>
         <td class="descCol"
-          >QuickBooks Online connection and sync workflows for invoices, bills, and operational accounting data</td
+          >QuickBooks Online connection—send invoices and bills to QBO from your operational data</td
         >
       </tr>
       </tbody>
@@ -493,6 +533,52 @@
 </article>
 
 <style lang="scss">
+  .bundles {
+      padding: var(--fv-space-5, 24px);
+
+      h2 {
+        margin: 0 0 var(--fv-space-2, 8px);
+        font-size: 1.35rem;
+      }
+
+      .bundles-note {
+        margin: 0 0 var(--fv-space-4, 16px);
+        max-width: 68ch;
+      }
+
+      .bundle-grid {
+        display: grid;
+        gap: var(--fv-space-4, 16px);
+
+        @media (min-width: 640px) {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .bundle {
+        border: 1px solid rgba(92, 142, 196, 0.35);
+        border-radius: var(--fv-radius-lg, 14px);
+        padding: var(--fv-space-4, 16px) var(--fv-space-5, 24px);
+
+        h3 {
+          margin: 0 0 var(--fv-space-2, 8px);
+        }
+
+        p {
+          margin: 0 0 var(--fv-space-2, 8px);
+        }
+
+        .bundle-price {
+          font-size: 1.15rem;
+        }
+      }
+
+      .bundles-fineprint {
+        margin: var(--fv-space-4, 16px) 0 0;
+        font-size: 0.85rem;
+      }
+    }
+
   .pricing-page {
     width: 100%;
     padding: 0;
@@ -563,6 +649,19 @@
         min-height: 44px;
       }
     }
+    
+
+    .billing-note {
+      flex-basis: 100%;
+      font-size: 0.9rem;
+    }
+
+    .priceCol {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+      padding-right: var(--fv-space-3, 12px);
+    }
+
     .pricingTotal {
       margin: var(--fv-space-4, 16px) 0;
       padding: var(--fv-space-4, 16px) var(--fv-space-5, 24px);

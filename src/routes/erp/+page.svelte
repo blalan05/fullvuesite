@@ -1,6 +1,6 @@
 <article class="erp-page">
   <header class="erp-hero fv-card">
-    <h1>What ERP means for operators like you</h1>
+    <h1>Do you need an ERP? What one costs at small-business scale</h1>
     <p class="lead fv-muted">
       “ERP” (enterprise resource planning) is simply shared software for running the business: customers, jobs,
       schedules, bills, inventory, time, and HR records live together instead of in separate spreadsheets and apps.
@@ -15,13 +15,13 @@
       has one trustworthy picture of margin or backlog.
     </p>
     <p>
-      Fullvue is built for owners and GMs who sell work, dispatch crews (or run a shop floor), buy parts, invoice
+      FullVue is built for owners and GMs who sell work, dispatch crews (or run a shop floor), buy parts, invoice
       customers, and manage people—in parallel.
     </p>
   </section>
 
   <section class="erp-pillars" aria-labelledby="erp-pillars-heading">
-    <h2 id="erp-pillars-heading" class="pillars-intro">What stays inside Fullvue</h2>
+    <h2 id="erp-pillars-heading" class="pillars-intro">What stays inside FullVue</h2>
     <p class="pillars-lead fv-muted">
       Modules mirror how work actually flows—pick depth where you leak time or dollars, tighten the rest later.
     </p>
@@ -66,8 +66,8 @@
   <section class="erp-section erp-section--alt fv-card">
     <h2>Accounting and QuickBooks Online</h2>
     <p>
-      Fullvue is positioned around running operations day-to-day. For organizations that keep their books in
-      <strong>QuickBooks Online</strong>, Fullvue supports connecting that accounting layer—for example pushing invoices
+      FullVue is positioned around running operations day-to-day. For organizations that keep their books in
+      <strong>QuickBooks Online</strong>, FullVue supports connecting that accounting layer—for example pushing invoices
       and bills—so finance stays where your accountant expects it while work stays connected to jobs.
     </p>
   </section>
@@ -81,8 +81,27 @@
     <p>If that matches where your team is stuck, it’s worth mapping modules to how you operate—starting where you leak time or margin.</p>
   </section>
 
+  <section class="erp-section fv-card">
+    <h2>What this actually costs at your size</h2>
+    <p>
+      The reason “ERP” scares small operators is the price tag attached to the word — per-user licenses,
+      implementation consultants, and quotes that only show up after a discovery call. FullVue’s prices are posted
+      instead: Core starts at $1,500 per year, the Field Service bundle runs about $242 per month billed annually,
+      and the Full Suite — every module — is about $433 per month billed annually (month-to-month runs 12.5% more).
+      Pricing steps in five-employee brackets rather than per-seat licenses, so a growing crew doesn’t mean a
+      renegotiated contract.
+    </p>
+    <p>
+      Start with the <a href="/pricing">pricing page</a> — base prices and bracket math are visible, no email gate.
+      Then pick modules on the <a href="/modules">modules page</a> for the places you’re leaking time or margin:
+      most shops begin with quotes, jobs, time, and invoicing, and add purchasing, inventory, or counter sales when
+      they’re ready. And if reading isn’t the fastest way to decide, <a href="/contact">schedule a walkthrough</a> —
+      we’ll run your actual workflow through it, end to end.
+    </p>
+  </section>
+
   <section class="cta fv-card">
-    <h2>See Fullvue against your workflows</h2>
+    <h2>See FullVue against your workflows</h2>
     <p class="fv-muted">Walk through quotes → jobs → field → billing → purchasing with your terminology.</p>
     <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
   </section>

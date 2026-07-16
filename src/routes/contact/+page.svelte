@@ -1,7 +1,7 @@
 <article class="contact-page">
   <header class="contact-hero fv-card">
     <p class="eyebrow">We’re here to help</p>
-    <h1>Contact Fullvue</h1>
+    <h1>Contact FullVue</h1>
     <p class="lead fv-muted">
       Questions, a tailored walkthrough, or help scoping modules for your crew—send a note and we’ll reply with next steps.
     </p>
@@ -12,8 +12,18 @@
     <p class="form-hint fv-muted">
       Include how you quote, dispatch, and invoice today if you want a demo mapped to your workflow.
     </p>
-    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/thank-you"
+      class="contact-form"
+    >
       <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden-field" aria-hidden="true">
+        <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
       <div class="field-grid">
         <div class="field">
           <label for="name">Name</label>
@@ -46,6 +56,7 @@
             name="email"
             id="email"
             class="fv-field"
+            required
             autocomplete="email"
             placeholder="you@company.com"
           />
@@ -63,7 +74,7 @@
         </div>
         <div class="field field--full">
           <label for="message">Message</label>
-          <textarea name="message" id="message" class="fv-field" rows="6" placeholder="What would you like to explore?"></textarea>
+          <textarea name="message" id="message" class="fv-field" rows="6" required placeholder="What would you like to explore?"></textarea>
         </div>
       </div>
       <div class="submit-row">
@@ -139,6 +150,14 @@
 
   .field--full {
     grid-column: 1 / -1;
+  }
+
+  .hidden-field {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
   }
 
   .submit-row {

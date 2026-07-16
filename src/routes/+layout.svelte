@@ -57,16 +57,66 @@
 </script>
 
 <svelte:head>
-  <title>{page.data.metaTitle}</title>
-  <meta name="description" content={page.data.metaDescription} />
-  <meta name="keywords" content={page.data.metaKeywords} />
+  <title
+    >{page.error
+      ? page.status === 404
+        ? 'Page not found | FullVue'
+        : 'Something went wrong | FullVue'
+      : (page.data.metaTitle ?? 'FullVue')}</title
+  >
+  <meta name="description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
   {#if isAppLauncher}
+    <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#417505" />
     <meta name="mobile-web-app-capable" content="yes" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/icon-192x192.png" />
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+  {:else if !page.error}
+    <link rel="canonical" href={`https://fullvue.io${page.url.pathname === '/' ? '/' : page.url.pathname}`} />
+    <meta property="og:site_name" content="FullVue" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={page.data.metaTitle ?? 'FullVue'} />
+    <meta property="og:description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
+    <meta property="og:url" content={`https://fullvue.io${page.url.pathname}`} />
+    <meta property="og:image" content="https://fullvue.io/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={page.data.metaTitle ?? 'FullVue'} />
+    <meta name="twitter:description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
+    <meta name="twitter:image" content="https://fullvue.io/og-image.png" />
+    {@html `<script type="application/ld+json">${JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': 'https://fullvue.io/#org',
+          name: 'FullVue',
+          url: 'https://fullvue.io',
+          logo: 'https://fullvue.io/icons/icon-512x512.png',
+          parentOrganization: {
+            '@type': 'Organization',
+            name: 'Foundational Technologies LLC',
+            url: 'https://foundtechsolutions.com'
+          }
+        },
+        {
+          '@type': 'SoftwareApplication',
+          name: 'FullVue',
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Web, Android',
+          url: 'https://fullvue.io',
+          description:
+            'Modular ERP for small time-and-materials businesses: quotes with e-signing, jobs, scheduling, invoicing, purchasing, inventory, counter/POS, attendance, and QuickBooks Online sync.',
+          offers: {
+            '@type': 'Offer',
+            price: '1500',
+            priceCurrency: 'USD',
+            description: 'Modular annual pricing; team-size brackets, no per-seat licenses.'
+          }
+        }
+      ]
+    })}</${'script'}>`}
   {/if}
 </svelte:head>
 
@@ -130,8 +180,13 @@
 </main>
 
 <footer>
-  Fullvue developed by
+  FullVue developed by
   <a href="https://foundtechsolutions.com" title="Foundational Technologies LLC">FoundTech</a>
+  <span class="ml-2">— veteran-owned, built in Appleton, WI</span>
+  <a href="/company" title="About the company" class="ml-2">Company</a>
+  <a href="/integrations/quickbooks" title="QuickBooks Online integration" class="ml-2">QuickBooks</a>
+  <a href="/compare/jobber" title="FullVue vs Jobber" class="ml-2">vs Jobber</a>
+  <a href="/compare/repairshopr" title="FullVue vs RepairShopr" class="ml-2">vs RepairShopr</a>
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
   <a href="/termsofuse" title="Terms of Use" class="ml-2">Terms of Use</a>
   <span class="ml-2 copyright"

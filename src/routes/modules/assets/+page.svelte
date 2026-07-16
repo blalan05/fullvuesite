@@ -5,9 +5,6 @@
     spreadsheets and legacy module names.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder">
-      <span class="fv-muted">Screenshot placeholder — capture Assets list from demo tenant.</span>
-    </div>
     <div class="module_summary">
       <p><strong>Outcome:</strong> Assign assets to people and jobs, track costs and attachments, and link related records without maintaining separate equipment and IT databases.</p>
       <ul>
@@ -34,20 +31,6 @@
       margin-bottom: var(--fv-space-4, 16px);
     }
 
-    .video_container {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: var(--fv-radius-md, 10px);
-      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
-
-      &.placeholder {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: var(--fv-space-4, 16px);
-        text-align: center;
-      }
-    }
+    
   }
 </style>
