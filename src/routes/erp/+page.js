@@ -1,7 +1,7 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'What is ERP? | Fullvue',
+    metaTitle: 'What is ERP? | FullVue',
     metaKeywords:
       'ERP definition, enterprise resource planning, operational software, jobs, invoicing, QuickBooks integration',
     metaDescription:

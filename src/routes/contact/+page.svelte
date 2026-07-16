@@ -1,7 +1,7 @@
 <article class="contact-page">
   <header class="contact-hero fv-card">
     <p class="eyebrow">We’re here to help</p>
-    <h1>Contact Fullvue</h1>
+    <h1>Contact FullVue</h1>
     <p class="lead fv-muted">
       Questions, a tailored walkthrough, or help scoping modules for your crew—send a note and we’ll reply with next steps.
     </p>

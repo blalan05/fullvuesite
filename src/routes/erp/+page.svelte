@@ -15,13 +15,13 @@
       has one trustworthy picture of margin or backlog.
     </p>
     <p>
-      Fullvue is built for owners and GMs who sell work, dispatch crews (or run a shop floor), buy parts, invoice
+      FullVue is built for owners and GMs who sell work, dispatch crews (or run a shop floor), buy parts, invoice
       customers, and manage people—in parallel.
     </p>
   </section>
 
   <section class="erp-pillars" aria-labelledby="erp-pillars-heading">
-    <h2 id="erp-pillars-heading" class="pillars-intro">What stays inside Fullvue</h2>
+    <h2 id="erp-pillars-heading" class="pillars-intro">What stays inside FullVue</h2>
     <p class="pillars-lead fv-muted">
       Modules mirror how work actually flows—pick depth where you leak time or dollars, tighten the rest later.
     </p>
@@ -66,8 +66,8 @@
   <section class="erp-section erp-section--alt fv-card">
     <h2>Accounting and QuickBooks Online</h2>
     <p>
-      Fullvue is positioned around running operations day-to-day. For organizations that keep their books in
-      <strong>QuickBooks Online</strong>, Fullvue supports connecting that accounting layer—for example pushing invoices
+      FullVue is positioned around running operations day-to-day. For organizations that keep their books in
+      <strong>QuickBooks Online</strong>, FullVue supports connecting that accounting layer—for example pushing invoices
       and bills—so finance stays where your accountant expects it while work stays connected to jobs.
     </p>
   </section>
@@ -82,7 +82,7 @@
   </section>
 
   <section class="cta fv-card">
-    <h2>See Fullvue against your workflows</h2>
+    <h2>See FullVue against your workflows</h2>
     <p class="fv-muted">Walk through quotes → jobs → field → billing → purchasing with your terminology.</p>
     <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
   </section>

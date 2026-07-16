@@ -146,7 +146,7 @@
     <p class="eyebrow">Transparent estimates</p>
     <h1>Pricing built around modules you actually need</h1>
     <p class="lead fv-muted">
-      Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. Fullvue stays
+      Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. FullVue stays
       modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, attendance, and HR—then scale employee tiers as you grow.
     </p>
     <p class="lead fv-muted">

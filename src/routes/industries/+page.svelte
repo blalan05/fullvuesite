@@ -65,7 +65,7 @@
 
 <article class="industries-hub">
   <header class="hub-hero fv-card">
-    <p class="eyebrow">Who Fullvue fits</p>
+    <p class="eyebrow">Who FullVue fits</p>
     <h1>Operational software shaped around how service businesses actually run</h1>
     <p class="lead">
       Owners pick modules that mirror real life—quotes and jobs, field schedules, invoicing, purchasing and inventory, time and payroll exports—and plug into
@@ -94,7 +94,7 @@
   <section class="more fv-card">
     <h2>Need something adjacent?</h2>
     <p>
-      Mixed retail counters, memberships, rental-ish workflows—tell us how revenue hits your bank and how crews move. If Fullvue fits, we’ll map modules honestly; if not,
+      Mixed retail counters, memberships, rental-ish workflows—tell us how revenue hits your bank and how crews move. If FullVue fits, we’ll map modules honestly; if not,
       we’ll say so.
     </p>
     <a href="/contact" class="fv-btn fv-btn--primary">Describe your operation</a>

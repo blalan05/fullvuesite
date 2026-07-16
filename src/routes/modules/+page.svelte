@@ -2,7 +2,7 @@
   <p class="eyebrow">Module overview</p>
   <h1>Pick the areas that match how you operate</h1>
   <p class="lead fv-muted">
-    Fullvue connects sales, jobs, field execution, billing, purchasing, inventory, counter/POS, assets, rentals,
+    FullVue connects sales, jobs, field execution, billing, purchasing, inventory, counter/POS, assets, rentals,
     messaging, and workforce tools in one permissioned system—without forcing you to buy capabilities you will not use.
   </p>
   <div class="hub-actions">
@@ -76,7 +76,7 @@
         width="100%"
         height="100%"
         src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0"
-        title="Fullvue jobs overview"
+        title="FullVue jobs overview"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
@@ -416,7 +416,7 @@
   <h2><a href="/modules/tether">Tether</a></h2>
   <p class="problem"><strong>Pain:</strong> Decisions made in texts and email never tie back to jobs or customers.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Team channels, DMs, customer chat for staff, and personal notes—coordination inside Fullvue instead of another chat app.
+    <strong>Outcome:</strong> Team channels, DMs, customer chat for staff, and personal notes—coordination inside FullVue instead of another chat app.
   </p>
   <div class="col_container">
     <div class="module_summary">

@@ -15,7 +15,7 @@
     painPoints,
     fitBullets,
     painTitle = 'Operational friction we hear about',
-    fitTitle = 'What Fullvue gives your team',
+    fitTitle = 'What FullVue gives your team',
     closing = 'Walk through quotes, jobs, field work, billing, and purchasing with your workflows—we’ll show where modules earn their keep.',
   }: Props = $props();
 </script>
@@ -44,7 +44,7 @@
   <section class="fv-card section">
     <h2>{fitTitle}</h2>
     <p class="fit-intro">
-      Fullvue ties sales and quotes to jobs, schedules, time and materials, invoicing, and purchasing—so crews and the office stop debating “what happened on that job.” Connect
+      FullVue ties sales and quotes to jobs, schedules, time and materials, invoicing, and purchasing—so crews and the office stop debating “what happened on that job.” Connect
       <strong>QuickBooks Online</strong> when you want billing synced without running operations out of spreadsheets.
     </p>
     <ul class="bullet-list">

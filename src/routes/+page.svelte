@@ -27,7 +27,7 @@
       <p class="hero-eyebrow">Operations software for owners who run jobs, crews, and the books</p>
       <h1>Run sales, jobs, field work, billing, and purchasing in one place</h1>
       <p class="hero-lead fv-muted">
-        Fullvue replaces scattered spreadsheets and disconnected tools with a single operational system—from
+        FullVue replaces scattered spreadsheets and disconnected tools with a single operational system—from
         opportunities and quotes through scheduling, invoicing, counter/POS, inventory buying, assets, messaging, time,
         and HR. Connect <strong>QuickBooks Online</strong> when you want invoices and bills reflected in your accounting.
       </p>
@@ -35,7 +35,7 @@
         <a href="/pricing" class="fv-btn fv-btn--primary">See pricing</a>
         <a href="/contact" class="fv-btn fv-btn--ghost">Schedule a demo</a>
       </div>
-      <ul class="hero-points" aria-label="What Fullvue helps with">
+      <ul class="hero-points" aria-label="What FullVue helps with">
         <li>Quote and schedule work without losing context</li>
         <li>Invoice from job data; tighten labor and materials visibility</li>
         <li>Purchasing, assets, and counter flows tied to real operations</li>
@@ -44,7 +44,7 @@
       </ul>
     </div>
     <div class="hero-visual">
-      <img class="hero-logo" src={logo} alt="Fullvue" width="280" height="auto" />
+      <img class="hero-logo" src={logo} alt="FullVue" width="280" height="auto" />
       <div class="device-stack">
         <div class="pc_demo_container" aria-hidden="true"></div>
         <div class="mobile_demo_container" aria-hidden="true"></div>

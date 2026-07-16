@@ -1,7 +1,7 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Lawn care routing & billing software | Fullvue',
+    metaTitle: 'Lawn care routing & billing software | FullVue',
     metaDescription:
       'Manage mowing routes, recurring contracts, crew schedules, purchasing for turf inputs, and invoicing tied to documented stops.',
     metaKeywords: '',

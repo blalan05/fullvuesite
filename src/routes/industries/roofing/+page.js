@@ -1,7 +1,7 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Roofing contractor operations software | Fullvue',
+    metaTitle: 'Roofing contractor operations software | FullVue',
     metaDescription:
       'Storm or organic roofing workflows benefit from jobs linking supplements, dumpsters, subs, crew logs, purchasing, and invoices customers recognize.',
     metaKeywords: '',

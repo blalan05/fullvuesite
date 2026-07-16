@@ -2,7 +2,7 @@
   <h1>Planner</h1>
   <p class="lead">
     Personal schedules scattered across phone calendars do not reflect the jobs, quotes, and follow-ups your team already
-    tracks in Fullvue.
+    tracks in FullVue.
   </p>
   <div class="col_container">
     <div class="video_container placeholder">
