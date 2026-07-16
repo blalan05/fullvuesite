@@ -5,6 +5,6 @@ export function load() {
     metaKeywords:
       'jobs ERP, field service, invoicing module, purchasing, attendance, SDS, counter POS, QuickBooks',
     metaDescription:
-      'Explore FullVue modules: Sales, Field, Counter/POS, Invoicing, Purchasing, Assets, Rentals, Attendance, Tether, Planner, SDS, and more—aligned to how operators actually run.',
+      'Explore FullVue modules: Sales, Field, Counter/POS, Invoicing, Purchasing, Assets, Rentals, Attendance, SDS, and more—pick only what you run.',
   };
 }

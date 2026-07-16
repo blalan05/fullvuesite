@@ -22,7 +22,7 @@
     <div class="thanks-links">
       <a class="fv-btn fv-btn--primary" href="/modules">Explore the modules</a>
       <a class="fv-btn" href="/pricing">See pricing</a>
-      <a class="fv-btn" href="/industries">Find your industry</a>
+      <a class="fv-btn" href="/company">Meet the company</a>
     </div>
   </section>
 </article>

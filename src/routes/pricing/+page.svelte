@@ -185,7 +185,10 @@
     </div>
     <p class="fv-muted bundles-fineprint">
       Prices shown at the 10-employee bracket; larger teams step up in five-employee brackets using the
-      per-module rates below.
+      per-module rates below. Comparing options? See the honest side-by-sides:
+      <a href="/compare/jobber">FullVue vs Jobber</a> and
+      <a href="/compare/repairshopr">FullVue vs RepairShopr</a> — or how the
+      <a href="/integrations/quickbooks">QuickBooks Online integration</a> works.
     </p>
   </section>
   <section class="pricing_form fv-card">

@@ -1,7 +1,7 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: "FullVue vs Jobber: Honest Pricing & Feature Comparison",
-    metaDescription: "Jobber is excellent field service software. FullVue adds inventory, purchasing, POS, and rentals, priced in team-size brackets. An honest side-by-side.",
+    metaTitle: "Jobber Alternative with Inventory & POS | FullVue vs Jobber",
+    metaDescription: "Outgrowing Jobber's per-user seats and add-ons? FullVue adds native inventory, purchasing, POS, and rentals — bracket pricing, honest side-by-side inside.",
   };
 }
