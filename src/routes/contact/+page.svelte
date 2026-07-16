@@ -22,7 +22,7 @@
     >
       <input type="hidden" name="form-name" value="contact" />
       <p class="hidden-field" aria-hidden="true">
-        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
       </p>
       <div class="field-grid">
         <div class="field">

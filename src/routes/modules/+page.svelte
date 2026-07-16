@@ -655,15 +655,7 @@
       border-radius: var(--fv-radius-md, 10px);
       overflow: hidden;
       border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
-
-      &.placeholder {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: var(--fv-space-4, 16px);
-        text-align: center;
-      }
+      background: var(--fv-bg-elevated, #252a32);
 
       &.purchasing {
         background: url('$lib/purchasing.webp');

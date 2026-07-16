@@ -3,7 +3,6 @@
 </script>
 
 <svelte:head>
-  <title>{page.status === 404 ? 'Page not found | FullVue' : 'Something went wrong | FullVue'}</title>
   <meta name="robots" content="noindex" />
 </svelte:head>
 

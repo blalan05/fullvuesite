@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /thank-you
-Disallow: /*?app
-Disallow: /*?signedOut=*
 
 Sitemap: https://fullvue.io/sitemap.xml

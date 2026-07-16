@@ -5,9 +5,6 @@
     tracks in FullVue.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder">
-      <span class="fv-muted">Screenshot placeholder — Planner calendar.</span>
-    </div>
     <div class="module_summary">
       <p><strong>Outcome:</strong> Block time with reminders on a calendar that layers operational items—jobs, quotes, todos—so individuals see their day in context.</p>
       <ul>
@@ -37,15 +34,7 @@
       aspect-ratio: 16 / 9;
       border-radius: var(--fv-radius-md, 10px);
       border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
-
-      &.placeholder {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: var(--fv-space-4, 16px);
-        text-align: center;
-      }
+      background: var(--fv-bg-elevated, #252a32);
     }
   }
 </style>

@@ -13,7 +13,7 @@ export function load({ locals }) {
 		pageTitle: null,
 		metaTitle: 'FullVue | Jobs, field service, invoicing & ops in one system',
 		metaKeywords:
-			'ERP, field service, job costing, invoicing, QuickBooks Online, purchasing, inventory, payroll, small business operations',
+			'ERP, field service, job costing, invoicing, QuickBooks Online, purchasing, inventory, attendance, small business operations',
 		metaDescription:
 			'FullVue connects quotes, jobs, scheduling, invoicing, purchasing, inventory, time, and HR for operators who run crews and counters—and syncs billing data to QuickBooks Online.'
 	};

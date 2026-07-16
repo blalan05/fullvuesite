@@ -517,7 +517,7 @@
         <td class="nameCol">Accounting</td>
         <td class="priceCol">+$400/yr</td>
         <td class="descCol"
-          >QuickBooks Online connection and sync workflows for invoices, bills, and operational accounting data</td
+          >QuickBooks Online connection—send invoices and bills to QBO from your operational data</td
         >
       </tr>
       </tbody>

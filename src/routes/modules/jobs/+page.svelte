@@ -35,10 +35,10 @@
         <div class="module_overlay">Invoicing</div>
       </div>
     </a>
-    <a href="/modules/payroll" title="Payroll Module">
+    <a href="/modules/attendance" title="Attendance Module">
       <div class="module payroll">
         <div class="module_background"></div>
-        <div class="module_overlay">Payroll</div>
+        <div class="module_overlay">Attendance</div>
       </div>
     </a>
   </div>

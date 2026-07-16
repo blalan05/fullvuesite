@@ -4,16 +4,14 @@
     Punches and schedules need to reconcile with job time before payroll runs—not after disputes in a group chat.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder">
-      <span class="fv-muted">Screenshot placeholder — punch list or attendance report.</span>
-    </div>
+    <div class="video_container attendance-shot"></div>
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Time punches, schedules, and payroll-period attendance reporting sit beside HR and payroll features so leadership compares clock time to job time.</p>
+      <p><strong>Outcome:</strong> Time punches, schedules, and payroll-period attendance reporting sit beside HR so leadership compares clock time to job time—and exports payroll-ready reports for your bookkeeper or payroll provider.</p>
       <ul>
         <li>Time punches including quick in/out from navigation</li>
-        <li>Employee schedules tied to attendance workflows</li>
+        <li>Week rosters, shift swaps, availability, and PTO accruals</li>
         <li>Payroll-period attendance reporting</li>
-        <li>Works alongside Payroll and Human Resources modules</li>
+        <li>Works alongside the Human Resources module</li>
       </ul>
     </div>
   </div>
@@ -39,12 +37,10 @@
       border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
       background: var(--fv-bg-elevated, #252a32);
 
-      &.placeholder {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: var(--fv-space-4, 16px);
-        text-align: center;
+      &.attendance-shot {
+        background: url('$lib/payroll.webp');
+        background-size: cover;
+        background-position: top left;
       }
     }
   }

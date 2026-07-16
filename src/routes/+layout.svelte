@@ -57,7 +57,13 @@
 </script>
 
 <svelte:head>
-  <title>{page.data.metaTitle ?? 'FullVue'}</title>
+  <title
+    >{page.error
+      ? page.status === 404
+        ? 'Page not found | FullVue'
+        : 'Something went wrong | FullVue'
+      : (page.data.metaTitle ?? 'FullVue')}</title
+  >
   <meta name="description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
   {#if isAppLauncher}
     <meta name="robots" content="noindex" />
@@ -67,17 +73,17 @@
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/icon-192x192.png" />
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-  {:else}
+  {:else if !page.error}
     <link rel="canonical" href={`https://fullvue.io${page.url.pathname === '/' ? '/' : page.url.pathname}`} />
     <meta property="og:site_name" content="FullVue" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={page.data.metaTitle} />
-    <meta property="og:description" content={page.data.metaDescription} />
+    <meta property="og:title" content={page.data.metaTitle ?? 'FullVue'} />
+    <meta property="og:description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
     <meta property="og:url" content={`https://fullvue.io${page.url.pathname}`} />
     <meta property="og:image" content="https://fullvue.io/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={page.data.metaTitle} />
-    <meta name="twitter:description" content={page.data.metaDescription} />
+    <meta name="twitter:title" content={page.data.metaTitle ?? 'FullVue'} />
+    <meta name="twitter:description" content={page.data.metaDescription ?? 'FullVue — modular ERP for small businesses that bill time and materials.'} />
     <meta name="twitter:image" content="https://fullvue.io/og-image.png" />
     {@html `<script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org',
