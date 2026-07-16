@@ -65,7 +65,6 @@
       <h2>See the workflows your team lives in</h2>
       <p class="fv-muted">
         Short videos and product grabs across jobs, sales, field service, billing, HR, compliance, and shop-floor rhythm.
-        Drop in your own screenshots anytime—they slot right into this carousel.
       </p>
     </header>
 

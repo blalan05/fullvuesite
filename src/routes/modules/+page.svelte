@@ -39,8 +39,7 @@
       <span class="jump-label">People</span>
       <div class="jump-links">
         <a href="#hr">HR</a>
-        <a href="#payroll">Payroll &amp; time</a>
-        <a href="#attendance">Attendance</a>
+        <a href="#attendance">Attendance &amp; time</a>
       </div>
     </div>
     <div class="jump-group">
@@ -296,27 +295,6 @@
   </div>
 </section>
 
-<section class="module_container" id="payroll">
-  <h2><a href="/modules/payroll">Payroll &amp; time</a></h2>
-  <p class="problem"><strong>Pain:</strong> Payroll clerks chase screenshots of punches that never matched jobs.</p>
-  <p class="solution">
-    <strong>Outcome:</strong> Time punches, shifts, absences, and payroll-ready exports stay beside job time so leadership can reconcile labor honesty before payroll runs.
-  </p>
-  <div class="col_container">
-    <div class="video_container payroll"></div>
-    <div class="module_summary">
-      <ul>
-        <li>Generate period hours from punches</li>
-        <li>Notes channel between supervisors and payroll processors</li>
-        <li>Absence tracking with accrued balances where configured</li>
-      </ul>
-      <div class="learn_more_container">
-        <a href="/modules/payroll" class="fv-btn fv-btn--primary">Learn more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="module_container" id="products">
   <h2><a href="/modules/products">Products</a></h2>
   <p class="problem"><strong>Pain:</strong> Serial numbers, BOM hints, and repair history live on paper.</p>
@@ -324,7 +302,6 @@
     <strong>Outcome:</strong> Product catalog entries linked into sales and support conversations so technicians quote parts confidently.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Video or screenshot placeholder—swap when asset is ready.</span></div>
     <div class="module_summary">
       <ul>
         <li>Structured specs per SKU or assembly</li>
@@ -344,7 +321,6 @@
     <strong>Outcome:</strong> Tickets anchored to customers and installed products so resolutions capture labor and parts when billing applies.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Video or screenshot placeholder—swap when asset is ready.</span></div>
     <div class="module_summary">
       <ul>
         <li>Issue threads alongside catalog context</li>
@@ -383,7 +359,6 @@
     <strong>Outcome:</strong> One unified asset register for equipment, devices, components, and software—with assignments, costs, attachments, and links between records.
   </p>
   <div class="col_container">
-    <div class="video_container assets"></div>
     <div class="module_summary">
       <ul>
         <li>Shop and fleet equipment with assignments and utilization</li>
@@ -404,7 +379,6 @@
     <strong>Outcome:</strong> Reservations, checkout, and returns tie to rentable asset types—aligned with jobs and customer visibility in the portal.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Rentals dashboard.</span></div>
     <div class="module_summary">
       <ul>
         <li>Rental reservations and checkout workflows</li>
@@ -425,7 +399,6 @@
     <strong>Outcome:</strong> Register-oriented dashboards, promotions, memberships, loyalty, punch cards, promo codes, fees, and stored value—alongside traditional sales and job permissions.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Counter or POS register.</span></div>
     <div class="module_summary">
       <ul>
         <li>POS dashboard and register workflows</li>
@@ -446,7 +419,6 @@
     <strong>Outcome:</strong> Team channels, DMs, customer chat for staff, and personal notes—coordination inside Fullvue instead of another chat app.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Tether channel.</span></div>
     <div class="module_summary">
       <ul>
         <li>Group channels and direct messages</li>
@@ -467,7 +439,6 @@
     <strong>Outcome:</strong> Time-blocking with reminders on a calendar layered on operational items—jobs, quotes, todos—so individuals see their day in context.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—Planner calendar.</span></div>
     <div class="module_summary">
       <ul>
         <li>Personal schedule blocks with reminders</li>
@@ -482,18 +453,19 @@
 </section>
 
 <section class="module_container" id="attendance">
-  <h2><a href="/modules/attendance">Attendance</a></h2>
+  <h2><a href="/modules/attendance">Attendance &amp; time</a></h2>
   <p class="problem"><strong>Pain:</strong> Clock punches and schedules are reconciled in spreadsheets after payroll is already wrong.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Time punches, schedules, and payroll-period attendance reporting deploy alongside HR and payroll so leadership compares punch time to job time.
+    <strong>Outcome:</strong> A time clock plus staff scheduling that produces payroll-ready reports your bookkeeper or payroll provider runs with—and lets leadership compare punch time to job time.
   </p>
   <div class="col_container">
-    <div class="video_container placeholder"><span class="fv-muted">Screenshot placeholder—attendance or punch list.</span></div>
+    <div class="video_container payroll"></div>
     <div class="module_summary">
       <ul>
         <li>Quick in/out punches from navigation</li>
-        <li>Schedules and payroll-period attendance reports</li>
-        <li>Aligns with Payroll and Human Resources workflows</li>
+        <li>Week rosters, shift swaps, availability, and PTO accruals</li>
+        <li>Period hours generated from punches—export for your payroll provider</li>
+        <li>Aligns with Human Resources workflows</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/attendance" class="fv-btn fv-btn--primary">Learn more</a>
@@ -504,7 +476,7 @@
 
 <section class="cta_bottom fv-card">
   <h2>Need help sequencing modules?</h2>
-  <p class="fv-muted">Start where you leak margin—usually jobs + invoicing—then fold purchasing and payroll once data trusts the system.</p>
+  <p class="fv-muted">Start where you leak margin—usually jobs + invoicing—then fold purchasing and attendance once data trusts the system.</p>
   <div class="hub-actions">
     <a href="/contact" class="fv-btn fv-btn--primary">Talk with us</a>
     <a href="/pricing" class="fv-btn fv-btn--ghost">Pricing calculator</a>
@@ -713,12 +685,6 @@
         background-size: cover;
       }
 
-      &.assets {
-        background:
-          linear-gradient(145deg, rgba(65, 106, 152, 0.35), transparent),
-          url('$lib/purchasing.webp');
-        background-size: cover;
-      }
     }
   }
 

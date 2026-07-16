@@ -15,7 +15,6 @@
     productMod: boolean;
     supportMod: boolean;
     huddleMod: boolean;
-    // payrollMod: boolean;
     attendanceMod: boolean;
     assetsMod: boolean;
     rentalsMod: boolean;
@@ -38,7 +37,6 @@
     productMod: false,
     supportMod: false,
     huddleMod: false,
-    // payrollMod: false,
     attendanceMod: false,
     assetsMod: false,
     rentalsMod: false,
@@ -104,10 +102,6 @@
       moduleCost.push(150);
       rateIncrease.push(0.04);
     }
-    // if ($mods.payrollMod) {
-    //   moduleCost.push(400);
-    //   rateIncrease.push(0.05);
-    // }
     if ($mods.attendanceMod) {
       moduleCost.push(200);
       rateIncrease.push(0.05);
@@ -153,7 +147,7 @@
     <h1>Pricing built around modules you actually need</h1>
     <p class="lead fv-muted">
       Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. Fullvue stays
-      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, payroll, and HR—then scale employee tiers as you grow.
+      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, attendance, and HR—then scale employee tiers as you grow.
     </p>
     <p class="lead fv-muted">
       Totals combine <strong>selected modules</strong>, <strong>employee count</strong> (steps of five starting at ten seats),
@@ -330,21 +324,6 @@
           and reports</td
         >
       </tr>
-      <!-- <tr>
-        <td class="checkbox-wrapper">
-          <input
-            type="checkbox"
-            id="payrollMod"
-            bind:checked={$selModules.payrollMod}
-          />
-          <label for="payrollMod" class="check-box"> </label></td
-        >
-        <td class="nameCol">Payroll</td>
-        <td class="descCol"
-          >Track employees' absence requests and hours, and generates reports
-          for submitting to payroll provider</td
-        >
-      </tr> -->
       <tr>
         <td class="checkbox-wrapper">
           <input
@@ -372,7 +351,7 @@
           <label for="productMod" class="check-box"> </label></td
         >
         <td class="nameCol">Products</td>
-        <td class="descCol">Maintain detailed infomation about your products</td
+        <td class="descCol">Maintain detailed information about your products</td
         >
       </tr>
       <tr>
