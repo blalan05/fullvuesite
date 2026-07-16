@@ -11,10 +11,9 @@ export function load({ locals }) {
 
 	return {
 		pageTitle: null,
-		metaTitle: 'Fullvue | Jobs, field service, invoicing & ops in one system',
-		metaKeywords:
-			'ERP, field service, job costing, invoicing, QuickBooks Online, purchasing, inventory, payroll, small business operations',
+		metaTitle: 'Small Business ERP & Job Costing Software | FullVue',
+		metaKeywords: '',
 		metaDescription:
-			'Fullvue connects quotes, jobs, scheduling, invoicing, purchasing, inventory, time, and HR for operators who run crews and counters—and syncs billing data to QuickBooks Online.'
+			'One system for shops that bill time and materials — quotes, jobs, job costing, inventory, invoicing — with invoices and bills sent to QuickBooks Online.'
 	};
 }

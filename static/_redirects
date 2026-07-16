@@ -1,0 +1,2 @@
+# Canonical host: apex only
+https://www.fullvue.io/* https://fullvue.io/:splat 301!

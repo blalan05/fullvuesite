@@ -28,7 +28,17 @@
         'Tie estimates and POs to shop work so labor and materials roll up to invoices customers recognize—not stale spreadsheets.',
       links: [
         { href: '/industries/manufacturing', label: 'Manufacturing' },
-        { href: '/industries/machine-shop', label: 'Machine shop' },
+        { href: '/industries/machine-shop', label: 'Machine & fab shops' },
+      ],
+    },
+    {
+      title: 'Shops, counters & studios',
+      accent: 'rgb(140, 193, 82)',
+      intro:
+        'Businesses that fix, build, and rent — bench work, counter sales, parts inventory, client gear, and invoicing in one system.',
+      links: [
+        { href: '/industries/computer-repair', label: 'Computer & tech repair' },
+        { href: '/industries/video-production', label: 'Video production' },
       ],
     },
     {
@@ -65,7 +75,7 @@
 
 <article class="industries-hub">
   <header class="hub-hero fv-card">
-    <p class="eyebrow">Who Fullvue fits</p>
+    <p class="eyebrow">Who FullVue fits</p>
     <h1>Operational software shaped around how service businesses actually run</h1>
     <p class="lead">
       Owners pick modules that mirror real life—quotes and jobs, field schedules, invoicing, purchasing and inventory, time and payroll exports—and plug into
@@ -94,7 +104,7 @@
   <section class="more fv-card">
     <h2>Need something adjacent?</h2>
     <p>
-      Mixed retail counters, memberships, rental-ish workflows—tell us how revenue hits your bank and how crews move. If Fullvue fits, we’ll map modules honestly; if not,
+      Mixed retail counters, memberships, rental-ish workflows—tell us how revenue hits your bank and how crews move. If FullVue fits, we’ll map modules honestly; if not,
       we’ll say so.
     </p>
     <a href="/contact" class="fv-btn fv-btn--primary">Describe your operation</a>

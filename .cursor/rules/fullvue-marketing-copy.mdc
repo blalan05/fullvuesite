@@ -1,10 +1,10 @@
 ---
-description: Fullvue marketing copy — module names, voice, and ERP-aligned claims
+description: FullVue marketing copy — module names, voice, and ERP-aligned claims
 globs: src/routes/**/*.{svelte,js},fullvue-io-marketing-agent.md
 alwaysApply: false
 ---
 
-# Fullvue marketing copy
+# FullVue marketing copy
 
 Read **fullvue-io-marketing-agent.md** for the full brief. This repo is the fullvue.io **marketing site**; ERP paths in that doc refer to the product codebase.
 

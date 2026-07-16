@@ -1,10 +1,10 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Modules for sales, jobs, field & back office | Fullvue',
+    metaTitle: 'Modules for sales, jobs, field & back office | FullVue',
     metaKeywords:
-      'jobs ERP, field service, invoicing module, purchasing, payroll, SDS, counter POS, QuickBooks',
+      'jobs ERP, field service, invoicing module, purchasing, attendance, SDS, counter POS, QuickBooks',
     metaDescription:
-      'Explore Fullvue modules: Sales, Field, Counter/POS, Invoicing, Purchasing, Assets, Rentals, Payroll, Tether, Planner, SDS, and more—aligned to how operators actually run.',
+      'Explore FullVue modules: Sales, Field, Counter/POS, Invoicing, Purchasing, Assets, Rentals, Attendance, Tether, Planner, SDS, and more—aligned to how operators actually run.',
   };
 }

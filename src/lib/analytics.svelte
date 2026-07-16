@@ -22,6 +22,6 @@
     }
 
     gtag('js', new Date());
-    gtag('config', 'G-RDLSJ6V11K');
+    gtag('config', 'G-RDLSJ6V11K', { send_page_view: false });
   </script>
 </svelte:head>

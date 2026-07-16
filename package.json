@@ -24,7 +24,6 @@
 		"sass": "^1.70.0",
 		"super-sitemap": "^0.14.14",
 		"svelte": "^5.55.0",
-		"svelte-carousel": "^1.0.25",
 		"svelte-check": "^4.4.0",
 		"tslib": "^2.8.1",
 		"typescript": "^5.9.0",

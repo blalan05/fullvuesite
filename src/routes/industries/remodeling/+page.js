@@ -1,7 +1,7 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Remodeling contractor operations software | Fullvue',
+    metaTitle: 'Remodeling contractor operations software | FullVue',
     metaDescription:
       'Hold allowances, selections, change orders, purchasing, crew time, and progress invoicing together so remodel phases stop leaking margin.',
     metaKeywords: '',
