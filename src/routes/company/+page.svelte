@@ -123,18 +123,7 @@
 
   
 
-  .faq {
-    h3 {
-      margin: var(--fv-space-4, 16px) 0 var(--fv-space-2, 8px);
-      font-size: 1.05rem;
-    }
+  
 
-    p {
-      margin: 0;
-    }
-  }
-
-  .fineprint {
-    font-size: 0.8rem;
-  }
+  
 </style>

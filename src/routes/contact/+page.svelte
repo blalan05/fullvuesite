@@ -4,6 +4,7 @@
     <h1>Contact FullVue</h1>
     <p class="lead fv-muted">
       Questions, a tailored walkthrough, or help scoping modules for your crew—send a note and we’ll reply with next steps.
+      Wondering who you’ll be talking to? <a href="/company">Meet the company</a>.
     </p>
   </header>
 

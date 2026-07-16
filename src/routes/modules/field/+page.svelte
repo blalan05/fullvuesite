@@ -36,6 +36,13 @@
     </a>
   </div>
 </section>
+<section class="industry-fits">
+  <p>
+    Shops that lean on this module: <a href="/industries/hvac-heating-cooling">HVAC</a>, <a href="/industries/plumbing">plumbing</a> — or browse
+    <a href="/industries">all industries</a>.
+  </p>
+</section>
+
 <style lang="scss">
   .module_container {
     width: 100%;
