@@ -78,6 +78,7 @@
         src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0"
         title="FullVue jobs overview"
         frameborder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -112,6 +113,7 @@
         src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1&rel=0"
         title="Field module"
         frameborder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -143,6 +145,7 @@
         src="https://www.youtube.com/embed/EOlB8r5srIU?si=xedSZUsqgaLJ7v1z&rel=0"
         title="Invoicing module"
         frameborder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -174,6 +177,7 @@
         src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s&rel=0"
         title="Sales module"
         frameborder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -228,6 +232,7 @@
         src="https://www.youtube.com/embed/nyDg2QXozTw?si=wqSU8g93QwvN_Kx4&rel=0"
         title="To-dos module"
         frameborder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -258,6 +263,7 @@
         src="https://www.youtube.com/embed/jg24D6ihl7s?si=5o81yhqNLj3bSPNk&rel=0"
         title="SDS module"
         frameborder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -655,7 +661,7 @@
       border-radius: var(--fv-radius-md, 10px);
       overflow: hidden;
       border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
+      background: var(--fv-bg-elevated, #252a32);
 
       &.purchasing {
         background: url('$lib/purchasing.webp');

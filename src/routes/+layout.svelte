@@ -182,6 +182,7 @@
 <footer>
   FullVue developed by
   <a href="https://foundtechsolutions.com" title="Foundational Technologies LLC">FoundTech</a>
+  <span class="ml-2">— veteran-owned, built in Appleton, WI</span>
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
   <a href="/termsofuse" title="Terms of Use" class="ml-2">Terms of Use</a>
   <span class="ml-2 copyright"
