@@ -1,8 +1,8 @@
 export function load() {
   return {
     pageTitle: 'Customer Support',
-    metaTitle: 'Customer Support Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    metaTitle: 'Customer support tickets | Fullvue',
+    metaDescription:
+      'Track issues with customer and product context, capture resolutions, and associate labor or shipped parts when billing applies.',
+  };
 }

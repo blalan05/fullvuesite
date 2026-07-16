@@ -2,12 +2,35 @@
   import { writable } from "svelte/store";
   import { watch } from "$lib/watch";
 
+  type SelectedModules = {
+    coreMod: boolean;
+    fieldMod: boolean;
+    invoiceMod: boolean;
+    salesMod: boolean;
+    counterMod: boolean;
+    purchasingMod: boolean;
+    todosMod: boolean;
+    sdsMod: boolean;
+    hrMod: boolean;
+    productMod: boolean;
+    supportMod: boolean;
+    huddleMod: boolean;
+    // payrollMod: boolean;
+    attendanceMod: boolean;
+    assetsMod: boolean;
+    rentalsMod: boolean;
+    tetherMod: boolean;
+    plannerMod: boolean;
+    accountingMod: boolean;
+  };
+
   let employeeCount = writable(10);
-  let selModules = writable({
+  let selModules = writable<SelectedModules>({
     coreMod: true,
     fieldMod: false,
     invoiceMod: false,
     salesMod: false,
+    counterMod: false,
     purchasingMod: false,
     todosMod: false,
     sdsMod: false,
@@ -15,16 +38,21 @@
     productMod: false,
     supportMod: false,
     huddleMod: false,
-    payrollMod: false,
-    itmod: false,
-    equipmod: false,
+    // payrollMod: false,
+    attendanceMod: false,
+    assetsMod: false,
+    rentalsMod: false,
+    tetherMod: false,
+    plannerMod: false,
+    accountingMod: false,
   });
   let periodMod = writable(true);
   let totalEst = 0;
   let moduleCost = [];
   let rateIncrease = [];
 
-  watch([employeeCount, selModules, periodMod], ([$count, $mods, $period]) => {
+  watch([employeeCount, selModules, periodMod], (values) => {
+    const [$count, $mods, $period] = values as [number, SelectedModules, boolean];
     moduleCost = [];
     rateIncrease = [];
     totalEst = 0;
@@ -41,6 +69,10 @@
       rateIncrease.push(0.05);
     }
     if ($mods.salesMod) {
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
+    }
+    if ($mods.counterMod) {
       moduleCost.push(400);
       rateIncrease.push(0.05);
     }
@@ -72,17 +104,33 @@
       moduleCost.push(150);
       rateIncrease.push(0.04);
     }
-    if ($mods.payrollMod) {
-      moduleCost.push(400);
+    // if ($mods.payrollMod) {
+    //   moduleCost.push(400);
+    //   rateIncrease.push(0.05);
+    // }
+    if ($mods.attendanceMod) {
+      moduleCost.push(200);
       rateIncrease.push(0.05);
     }
-    if ($mods.itmod) {
-      moduleCost.push(50);
-      rateIncrease.push(0.1);
+    if ($mods.assetsMod) {
+      moduleCost.push(200);
+      rateIncrease.push(0.05);
     }
-    if ($mods.equipmod) {
+    if ($mods.rentalsMod) {
       moduleCost.push(150);
-      rateIncrease.push(0.02);
+      rateIncrease.push(0.04);
+    }
+    if ($mods.tetherMod) {
+      moduleCost.push(150);
+      rateIncrease.push(0.04);
+    }
+    if ($mods.plannerMod) {
+      moduleCost.push(50);
+      rateIncrease.push(0.04);
+    }
+    if ($mods.accountingMod) {
+      moduleCost.push(400);
+      rateIncrease.push(0.05);
     }
     if ($count > 10) {
       for (let i = 0; i < moduleCost.length; i++) {
@@ -99,54 +147,64 @@
   });
 </script>
 
-<article>
-  <section class="pricing_header">
-    <h1>FullVue</h1>
-    <h2>Pricing</h2>
-    <h3>A Small Business Tool Should Be Priced For Small Businesses</h3>
-    <p>
-      We understand that the majority of small businesses can't afford the
-      medium and large businesses tools priced in the 5 or 6 figure range.
+<article class="pricing-page">
+  <section class="pricing_header fv-card">
+    <p class="eyebrow">Transparent estimates</p>
+    <h1>Pricing built around modules you actually need</h1>
+    <p class="lead fv-muted">
+      Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. Fullvue stays
+      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, payroll, and HR—then scale employee tiers as you grow.
     </p>
-    <p>
-      Our pricing is based on the modules you choose, employee count, and
-      subscription length.
+    <p class="lead fv-muted">
+      Totals combine <strong>selected modules</strong>, <strong>employee count</strong> (steps of five starting at ten seats),
+      and <strong>annual vs monthly billing</strong>. Core is required because it anchors customers and jobs across the suite.
     </p>
   </section>
-  <section class="pricing_form">
-    <div class="inputWrapper">
-      <label for="employeeCount">Number of Employees:</label>
-      <input
-        type="number"
-        bind:value={$employeeCount}
-        id="employeeCount"
-        max="50"
-        min="10"
-        step="5"
-        inputmode="numeric"
-        pattern="\d*"
-      />
+  <section class="pricing_form fv-card">
+    <div class="pricing-controls">
+      <div class="inputWrapper">
+        <label for="employeeCount">Employees (minimum 10)</label>
+        <input
+          type="number"
+          bind:value={$employeeCount}
+          id="employeeCount"
+          class="fv-field"
+          max="50"
+          min="10"
+          step="5"
+          inputmode="numeric"
+          pattern="\d*"
+        />
+        <p class="field-hint fv-muted">
+          Above ten employees, module pricing scales using the configured uplift curve—adjust the counter to mirror how many field and office seats you fund today.
+        </p>
+      </div>
+      <div class="inputWrapper">
+        <label for="period">Billing cadence</label>
+        <select id="period" bind:value={$periodMod} class="fv-field pricing-select">
+          <option value={true}>Annual</option>
+          <option value={false}>Monthly</option>
+        </select>
+      </div>
     </div>
-    <div class="inputWrapper">
-      <label for="period">Subscription Term:</label>
-      <select id="period" bind:value={$periodMod}>
-        <option value={true}>Annual</option>
-        <option value={false}>Monthly</option>
-      </select>
-    </div>
-    <p class="pricingTotal">
-      <strong>Total: </strong>{Intl.NumberFormat("en-us", {
+    <div class="pricingTotal" role="status" aria-live="polite">
+      <span class="pricingTotal-label"
+        ><strong>{!$periodMod ? 'Estimated monthly payment' : 'Estimated annual total'}: </strong></span
+      >
+      <span class="pricingTotal-amount">{Intl.NumberFormat("en-us", {
         style: "currency",
         currency: "USD",
-      }).format(!$periodMod ? totalEst / 12 : totalEst)}
-    </p>
-    <hr />
+      }).format(!$periodMod ? totalEst / 12 : totalEst)}</span>
+    </div>
     <table class="pricingTable">
-      <tr>
-        <th style="border-bottom: 1px solid black"></th>
-        <th style="border-bottom: 1px solid black">Module</th>
-        <th style="border-bottom: 1px solid black">Description</th>
-      </tr>
+      <thead>
+        <tr>
+          <th class="pricing-table-head spacer"></th>
+          <th class="pricing-table-head">Module</th>
+          <th class="pricing-table-head">Description</th>
+        </tr>
+      </thead>
+      <tbody>
       <tr>
         <td class="checkbox-wrapper" style="padding-top: 12px">
           <input
@@ -161,6 +219,9 @@
         <td class="descCol" style="padding-top: 12px"
           >Customer and Job Management</td
         >
+      </tr>
+      <tr class="module-group">
+        <td colspan="3">Field service, invoicing &amp; pipeline</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -204,6 +265,23 @@
         <td class="checkbox-wrapper">
           <input
             type="checkbox"
+            id="counterMod"
+            bind:checked={$selModules.counterMod}
+          />
+          <label for="counterMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Counter / POS</td>
+        <td class="descCol"
+          >Register selling, promotions, memberships, loyalty, and stored value</td
+        >
+      </tr>
+      <tr class="module-group">
+        <td colspan="3">Purchasing, coordination &amp; safety</td>
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
             id="purchasingMod"
             bind:checked={$selModules.purchasingMod}
           />
@@ -238,6 +316,9 @@
           >Store and provide improved accessibility to Safety Data Sheets</td
         >
       </tr>
+      <tr class="module-group">
+        <td colspan="3">Workforce</td>
+      </tr>
       <tr>
         <td class="checkbox-wrapper">
           <input type="checkbox" id="hrMod" bind:checked={$selModules.hrMod} />
@@ -249,7 +330,7 @@
           and reports</td
         >
       </tr>
-      <tr>
+      <!-- <tr>
         <td class="checkbox-wrapper">
           <input
             type="checkbox"
@@ -263,6 +344,23 @@
           >Track employees' absence requests and hours, and generates reports
           for submitting to payroll provider</td
         >
+      </tr> -->
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="attendanceMod"
+            bind:checked={$selModules.attendanceMod}
+          />
+          <label for="attendanceMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Attendance</td>
+        <td class="descCol"
+          >Time punches, schedules, and payroll-period attendance reporting</td
+        >
+      </tr>
+      <tr class="module-group">
+        <td colspan="3">Products, assets &amp; rentals</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -310,106 +408,258 @@
         <td class="checkbox-wrapper">
           <input
             type="checkbox"
-            id="equipmod"
-            bind:checked={$selModules.equipmod}
+            id="assetsMod"
+            bind:checked={$selModules.assetsMod}
           />
-          <label for="equipmod" class="check-box"> </label></td
+          <label for="assetsMod" class="check-box"> </label></td
         >
-        <td class="nameCol">Equipment</td>
+        <td class="nameCol">Assets</td>
         <td class="descCol"
-          >Tracking Tools, Machines and Vehicles (Assignments, Costs and Usage)</td
+          >Unified register for fleet, tools, devices, components, and software</td
         >
       </tr>
       <tr>
         <td class="checkbox-wrapper">
-          <input type="checkbox" id="itmod" bind:checked={$selModules.itmod} />
-          <label for="itmod" class="check-box"> </label></td
+          <input
+            type="checkbox"
+            id="rentalsMod"
+            bind:checked={$selModules.rentalsMod}
+          />
+          <label for="rentalsMod" class="check-box"> </label></td
         >
-        <td class="nameCol">IT Database</td>
+        <td class="nameCol">Rentals</td>
         <td class="descCol"
-          >Document devices (PC, Tablets, Phones, Printers, etc.), internal
-          components and software</td
+          >Rental reservations, checkout, and returns tied to rentable assets</td
         >
       </tr>
+      <tr class="module-group">
+        <td colspan="3">Coordination</td>
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="tetherMod"
+            bind:checked={$selModules.tetherMod}
+          />
+          <label for="tetherMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Tether</td>
+        <td class="descCol"
+          >Team messaging, customer chat for staff, and voice notes—includes 20GB of data</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="plannerMod"
+            bind:checked={$selModules.plannerMod}
+          />
+          <label for="plannerMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Planner</td>
+        <td class="descCol"
+          >Personal calendar layered on jobs, quotes, and todos</td
+        >
+      </tr>
+      <tr class="module-group">
+        <td colspan="3">Accounting &amp; integrations</td>
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="accountingMod"
+            bind:checked={$selModules.accountingMod}
+          />
+          <label for="accountingMod" class="check-box"> </label></td
+        >
+        <td class="nameCol">Accounting</td>
+        <td class="descCol"
+          >QuickBooks Online connection and sync workflows for invoices, bills, and operational accounting data</td
+        >
+      </tr>
+      </tbody>
     </table>
   </section>
-  <section class="cta_bottom">
-    <h3>Set up a customized demo today!</h3>
-    <p>
-      We can customized our software to your business lickety-split and show you
-      how you can grow your small business
+  <section class="cta_bottom fv-card">
+    <h2>Want numbers validated against your rollout?</h2>
+    <p class="fv-muted">
+      Tell us which modules matter first—we’ll tailor the workspace and confirm estimates before you commit.
     </p>
-    <a href="/contact" title="Contact Us" class="cta_contact">Schedule Today</a>
+    <a href="/contact" title="Contact Us" class="fv-btn fv-btn--primary">Schedule a demo</a>
   </section>
 </article>
 
 <style lang="scss">
-  article {
+  .pricing-page {
     width: 100%;
-    padding: 0 12px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--fv-space-5, 24px);
   }
+
   .pricing_header {
     text-align: center;
+    padding: var(--fv-space-6, 32px) var(--fv-space-4, 16px);
+
+    h1 {
+      margin: var(--fv-space-2, 8px) 0 var(--fv-space-3, 12px);
+    }
   }
+
+  .eyebrow {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fv-accent-hover, #5485b8);
+    font-weight: 600;
+  }
+
+  .lead {
+    margin: 0 auto var(--fv-space-3, 12px);
+    max-width: 68ch;
+  }
+
   .pricing_form {
-    background-color: #343b44;
-    margin-top: 1.5em;
-    padding: 1em;
-    border-radius: 1em;
-    box-shadow: #1b1b1b 2px 3px 7px 3px;
+    margin-top: 0;
+    padding: var(--fv-space-5, 24px);
+    border-radius: var(--fv-radius-lg, 14px);
+
+    .pricing-select {
+      max-width: 320px;
+      cursor: pointer;
+      min-height: 44px;
+    }
+
+    .pricing-controls {
+      display: grid;
+      gap: var(--fv-space-4, 16px);
+      margin-bottom: var(--fv-space-3, 12px);
+    }
+
     .inputWrapper {
-      padding: 12px 0;
+      padding: 0;
+
       label {
-        font-size: 1.25em;
-        display: inline-block;
-        min-width: 90px;
-        font-weight: bold;
+        font-size: 1rem;
+        display: block;
+        margin-bottom: var(--fv-space-2, 8px);
+        font-weight: 600;
+        color: var(--fv-text, #f4f6f8);
       }
-      input,
-      select {
-        min-width: 260px;
-        border-radius: 5px;
-        background: rgb(249, 250, 250);
-        border: 1px solid rgb(181, 189, 196);
-        font-size: 16px;
-        height: 40px;
-        line-height: 24px;
-        padding: 7px 8px;
-        box-shadow: none;
-        :focus {
-          background-color: #fff;
-          border-color: #3b49df;
-          box-shadow: 1px 1px 0 #3b49df;
-        }
+
+      .field-hint {
+        margin: var(--fv-space-2, 8px) 0 0;
+        font-size: 0.875rem;
+        max-width: 52ch;
+      }
+
+      .fv-field {
+        max-width: 320px;
+        min-height: 44px;
       }
     }
     .pricingTotal {
-      font-size: 1.25em;
-      padding-bottom: 12px;
+      margin: var(--fv-space-4, 16px) 0;
+      padding: var(--fv-space-4, 16px) var(--fv-space-5, 24px);
+      border-radius: var(--fv-radius-lg, 14px);
       text-align: center;
+      border: 1px solid rgba(92, 142, 196, 0.35);
+      background: linear-gradient(
+        155deg,
+        rgba(92, 142, 196, 0.18),
+        rgba(18, 20, 26, 0.55)
+      );
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+        0 12px 32px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0.35rem 0.75rem;
+
+      &-label strong {
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      &-amount {
+        font-size: clamp(1.25rem, 2.8vw, 1.65rem);
+        font-weight: 650;
+        font-family: var(--fv-font-display, inherit);
+        color: var(--fv-text, #f4f6f8);
+        text-shadow: 0 2px 18px rgba(92, 142, 196, 0.35);
+      }
     }
     .pricingTable {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
       table-layout: fixed;
       border-collapse: collapse;
-      tr {
-        font-size: 1.2em;
-        min-height: 1.5em;
-        border-bottom: 1px solid #000;
-        th {
-          text-align: left;
-          padding: 0 1em;
-        }
-        td {
-          word-break: break-word;
-        }
+      margin-top: var(--fv-space-3, 12px);
+      padding-top: var(--fv-space-3, 12px);
+      border-top: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      .pricing-table-head {
+        padding: 0 0 var(--fv-space-3, 12px);
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--fv-text-muted, #b0b8c4);
+        font-weight: 600;
+        border-bottom: 1px solid var(--fv-border-strong, rgba(255, 255, 255, 0.14));
       }
+
+      tr {
+        font-size: 1.05em;
+        transition: background 0.15s ease;
+      }
+
+      tbody tr:not(.module-group):hover {
+        background: rgba(65, 106, 152, 0.08);
+      }
+
+      tbody tr {
+        border-bottom: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+      }
+
+      tbody tr.module-group td {
+        padding: var(--fv-space-3, 12px) 8px var(--fv-space-2, 8px);
+        font-size: 0.78rem;
+        font-weight: 650;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--fv-accent-hover, #5c8ec4);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      th {
+        text-align: left;
+      }
+
+      td {
+        word-break: break-word;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
       .nameCol {
-        font-size: 0.85em;
-        font-weight: bold;
+        font-size: 0.92em;
+        font-weight: 700;
         padding: 0 8px;
       }
+
       .descCol {
         padding: 0 1em;
+        color: var(--fv-text-muted, #b0b8c4);
+        font-size: 0.88em;
+        line-height: 1.45;
       }
     }
   }
@@ -565,41 +815,34 @@
 
   .cta_bottom {
     text-align: center;
-    margin-bottom: 2em;
-    h3 {
-      text-align: center;
-      padding: 0 16px;
+    margin-bottom: var(--fv-space-5, 24px);
+    padding: var(--fv-space-6, 32px) var(--fv-space-4, 16px);
+
+    h2 {
+      margin-bottom: var(--fv-space-2, 8px);
     }
+
     p {
-      padding: 0 16px;
-    }
-    a {
-      display: inline-block;
-      font-size: 1.2em;
-      margin-top: 0.5em;
-      padding: 6px 14px;
-      background-color: #416a98;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
+      margin: 0 auto var(--fv-space-4, 16px);
+      max-width: 54ch;
     }
   }
+
   @media screen and (min-width: 920px) {
-    article {
+    .pricing-page {
       max-width: 920px;
       margin: 0 auto;
     }
-    .pricing_form {
-      .inputWrapper {
-        width: 50%;
-        float: left;
-      }
+
+    .pricing_form .pricing-controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
     }
   }
+
   @media screen and (min-width: 1200px) {
-    article {
-      max-width: 1200px;
-      margin: 0 auto;
+    .pricing-page {
+      max-width: 1120px;
     }
   }
 </style>

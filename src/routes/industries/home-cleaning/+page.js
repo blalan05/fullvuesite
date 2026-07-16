@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving home cleaning companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the home cleaning industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Home cleaning service software | Fullvue',
+    metaDescription:
+      'Run recurring cleans with jobs, schedules, supply visibility, labor tracking, and invoicing aligned for residential cleaning operators.',
+    metaKeywords: '',
+  };
 }

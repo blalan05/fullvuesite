@@ -1,8 +1,8 @@
 export function load() {
   return {
-    pageTitle: 'Field (Off-site)',
-    metaTitle: 'Field Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    pageTitle: 'Field',
+    metaTitle: 'Field service module | Fullvue',
+    metaDescription:
+      'Coordinate mileage, trips, itineraries, and schedules so crews see the same job context dispatch and billing rely on.',
+  };
 }

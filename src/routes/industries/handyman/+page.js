@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving handyman companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the handyman industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Handyman operations software | Fullvue',
+    metaDescription:
+      'Turn high-volume handyman visits into profitable jobs—quotes, schedules, materials, labor logs, and invoicing without spreadsheet drift.',
+    metaKeywords: '',
+  };
 }

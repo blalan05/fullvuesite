@@ -1,8 +1,8 @@
 export function load() {
   return {
     pageTitle: 'Sales',
-    metaTitle: 'Sales Module | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    metaTitle: 'Sales & quotes module | Fullvue',
+    metaDescription:
+      'Track opportunities, build structured quotes—including customer-facing signing flows—and convert wins into jobs with estimate vs actual insight.',
+  };
 }

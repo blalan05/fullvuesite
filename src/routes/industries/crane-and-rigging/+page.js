@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving crane and rigging companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the crane and rigging industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Crane & rigging operations software | Fullvue',
+    metaDescription:
+      'Align crane lift planning, crew time, equipment assignments, purchasing, and invoicing so heavy jobs stay auditable end to end.',
+    metaKeywords: '',
+  };
 }

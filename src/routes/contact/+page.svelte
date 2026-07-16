@@ -1,100 +1,153 @@
-<article>
-  <section>
-    <h1>FullVue</h1>
-    <h2>Contact Us</h2>
-    <p>Reach out to us if you have questions or would like to schedule a customized demo!</p>
-  </section>
-  <section>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required autocomplete="name" />
+<article class="contact-page">
+  <header class="contact-hero fv-card">
+    <p class="eyebrow">We’re here to help</p>
+    <h1>Contact Fullvue</h1>
+    <p class="lead fv-muted">
+      Questions, a tailored walkthrough, or help scoping modules for your crew—send a note and we’ll reply with next steps.
+    </p>
+  </header>
+
+  <section class="contact-form-wrap fv-card" aria-labelledby="contact-form-heading">
+    <h2 id="contact-form-heading" class="form-title">Send a message</h2>
+    <p class="form-hint fv-muted">
+      Include how you quote, dispatch, and invoice today if you want a demo mapped to your workflow.
+    </p>
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="field-grid">
+        <div class="field">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="fv-field"
+            required
+            autocomplete="name"
+            placeholder="Your name"
+          />
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input
+            type="text"
+            name="company"
+            id="company"
+            class="fv-field"
+            required
+            autocomplete="organization"
+            placeholder="Business name"
+          />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="fv-field"
+            autocomplete="email"
+            placeholder="you@company.com"
+          />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            class="fv-field"
+            autocomplete="tel"
+            placeholder="Optional"
+          />
+        </div>
+        <div class="field field--full">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="fv-field" rows="6" placeholder="What would you like to explore?"></textarea>
+        </div>
       </div>
-      <div>
-        <label for="company">Company</label>
-        <input type="text" name="company" id="company" required autocomplete="organization" />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" autocomplete="email" />
-      </div>
-      <div>
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" autocomplete="tel" />
-      </div>
-      <div class="message_container">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" />
-      </div>
-      <div class="submit_container">
-        <button type="submit">Submit</button>
+      <div class="submit-row">
+        <button type="submit" class="fv-btn fv-btn--primary">Submit</button>
       </div>
     </form>
   </section>
 </article>
+
 <style lang="scss">
-  article {
+  .contact-page {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 2em;
-    form {
-      div {
-        margin-top: 1em;
-        label {
-          display: inline-block;
-          min-width: 90px;
-          font-weight: bold;
-        }
-        input, textarea {
-          min-width: 260px;
-          border-radius: 5px;
-          background: rgb(249, 250, 250);
-          border: 1px solid rgb(181, 189, 196);
-          font-size: 16px;
-          height: 40px;
-          line-height: 24px;
-          padding: 7px 8px;
-          color: rgb(8, 9, 10);
-          box-shadow: none;
-          :focus{
-              background-color: #fff;
-              border-color: #3b49df;
-              box-shadow: 1px 1px 0 #3b49df;
-          }
-        }
-      }
-      .message_container {
-        display: flex;
-        align-items: center;
-      }
-      .submit_container {
-        button {
-          background: #416a98;
-          color: white;
-          border: none;
-          padding: 6px 12px;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-      }
-    }
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--fv-space-5, 24px);
+    padding-bottom: var(--fv-space-5, 24px);
   }
-  @media screen and (min-width: 920px) {
-    article {
-      max-width: 920px;
-      margin: 0 auto 2em auto;
 
-      form div input, form div textarea {
-        min-width: 420px;
-      }
+  .contact-hero {
+    padding: var(--fv-space-6, 32px) var(--fv-space-5, 24px);
+    text-align: center;
+  }
+
+  .eyebrow {
+    margin: 0 0 var(--fv-space-2, 8px);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--fv-accent-hover, #5c8ec4);
+  }
+
+  .contact-hero h1 {
+    margin: 0 0 var(--fv-space-3, 12px);
+  }
+
+  .lead {
+    margin: 0;
+    max-width: 48ch;
+    margin-inline: auto;
+    font-size: 1.05rem;
+  }
+
+  .contact-form-wrap {
+    padding: var(--fv-space-5, 24px);
+  }
+
+  .form-title {
+    margin: 0 0 var(--fv-space-2, 8px);
+    font-size: 1.25rem;
+  }
+
+  .form-hint {
+    margin: 0 0 var(--fv-space-4, 16px);
+    font-size: 0.95rem;
+    max-width: 52ch;
+  }
+
+  .field-grid {
+    display: grid;
+    gap: var(--fv-space-4, 16px);
+  }
+
+  .field label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: var(--fv-space-2, 8px);
+    color: var(--fv-text, #f4f6f8);
+  }
+
+  .field--full {
+    grid-column: 1 / -1;
+  }
+
+  .submit-row {
+    margin-top: var(--fv-space-5, 24px);
+  }
+
+  @media (min-width: 560px) {
+    .field-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  @media screen and (min-width: 1200px) {
-    article {
-      max-width: 1200px;
-    }
-  }
-  
 </style>
-

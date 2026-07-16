@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving remodeling companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the remodeling industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Remodeling contractor operations software | Fullvue',
+    metaDescription:
+      'Hold allowances, selections, change orders, purchasing, crew time, and progress invoicing together so remodel phases stop leaking margin.',
+    metaKeywords: '',
+  };
 }

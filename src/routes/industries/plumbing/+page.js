@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving plumbing companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the plumbing industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Plumbing dispatch & invoicing software | Fullvue',
+    metaDescription:
+      'Keep plumbing emergencies and multi-day jobs profitable—dispatch, truck inventory, purchasing, logged labor and materials, invoices synced toward QuickBooks.',
+    metaKeywords: '',
+  };
 }

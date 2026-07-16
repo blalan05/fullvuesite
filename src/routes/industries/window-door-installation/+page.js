@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving Window and Door Installation companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the Window and Door Installation industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Window & door installation software | Fullvue',
+    metaDescription:
+      'Quote openings, stage vendor shipments, coordinate measure/install crews, track extras, and invoice milestones without spreadsheet reconciliation.',
+    metaKeywords: '',
+  };
 }

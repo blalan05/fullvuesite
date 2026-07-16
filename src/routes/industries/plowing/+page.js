@@ -1,8 +1,9 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Serving plowing companies | FullVue',
-    metaDescription: 'Customizable software for small busineses in the plowing industry.',
-    metaKeywords: ''
-  }
+    metaTitle: 'Snow plowing operations software | Fullvue',
+    metaDescription:
+      'Contract seasonal pushes and routes with jobs, surge schedules, bulk salt purchasing, subcontract bills, and invoicing tied to documented events.',
+    metaKeywords: '',
+  };
 }

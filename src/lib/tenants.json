@@ -1,0 +1,9 @@
+{
+  "tenants": [
+    { "slug": "fullbrew", "name": "Fullbrew", "region": "US" },
+    { "slug": "foundtech", "name": "FoundTech", "region": "US" },
+    { "slug": "sales1", "name": "Sales 1 Demo", "region": "US" },
+    { "slug": "bosstables", "name": "Boss Tables", "region": "US" },
+    { "slug": "fuzion", "name": "FuZion Videos", "region": "US" }
+  ]
+}

@@ -1,7 +1,7 @@
 <article>
   <section>
     <h2>FoundTech Privacy Policy</h2>
-    <p>Updated: May 24th, 2023</p>
+    <p>Updated: April 30th, 2026</p>
 
     <h3>Personal Data we Collect</h3>
 
@@ -82,6 +82,8 @@
     
     <p>Please note that, as defined under certain U.S. state data privacy laws, “sharing” also relates to
     providing personal data to third parties for personalized advertising purposes.</p>
+
+    <p>All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
     
     <h3>How to Access and Control Your Personal Data</h3>
     
@@ -187,6 +189,16 @@
     <p>We realize how important and sensitive your personal data is, and we take a great number of
     measures to ensure that this information is securely processed, stored and preserved from data
     loss and unauthorized access.</p>
+
+    <h3>Text Messaging (SMS) and FullVue</h3>
+
+    <p><strong>FullVue</strong> is a product of Foundational Technologies, LLC (&ldquo;FoundTech&rdquo;). FoundTech provides messaging technology that businesses use to send SMS to their own customers—typically <strong>account notification messages</strong> such as job status updates. The business you hire or work with (the FullVue customer) is the party collecting your phone number and securing your consent; FoundTech processes and delivers messages on their behalf as part of the FullVue service.</p>
+
+    <p><strong>If you receive SMS as an end customer of a FullVue user:</strong> Your service provider should obtain your consent using disclosures that include: that updates include account notification messages; that message frequency varies; that message &amp; data rates may apply; that you may reply <strong>HELP</strong> for assistance and <strong>STOP</strong> to unsubscribe; and that your contact number will not be shared with third parties for their marketing or other purposes. Consent is not a condition of purchase. Many programs include a confirmation message to which you may reply with a keyword (such as <strong>YES</strong>) to confirm opt-in. To opt out of further messages, reply <strong>STOP</strong>. For help with the text program, reply <strong>HELP</strong>. Questions about your job, account, or service should be directed to the business that uses FullVue to message you.</p>
+
+    <p><strong>If you use FullVue to message your customers:</strong> You are responsible for obtaining legally sufficient consent and for your communications with your customers. FoundTech provides the platform and technical delivery as described in your agreement and documentation.</p>
+
+    <p><strong>No sharing of SMS opt-in data:</strong> Text messaging originator opt-in data and consent obtained for messages sent via FullVue are not sold or shared with third parties for their own marketing or unrelated purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
 
     <h3>Policy Updates</h3>
     

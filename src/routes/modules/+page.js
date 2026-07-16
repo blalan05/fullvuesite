@@ -1,8 +1,10 @@
 export function load() {
   return {
     pageTitle: null,
-    metaTitle: 'Modules to Help Every Department | FullVue',
-    metaDescription: 'We\'ve developed tools to assist smalls businesses in every department, with management and workflows, sales, HR and billing',
-    metaKeywords: ''
-  }
+    metaTitle: 'Modules for sales, jobs, field & back office | Fullvue',
+    metaKeywords:
+      'jobs ERP, field service, invoicing module, purchasing, payroll, SDS, counter POS, QuickBooks',
+    metaDescription:
+      'Explore Fullvue modules: Sales, Field, Counter/POS, Invoicing, Purchasing, Assets, Rentals, Payroll, Tether, Planner, SDS, and more—aligned to how operators actually run.',
+  };
 }
