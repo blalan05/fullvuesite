@@ -42,6 +42,7 @@
     { title: 'Modules', link: '/modules' },
     { title: 'Industries', link: '/industries' },
     { title: 'Pricing', link: '/pricing' },
+    { title: 'Free Trial', link: '/trial' },
     { title: 'Contact', link: '/contact' },
   ];
 
