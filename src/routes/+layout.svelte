@@ -228,6 +228,7 @@
   <a href="/compare/repairshopr" title="FullVue vs RepairShopr" class="ml-2">vs RepairShopr</a>
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
   <a href="/termsofuse" title="Terms of Use" class="ml-2">Terms of Use</a>
+  <a href="/subscription-agreement" title="Subscription Agreement" class="ml-2">Subscription Agreement</a>
   <span class="ml-2 copyright"
     >Copyright &copy; {Intl.DateTimeFormat('en-us', { year: 'numeric' }).format(new Date())}</span
   >
