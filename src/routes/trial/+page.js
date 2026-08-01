@@ -3,9 +3,9 @@ export const prerender = true;
 export function load() {
 	return {
 		pageTitle: null,
-		metaTitle: 'Start your free FullVue trial | 14 days, full features',
+		metaTitle: 'Start your free FullVue trial | 14 days, no credit card',
 		metaDescription:
-			'Spin up your own FullVue workspace in minutes — every module, real sample data, 14 days free. No credit card required.',
+			'Pick the modules you want and get your own FullVue workspace loaded with realistic sample data — 14 days free. No credit card required.',
 		metaKeywords: ''
 	};
 }
