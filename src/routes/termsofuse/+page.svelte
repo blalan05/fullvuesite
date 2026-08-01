@@ -120,7 +120,8 @@
 
     <h3>10. Contact</h3>
     <p>
-      Questions about these Terms of Use can be sent through our
+      Questions about these Terms of Use can be sent to
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a> or through our
       <a href="/contact">contact form</a>. Foundational Technologies, LLC is based in Appleton,
       Wisconsin.
     </p>

@@ -605,8 +605,10 @@
     <p>
       21.4 <strong>Notices.</strong> We may give notices to Customer by email to the account email
       on file, by notice in the Service, or by posting on our website as described in Section 19.
-      Customer may give notices to us through the <a href="/contact">contact form</a> on our website
-      or to any notice email we designate in the Service; notices of non-renewal, termination, or
+      Customer may give notices to us at
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a>, through the
+      <a href="/contact">contact form</a> on our website, or to any other notice email we designate
+      in the Service; notices of non-renewal, termination, or
       breach must be in writing (email suffices). Notices from us are deemed given when sent to the
       account email on file. Notices from Customer are effective when we receive them, and we will
       confirm receipt of non-renewal and termination notices promptly.

@@ -119,7 +119,9 @@
     <h3>Accessing, Updating, or Deleting Your Personal Information</h3>
     <p>
       You may request access to, correction of, or deletion of the personal data we hold about you,
-      or a copy of it in a portable format, through our <a href="/contact">contact form</a>. We
+      or a copy of it in a portable format, by emailing
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a> or through our
+      <a href="/contact">contact form</a>. We
       extend these choices to everyone regardless of where you live, we will respond within 45
       days, and we will never treat you differently for exercising them. We may need to verify your
       identity (typically via the email address on file) and may retain what the law requires us to
@@ -205,9 +207,10 @@
 
     <h3>Contact Us</h3>
     <p>
-      For privacy questions or requests, reach us through our
-      <a href="/contact">contact form</a>. Foundational Technologies, LLC is based in Appleton,
-      Wisconsin.
+      For privacy questions or requests, email
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a> or reach us
+      through our <a href="/contact">contact form</a>. Foundational Technologies, LLC is based in
+      Appleton, Wisconsin.
     </p>
   </section>
 </article>
