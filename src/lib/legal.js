@@ -10,8 +10,16 @@
 // do not bump-and-deploy a material change without that notice process.
 // Keep superseded versions available on request (git history is the archive).
 
+// v1.1 (both docs): disclosed the FoundTech Support Account and the automated
+// operating access that reads workspace databases; made the Support Account a
+// non-billable non-User; moved responsibility for its activity from Customer
+// to us in §3.3. The Support Account disclosure is arguably in Customer's
+// favour, but disclosing vendor access to a workspace is material either way,
+// so the effective date honours the 30-day notice in §19.2 rather than
+// bump-and-deploy. Existing customers need that notice sent — §19.2 allows
+// email to the account address, in-Service notice, or prominent website notice.
 export const LEGAL = {
-	subscriptionAgreement: { version: '1.0', effective: 'July 31, 2026' },
+	subscriptionAgreement: { version: '1.1', effective: 'September 9, 2026' },
 	termsOfUse: { version: '1.0', effective: 'July 31, 2026' },
-	privacyPolicy: { version: '1.0', effective: 'July 31, 2026' }
+	privacyPolicy: { version: '1.1', effective: 'September 9, 2026' }
 };

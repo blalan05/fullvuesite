@@ -155,6 +155,34 @@
       <a href="/subscription-agreement">Subscription Agreement</a> and applicable law.
     </p>
 
+    <h3>When FoundTech Accesses a Customer Workspace</h3>
+    <p>
+      Being straightforward about this matters more than sounding reassuring, so: yes, we can get
+      into a customer&rsquo;s FullVue workspace, and here is exactly how and why.
+    </p>
+    <p>
+      Every workspace contains one account belonging to us, labeled as FoundTech, and it is visible
+      in the customer&rsquo;s own user list. We use it to diagnose and fix problems, to confirm a
+      fix actually works in that customer&rsquo;s environment, and to look at configuration or data
+      when someone tells us something is wrong. We do not use it to monitor how a business is
+      doing, to look at anyone&rsquo;s data out of curiosity, or for sales or marketing. Its
+      password is unique to each workspace, so one credential does not open any other
+      customer&rsquo;s system, and sign-ins and changes made through it are recorded in that
+      customer&rsquo;s own activity log where they can review them.
+    </p>
+    <p>
+      Separately, running the service means we administer the servers and databases that host each
+      workspace, and automated processes read workspace databases to check health, capacity, and
+      usage. That is part of hosting the software rather than something a person does.
+    </p>
+    <p>
+      A customer can ask us to disable their FoundTech account by writing to
+      <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a>. Support
+      continues either way, but without it we cannot look at a problem directly, so some issues
+      take longer or need a scheduled screen-sharing session instead. Section 5 of the
+      <a href="/subscription-agreement">Subscription Agreement</a> sets this out in contract terms.
+    </p>
+
     <h3>Children</h3>
     <p>
       Our websites and services are intended for businesses and are not directed to children under

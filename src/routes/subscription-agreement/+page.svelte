@@ -52,8 +52,14 @@
     <p>
       &ldquo;<strong>User</strong>&rdquo; means a user account in Customer&rsquo;s Workspace that is
       indicated as active in the Service, with access to creation or editing features. Deactivated
-      accounts, and accounts used by external people or systems with only limited portal-style
-      access, are not counted as Users.
+      accounts, accounts used by external people or systems with only limited portal-style
+      access, and the Support Account described in Section 5.3 are not counted as Users and are
+      never billable.
+    </p>
+    <p>
+      &ldquo;<strong>Support Account</strong>&rdquo; means the single account in Customer&rsquo;s
+      Workspace, labeled as belonging to FoundTech Solutions, that we use to provide the support
+      described in Section 5.
     </p>
     <p>
       &ldquo;<strong>Module</strong>&rdquo; means a specialized group of features available for
@@ -138,8 +144,9 @@
       3.3 <strong>Accounts and security.</strong> Customer will keep registration information
       current, complete, and accurate; will take reasonable measures to keep its User accounts
       secure, including strong passwords that are not shared; is responsible for all activity under
-      its accounts; and will notify us promptly of any unauthorized use of its accounts or any other
-      breach of security affecting the Service.
+      its accounts, <strong>other than activity under the Support Account, for which we are
+      responsible</strong>; and will notify us promptly of any unauthorized use of its accounts or
+      any other breach of security affecting the Service.
     </p>
     <p>
       3.4 <strong>Lawful use.</strong> Customer will use the Service in compliance with applicable
@@ -207,7 +214,47 @@
       If it is unclear whether a request is covered, the decision is at our reasonable discretion.
     </p>
     <p>
-      5.3 <strong>Channels.</strong> Tickets may be submitted through the
+      5.3 <strong>Our access to the Workspace.</strong> Each Workspace contains one Support Account
+      belonging to us. We use it to diagnose and fix problems, verify that fixes work in
+      Customer&rsquo;s own environment, and check configuration or data when Customer reports that
+      something is wrong. We do not use it to monitor Customer&rsquo;s business activity.
+      Specifically:
+    </p>
+    <ul>
+      <li>
+        The Support Account is visible in Customer&rsquo;s user list and clearly labeled as ours. It
+        is not a User, is never billable, and does not count toward any User limit.
+      </li>
+      <li>
+        Its password is unique to Customer&rsquo;s Workspace. We do not reuse one credential across
+        customers.
+      </li>
+      <li>
+        Sign-ins and changes made through it are recorded in Customer&rsquo;s own activity log,
+        where Customer can review them.
+      </li>
+      <li>
+        We restrict use of the Support Account to personnel who need it to perform the support
+        described in this Section, and we access Customer Data through it only as necessary for
+        that purpose or as Section 10 otherwise permits.
+      </li>
+      <li>
+        Customer may ask us to disable the Support Account by writing to
+        <a href="mailto:sales@foundtechsolutions.com">sales@foundtechsolutions.com</a>. If Customer
+        does, we will still provide support, but our ability to diagnose problems without
+        Customer&rsquo;s live participation will be limited, and some issues may take longer to
+        resolve or may require a scheduled screen-sharing session.
+      </li>
+    </ul>
+    <p>
+      5.4 <strong>Operating access.</strong> Separately from the Support Account, operating the
+      Service requires us to administer the servers and databases on which Customer&rsquo;s
+      Workspace runs, including automated processes that read Workspace databases to monitor health,
+      capacity, and usage. This access is part of hosting and operating the Service and is subject
+      to Section 10.
+    </p>
+    <p>
+      5.5 <strong>Channels.</strong> Tickets may be submitted through the
       <a href="/contact">contact form</a> on our website or any additional support channels we
       designate in the Service.
     </p>
@@ -263,7 +310,7 @@
       either party may decline renewal by written notice given any time before the end of the
       current term, effective at the end of that term. For longer terms, either party must give
       written notice of non-renewal at least 30 days before the end of the current term.</strong>
-      Customer may give non-renewal notice through the support channels in Section 5.3 or by any
+      Customer may give non-renewal notice through the support channels in Section 5.5 or by any
       other method described in Section 21.4.
     </p>
     <p>
@@ -307,7 +354,7 @@
     <p>
       8.4 <strong>Data export and deletion.</strong> Customer may export Customer Data at any time
       during this Agreement, at no additional charge, using features of the Service or by request
-      through the support channels in Section 5.3. In addition, upon request made within 30 days
+      through the support channels in Section 5.5. In addition, upon request made within 30 days
       after expiration or termination of a paid subscription, we will make Customer Data available
       to Customer in a commonly used, machine-readable format. Unless legally required to retain it, we
       will permanently delete all copies of Customer Data in our possession within 90 days after
