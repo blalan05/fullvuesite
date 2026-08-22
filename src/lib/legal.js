@@ -18,8 +18,15 @@
 // so the effective date honours the 30-day notice in §19.2 rather than
 // bump-and-deploy. Existing customers need that notice sent — §19.2 allows
 // email to the account address, in-Service notice, or prominent website notice.
+// v1.2 (Subscription Agreement only): aligned enforcement with the lifecycle
+// the platform actually implements — trial expiry and non-payment now restrict
+// to READ-ONLY (sign in / view / export preserved) instead of suspension, and
+// termination for non-payment moved from 21 to 30 days past due (still after
+// >=3 reminders). Both changes are in Customer's favour, and no customer has
+// accepted any prior version in production yet, so this is effective
+// immediately rather than through the Section 19 notice cycle.
 export const LEGAL = {
-	subscriptionAgreement: { version: '1.1', effective: 'September 9, 2026' },
+	subscriptionAgreement: { version: '1.2', effective: 'August 22, 2026' },
 	termsOfUse: { version: '1.0', effective: 'July 31, 2026' },
 	privacyPolicy: { version: '1.1', effective: 'September 9, 2026' }
 };

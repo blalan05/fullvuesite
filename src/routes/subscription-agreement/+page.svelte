@@ -110,10 +110,12 @@
     </p>
     <p>
       2.3 <strong>End of Trial.</strong> Either party may end a Trial at any time, with or without
-      cause. When a Trial expires or is ended without a subscription, we suspend the Workspace,
-      retain it for 30 days so you can still subscribe and keep your data, and may permanently
-      delete it after that period. If you subscribe during the Trial or within that 30-day window,
-      your Workspace and Customer Data carry over to your paid subscription unchanged.
+      cause. When a Trial expires or is ended without a subscription, the Workspace becomes
+      read-only: you can still sign in, view, and export your Customer Data, but cannot make
+      changes. We retain the Workspace in that state for 30 days so you can still subscribe and
+      keep your data, and may permanently delete it after that period. If you subscribe during the
+      Trial or within that 30-day window, your Workspace and Customer Data carry over to your paid
+      subscription unchanged.
     </p>
     <p>
       2.4 <strong>Trial disclaimer.</strong> Notwithstanding anything else in this Agreement, Trials
@@ -284,13 +286,15 @@
     </p>
     <p>
       6.5 <strong>Non-payment.</strong> If undisputed fees remain unpaid 14 days after their due
-      date, we may suspend the Service after giving at least one written notice. If undisputed fees
-      remain unpaid 21 days after their due date and we have sent at least 3 reminders, we may
-      terminate this Agreement immediately. Fees are undisputed for purposes of this Section unless
-      Customer has notified us of a good-faith dispute under Section 6.4 before the date of the
-      suspension or termination; a dispute raised later is handled under Section 6.4, with a credit
-      or refund if resolved in Customer&rsquo;s favor, but does not make a prior suspension or
-      termination wrongful.
+      date, we may, after giving at least one written notice, restrict the Service to read-only
+      access: Users can still sign in, view, and export Customer Data, but cannot make changes.
+      Access is restored promptly once the overdue fees are paid. If undisputed fees remain unpaid
+      30 days after their due date and we have sent at least 3 reminders, we may terminate this
+      Agreement immediately; Customer Data is then retained and deleted as described in Section
+      8.4. Fees are undisputed for purposes of this Section unless Customer has notified us of a
+      good-faith dispute under Section 6.4 before the date of the restriction or termination; a
+      dispute raised later is handled under Section 6.4, with a credit or refund if resolved in
+      Customer&rsquo;s favor, but does not make a prior restriction or termination wrongful.
     </p>
     <p>
       6.6 <strong>Taxes.</strong> Fees are exclusive of all applicable federal, state, local, or
