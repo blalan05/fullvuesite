@@ -26,6 +26,7 @@ const MAX_MODULES = 40;
 const COMPANY_SIZE_KEYS = ['1-5', '6-10', '11-20', '21-50', '51-250', '250+'];
 const PHONE_RE = /^[0-9+()\-.\s]{7,40}$/;
 
+/** @param {string} ip */
 function throttled(ip) {
 	const now = Date.now();
 	const entry = attempts.get(ip);
@@ -77,6 +78,9 @@ export async function POST({ request, getClientAddress }) {
 	if (throttled(ip)) return json(429, { ok: false, reason: 'throttled' });
 
 	if (!env.FOUNDTECH_DASH_URL || !env.FOUNDTECH_DASH_API_KEY) {
+		// Every signup dies here until the two env vars are set — say so where an
+		// operator can see it, because the visitor only gets a generic error.
+		console.error('[start-trial] FOUNDTECH_DASH_URL / FOUNDTECH_DASH_API_KEY not set — refusing signup');
 		return json(503, { ok: false, reason: 'not-configured' });
 	}
 
@@ -155,6 +159,10 @@ export async function POST({ request, getClientAddress }) {
 		const thrown = /** @type {{ name?: string, cause?: { name?: string } } | null} */ (error);
 		const timedOut =
 			thrown?.name === 'TimeoutError' || thrown?.cause?.name === 'TimeoutError';
+		console.error(
+			`[start-trial] control plane ${timedOut ? 'timed out' : 'unreachable'}:`,
+			thrown?.name ?? error
+		);
 		return json(timedOut ? 504 : 502, {
 			ok: false,
 			reason: timedOut ? 'upstream-timeout' : 'upstream-unreachable'
@@ -164,6 +172,12 @@ export async function POST({ request, getClientAddress }) {
 	const data = await upstream.json().catch(() => ({}));
 
 	if (upstream.status === 201) {
+		// A 201 with no slug is not a success we can show — the card would
+		// congratulate the visitor with no address to give them.
+		if (typeof data.slug !== 'string' || !data.slug) {
+			console.error('[start-trial] control plane returned 201 with a malformed body');
+			return json(502, { ok: false, reason: 'upstream-error' });
+		}
 		return json(200, {
 			ok: true,
 			slug: data.slug,
@@ -192,7 +206,9 @@ export async function POST({ request, getClientAddress }) {
 	}
 	// Usually a module key that vanished from the catalog since the page loaded.
 	if (upstream.status === 400) {
+		console.error('[start-trial] control plane rejected the signup:', data?.error ?? '400');
 		return json(400, { ok: false, reason: 'invalid' });
 	}
+	console.error(`[start-trial] control plane answered ${upstream.status}`);
 	return json(502, { ok: false, reason: 'upstream-error' });
 }

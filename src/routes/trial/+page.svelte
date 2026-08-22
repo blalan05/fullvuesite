@@ -37,6 +37,13 @@
 	let selected = $state({});
 	let modulesLoading = $state(true);
 	let modulesFailed = $state(false);
+	// True when the list came from the hardcoded fallback instead of the control
+	// plane — the picker still works, but the visitor deserves to know.
+	let modulesFallback = $state(false);
+
+	// The success payload survives a refresh: without it, a reload of this page
+	// loses the workspace address the visitor was just told to bookmark.
+	const RESULT_STORAGE_KEY = 'fv-trial-result';
 
 	let submitting = $state(false);
 	/** @type {{ slug?: string, instanceUrl?: string, trialEndsAt?: string, provisioning?: string | null, emailQueued?: boolean } | null} */
@@ -53,12 +60,25 @@
 
 	onMount(async () => {
 		try {
+			const saved = sessionStorage.getItem(RESULT_STORAGE_KEY);
+			if (saved) {
+				const parsed = JSON.parse(saved);
+				if (parsed?.result?.slug) {
+					result = parsed.result;
+					chosenLabels = Array.isArray(parsed.chosenLabels) ? parsed.chosenLabels : [];
+				}
+			}
+		} catch {
+			// Storage blocked or the payload rotted — the form just renders fresh.
+		}
+		try {
 			const response = await fetch('/api/trial-modules');
 			const data = await response.json();
 			if (!response.ok || !Array.isArray(data?.modules) || data.modules.length === 0) {
 				throw new Error('no modules');
 			}
 			modules = data.modules;
+			modulesFallback = data.fallback === true;
 			selected = Object.fromEntries(modules.map((mod) => [mod.key, mod.required === true]));
 		} catch {
 			modulesFailed = true;
@@ -111,6 +131,14 @@
 					.filter((mod) => submittedKeys.includes(mod.key))
 					.map((mod) => mod.label);
 				result = data;
+				try {
+					sessionStorage.setItem(RESULT_STORAGE_KEY, JSON.stringify({ result: data, chosenLabels }));
+				} catch {
+					// Storage blocked — the card still renders for this visit.
+				}
+				if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+					window.gtag('event', 'generate_lead', { form: 'trial' });
+				}
 			} else if (response.status === 409) {
 				errorMessage =
 					'That email already has a FullVue workspace. Contact us and we’ll get you back into it.';
@@ -122,6 +150,11 @@
 			} else if (response.status === 400 && data.reason === 'bad-request') {
 				errorMessage =
 					'Check your details — company, first and last name, and work email are required, and the agreement box must be checked.';
+			} else if (response.status === 504 || data.reason === 'upstream-timeout') {
+				// The request may have landed after our wait gave up: a retry would
+				// hit the duplicate-email guard, so steer to the inbox instead.
+				errorMessage =
+					'That took longer than expected. If a welcome email arrives in the next few minutes, your workspace was created — don’t submit again. Otherwise, try once more or contact us.';
 			} else {
 				errorMessage = 'Something went wrong starting your trial. Try again, or contact us.';
 			}
@@ -309,6 +342,12 @@
 							anything else once you're in.
 						</p>
 					{:else}
+						{#if modulesFallback}
+							<p class="modules-status fv-muted" role="status">
+								Showing our standard module list — the live one didn't load. If a module you picked
+								errors on submit, try again in a minute.
+							</p>
+						{/if}
 						<ul class="module-list" role="list">
 							{#each modules as mod (mod.key)}
 								<li class="module-item">
