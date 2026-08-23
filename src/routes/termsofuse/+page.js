@@ -2,7 +2,7 @@ export function load() {
   return {
     pageTitle: null,
     metaTitle: 'Terms of Use | FullVue',
-    metaDescription: 'A simple Terms of Use for the small business ERP that tracks time, assists with sales and billing, helping you become more profitable and more efficient.',
-    metaKeywords: 'Affordable price, Small Business, Midsize, App, Cloud, Management, Billing, Invoicing'
+    metaDescription: 'Plain-English terms for using the fullvue.io website, including our text messaging program terms. FullVue trials and subscriptions are governed by the FullVue Subscription Agreement.',
+    metaKeywords: 'Terms of Use, Small Business, ERP, Cloud, Management, Billing, Invoicing'
   }
 }

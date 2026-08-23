@@ -13,11 +13,13 @@
     <p class="form-hint fv-muted">
       Include how you quote, dispatch, and invoice today if you want a demo mapped to your workflow.
     </p>
+    <!-- netlify-honeypot is a Netlify build-time attribute, not standard HTML;
+         spreading it keeps svelte-check quiet without changing the markup. -->
     <form
       name="contact"
       method="POST"
       data-netlify="true"
-      netlify-honeypot="bot-field"
+      {...{ 'netlify-honeypot': 'bot-field' }}
       action="/thank-you"
       class="contact-form"
     >

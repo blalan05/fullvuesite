@@ -532,6 +532,7 @@
       Tell us which modules matter first—we’ll tailor the workspace and confirm estimates before you commit.
     </p>
     <a href="/contact" title="Contact Us" class="fv-btn fv-btn--primary">Schedule a demo</a>
+    <a href="/trial" title="Start your free trial" class="fv-btn">Or start a 14-day free trial</a>
   </section>
 </article>
 
