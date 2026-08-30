@@ -1,15 +1,17 @@
 <section class="module_container">
-    <h1>Invoicing</h1>
+    <h1>Invoice the work—and get paid online</h1>
   <div class="col_container">
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EOlB8r5srIU?si=xedSZUsqgaLJ7v1z&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
     <div class="module_summary">
+      <p>Invoicing turns completed work into invoices and payments, including public pay-by-link so customers can pay by card after FoundTech Payments is set up.</p>
       <ul>
-        <li>Quickly build an invoice from the recorded job data</li>
-        <li>Easily make adjustments to quantities, descriptions and prices</li>
-        <li>Send invoices via email and see when they've been read</li>
+        <li>Create and send invoices tied to jobs and sales</li>
+        <li>Record payments and track AR in the same system</li>
+        <li>Share pay links customers can open without a staff login</li>
+        <li>Keep billing documents on brand with templates</li>
       </ul>
   </div>
 </section>

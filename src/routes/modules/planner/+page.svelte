@@ -1,16 +1,16 @@
 <section class="module_container">
-  <h1>Planner</h1>
+  <h1>Your day, layered on real operational data</h1>
   <p class="lead">
-    Personal schedules scattered across phone calendars do not reflect the jobs, quotes, and follow-ups your team already
-    tracks in FullVue.
+    Planner is a personal time-blocking calendar with reminders that can surface jobs, quotes, to-dos, and absences—so
+    “my day” matches the business.
   </p>
   <div class="col_container">
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Block time with reminders on a calendar that layers operational items—jobs, quotes, todos—so individuals see their day in context.</p>
       <ul>
-        <li>Personal time-blocking with reminders</li>
-        <li>Layers for jobs, quotes, todos, and related work</li>
-        <li>Complements team schedules in Field—not a replacement for dispatch boards</li>
+        <li>Block personal time with reminders</li>
+        <li>See schedule, due work, and absences in one calendar view</li>
+        <li>Reduce double-booking between field work and office tasks</li>
+        <li>Keep planning inside FullVue instead of a separate calendar silo</li>
       </ul>
     </div>
   </div>

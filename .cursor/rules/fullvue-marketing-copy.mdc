@@ -11,11 +11,14 @@ Read **fullvue-io-marketing-agent.md** for the full brief. This repo is the full
 ## Hard rules
 
 - **Assets** replaces legacy **Equipment** and **IT Database (ITDB)** — one module, slug `assets`. Do not list Equipment/ITDB as separate product modules on this site.
-- Match **module names** to the catalog in the brief (Sales, Field, Counter, Tether, Planner, Rentals, etc.).
+- Match **module names** to the catalog in the brief (Sales, Field, Counter, Tether, Planner, Rentals, Accounting, Email, etc.).
 - **Outcome-first** copy for owners/GMs; no unsupported superlatives or invented integrations.
-- **QuickBooks Online** is the verified accounting integration; do not claim full GL replacement.
+- **Accounting** is an in-app GL. **QuickBooks Online** is a separate one-way push of invoices, credit memos, bills, and payments—not two-way sync, not a QBO replacement.
+- **Ask FullVue** is marketed at `/modules/ai` (hub + page + nav). It is not a deployment module slug and is not a priced checkbox on `/pricing`. Do not claim write mode. `/ai` redirects to `/modules/ai`.
+- Primary CTA is **Start free trial** → `/trial` (auto-provisioning). Use `/contact` for questions—not as the default conversion CTA.
+- **SMS** exists in the product but is **not** listed as a self-serve provisionable module—it needs FoundTech support to set up. Do not add an SMS module page or pricing row.
 - Industry pages may mention equipment in plain English; product/module lists must use **Assets**.
 
 ## Site gaps to watch
 
-Counter/POS, Assets, Rentals, Tether, Planner, Attendance, Customer portal — flag if missing from `/modules` or pricing.
+Accounting, Email, Counter/POS, Assets, Rentals, Tether, Planner, Attendance, Customer portal — flag if missing from `/modules` or pricing. Do not add SMS as a pickable module.

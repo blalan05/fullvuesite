@@ -1,16 +1,16 @@
 <section class="module_container">
-  <h1>Tether</h1>
+  <h1>Team messaging inside the system of record</h1>
   <p class="lead">
-    Office, field, and shop still coordinate in texts and email threads that never tie back to jobs or customers.
+    Tether is in-app messaging—channels, DMs, customer-related chat for staff, and notes-to-self—so coordination does
+    not vanish into personal text threads.
   </p>
   <div class="col_container">
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Messaging channels live beside operational data—fewer “where did we agree that?” moments between dispatch, crews, and counter staff.</p>
       <ul>
-        <li>Team channels and direct messages</li>
-        <li>Customer chat for staff handling service conversations</li>
-        <li>Personal notes-to-self and optional voice notes</li>
-        <li>Optional transcription on voice notes where configured</li>
+        <li>Message in channels and direct conversations</li>
+        <li>Keep customer-related staff chat near the work</li>
+        <li>Capture personal notes-to-self from the home experience</li>
+        <li>Archive history for admins when you need continuity</li>
       </ul>
     </div>
   </div>

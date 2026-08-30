@@ -1,14 +1,16 @@
 <section class="module_container">
-    <h1>Field (Off-site Service)</h1>
+    <h1>Field work that feeds the same job record</h1>
   <div class="col_container">
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
+      <p>Field turns daily road sheets, schedules, mileage, and on-site closeout into operational truth—so office and crew stop arguing from different notes.</p>
       <ul>
-        <li>Log mileage as job data</li>
-        <li>Simplify entry for Trip records</li>
-        <li>Set job schedules and communicate travel itineraries with employees</li>
+        <li>Capture daily field records tied to jobs</li>
+        <li>Schedule field work and track job mileage</li>
+        <li>Close out on site with photos and customer signature when configured</li>
+        <li>Keep working with offline-friendly field sync when signal drops</li>
       </ul>
     </div>
   </div>

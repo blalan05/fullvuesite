@@ -1,10 +1,14 @@
 <section class="module_container">
-    <h1>Production Meeting</h1>
+    <h1>Production meetings with an operational rhythm</h1>
   <div class="col_container">
     <div class="video_container"></div>
     <div class="module_summary">
+      <p>Production Meetings (Huddle) structure huddle workflows so shop-floor and ops standups stay tied to how work actually runs.</p>
       <ul>
-        <li>Improve communication before, during, and after regular meetings</li>
+        <li>Run production meeting workflows in-product</li>
+        <li>Keep standup structure consistent across days and crews</li>
+        <li>Reduce “we talked about it” with a durable meeting habit</li>
+        <li>Pair with jobs and to-dos for follow-through</li>
       </ul>
     </div>
   </div>

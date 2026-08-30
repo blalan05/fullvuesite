@@ -9,7 +9,8 @@ export const GET = async () => {
       '^/thank-you$', // form-success page, noindexed
       '^/modules/payroll$', // 301 -> /modules/attendance
       '^/modules/equipment$', // 301 -> /modules/assets
-      '^/modules/it-database$' // 301 -> /modules/assets
+      '^/modules/it-database$', // 301 -> /modules/assets
+      '^/ai$' // 301 -> /modules/ai
     ]
   });
 };

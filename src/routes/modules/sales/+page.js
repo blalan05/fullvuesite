@@ -3,6 +3,6 @@ export function load() {
     pageTitle: 'Sales',
     metaTitle: 'Sales & quotes module | FullVue',
     metaDescription:
-      'Track opportunities, build structured quotes—including customer-facing signing flows—and convert wins into jobs with estimate vs actual insight.',
+      'FullVue Sales manages opportunities, quotes, and customer e-sign from estimate to approval.',
   };
 }

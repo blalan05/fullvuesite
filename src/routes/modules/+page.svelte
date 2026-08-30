@@ -2,18 +2,26 @@
   <p class="eyebrow">Module overview</p>
   <h1>Pick the areas that match how you operate</h1>
   <p class="lead fv-muted">
-    FullVue connects sales, jobs, field execution, billing, purchasing, inventory, counter/POS, assets, rentals,
-    messaging, and workforce tools in one permissioned system—without forcing you to buy capabilities you will not use.
+    FullVue is modular. Enable Field, Counter, Accounting, Rentals, Email, and more when they fit how you operate—without
+    buying a separate product for each department. Sales, jobs, field, invoicing, purchasing, and workforce tools share
+    one permissioned system.
   </p>
   <div class="hub-actions">
-    <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+    <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
     <a href="/pricing" class="fv-btn fv-btn--ghost">Estimate pricing</a>
+    <a href="/contact" class="fv-btn fv-btn--ghost">Contact us</a>
   </div>
 </section>
 
 <nav class="jump-nav fv-card" aria-label="Jump to module sections">
   <p class="jump-title">Browse by focus</p>
   <div class="jump-groups">
+    <div class="jump-group">
+      <span class="jump-label">AI</span>
+      <div class="jump-links">
+        <a href="#ask-fullvue">Ask FullVue</a>
+      </div>
+    </div>
     <div class="jump-group">
       <span class="jump-label">Sell &amp; quote</span>
       <div class="jump-links">
@@ -33,6 +41,7 @@
       <div class="jump-links">
         <a href="#invoicing">Invoicing</a>
         <a href="#purchasing">Purchasing</a>
+        <a href="#accounting">Accounting</a>
       </div>
     </div>
     <div class="jump-group">
@@ -51,6 +60,7 @@
         <a href="#products">Products</a>
         <a href="#tether">Tether</a>
         <a href="#planner">Planner</a>
+        <a href="#email">Email</a>
       </div>
     </div>
     <div class="jump-group">
@@ -64,11 +74,32 @@
   </div>
 </nav>
 
+<section class="module_container" id="ask-fullvue">
+  <h2><a href="/modules/ai">Ask FullVue</a></h2>
+  <p class="problem"><strong>Pain:</strong> Answers live in reports and tabs—owners spend Monday hunting instead of deciding.</p>
+  <p class="solution">
+    <strong>Outcome:</strong> A permission-aware assistant that answers questions from your FullVue data, plus assist-tier polish and table explanations. Read and assist only—metered with AI credits, no silent edits.
+  </p>
+  <div class="col_container">
+    <div class="module_summary">
+      <ul>
+        <li>Ask natural-language questions about jobs, sales, and operational data you can already see</li>
+        <li>Get answers grounded in FullVue—not a generic chatbot</li>
+        <li>Use assist-tier polish and table explain for everyday clarity</li>
+        <li>No write mode—it does not post invoices or rewrite jobs</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/ai" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="module_container" id="core">
   <h2><a href="/modules/jobs">Core (Jobs)</a></h2>
   <p class="problem"><strong>Pain:</strong> Job detail, labor, materials, and customer context live in different places.</p>
   <p class="solution">
-    <strong>Outcome:</strong> One job record anchors customers, locations, time and materials, departments, and profitability views like cost sheets—so invoicing and purchasing trace back to real work. Invited customers can use the portal for jobs, billing, quotes, rentals, and chat where you enable it.
+    <strong>Outcome:</strong> Core is the company hub—customers and vendors, jobs with costing, inventory, permissions, search, and settings—so every other module has a single source of truth. Invited customers can use the portal for jobs, quotes, invoices, and documents where you enable it.
   </p>
   <div class="col_container">
     <div class="video_container">
@@ -85,12 +116,10 @@
     </div>
     <div class="module_summary">
       <ul>
-        <li>Employees and customers in shared reference data</li>
-        <li>Customer sites with addresses and map markers where you use them</li>
-        <li>Group customers by industry for reporting</li>
-        <li>Log time, materials, and extras against jobs</li>
-        <li>Departments tailored to how your crews actually run</li>
-        <li>Cost sheet style views for margin visibility</li>
+        <li>Run jobs with tasks, materials, mileage, extras, and audit-ready states</li>
+        <li>Maintain customers, vendors, locations, and role-based access</li>
+        <li>Find records fast with global search and home dashboard widgets</li>
+        <li>Configure PDF templates, announcements, and onboarding for new teams</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/jobs" class="fv-btn fv-btn--primary">Learn more</a>
@@ -103,7 +132,7 @@
   <h2><a href="/modules/field">Field (off-site service)</a></h2>
   <p class="problem"><strong>Pain:</strong> Dispatch and field staff do not see the same schedule and job context.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Field flows add road sheets, job schedules, in-house views, and audit-ready states—mileage and trip data crews can follow on the road.
+    <strong>Outcome:</strong> Field turns daily road sheets, schedules, mileage, and on-site closeout into operational truth—so office and crew stop arguing from different notes.
   </p>
   <div class="col_container">
     <div class="video_container">
@@ -120,9 +149,10 @@
     </div>
     <div class="module_summary">
       <ul>
-        <li>Road sheets and job schedules crews can follow</li>
-        <li>In-house job views separate shop work from field routes</li>
-        <li>Log mileage and streamline trip entry on job records</li>
+        <li>Capture daily field records tied to jobs</li>
+        <li>Schedule field work and track job mileage</li>
+        <li>Close out on site with photos and customer signature when configured</li>
+        <li>Keep working with offline-friendly field sync when signal drops</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/field" class="fv-btn fv-btn--primary">Learn more</a>
@@ -135,7 +165,7 @@
   <h2><a href="/modules/invoicing">Invoicing</a></h2>
   <p class="problem"><strong>Pain:</strong> Billing drifts away from what crews logged on the job.</p>
   <p class="solution">
-    <strong>Outcome:</strong> Build invoices from recorded job data, adjust lines when reality differs, email PDFs and track reads—and sync billing documents toward QuickBooks Online where you connect it.
+    <strong>Outcome:</strong> Turn completed work into invoices and payments, including public pay-by-link so customers can pay by card after FoundTech Payments is set up.
   </p>
   <div class="col_container">
     <div class="video_container">
@@ -152,9 +182,10 @@
     </div>
     <div class="module_summary">
       <ul>
-        <li>Draft invoices straight from completed job detail</li>
-        <li>Edit quantities, descriptions, and pricing before sending</li>
-        <li>Email invoices and monitor delivery/read status</li>
+        <li>Create and send invoices tied to jobs and sales</li>
+        <li>Record payments and track AR in the same system</li>
+        <li>Share pay links customers can open without a staff login</li>
+        <li>Keep billing documents on brand with templates</li>
       </ul>
       <div class="learn_more_container">
         <a href="/modules/invoicing" class="fv-btn fv-btn--primary">Learn more</a>
@@ -190,6 +221,27 @@
       </ul>
       <div class="learn_more_container">
         <a href="/modules/sales" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module_container" id="accounting">
+  <h2><a href="/modules/accounting">Accounting</a></h2>
+  <p class="problem"><strong>Pain:</strong> Operators who need a real ledger still retype cash documents into a side system—or get sold a fake “sync.”</p>
+  <p class="solution">
+    <strong>Outcome:</strong> An in-app general ledger—AR/AP, journals, bank reconciliation, budgets, and financial reports—with file-based bank import. Pair it with one-way QuickBooks Online push when your accountant lives in QBO.
+  </p>
+  <div class="col_container">
+    <div class="module_summary">
+      <ul>
+        <li>Maintain chart of accounts, journals, and fiscal periods</li>
+        <li>Reconcile bank accounts and import CSV/OFX/QFX files</li>
+        <li>Run financial reports without exporting to a side spreadsheet first</li>
+        <li>Optional one-way QuickBooks Online push—not two-way sync, not live bank feeds</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/accounting" class="fv-btn fv-btn--primary">Learn more</a>
       </div>
     </div>
   </div>
@@ -458,6 +510,27 @@
   </div>
 </section>
 
+<section class="module_container" id="email">
+  <h2><a href="/modules/email">Email</a></h2>
+  <p class="problem"><strong>Pain:</strong> Work lives in FullVue; the inbox lives in another tab—and context never meets.</p>
+  <p class="solution">
+    <strong>Outcome:</strong> Employees connect Google, Microsoft, or IMAP mailboxes to read and send from FullVue—separate from company transactional document email.
+  </p>
+  <div class="col_container">
+    <div class="module_summary">
+      <ul>
+        <li>Connect per-employee Google, Microsoft, or IMAP accounts</li>
+        <li>Work inbox and compose without leaving FullVue</li>
+        <li>Keep mailbox access distinct from Resend document senders</li>
+        <li>Reduce tab-hopping between CRM-ish work and the inbox</li>
+      </ul>
+      <div class="learn_more_container">
+        <a href="/modules/email" class="fv-btn fv-btn--primary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="module_container" id="attendance">
   <h2><a href="/modules/attendance">Attendance &amp; time</a></h2>
   <p class="problem"><strong>Pain:</strong> Clock punches and schedules are reconciled in spreadsheets after payroll is already wrong.</p>
@@ -482,9 +555,9 @@
 
 <section class="cta_bottom fv-card">
   <h2>Need help sequencing modules?</h2>
-  <p class="fv-muted">Start where you leak margin—usually jobs + invoicing—then fold purchasing and attendance once data trusts the system.</p>
+  <p class="fv-muted">Start a trial with Core plus the areas you leak margin—usually jobs and invoicing—then add purchasing, attendance, or Accounting as the data trusts the system.</p>
   <div class="hub-actions">
-    <a href="/contact" class="fv-btn fv-btn--primary">Talk with us</a>
+    <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
     <a href="/pricing" class="fv-btn fv-btn--ghost">Pricing calculator</a>
   </div>
 </section>

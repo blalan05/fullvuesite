@@ -1,14 +1,17 @@
 <section class="module_container">
-    <h1>To-dos</h1>
+    <h1>Company task lists that do not live in chat</h1>
   <div class="col_container">
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nyDg2QXozTw?si=wqSU8g93QwvN_Kx4&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
   <div class="module_summary">
+    <p>To-Dos give teams shared task lists with statuses, notes, and attachments—so follow-ups survive beyond a message thread.</p>
     <ul>
-      <li>Task list for non-job related assignments</li>
-      <li>Indicate task status and add notes to increase communication</li>
+      <li>Create task lists for ops, office, or project follow-through</li>
+      <li>Track status, notes, and attachments on each item</li>
+      <li>Keep execution visible without inventing another board tool</li>
+      <li>Pair with Planner when people need personal time-blocking too</li>
     </ul>
   </div>
 </section>

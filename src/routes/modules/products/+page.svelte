@@ -1,11 +1,13 @@
 <section class="module_container">
-    <h1>Products</h1>
+    <h1>A catalog built for real configurations</h1>
   <div class="col_container">
-    <div class="video_container">Products Demo Video</div>
     <div class="module_summary">
+      <p>Products manages your catalog with configurable types and fields—so serialized or structured items stay consistent across sales, support, and inventory.</p>
       <ul>
-        <li>Document sold products and specifications</li>
-        <li>Easily locate part data to facilitate repairs</li>
+        <li>Define product types, fields, and groups that match how you sell</li>
+        <li>Keep catalog data consistent across quotes, jobs, and support</li>
+        <li>Track the product detail your team needs for warranty and service</li>
+        <li>Avoid one-off spreadsheets for “special” items</li>
       </ul>
     </div>
   </div>

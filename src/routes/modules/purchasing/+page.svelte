@@ -1,14 +1,14 @@
 <section class="module_container">
-    <h1>Purchasing & Advanced Inventory</h1>
+    <h1>Buy what the job needs—then receive it into stock</h1>
   <div class="col_container">
     <div class="video_container"></div>
     <div class="module_summary">
+      <p>Purchasing covers purchase requests, POs, receiving, vendor bills, and paylists so AP reflects what you actually ordered and received.</p>
       <ul>
-        <li>Create purchase orders to submit to vendors</li>
-        <li>Track submitted, approved, received, and completed purchase orders</li>
-        <li>Track bills and payments</li>
-        <li>Live inventory counts</li>
-        <li>Order Options (conversions for ordering count/unit and selling differences)</li>
+        <li>Raise purchase requests and issue purchase orders</li>
+        <li>Receive inventory against what was ordered</li>
+        <li>Enter vendor bills and run paylists</li>
+        <li>Keep vendors and parts tied to real purchasing history</li>
       </ul>
     </div>
   </div>

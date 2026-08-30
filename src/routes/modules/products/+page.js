@@ -3,6 +3,6 @@ export function load() {
     pageTitle: 'Products',
     metaTitle: 'Products catalog module | FullVue',
     metaDescription:
-      'Maintain detailed product specs tied into sales and support conversations so technicians quote repairs with accurate parts context.',
+      'FullVue Products is a configurable catalog for sales, support, and inventory.',
   };
 }

@@ -3,7 +3,10 @@
     <p class="eyebrow">We’re here to help</p>
     <h1>Contact FullVue</h1>
     <p class="lead fv-muted">
-      Questions, a tailored walkthrough, or help scoping modules for your crew—send a note and we’ll reply with next steps.
+      Questions about modules, pricing, or migration—send a note and we’ll reply within one business day.
+      Ready to try the product instead?
+      <a href="/trial">Start a free 14-day trial</a>
+      (auto-provisioned, no credit card).
       Wondering who you’ll be talking to? <a href="/company">Meet the company</a>.
     </p>
   </header>
@@ -11,7 +14,7 @@
   <section class="contact-form-wrap fv-card" aria-labelledby="contact-form-heading">
     <h2 id="contact-form-heading" class="form-title">Send a message</h2>
     <p class="form-hint fv-muted">
-      Include how you quote, dispatch, and invoice today if you want a demo mapped to your workflow.
+      Include how you quote, dispatch, and invoice today if you want answers mapped to your workflow.
     </p>
     <!-- netlify-honeypot is a Netlify build-time attribute, not standard HTML;
          spreading it keeps svelte-check quiet without changing the markup. -->

@@ -154,7 +154,7 @@
     <h1>Pricing built around modules you actually need</h1>
     <p class="lead fv-muted">
       Enterprise suites priced for Fortune budgets rarely fit operators running crews and counters together. FullVue stays
-      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, assets, attendance, and HR—then scale employee tiers as you grow.
+      modular—pick areas such as jobs, field service, invoicing, counter/POS, purchasing, accounting, assets, attendance, and HR—then scale employee tiers as you grow.
     </p>
     <p class="lead fv-muted">
       Totals combine <strong>selected modules</strong>, <strong>employee count</strong> (steps of five starting at ten seats),
@@ -178,7 +178,7 @@
       </div>
       <div class="bundle">
         <h3>Full Suite</h3>
-        <p class="bundle-mods fv-muted">Every module, including Counter/POS, Attendance, Assets, Rentals, SDS, and Tether</p>
+        <p class="bundle-mods fv-muted">Every priced module, including Counter/POS, Attendance, Assets, Accounting, Rentals, SDS, and Tether</p>
         <p class="bundle-price"><strong>~$433/mo</strong> billed annually ($5,200/yr)</p>
         <p class="bundle-alt fv-muted">~$488/mo billed monthly</p>
       </div>
@@ -189,6 +189,8 @@
       <a href="/compare/jobber">FullVue vs Jobber</a> and
       <a href="/compare/repairshopr">FullVue vs RepairShopr</a> — or how the
       <a href="/integrations/quickbooks">QuickBooks Online integration</a> works.
+      QuickBooks Online is a capability, not a priced module. Connected
+      <a href="/modules/email">Email</a> is available when enabled; we’ll confirm setup on a walkthrough.
     </p>
   </section>
   <section class="pricing_form fv-card">
@@ -258,7 +260,7 @@
         <td class="nameCol" style="padding-top: 12px;">Core</td>
         <td class="priceCol">$1,500/yr</td>
         <td class="descCol" style="padding-top: 12px"
-          >Customer and Job Management</td
+          >Jobs, customers, vendors, inventory, permissions, and company settings</td
         >
       </tr>
       <tr class="module-group">
@@ -275,7 +277,7 @@
         >
         <td class="nameCol">Field</td>
         <td class="priceCol">+$200/yr</td>
-        <td class="descCol">Additional Field Service features</td>
+        <td class="descCol">Road sheets, field schedules, mileage, and on-site closeout</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -288,7 +290,7 @@
         >
         <td class="nameCol">Invoicing</td>
         <td class="priceCol">+$400/yr</td>
-        <td class="descCol">Generate invoices and track payments</td>
+        <td class="descCol">Invoices, payment recording, and customer pay-by-link</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -302,7 +304,7 @@
         <td class="nameCol">Sales</td>
         <td class="priceCol">+$400/yr</td>
         <td class="descCol"
-          >Track Sales Opportunities, and build and send quotes</td
+          >Opportunities, quotes, and customer e-sign—no login required</td
         >
       </tr>
       <tr>
@@ -334,7 +336,7 @@
         >
         <td class="nameCol">Purchasing & Adv. Inventory</td>
         <td class="priceCol">+$400/yr</td>
-        <td class="descCol">Generate purchase orders and track inventory</td>
+        <td class="descCol">POs, requests, receiving, vendor bills, and paylists</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -347,7 +349,7 @@
         >
         <td class="nameCol">To-dos</td>
         <td class="priceCol">Free</td>
-        <td class="descCol">Communicate and document non-job related tasks</td>
+        <td class="descCol">Shared task lists with statuses, notes, and attachments</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -361,7 +363,7 @@
         <td class="nameCol">SDS</td>
         <td class="priceCol">+$50/yr</td>
         <td class="descCol"
-          >Store and provide improved accessibility to Safety Data Sheets</td
+          >In-app safety data sheet library and lookup</td
         >
       </tr>
       <tr class="module-group">
@@ -375,8 +377,7 @@
         <td class="nameCol">Human Resources</td>
         <td class="priceCol">+$200/yr</td>
         <td class="descCol"
-          >Extends Core Tools to manage employees and their benefits, reviews
-          and reports</td
+          >Benefits, employee HR data, reviews, and HR reports</td
         >
       </tr>
       <tr>
@@ -408,7 +409,7 @@
         >
         <td class="nameCol">Products</td>
         <td class="priceCol">+$200/yr</td>
-        <td class="descCol">Maintain detailed information about your products</td
+        <td class="descCol">Configurable catalog for serialized or structured items</td
         >
       </tr>
       <tr>
@@ -423,8 +424,7 @@
         <td class="nameCol">Customer Support</td>
         <td class="priceCol">+$150/yr</td>
         <td class="descCol"
-          >Extend the Product Module to include troubleshooting discussions, and
-          link time/parts to be billed</td
+          >Support tickets tied to customers, products, and jobs</td
         >
       </tr>
       <tr>
@@ -439,7 +439,7 @@
         <td class="nameCol">Production Meeting</td>
         <td class="priceCol">+$150/yr</td>
         <td class="descCol"
-          >Improve communication before, during and after your regular meetings</td
+          >Huddle and shop-floor meeting workflows</td
         >
       </tr>
       <tr>
@@ -506,7 +506,7 @@
         >
       </tr>
       <tr class="module-group">
-        <td colspan="4">Accounting &amp; integrations</td>
+        <td colspan="4">Accounting &amp; communications</td>
       </tr>
       <tr>
         <td class="checkbox-wrapper">
@@ -520,19 +520,27 @@
         <td class="nameCol">Accounting</td>
         <td class="priceCol">+$400/yr</td>
         <td class="descCol"
-          >QuickBooks Online connection—send invoices and bills to QBO from your operational data</td
+          >In-app GL, AR/AP, bank reconciliation, and financial reports—pair with one-way QuickBooks Online push</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper"></td>
+        <td class="nameCol">Email</td>
+        <td class="priceCol">Talk to us</td>
+        <td class="descCol"
+          >Connected employee mailboxes (Google, Microsoft, or IMAP)—priced at setup, not in this calculator</td
         >
       </tr>
       </tbody>
     </table>
   </section>
   <section class="cta_bottom fv-card">
-    <h2>Want numbers validated against your rollout?</h2>
+    <h2>Ready to try it with your modules?</h2>
     <p class="fv-muted">
-      Tell us which modules matter first—we’ll tailor the workspace and confirm estimates before you commit.
+      Start a 14-day free trial—pick the modules that match your shop, get a workspace provisioned automatically, no credit card.
     </p>
-    <a href="/contact" title="Contact Us" class="fv-btn fv-btn--primary">Schedule a demo</a>
-    <a href="/trial" title="Start your free trial" class="fv-btn">Or start a 14-day free trial</a>
+    <a href="/trial" title="Start your free trial" class="fv-btn fv-btn--primary">Start free trial</a>
+    <a href="/contact" title="Contact Us" class="fv-btn fv-btn--ghost">Questions? Contact us</a>
   </section>
 </article>
 

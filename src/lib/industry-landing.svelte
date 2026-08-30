@@ -16,7 +16,7 @@
     fitBullets,
     painTitle = 'Operational friction we hear about',
     fitTitle = 'What FullVue gives your team',
-    closing = 'Walk through quotes, jobs, field work, billing, and purchasing with your workflows—we’ll show where modules earn their keep.',
+    closing = 'Start a free trial with sample data for quotes, jobs, field work, billing, and purchasing—or contact us if you want help scoping modules first.',
   }: Props = $props();
 </script>
 
@@ -26,9 +26,9 @@
     <h1>{headline}</h1>
     <p class="lead">{lead}</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
-      <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
+      <a href="/contact" class="fv-btn fv-btn--ghost">Contact us</a>
     </div>
   </header>
 
@@ -45,7 +45,7 @@
     <h2>{fitTitle}</h2>
     <p class="fit-intro">
       FullVue ties sales and quotes to jobs, schedules, time and materials, invoicing, and purchasing—so crews and the office stop debating “what happened on that job.” Connect
-      <strong>QuickBooks Online</strong> when you want billing synced without running operations out of spreadsheets.
+      <strong>QuickBooks Online</strong> for a one-way push of invoices, bills, and payments—not two-way sync.
     </p>
     <ul class="bullet-list">
       {#each fitBullets as item}
@@ -56,7 +56,7 @@
 
   <footer class="fv-card closing">
     <p>{closing}</p>
-    <a href="/contact" class="fv-btn fv-btn--primary">Talk with us</a>
+    <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
   </footer>
 </article>
 

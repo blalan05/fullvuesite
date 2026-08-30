@@ -1,17 +1,17 @@
 <section class="module_container">
-  <h1>Attendance</h1>
+  <h1>Time and schedules that can face the job clock</h1>
   <p class="lead">
-    Punches and schedules need to reconcile with job time before payroll runs—not after disputes in a group chat.
+    Attendance covers punches, schedules, absences, and payroll-period reporting—so labor data is captured where work is
+    managed.
   </p>
   <div class="col_container">
     <div class="video_container attendance-shot"></div>
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Time punches, schedules, and payroll-period attendance reporting sit beside HR so leadership compares clock time to job time—and exports payroll-ready reports for your bookkeeper or payroll provider.</p>
       <ul>
-        <li>Time punches including quick in/out from navigation</li>
-        <li>Week rosters, shift swaps, availability, and PTO accruals</li>
-        <li>Payroll-period attendance reporting</li>
-        <li>Works alongside the Human Resources module</li>
+        <li>Clock in and out from the app (including nav In/Out)</li>
+        <li>Manage schedules, shifts, and absences</li>
+        <li>Report attendance by payroll period</li>
+        <li>Compare workforce time against job time where your reports support it</li>
       </ul>
     </div>
   </div>

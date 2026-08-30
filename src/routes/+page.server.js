@@ -14,6 +14,6 @@ export function load({ locals }) {
 		metaTitle: 'Small Business ERP & Job Costing Software | FullVue',
 		metaKeywords: '',
 		metaDescription:
-			'One system for shops that bill time and materials — quotes, jobs, job costing, inventory, invoicing — with invoices and bills sent to QuickBooks Online.'
+			'FullVue runs jobs, field, and invoicing in one system—with one-way QuickBooks Online push and Ask FullVue AI for answers from your data.'
 	};
 }

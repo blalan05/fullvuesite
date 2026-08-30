@@ -1,14 +1,16 @@
 <section class="module_container">
-    <h1>Sales</h1>
+    <h1>From opportunity to signed quote without a side system</h1>
   <div class="col_container">
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
+      <p>Sales manages opportunities, quotes, and customer e-sign so proposals become jobs without retyping into another tool.</p>
       <ul>
-        <li>Improve your sales record-keeping and team communication with Opportunities and Details</li>
-        <li>Tools for thorough quote building and price generation</li>
-        <li>Convert signed quotes to jobs, and compare estimated vs. actual to improve future quotes</li>
+        <li>Track opportunities and surveys through the pipeline</li>
+        <li>Build quotes and quote plots your team can revise quickly</li>
+        <li>Send customer-facing e-sign links—no customer login required</li>
+        <li>Hand off into jobs and invoicing in the same product</li>
       </ul>
     </div>
   </div>

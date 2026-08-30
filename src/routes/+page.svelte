@@ -44,22 +44,25 @@
   <section class="hero fv-card">
     <div class="hero-copy">
       <p class="hero-eyebrow">Operations software for owners who run jobs, crews, and the books</p>
-      <h1>Run sales, jobs, field work, billing, and purchasing in one place</h1>
+      <h1>Run operations in FullVue. Close the books in QuickBooks. Ask AI about the rest.</h1>
       <p class="hero-lead fv-muted">
-        FullVue replaces scattered spreadsheets and disconnected tools with a single operational system—from
-        opportunities and quotes through scheduling, invoicing, counter/POS, inventory buying, assets, messaging, time,
-        and HR. Connect <strong><a href="/integrations/quickbooks">QuickBooks Online</a></strong> when you want invoices and bills reflected in your accounting.
+        FullVue connects sales, jobs, field work, purchasing, invoicing, and payments in one system—then pushes invoices,
+        bills, and payments one-way to
+        <strong><a href="/integrations/quickbooks">QuickBooks Online</a></strong>
+        for your accountant.
+        <strong><a href="/modules/ai">Ask FullVue</a></strong>
+        answers questions about your data without silently changing it.
       </p>
       <div class="hero-cta">
-        <a href="/pricing" class="fv-btn fv-btn--primary">See pricing</a>
-        <a href="/contact" class="fv-btn fv-btn--ghost">Schedule a demo</a>
+        <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
+        <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
+        <a href="/contact" class="fv-btn fv-btn--ghost">Contact us</a>
       </div>
       <ul class="hero-points" aria-label="What FullVue helps with">
-        <li>Quote and schedule work without losing context</li>
-        <li>Invoice from job data; tighten labor and materials visibility</li>
-        <li>Purchasing, assets, and counter flows tied to real operations</li>
-        <li>Tether and Planner reduce coordination outside the system</li>
-        <li>Role-based permissions so teams see only what they need</li>
+        <li>QuickBooks Online — one-way push, not two-way sync theater</li>
+        <li>Ask FullVue — permission-aware answers from your live data</li>
+        <li>Jobs, field, invoicing, and payments on the same record</li>
+        <li>Modules that match your business—not a suite you never use</li>
       </ul>
     </div>
     <div class="hero-visual">
@@ -76,11 +79,51 @@
   </section>
 
   <section class="strip">
-    <h2 class="strip-title">Less swivel-chairing between apps</h2>
+    <h2 class="strip-title">Too many tools, not enough truth</h2>
     <p class="strip-text fv-muted">
-      Built for businesses that sell work, dispatch crews, stock parts, and still need counter-ready flows—without
-      maintaining five different subscriptions.
+      When quotes live in one place, schedules in another, and invoices somewhere else, margin disappears in the gaps.
+      FullVue keeps the job as the spine—from opportunity to cash—and keeps your accountant and your team out of retyping hell.
     </p>
+  </section>
+
+  <section class="flagship-grid">
+    <article class="flagship fv-card">
+      <p class="flagship-eyebrow">Flagship</p>
+      <h2>Your accountant stays in QuickBooks. You stay in FullVue.</h2>
+      <p class="fv-muted">
+        Connect QuickBooks Online and push invoices, credit memos, bills, and payments one-way into QBO. Jobs, purchase
+        orders, and inventory stay where work happens. No two-way sync theater—just the cash documents your books need.
+      </p>
+      <a href="/integrations/quickbooks" class="fv-btn fv-btn--ghost">See how QuickBooks connects</a>
+    </article>
+    <article class="flagship fv-card">
+      <p class="flagship-eyebrow">Flagship</p>
+      <h2>Ask your business a question—get an answer from your data.</h2>
+      <p class="fv-muted">
+        Ask FullVue is a permission-aware assistant that helps owners and managers find what’s in FullVue—jobs, sales,
+        reports, and more—plus assist-tier polish and table explanations. It does not rewrite invoices or post behind your
+        back. Metered with AI credits.
+      </p>
+      <a href="/modules/ai" class="fv-btn fv-btn--ghost">See Ask FullVue</a>
+    </article>
+  </section>
+
+  <section class="pillars fv-card">
+    <h2>How it works</h2>
+    <ol class="pillar-list">
+      <li>
+        <strong>Sell and schedule.</strong>
+        Quotes, e-sign, job schedules, and field road sheets in the same workspace.
+      </li>
+      <li>
+        <strong>Execute and bill.</strong>
+        Time, materials, closeout, invoices, and card pay links tied to the work.
+      </li>
+      <li>
+        <strong>Close and understand.</strong>
+        One-way QuickBooks Online push for the accountant; Ask FullVue when you need answers fast.
+      </li>
+    </ol>
   </section>
 
   <section class="demo_gallery">
@@ -120,12 +163,12 @@
   </section>
 
   <section class="cta_bottom fv-card">
-    <h2>Want a walkthrough tuned to how you operate?</h2>
+    <h2>Ready to run it on your workflows?</h2>
     <p class="fv-muted">
-      Tell us how you quote, dispatch, buy parts, and pay people—we’ll map the modules that matter and show the handoff
-      to QuickBooks when you’re ready.
+      Start a 14-day free trial with auto-provisioned sample data for the modules you pick—no credit card. Prefer to talk first?
+      <a href="/contact">Contact us</a>.
     </p>
-    <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+    <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
   </section>
 </article>
 {/if}
@@ -312,6 +355,64 @@
     z-index: 1;
     margin: 0 auto;
     max-width: 62ch;
+  }
+
+  .flagship-grid {
+    display: grid;
+    gap: var(--fv-space-4, 16px);
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .flagship {
+    padding: var(--fv-space-5, 24px);
+
+    h2 {
+      margin: 0 0 var(--fv-space-3, 12px);
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0 0 var(--fv-space-4, 16px);
+      max-width: 56ch;
+    }
+  }
+
+  .flagship-eyebrow {
+    margin: 0 0 var(--fv-space-2, 8px);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--fv-accent-hover, #5485b8);
+  }
+
+  .pillars {
+    padding: var(--fv-space-5, 24px);
+
+    h2 {
+      margin: 0 0 var(--fv-space-3, 12px);
+      text-align: center;
+    }
+  }
+
+  .pillar-list {
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    max-width: 68ch;
+    display: flex;
+    flex-direction: column;
+    gap: var(--fv-space-3, 12px);
+
+    li {
+      color: var(--fv-text-muted, #b8c0cc);
+    }
+
+    strong {
+      color: var(--fv-text, #f4f6f8);
+    }
   }
 
   .demo_gallery {

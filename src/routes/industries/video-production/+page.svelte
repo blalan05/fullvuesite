@@ -8,7 +8,7 @@
     <h1>Gear checkout and job profitability for small production companies</h1>
     <p class="lead fv-muted">Your cameras live in a spreadsheet, your quotes live in email threads, and nobody can say whether the last shoot actually made money. FullVue puts gear checkout, shoot scheduling, quotes, crew hours, and invoicing in one system — so the business side of your production company takes hours a week, not days.</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
       <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
     </div>
@@ -57,11 +57,11 @@
   <section class="fv-card section">
     <h2>See it with your own workflow</h2>
     <p class="fv-muted">
-      Tell us how you quote, run work, and bill today — we'll walk the same loop through FullVue and you can
-      judge the fit yourself.
+      Start a free 14-day trial—your workspace is provisioned automatically with sample data for the modules you pick.
+      Prefer to talk first? <a href="/contact">Contact us</a>.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
     </div>
   </section>

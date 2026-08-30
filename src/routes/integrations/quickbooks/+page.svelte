@@ -1,22 +1,22 @@
 <svelte:head>
-  {@html `<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the QuickBooks integration sync both ways?","acceptedAnswer":{"@type":"Answer","text":"No — and we won't pretend it does. It's a one-way push: you send invoices and bills from FullVue to QuickBooks Online. Changes made in QuickBooks don't flow back into FullVue, and FullVue never edits your books on its own. If your operation truly needs a field-by-field two-way sync, we're not the right fit — we'd rather tell you that now than after you've migrated."}},{"@type":"Question","name":"What exactly gets sent to QuickBooks Online?","acceptedAnswer":{"@type":"Answer","text":"Invoices and bills, when you choose to send them. Quotes, jobs, schedules, time punches, purchase orders, and inventory stay in FullVue — that's the operational side QuickBooks was never built to run."}},{"@type":"Question","name":"Do we have to move our books out of QuickBooks?","acceptedAnswer":{"@type":"Answer","text":"No. Your books stay in QuickBooks Online, and your accountant or bookkeeper keeps working exactly the way they do today. FullVue runs the work; QuickBooks keeps the books."}},{"@type":"Question","name":"How does job costing work if the books live in QuickBooks?","acceptedAnswer":{"@type":"Answer","text":"Job costing happens in FullVue, while the job is running. Labor from the time clock and materials from inventory post against the job as they happen, so you can see where a job stands before it closes — not after month-end. QuickBooks receives the finished invoice and bill; FullVue holds the job-level detail behind them."}}]})}</${'script'}>`}
+  {@html `<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the QuickBooks integration sync both ways?","acceptedAnswer":{"@type":"Answer","text":"No — and we won't pretend it does. It's a one-way push: invoices, credit memos, bills, customer payments, and bill payments go from FullVue to QuickBooks Online. Nothing is pulled back from QBO. If your operation truly needs a field-by-field two-way sync, we're not the right fit — we'd rather tell you that now than after you've migrated."}},{"@type":"Question","name":"What exactly gets sent to QuickBooks Online?","acceptedAnswer":{"@type":"Answer","text":"Invoices, credit memos, bills, customer payments, and bill payments—when you send them. Jobs, purchase orders, and inventory stay in FullVue. A separate IIF export exists for QuickBooks Desktop; that is not live sync."}},{"@type":"Question","name":"Do we have to move our books out of QuickBooks?","acceptedAnswer":{"@type":"Answer","text":"No. Most teams keep the accountant in QuickBooks Online and run operations in FullVue. If you also want an in-app ledger, the Accounting module can sit alongside the QBO push—same close story, two depths."}},{"@type":"Question","name":"How does job costing work if the books live in QuickBooks?","acceptedAnswer":{"@type":"Answer","text":"Job costing happens in FullVue, while the job is running. Labor and materials post against the job as they happen, so you can see where a job stands before it closes — not after month-end. QuickBooks receives the cash documents; FullVue holds the job-level detail behind them."}}]})}</${'script'}>`}
 </svelte:head>
 
 <article class="content-page">
   <header class="hero fv-card">
     <p class="eyebrow">Integrations</p>
-    <h1>Field service and job costing software that works with QuickBooks Online</h1>
-    <p class="lead fv-muted">You run the work in FullVue — quotes, jobs, hours, materials, purchasing. When it's time to bill, you send the invoice to QuickBooks Online. Your books stay in QuickBooks, your accountant stays happy, and nobody re-types anything.</p>
+    <h1>Operations in FullVue. Books in QuickBooks—without retyping.</h1>
+    <p class="lead fv-muted">Connect QuickBooks Online to push invoices, credit memos, bills, customer payments, and bill payments one-way into QBO. Your team keeps running jobs in FullVue; your accountant gets the documents they need to close. Nothing is pulled back from QuickBooks, and jobs, POs, and inventory stay in FullVue.</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
-      <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
+      <a href="/contact" class="fv-btn fv-btn--ghost">Contact us</a>
     </div>
   </header>
 
   <section class="fv-card section">
     <h2>One-way push, on purpose</h2>
-    <p class="fv-muted">FullVue's QuickBooks Online integration is a one-way push, and that's deliberate. You quote the job, run it, and track hours and materials against it in FullVue. When the work is billed, you send the invoice to QuickBooks Online. Bills from purchasing push the same way. That's the whole integration — and that's the point.</p>
+    <p class="fv-muted">FullVue's QuickBooks Online integration is a one-way push, and that's deliberate. You quote the job, run it, and track hours and materials against it in FullVue. When cash documents are ready, you push invoices, credit memos, bills, and payments into QuickBooks Online. That's the whole integration — and that's the point.</p>
     <p class="fv-muted">Nothing writes back the other direction, and nothing runs in the background quietly editing your inventory, your customers, or your books. If you've ever fought a "seamless" two-way sync that adjusted inventory on its own, you already know why we built it this way: data moves in one direction, when you send it.</p>
   </section>
 
@@ -24,9 +24,9 @@
     <h2>What pushes to QuickBooks — and what stays in FullVue</h2>
     <p class="fv-muted">The dividing line is simple: QuickBooks Online keeps the books, FullVue runs the work.</p>
     <ul>
-      <li>Pushes to QuickBooks Online: invoices you send, built from the job's actual time and materials — and bills you send, entered against purchase orders and receipts in FullVue.</li>
-      <li>Stays in FullVue: quotes and e-signatures, jobs and schedules, time clock punches, purchase orders and receipts, inventory, counter sales, rentals, and the customer portal.</li>
-      <li>Stays in QuickBooks: your chart of accounts, reconciliation, financial reports, and everything your accountant touches at tax time.</li>
+      <li>Pushes to QuickBooks Online: invoices, credit memos, bills, customer payments, and bill payments—when you send them.</li>
+      <li>Stays in FullVue: jobs, purchase orders, inventory, quotes and e-sign, schedules, time punches, counter sales, rentals, and the customer portal.</li>
+      <li>Closes in QuickBooks: the cash documents your accountant needs. Teams that also want an in-app ledger can enable the Accounting module—that is a choice, not a replacement for this push.</li>
     </ul>
   </section>
 
@@ -38,8 +38,8 @@
 
   <section class="fv-card section">
     <h2>Your accountant keeps QuickBooks</h2>
-    <p class="fv-muted">The fastest way to kill a software change is to ask your bookkeeper to switch systems. So don't. With FullVue, nothing changes on the accounting side: same QuickBooks Online file, same reports, same tax-time workflow. The only difference your accountant notices is that invoices and bills show up already entered instead of arriving as a shoebox of paper.</p>
-    <p class="fv-muted">FullVue isn't trying to be your general ledger. Your books stay in QuickBooks, your accountant stays in the tool they trust, and you stop being the human sync between the shop floor and the bookkeeping.</p>
+    <p class="fv-muted">The fastest way to kill a software change is to ask your bookkeeper to switch systems. So don't. With FullVue, the QBO file, reports, and tax-time workflow stay put. The only difference your accountant notices is that invoices, bills, and payments show up already entered instead of arriving as a shoebox of paper.</p>
+    <p class="fv-muted">Owners and managers do not need a daily QuickBooks login. Run operations in FullVue; push the cash documents. If you later want an in-app general ledger as well, <a href="/modules/accounting">Accounting</a> is available when enabled. A separate IIF export exists for QuickBooks Desktop—do not call that live sync.</p>
   </section>
 
   <section class="fv-card section">
@@ -51,11 +51,11 @@
   <section class="fv-card section faq">
     <h2>Questions owners actually ask</h2>
     <h3>Does the QuickBooks integration sync both ways?</h3>
-    <p class="fv-muted">No — and we won't pretend it does. It's a one-way push: you send invoices and bills from FullVue to QuickBooks Online. Changes made in QuickBooks don't flow back into FullVue, and FullVue never edits your books on its own. If your operation truly needs a field-by-field two-way sync, we're not the right fit — we'd rather tell you that now than after you've migrated.</p>
+    <p class="fv-muted">No — and we won't pretend it does. It's a one-way push: invoices, credit memos, bills, customer payments, and bill payments go from FullVue to QuickBooks Online. Nothing is pulled back from QBO. If your operation truly needs a field-by-field two-way sync, we're not the right fit — we'd rather tell you that now than after you've migrated.</p>
     <h3>What exactly gets sent to QuickBooks Online?</h3>
-    <p class="fv-muted">Invoices and bills, when you choose to send them. Quotes, jobs, schedules, time punches, purchase orders, and inventory stay in FullVue — that's the operational side QuickBooks was never built to run.</p>
+    <p class="fv-muted">Invoices, credit memos, bills, customer payments, and bill payments—when you send them. Jobs, purchase orders, and inventory stay in FullVue. A separate IIF export exists for QuickBooks Desktop; that is not live sync.</p>
     <h3>Do we have to move our books out of QuickBooks?</h3>
-    <p class="fv-muted">No. Your books stay in QuickBooks Online, and your accountant or bookkeeper keeps working exactly the way they do today. FullVue runs the work; QuickBooks keeps the books.</p>
+    <p class="fv-muted">No. Most teams keep the accountant in QuickBooks Online and run operations in FullVue. If you also want an in-app ledger, the Accounting module can sit alongside the QBO push—same close story, two depths.</p>
     <h3>How does job costing work if the books live in QuickBooks?</h3>
     <p class="fv-muted">Job costing happens in FullVue, while the job is running. Labor from the time clock and materials from inventory post against the job as they happen, so you can see where a job stands before it closes — not after month-end. QuickBooks receives the finished invoice and bill; FullVue holds the job-level detail behind them.</p>
   </section>
@@ -70,11 +70,11 @@
   <section class="fv-card section">
     <h2>See it with your own workflow</h2>
     <p class="fv-muted">
-      Tell us how you quote, run work, and bill today — we'll walk the same loop through FullVue and you can
-      judge the fit yourself.
+      Start a free trial and walk quote → job → invoice → QuickBooks push yourself—or
+      <a href="/contact">contact us</a> if you have questions first.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
     </div>
   </section>

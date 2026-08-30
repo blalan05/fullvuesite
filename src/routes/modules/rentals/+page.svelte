@@ -1,17 +1,16 @@
 <section class="module_container">
-  <h1>Rentals</h1>
+  <h1>Reserve, check out, and return rental equipment</h1>
   <p class="lead">
-    When you rent equipment to customers, reservations and returns should trace back to the same asset and job records
-    your shop already trusts.
+    Rentals manages reservations, calendar availability, checkout, and returns—with public claim/signup flows when
+    customers need self-serve access.
   </p>
   <div class="col_container">
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Rental reservations, checkout, and returns connect to rentable asset types in Assets—so availability and billing stay aligned with operations.</p>
       <ul>
-        <li>Rental reservations and checkout workflows</li>
-        <li>Returns tracking against rented assets</li>
-        <li>Ties to rentable categories configured in Assets</li>
-        <li>Customer portal visibility for invited contacts where enabled</li>
+        <li>Book rental reservations against your equipment</li>
+        <li>See availability on a rental calendar</li>
+        <li>Check out and return assets without a side rental app</li>
+        <li>Offer public claim/signup links when that fits your process</li>
       </ul>
     </div>
   </div>

@@ -3,6 +3,6 @@ export function load() {
     pageTitle: 'Tether',
     metaTitle: 'Tether team messaging module | FullVue',
     metaDescription:
-      'Team channels, DMs, customer chat for staff, personal notes, and voice notes—coordination inside FullVue instead of scattered texts and email.',
+      'FullVue Tether is team messaging with channels, DMs, and notes inside your operations system.',
   };
 }

@@ -1,18 +1,16 @@
 <section class="module_container">
-  <h1>Assets</h1>
+  <h1>One register for equipment, devices, and software</h1>
   <p class="lead">
-    Fleet trucks, shop tools, laptops, components, and software licenses belong in one register—not split across
-    spreadsheets and legacy module names.
+    Assets unifies shop and fleet equipment with IT-style devices, components, and software—assignments, costs,
+    attachments, and optional fleet inspections in one place.
   </p>
   <div class="col_container">
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Assign assets to people and jobs, track costs and attachments, and link related records without maintaining separate equipment and IT databases.</p>
       <ul>
-        <li>Shop and fleet equipment with assignments and utilization</li>
-        <li>Devices, components, and software in the same module</li>
-        <li>Configurable asset types (equipment vs device, and more)</li>
-        <li>Costs, attachments, and links between related assets</li>
-        <li>Ties into rentals when you enable rentable asset types</li>
+        <li>Track equipment, devices, components, and software together</li>
+        <li>Assign assets, attach files, and capture costs</li>
+        <li>Run fleet inspections when you need checklist discipline in the field</li>
+        <li>Retire separate “equipment vs ITDB” tool sprawl</li>
       </ul>
     </div>
   </div>

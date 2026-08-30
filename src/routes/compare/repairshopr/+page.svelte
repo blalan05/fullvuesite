@@ -8,7 +8,7 @@
     <h1>FullVue vs RepairShopr: an honest comparison</h1>
     <p class="lead fv-muted">RepairShopr more or less defined repair shop software, and plenty of shops still run on it just fine. But if you found this page, you've probably read the same switching threads we have. Here's our honest answer: where RepairShopr is still the stronger choice, where FullVue is built differently, and how we help you move your data if you decide to switch.</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
       <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
     </div>
@@ -41,12 +41,12 @@
   <section class="fv-card section">
     <h2>Switching without the horror story</h2>
     <p class="fv-muted">The number-one reason shops stay on software they complain about is the data. Forum veterans tell each other to "export all you can" and double-enter until the final cutoff — because they've heard the stories about losing access to years of records after cancelling.</p>
-    <p class="fv-muted">Our offer: assisted migration. We help you export customers, devices, and parts from RepairShopr, load them into FullVue, and run in parallel until you're ready to cut over. After that, your data is yours — full export anytime, no fee, no lockout. Book a demo, tell us what you're leaving, and bring your ugliest export file.</p>
+    <p class="fv-muted">Our offer: assisted migration. We help you export customers, devices, and parts from RepairShopr, load them into FullVue, and run in parallel until you're ready to cut over. After that, your data is yours — full export anytime, no fee, no lockout. Start a free trial, tell us what you're leaving, and bring your ugliest export file.</p>
   </section>
 
   <section class="fv-card section">
     <h2>Side by side</h2>
-    <p class="fv-muted">Both columns are based on public information as of July 2026 — check RepairShopr's own site for current details, and check ours by booking a demo and asking hard questions.</p>
+    <p class="fv-muted">Both columns are based on public information as of July 2026 — check RepairShopr's own site for current details, and check ours in a free trial or by contacting us with hard questions.</p>
     <div class="compare-wrap">
       <table class="compare">
         <thead>
@@ -80,11 +80,11 @@
   <section class="fv-card section">
     <h2>See it with your own workflow</h2>
     <p class="fv-muted">
-      Tell us how you quote, run work, and bill today — we'll walk the same loop through FullVue and you can
-      judge the fit yourself.
+      Start a free 14-day trial—your workspace is provisioned automatically with sample data for the modules you pick.
+      Prefer to talk first? <a href="/contact">Contact us</a>.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
     </div>
   </section>

@@ -4,7 +4,7 @@
     <h1>Built by a veteran-owned software firm in Appleton, Wisconsin</h1>
     <p class="lead fv-muted">FullVue comes from Foundational Technologies — a small, veteran-owned custom-software firm that has been building systems for working businesses for years. We're not a startup chasing a category. We're the people who wrote the code, and we answer our own email.</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
       <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
     </div>
@@ -48,11 +48,11 @@
   <section class="fv-card section">
     <h2>See it with your own workflow</h2>
     <p class="fv-muted">
-      Tell us how you quote, run work, and bill today — we'll walk the same loop through FullVue and you can
-      judge the fit yourself.
+      Start a free 14-day trial—your workspace is provisioned automatically with sample data for the modules you pick.
+      Prefer to talk first? <a href="/contact">Contact us</a>.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
     </div>
   </section>

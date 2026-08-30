@@ -82,7 +82,7 @@
       <strong>QuickBooks Online</strong> when accounting belongs there.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">Estimate pricing</a>
     </div>
   </header>

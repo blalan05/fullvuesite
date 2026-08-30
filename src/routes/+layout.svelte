@@ -40,6 +40,7 @@
     { title: 'Home', link: '/' },
     { title: 'What is ERP?', link: '/erp' },
     { title: 'Modules', link: '/modules' },
+    { title: 'Ask FullVue', link: '/modules/ai' },
     { title: 'Industries', link: '/industries' },
     { title: 'Pricing', link: '/pricing' },
     { title: 'Free Trial', link: '/trial' },
@@ -63,6 +64,8 @@
     integrations: 'Integrations',
     pricing: 'Pricing',
     erp: 'ERP',
+    ai: 'Ask FullVue',
+    trial: 'Free Trial',
     contact: 'Contact',
     company: 'Company',
   };
@@ -146,7 +149,7 @@
           operatingSystem: 'Web, Android',
           url: 'https://fullvue.io',
           description:
-            'Modular ERP for small time-and-materials businesses: quotes with e-signing, jobs, scheduling, invoicing, purchasing, inventory, counter/POS, attendance, and QuickBooks Online sync.',
+            'Modular ERP for small time-and-materials businesses: jobs, field, invoicing, purchasing, counter/POS, attendance, one-way QuickBooks Online push, and Ask FullVue AI.',
           offers: {
             '@type': 'Offer',
             price: '1500',
@@ -224,6 +227,7 @@
   <span class="ml-2">— veteran-owned, built in Appleton, WI</span>
   <a href="/company" title="About the company" class="ml-2">Company</a>
   <a href="/integrations/quickbooks" title="QuickBooks Online integration" class="ml-2">QuickBooks</a>
+  <a href="/modules/ai" title="Ask FullVue AI" class="ml-2">Ask FullVue</a>
   <a href="/compare/jobber" title="FullVue vs Jobber" class="ml-2">vs Jobber</a>
   <a href="/compare/repairshopr" title="FullVue vs RepairShopr" class="ml-2">vs RepairShopr</a>
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
