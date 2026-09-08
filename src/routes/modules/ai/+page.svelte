@@ -1,3 +1,7 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
   <h1>Ask FullVue—AI that knows your shop</h1>
   <p class="lead">
@@ -5,6 +9,9 @@
     spend less time hunting reports and more time deciding. Assist-tier polish and table explanations help clean up
     language and understand grids. It does not silently change records. Usage is metered with AI credits.
   </p>
+  <div class="product-shot">
+    <ThemeShot slug="ai" alt="Ask FullVue dialog answering a purchase-order materials question" />
+  </div>
   <div class="col_container">
     <div class="module_summary">
       <ul>
@@ -33,6 +40,20 @@
     .lead {
       max-width: 68ch;
       margin-bottom: var(--fv-space-4, 16px);
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top center;
+      }
     }
 
     .note {

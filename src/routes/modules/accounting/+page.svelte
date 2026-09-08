@@ -1,9 +1,16 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
   <h1>Books for operators who need a real ledger</h1>
   <p class="lead">
     Accounting adds an in-app general ledger—AR/AP, journals, bank reconciliation, budgets, and financial reports—with
     file-based bank import when you need statement detail in FullVue.
   </p>
+  <div class="product-shot">
+    <ThemeShot slug="accounting" alt="FullVue accounting dashboard with ledger, AR, AP, and reports" />
+  </div>
   <div class="col_container">
     <div class="module_summary">
       <ul>
@@ -32,6 +39,20 @@
     .lead {
       max-width: 68ch;
       margin-bottom: var(--fv-space-4, 16px);
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
 
     .note {

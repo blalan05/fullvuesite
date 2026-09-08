@@ -1,7 +1,21 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
     <h1>Buy what the job needs—then receive it into stock</h1>
   <div class="col_container">
-    <div class="video_container"></div>
+    <div class="shot-stack">
+      <div class="video_container product-shot">
+        <ThemeShot slug="purchasing-order" alt="FullVue purchase order with lines, totals, and vendor context" />
+      </div>
+      <div class="video_container product-shot">
+        <ThemeShot slug="purchase-request" alt="FullVue purchase request queue for parts and materials" />
+      </div>
+      <div class="video_container product-shot">
+        <ThemeShot slug="vendor" alt="FullVue vendor record with purchasing history" />
+      </div>
+    </div>
     <div class="module_summary">
       <p>Purchasing covers purchase requests, POs, receiving, vendor bills, and paylists so AP reflects what you actually ordered and received.</p>
       <ul>
@@ -49,11 +63,26 @@
     h1 {
       margin-top: 0;
     }
+    .shot-stack {
+      display: flex;
+      flex-direction: column;
+      gap: var(--fv-space-3, 12px);
+      width: 100%;
+    }
+
     .video_container {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      background: url('$lib/purchasing.webp');
-      background-size: cover;
+      aspect-ratio: 16 / 10;
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
   h4 {

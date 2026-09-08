@@ -1,6 +1,19 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
     <h1>Your company hub—jobs, people, and inventory in one place</h1>
   <div>
+    <div class="product-shot">
+      <ThemeShot slug="jobs" alt="FullVue jobs dashboard with status chips and customer context" />
+    </div>
+    <div class="product-shot">
+      <ThemeShot slug="inventory" alt="FullVue inventory dashboard for parts and stock levels" />
+    </div>
+    <div class="product-shot">
+      <ThemeShot slug="customer" alt="FullVue customer record with jobs and contact context" />
+    </div>
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S18ptA8cySc?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
@@ -54,6 +67,20 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
   h4 {

@@ -1,3 +1,7 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
     <h1>Field work that feeds the same job record</h1>
   <div class="col_container">
@@ -5,6 +9,15 @@
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jeWbM4vBzkE?si=4WbS5nHNeroPAlb1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
+      <div class="product-shot">
+        <ThemeShot slug="field" alt="FullVue field sheet with time, materials, and mileage on a job" />
+      </div>
+      <div class="product-shot">
+        <ThemeShot slug="scheduling" alt="FullVue field schedule for crew coordination" />
+      </div>
+      <div class="product-shot">
+        <ThemeShot slug="field-fleet-inspections" alt="FullVue fleet inspection checklist for a service truck" />
+      </div>
       <p>Field turns daily road sheets, schedules, mileage, and on-site closeout into operational truth—so office and crew stop arguing from different notes.</p>
       <ul>
         <li>Capture daily field records tied to jobs</li>
@@ -54,6 +67,20 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
   h4 {

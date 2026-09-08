@@ -1,3 +1,7 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
   <h1>Time and schedules that can face the job clock</h1>
   <p class="lead">
@@ -5,7 +9,9 @@
     managed.
   </p>
   <div class="col_container">
-    <div class="video_container attendance-shot"></div>
+    <div class="video_container product-shot">
+      <ThemeShot slug="attendance" alt="FullVue attendance and staff scheduling view" />
+    </div>
     <div class="module_summary">
       <ul>
         <li>Clock in and out from the app (including nav In/Out)</li>
@@ -39,15 +45,16 @@
 
     .video_container {
       width: 100%;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 16 / 10;
       border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
       border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
 
-      &.attendance-shot {
-        background: url('$lib/payroll.webp');
-        background-size: cover;
-        background-position: top left;
+      :global(img) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top left;
       }
     }
   }

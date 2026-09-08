@@ -1,0 +1,1698 @@
+{
+  "accounting": {
+    "desktop": {
+      "dark": {
+        "src": "images/accounting/sales1.fullvue.io_todos_view_1.png",
+        "out": "static/shots/accounting/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/accounting/sales1.fullvue.io_todos_view_1 (1).png",
+        "out": "static/shots/accounting/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/accounting/sales1.fullvue.io_todos_view_1(Pixel 10).png",
+        "out": "static/shots/accounting/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/accounting/sales1.fullvue.io_todos_view_1(Pixel 10) (1).png",
+        "out": "static/shots/accounting/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/accounting/sales1.fullvue.io_todos_view_1(iPad Pro).png",
+        "out": "static/shots/accounting/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/accounting/sales1.fullvue.io_todos_view_1(iPad Pro) (1).png",
+        "out": "static/shots/accounting/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "ai": {
+    "desktop": {
+      "dark": {
+        "src": "images/ai/sales1.fullvue.io_.png",
+        "out": "static/shots/ai/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/ai/sales1.fullvue.io_ (1).png",
+        "out": "static/shots/ai/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/ai/sales1.fullvue.io_(Pixel 10).png",
+        "out": "static/shots/ai/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/ai/sales1.fullvue.io_(Pixel 10) (1).png",
+        "out": "static/shots/ai/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/ai/sales1.fullvue.io_(iPad Pro).png",
+        "out": "static/shots/ai/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/ai/sales1.fullvue.io_(iPad Pro) (1).png",
+        "out": "static/shots/ai/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "assets": {
+    "desktop": {
+      "dark": {
+        "src": "images/assets/sales1.fullvue.io_invoicing_view_6.png",
+        "out": "static/shots/assets/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/assets/sales1.fullvue.io_invoicing_view_6 (1).png",
+        "out": "static/shots/assets/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/assets/sales1.fullvue.io_invoicing_view_6(Pixel 10).png",
+        "out": "static/shots/assets/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/assets/sales1.fullvue.io_invoicing_view_6(Pixel 10) (1).png",
+        "out": "static/shots/assets/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/assets/sales1.fullvue.io_invoicing_view_6(iPad Pro).png",
+        "out": "static/shots/assets/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/assets/sales1.fullvue.io_invoicing_view_6(iPad Pro) (1).png",
+        "out": "static/shots/assets/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "attendance": {
+    "desktop": {
+      "dark": {
+        "src": "images/attendence/sales1.fullvue.io_invoicing_view_6.png",
+        "out": "static/shots/attendance/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/attendence/sales1.fullvue.io_invoicing_view_6 (1).png",
+        "out": "static/shots/attendance/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/attendence/sales1.fullvue.io_invoicing_view_6(Pixel 10).png",
+        "out": "static/shots/attendance/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/attendence/sales1.fullvue.io_invoicing_view_6(Pixel 10) (1).png",
+        "out": "static/shots/attendance/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/attendence/sales1.fullvue.io_invoicing_view_6(iPad Pro).png",
+        "out": "static/shots/attendance/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/attendence/sales1.fullvue.io_invoicing_view_6(iPad Pro) (1).png",
+        "out": "static/shots/attendance/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "counter": {
+    "desktop": {
+      "dark": {
+        "src": "images/counter/sales1.fullvue.io_counter-desktop-dark.png",
+        "out": "static/shots/counter/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/counter/sales1.fullvue.io_counter-desktop-light.png",
+        "out": "static/shots/counter/desktop-light.webp",
+        "size": [
+          1585,
+          991
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/counter/sales1.fullvue.io_counter-phone-dark.png",
+        "out": "static/shots/counter/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/counter/sales1.fullvue.io_counter-phone-light.png",
+        "out": "static/shots/counter/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/counter/sales1.fullvue.io_counter-tablet-dark.png",
+        "out": "static/shots/counter/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/counter/sales1.fullvue.io_counter-tablet-light.png",
+        "out": "static/shots/counter/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "counter-receipt": {
+    "desktop": {
+      "dark": {
+        "src": "images/counter-receipt/sales1.fullvue.io_todos_view_1.png",
+        "out": "static/shots/counter-receipt/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/counter-receipt/sales1.fullvue.io_todos_view_1 (1).png",
+        "out": "static/shots/counter-receipt/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/counter-receipt/sales1.fullvue.io_todos_view_1(Pixel 10).png",
+        "out": "static/shots/counter-receipt/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/counter-receipt/sales1.fullvue.io_todos_view_1(Pixel 10) (1).png",
+        "out": "static/shots/counter-receipt/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/counter-receipt/sales1.fullvue.io_todos_view_1(iPad Pro).png",
+        "out": "static/shots/counter-receipt/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/counter-receipt/sales1.fullvue.io_todos_view_1(iPad Pro) (1).png",
+        "out": "static/shots/counter-receipt/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "counter-settings": {
+    "desktop": {
+      "dark": {
+        "src": "images/counter-settings/sales1.fullvue.io_todos_view_1.png",
+        "out": "static/shots/counter-settings/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/counter-settings/sales1.fullvue.io_todos_view_1 (1).png",
+        "out": "static/shots/counter-settings/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/counter-settings/sales1.fullvue.io_todos_view_1(Pixel 10).png",
+        "out": "static/shots/counter-settings/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/counter-settings/sales1.fullvue.io_todos_view_1(Pixel 10) (1).png",
+        "out": "static/shots/counter-settings/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/counter-settings/sales1.fullvue.io_todos_view_1(iPad Pro).png",
+        "out": "static/shots/counter-settings/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/counter-settings/sales1.fullvue.io_todos_view_1(iPad Pro) (1).png",
+        "out": "static/shots/counter-settings/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "customer": {
+    "desktop": {
+      "dark": {
+        "src": "images/customer/sales1.fullvue.io_invoicing_view_6.png",
+        "out": "static/shots/customer/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/customer/sales1.fullvue.io_invoicing_view_6 (1).png",
+        "out": "static/shots/customer/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/customer/sales1.fullvue.io_invoicing_view_6(Pixel 10).png",
+        "out": "static/shots/customer/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/customer/sales1.fullvue.io_invoicing_view_6(Pixel 10) (1).png",
+        "out": "static/shots/customer/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/customer/sales1.fullvue.io_invoicing_view_6(iPad Pro).png",
+        "out": "static/shots/customer/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/customer/sales1.fullvue.io_invoicing_view_6(iPad Pro) (1).png",
+        "out": "static/shots/customer/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "customer-quote": {
+    "desktop": {
+      "dark": {
+        "src": "images/customer-quote/[sanitized].png",
+        "out": "static/shots/customer-quote/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/customer-quote/[sanitized].png",
+        "out": "static/shots/customer-quote/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/customer-quote/[sanitized].png",
+        "out": "static/shots/customer-quote/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/customer-quote/[sanitized].png",
+        "out": "static/shots/customer-quote/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/customer-quote/[sanitized].png",
+        "out": "static/shots/customer-quote/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/customer-quote/[sanitized].png",
+        "out": "static/shots/customer-quote/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "field": {
+    "desktop": {
+      "dark": {
+        "src": "images/field/sales1.fullvue.io_view_17_tasks (2).png",
+        "out": "static/shots/field/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/field/sales1.fullvue.io_view_17_tasks (3).png",
+        "out": "static/shots/field/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/field/sales1.fullvue.io_view_17_tasks(Pixel 10) (2).png",
+        "out": "static/shots/field/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/field/sales1.fullvue.io_view_17_tasks(Pixel 10) (3).png",
+        "out": "static/shots/field/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/field/sales1.fullvue.io_view_17_tasks(iPad Pro) (2).png",
+        "out": "static/shots/field/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/field/sales1.fullvue.io_view_17_tasks(iPad Pro) (3).png",
+        "out": "static/shots/field/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "field-fleet-inspections": {
+    "desktop": {
+      "dark": {
+        "src": "images/field-fleet-inspections/sales1.fullvue.io_todos_view_1 (1).png",
+        "out": "static/shots/field-fleet-inspections/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/field-fleet-inspections/sales1.fullvue.io_todos_view_1.png",
+        "out": "static/shots/field-fleet-inspections/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/field-fleet-inspections/sales1.fullvue.io_todos_view_1(Pixel 10) (1).png",
+        "out": "static/shots/field-fleet-inspections/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/field-fleet-inspections/sales1.fullvue.io_todos_view_1(Pixel 10).png",
+        "out": "static/shots/field-fleet-inspections/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/field-fleet-inspections/sales1.fullvue.io_todos_view_1(iPad Pro) (1).png",
+        "out": "static/shots/field-fleet-inspections/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/field-fleet-inspections/sales1.fullvue.io_todos_view_1(iPad Pro).png",
+        "out": "static/shots/field-fleet-inspections/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "field-sms": {
+    "desktop": {
+      "dark": {
+        "src": "images/field-sms/foundtech.fullvue.io_settings_smsgeneral_section=communications (2).png",
+        "out": "static/shots/field-sms/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/field-sms/foundtech.fullvue.io_settings_smsgeneral_section=communications (3).png",
+        "out": "static/shots/field-sms/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/field-sms/foundtech.fullvue.io_settings_smsgeneral_section=communications(Pixel 10) (2).png",
+        "out": "static/shots/field-sms/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/field-sms/foundtech.fullvue.io_settings_smsgeneral_section=communications(Pixel 10) (3).png",
+        "out": "static/shots/field-sms/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/field-sms/foundtech.fullvue.io_settings_smsgeneral_section=communications(iPad Pro) (2).png",
+        "out": "static/shots/field-sms/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/field-sms/foundtech.fullvue.io_settings_smsgeneral_section=communications(iPad Pro) (3).png",
+        "out": "static/shots/field-sms/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "huddle": {
+    "desktop": {
+      "dark": {
+        "src": "images/huddle/sales1.fullvue.io_login (2).png",
+        "out": "static/shots/huddle/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/huddle/sales1.fullvue.io_login (1).png",
+        "out": "static/shots/huddle/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/huddle/sales1.fullvue.io_login(Pixel 10) (1).png",
+        "out": "static/shots/huddle/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/huddle/sales1.fullvue.io_login(Pixel 10).png",
+        "out": "static/shots/huddle/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/huddle/sales1.fullvue.io_login(iPad Pro) (1).png",
+        "out": "static/shots/huddle/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/huddle/sales1.fullvue.io_login(iPad Pro).png",
+        "out": "static/shots/huddle/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "inventory": {
+    "desktop": {
+      "dark": {
+        "src": "images/inventory/sales1.fullvue.io_ (1).png",
+        "out": "static/shots/inventory/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/inventory/sales1.fullvue.io_.png",
+        "out": "static/shots/inventory/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/inventory/sales1.fullvue.io_(Pixel 10) (1).png",
+        "out": "static/shots/inventory/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/inventory/sales1.fullvue.io_(Pixel 10).png",
+        "out": "static/shots/inventory/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/inventory/sales1.fullvue.io_(iPad Pro) (1).png",
+        "out": "static/shots/inventory/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/inventory/sales1.fullvue.io_(iPad Pro).png",
+        "out": "static/shots/inventory/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "job": {
+    "desktop": {
+      "dark": {
+        "src": "images/job/sales1.fullvue.io_view_17_tasks (1).png",
+        "out": "static/shots/job/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/job/sales1.fullvue.io_view_17_tasks.png",
+        "out": "static/shots/job/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/job/sales1.fullvue.io_view_17_tasks(Pixel 10) (1).png",
+        "out": "static/shots/job/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/job/sales1.fullvue.io_view_17_tasks(Pixel 10).png",
+        "out": "static/shots/job/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/job/sales1.fullvue.io_view_17_tasks(iPad Pro) (1).png",
+        "out": "static/shots/job/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/job/sales1.fullvue.io_view_17_tasks(iPad Pro).png",
+        "out": "static/shots/job/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "jobs": {
+    "desktop": {
+      "dark": {
+        "src": "images/jobs/sales1.fullvue.io_login.png",
+        "out": "static/shots/jobs/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/jobs/sales1.fullvue.io_login (2).png",
+        "out": "static/shots/jobs/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/jobs/sales1.fullvue.io_login(Pixel 10).png",
+        "out": "static/shots/jobs/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/jobs/sales1.fullvue.io_login(Pixel 10) (3).png",
+        "out": "static/shots/jobs/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/jobs/sales1.fullvue.io_login(iPad Pro).png",
+        "out": "static/shots/jobs/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/jobs/sales1.fullvue.io_login(iPad Pro) (3).png",
+        "out": "static/shots/jobs/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "landing": {
+    "desktop": {
+      "dark": {
+        "src": "images/landing/sales1.fullvue.io_login (3).png",
+        "out": "static/shots/landing/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/landing/sales1.fullvue.io_login.png",
+        "out": "static/shots/landing/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/landing/sales1.fullvue.io_login(Pixel 10) (4).png",
+        "out": "static/shots/landing/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/landing/sales1.fullvue.io_login(Pixel 10).png",
+        "out": "static/shots/landing/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/landing/sales1.fullvue.io_login(iPad Pro) (4).png",
+        "out": "static/shots/landing/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/landing/sales1.fullvue.io_login(iPad Pro).png",
+        "out": "static/shots/landing/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "products": {
+    "desktop": {
+      "dark": {
+        "src": "images/products/sales1.fullvue.io_products (1).png",
+        "out": "static/shots/products/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/products/sales1.fullvue.io_login.png",
+        "out": "static/shots/products/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/products/sales1.fullvue.io_login(Pixel 10) (1).png",
+        "out": "static/shots/products/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/products/sales1.fullvue.io_login(Pixel 10).png",
+        "out": "static/shots/products/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/products/sales1.fullvue.io_login(iPad Pro) (1).png",
+        "out": "static/shots/products/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/products/sales1.fullvue.io_login(iPad Pro).png",
+        "out": "static/shots/products/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "purchase-request": {
+    "desktop": {
+      "dark": {
+        "src": "images/purchase-request/sales1.fullvue.io_invoicing_view_6 (1).png",
+        "out": "static/shots/purchase-request/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/purchase-request/sales1.fullvue.io_invoicing_view_6.png",
+        "out": "static/shots/purchase-request/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    }
+  },
+  "purchasing": {
+    "desktop": {
+      "dark": {
+        "src": "images/purchasing/sales1.fullvue.io_sales.png",
+        "out": "static/shots/purchasing/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/purchasing/sales1.fullvue.io_sales (1).png",
+        "out": "static/shots/purchasing/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/purchasing/sales1.fullvue.io_sales(Pixel 10).png",
+        "out": "static/shots/purchasing/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/purchasing/sales1.fullvue.io_sales(Pixel 10) (1).png",
+        "out": "static/shots/purchasing/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/purchasing/sales1.fullvue.io_sales(iPad Pro).png",
+        "out": "static/shots/purchasing/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/purchasing/sales1.fullvue.io_sales(iPad Pro) (1).png",
+        "out": "static/shots/purchasing/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "purchasing-order": {
+    "desktop": {
+      "dark": {
+        "src": "images/purchasing/sales1.fullvue.io_purchasing_order_1 (1).png",
+        "out": "static/shots/purchasing-order/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/purchasing/sales1.fullvue.io_purchasing_order_1.png",
+        "out": "static/shots/purchasing-order/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/purchasing/sales1.fullvue.io_purchasing_order_1(Pixel 10) (1).png",
+        "out": "static/shots/purchasing-order/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/purchasing/sales1.fullvue.io_purchasing_order_1(Pixel 10).png",
+        "out": "static/shots/purchasing-order/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/purchasing/sales1.fullvue.io_purchasing_order_1(iPad Pro) (1).png",
+        "out": "static/shots/purchasing-order/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/purchasing/sales1.fullvue.io_purchasing_order_1(iPad Pro).png",
+        "out": "static/shots/purchasing-order/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "qbo": {
+    "desktop": {
+      "dark": {
+        "src": "images/qbo/[sanitized].png",
+        "out": "static/shots/qbo/desktop-dark.webp",
+        "size": [
+          1082,
+          676
+        ]
+      },
+      "light": {
+        "src": "images/qbo/[sanitized].png",
+        "out": "static/shots/qbo/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    }
+  },
+  "quotes": {
+    "desktop": {
+      "dark": {
+        "src": "images/quotes/sales1.fullvue.io_sales (1).png",
+        "out": "static/shots/quotes/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/quotes/sales1.fullvue.io_sales.png",
+        "out": "static/shots/quotes/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/quotes/sales1.fullvue.io_sales(Pixel 10) (1).png",
+        "out": "static/shots/quotes/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/quotes/sales1.fullvue.io_sales(Pixel 10).png",
+        "out": "static/shots/quotes/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/quotes/sales1.fullvue.io_sales(iPad Pro) (1).png",
+        "out": "static/shots/quotes/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/quotes/sales1.fullvue.io_sales(iPad Pro).png",
+        "out": "static/shots/quotes/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "sales": {
+    "desktop": {
+      "dark": {
+        "src": "images/sales/sales1.fullvue.io_sales-dark.png",
+        "out": "static/shots/sales/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/sales/sales1.fullvue.io_sales.png",
+        "out": "static/shots/sales/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/sales/sales1.fullvue.io_sales(Pixel 10).png",
+        "out": "static/shots/sales/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/sales/sales1.fullvue.io_sales(Pixel 10) (1).png",
+        "out": "static/shots/sales/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/sales/sales1.fullvue.io_sales(iPad Pro).png",
+        "out": "static/shots/sales/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/sales/sales1.fullvue.io_sales(iPad Pro) (1).png",
+        "out": "static/shots/sales/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "scheduling": {
+    "desktop": {
+      "dark": {
+        "src": "images/scheduling/sales1.fullvue.io_view_17_tasks (1).png",
+        "out": "static/shots/scheduling/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/scheduling/sales1.fullvue.io_view_17_tasks.png",
+        "out": "static/shots/scheduling/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/scheduling/sales1.fullvue.io_view_17_tasks(Pixel 10) (1).png",
+        "out": "static/shots/scheduling/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/scheduling/sales1.fullvue.io_view_17_tasks(Pixel 10).png",
+        "out": "static/shots/scheduling/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/scheduling/sales1.fullvue.io_view_17_tasks(iPad Pro) (1).png",
+        "out": "static/shots/scheduling/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/scheduling/sales1.fullvue.io_view_17_tasks(iPad Pro).png",
+        "out": "static/shots/scheduling/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "sds": {
+    "desktop": {
+      "light": {
+        "src": "images/sds/sales1.fullvue.io_login.png",
+        "out": "static/shots/sds/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "light": {
+        "src": "images/sds/sales1.fullvue.io_login(Pixel 10).png",
+        "out": "static/shots/sds/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "light": {
+        "src": "images/sds/sales1.fullvue.io_login(iPad Pro).png",
+        "out": "static/shots/sds/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "search": {
+    "desktop": {
+      "dark": {
+        "src": "images/search/sales1.fullvue.io_login (4).png",
+        "out": "static/shots/search/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/search/sales1.fullvue.io_login (1).png",
+        "out": "static/shots/search/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/search/sales1.fullvue.io_login(Pixel 10) (5).png",
+        "out": "static/shots/search/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/search/sales1.fullvue.io_login(Pixel 10) (1).png",
+        "out": "static/shots/search/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/search/sales1.fullvue.io_login(iPad Pro) (5).png",
+        "out": "static/shots/search/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/search/sales1.fullvue.io_login(iPad Pro) (1).png",
+        "out": "static/shots/search/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "settings": {
+    "desktop": {
+      "dark": {
+        "src": "images/settings/sales1.fullvue.io_todos_view_1 (1).png",
+        "out": "static/shots/settings/desktop-dark.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      },
+      "light": {
+        "src": "images/settings/sales1.fullvue.io_todos_view_1.png",
+        "out": "static/shots/settings/desktop-light.webp",
+        "size": [
+          1920,
+          1199
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/settings/sales1.fullvue.io_todos_view_1(Pixel 10) (1).png",
+        "out": "static/shots/settings/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/settings/sales1.fullvue.io_todos_view_1(Pixel 10).png",
+        "out": "static/shots/settings/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/settings/sales1.fullvue.io_todos_view_1(iPad Pro) (1).png",
+        "out": "static/shots/settings/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/settings/sales1.fullvue.io_todos_view_1(iPad Pro).png",
+        "out": "static/shots/settings/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "sms-settings": {
+    "desktop": {
+      "dark": {
+        "src": "images/sms-settings/foundtech.fullvue.io_settings_smsgeneral_section=communications (1).png",
+        "out": "static/shots/sms-settings/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/sms-settings/foundtech.fullvue.io_settings_smsgeneral_section=communications.png",
+        "out": "static/shots/sms-settings/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/sms-settings/foundtech.fullvue.io_settings_smsgeneral_section=communications(Pixel 10) (1).png",
+        "out": "static/shots/sms-settings/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/sms-settings/foundtech.fullvue.io_settings_smsgeneral_section=communications(Pixel 10).png",
+        "out": "static/shots/sms-settings/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/sms-settings/foundtech.fullvue.io_settings_smsgeneral_section=communications(iPad Pro) (1).png",
+        "out": "static/shots/sms-settings/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/sms-settings/foundtech.fullvue.io_settings_smsgeneral_section=communications(iPad Pro).png",
+        "out": "static/shots/sms-settings/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "tether": {
+    "desktop": {
+      "dark": {
+        "src": "images/tether/sales1.fullvue.io_invoicing_view_6 (1).png",
+        "out": "static/shots/tether/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/tether/sales1.fullvue.io_invoicing_view_6.png",
+        "out": "static/shots/tether/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/tether/sales1.fullvue.io_invoicing_view_6(Pixel 10) (1).png",
+        "out": "static/shots/tether/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/tether/sales1.fullvue.io_invoicing_view_6(Pixel 10).png",
+        "out": "static/shots/tether/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/tether/sales1.fullvue.io_invoicing_view_6(iPad Pro) (1).png",
+        "out": "static/shots/tether/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/tether/sales1.fullvue.io_invoicing_view_6(iPad Pro).png",
+        "out": "static/shots/tether/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "todos": {
+    "desktop": {
+      "dark": {
+        "src": "images/to-do/sales1.fullvue.io_todos_view_1 (1).png",
+        "out": "static/shots/todos/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/to-do/sales1.fullvue.io_todos_view_1.png",
+        "out": "static/shots/todos/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/to-do/sales1.fullvue.io_todos_view_1(Pixel 10) (1).png",
+        "out": "static/shots/todos/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/to-do/sales1.fullvue.io_todos_view_1(Pixel 10).png",
+        "out": "static/shots/todos/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/to-do/sales1.fullvue.io_todos_view_1(iPad Pro) (1).png",
+        "out": "static/shots/todos/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/to-do/sales1.fullvue.io_todos_view_1(iPad Pro).png",
+        "out": "static/shots/todos/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  },
+  "vendor": {
+    "desktop": {
+      "dark": {
+        "src": "images/vendor/sales1.fullvue.io_invoicing_view_6 (3).png",
+        "out": "static/shots/vendor/desktop-dark.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      },
+      "light": {
+        "src": "images/vendor/sales1.fullvue.io_invoicing_view_6 (2).png",
+        "out": "static/shots/vendor/desktop-light.webp",
+        "size": [
+          1920,
+          1200
+        ]
+      }
+    },
+    "phone": {
+      "dark": {
+        "src": "images/vendor/sales1.fullvue.io_invoicing_view_6(Pixel 10) (3).png",
+        "out": "static/shots/vendor/phone-dark.webp",
+        "size": [
+          720,
+          1279
+        ]
+      },
+      "light": {
+        "src": "images/vendor/sales1.fullvue.io_invoicing_view_6(Pixel 10) (2).png",
+        "out": "static/shots/vendor/phone-light.webp",
+        "size": [
+          720,
+          1279
+        ]
+      }
+    },
+    "tablet": {
+      "dark": {
+        "src": "images/vendor/sales1.fullvue.io_invoicing_view_6(iPad Pro) (3).png",
+        "out": "static/shots/vendor/tablet-dark.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      },
+      "light": {
+        "src": "images/vendor/sales1.fullvue.io_invoicing_view_6(iPad Pro) (2).png",
+        "out": "static/shots/vendor/tablet-light.webp",
+        "size": [
+          1200,
+          1599
+        ]
+      }
+    }
+  }
+}

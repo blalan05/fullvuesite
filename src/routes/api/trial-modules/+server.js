@@ -17,10 +17,8 @@ const KEY_RE = /^[a-z][a-z0-9-]{0,31}$/;
 
 /** @typedef {{ key: string, label: string, description: string, required: boolean }} TrialModule */
 
-// Mirrors the control plane's default catalog (DEFAULT_MODULE_CATALOG in
-// foundTechDash server/prisma/seed.js — keep the two in sync), trimmed to what
-// the page renders. Only used when the upstream call fails — a stale-but-sane
-// list beats a dead form.
+// Mirrors fullVueModules.ts titles. Core first (always required); remaining
+// keys match the product catalog. Only used when the upstream call fails.
 /** @type {TrialModule[]} */
 const FALLBACK_MODULES = [
 	{
@@ -30,46 +28,39 @@ const FALLBACK_MODULES = [
 		required: true
 	},
 	{
-		key: 'field',
-		label: 'Field Service',
-		description: 'Dispatch, routes, and the mobile field app.',
-		required: false
-	},
-	{ key: 'sales', label: 'Sales', description: 'Quotes, orders, and pipeline.', required: false },
-	{
-		key: 'invoicing',
-		label: 'Invoicing',
-		description: 'Invoices, payments, and the customer payment portal.',
-		required: false
-	},
-	{
 		key: 'accounting',
 		label: 'Accounting',
 		description: 'General ledger, AR/AP, fiscal periods, and financial reports.',
 		required: false
 	},
 	{
-		key: 'counter',
-		label: 'Counter / POS',
-		description: 'Register, checkout, promos, and stored value.',
+		key: 'ai',
+		label: 'AI',
+		description: 'Ask FullVue — permission-aware answers from your live data.',
 		required: false
 	},
 	{
-		key: 'purchasing',
-		label: 'Purchasing',
-		description: 'Purchase orders, receiving, and vendors.',
-		required: false
-	},
-	{
-		key: 'products',
-		label: 'Products',
-		description: 'Catalog and inventory items.',
+		key: 'assets',
+		label: 'Assets',
+		description: 'Equipment, devices, components, software, and fleet inspections.',
 		required: false
 	},
 	{
 		key: 'attendance',
-		label: 'Attendance & Payroll',
-		description: 'Time clock, attendance, accruals, and payroll periods.',
+		label: 'Attendance',
+		description: 'Time punches, schedules, and payroll-period attendance reporting.',
+		required: false
+	},
+	{
+		key: 'counter',
+		label: 'Counter',
+		description: 'Register, checkout, promotions, memberships, and stored value.',
+		required: false
+	},
+	{
+		key: 'email',
+		label: 'Email',
+		description: 'Connected employee mailboxes (Google, Microsoft, or IMAP).',
 		required: false
 	},
 	{
@@ -79,43 +70,68 @@ const FALLBACK_MODULES = [
 		required: false
 	},
 	{
-		key: 'assets',
-		label: 'Assets',
-		description: 'Equipment, maintenance, fixed assets, and the IT device database.',
+		key: 'huddle',
+		label: 'Production Meetings',
+		description: 'Huddle and shop-floor meeting workflows.',
 		required: false
 	},
 	{
-		key: 'rentals',
-		label: 'Rentals',
-		description: 'Rental agreements, availability, and returns.',
+		key: 'invoicing',
+		label: 'Invoicing',
+		description: 'Invoices, payments, and customer pay-by-link.',
 		required: false
 	},
 	{
 		key: 'planner',
 		label: 'Planner',
-		description: 'Capacity planning and scheduling boards.',
+		description: 'Personal calendar layered on jobs, quotes, and to-dos.',
+		required: false
+	},
+	{
+		key: 'products',
+		label: 'Products',
+		description: 'Serialized and configurable product catalog.',
+		required: false
+	},
+	{
+		key: 'purchasing',
+		label: 'Purchasing',
+		description: 'Purchase orders, requests, receiving, and vendor bills.',
+		required: false
+	},
+	{
+		key: 'rentals',
+		label: 'Rentals',
+		description: 'Rental reservations, checkout, and returns.',
+		required: false
+	},
+	{
+		key: 'field',
+		label: 'Field',
+		description: 'Road sheets, field schedules, mileage, and on-site closeout.',
+		required: false
+	},
+	{ key: 'sales', label: 'Sales', description: 'Opportunities, quotes, and customer e-sign.', required: false },
+	{ key: 'sds', label: 'SDS', description: 'Safety data sheets library and lookup.', required: false },
+	{
+		key: 'sms',
+		label: 'SMS',
+		description: 'Consented job texts, review invites, and optional AI receptionist.',
+		required: false
+	},
+	{
+		key: 'support',
+		label: 'Customer Support',
+		description: 'Support tickets tied to customers, products, and jobs.',
 		required: false
 	},
 	{
 		key: 'tether',
 		label: 'Tether',
-		description: 'Connected device and telemetry tracking.',
+		description: 'Team messaging, customer chat for staff, and notes.',
 		required: false
 	},
-	{ key: 'todos', label: 'To-Dos', description: 'Task lists and assignments.', required: false },
-	{
-		key: 'support',
-		label: 'Customer Support',
-		description: 'Support tickets and customer requests.',
-		required: false
-	},
-	{ key: 'sds', label: 'SDS', description: 'Safety data sheets.', required: false },
-	{
-		key: 'huddle',
-		label: 'Production Meetings',
-		description: 'Daily huddle board.',
-		required: false
-	}
+	{ key: 'todos', label: 'To-Dos', description: 'Shared task lists with statuses, notes, and attachments.', required: false }
 ];
 
 /** @type {{ modules: TrialModule[], expires: number, upstream: boolean } | null} */

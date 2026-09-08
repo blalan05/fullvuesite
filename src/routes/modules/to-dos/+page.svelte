@@ -1,6 +1,13 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
     <h1>Company task lists that do not live in chat</h1>
   <div class="col_container">
+    <div class="product-shot">
+      <ThemeShot slug="todos" alt="FullVue to-do with tasks, notes, and owner" />
+    </div>
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nyDg2QXozTw?si=wqSU8g93QwvN_Kx4&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
@@ -47,6 +54,20 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
   h4 {

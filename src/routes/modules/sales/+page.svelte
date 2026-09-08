@@ -1,3 +1,7 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
     <h1>From opportunity to signed quote without a side system</h1>
   <div class="col_container">
@@ -5,6 +9,15 @@
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SYIZux4tCZU?si=m7nyVXzfQr239m0s&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="module_summary">
+      <div class="product-shot">
+        <ThemeShot slug="sales" alt="FullVue sales opportunities pipeline" />
+      </div>
+      <div class="product-shot">
+        <ThemeShot slug="quotes" alt="FullVue quotes list for proposals and customer e-sign" />
+      </div>
+      <div class="product-shot">
+        <ThemeShot slug="customer-quote" alt="Customer-facing quote signing page on a phone-friendly link" />
+      </div>
       <p>Sales manages opportunities, quotes, and customer e-sign so proposals become jobs without retyping into another tool.</p>
       <ul>
         <li>Track opportunities and surveys through the pipeline</li>
@@ -54,6 +67,20 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
   h4 {

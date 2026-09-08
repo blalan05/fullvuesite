@@ -1,9 +1,16 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
   <h1>Team messaging inside the system of record</h1>
   <p class="lead">
     Tether is in-app messaging—channels, DMs, customer-related chat for staff, and notes-to-self—so coordination does
     not vanish into personal text threads.
   </p>
+  <div class="product-shot">
+    <ThemeShot slug="tether" alt="FullVue Tether messaging channels and conversations" />
+  </div>
   <div class="col_container">
     <div class="module_summary">
       <ul>
@@ -29,6 +36,18 @@
       margin-bottom: var(--fv-space-4, 16px);
     }
 
-    
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
+    }
   }
 </style>

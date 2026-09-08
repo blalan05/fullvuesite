@@ -1,9 +1,19 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
   <h1>One register for equipment, devices, and software</h1>
   <p class="lead">
     Assets unifies shop and fleet equipment with IT-style devices, components, and software—assignments, costs,
     attachments, and optional fleet inspections in one place.
   </p>
+  <div class="product-shot">
+    <ThemeShot slug="assets" alt="FullVue assets register for equipment and assignments" />
+  </div>
+  <div class="product-shot">
+    <ThemeShot slug="field-fleet-inspections" alt="FullVue fleet inspection checklist for a service truck" />
+  </div>
   <div class="col_container">
     <div class="module_summary">
       <ul>
@@ -36,6 +46,18 @@
       margin-bottom: var(--fv-space-4, 16px);
     }
 
-    
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
+    }
   }
 </style>

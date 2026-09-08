@@ -178,7 +178,7 @@
       </div>
       <div class="bundle">
         <h3>Full Suite</h3>
-        <p class="bundle-mods fv-muted">Every priced module, including Counter/POS, Attendance, Assets, Accounting, Rentals, SDS, and Tether</p>
+        <p class="bundle-mods fv-muted">Every priced module, including Counter, Attendance, Assets, Accounting, Rentals, SDS, and Tether</p>
         <p class="bundle-price"><strong>~$433/mo</strong> billed annually ($5,200/yr)</p>
         <p class="bundle-alt fv-muted">~$488/mo billed monthly</p>
       </div>
@@ -190,7 +190,8 @@
       <a href="/compare/repairshopr">FullVue vs RepairShopr</a> — or how the
       <a href="/integrations/quickbooks">QuickBooks Online integration</a> works.
       QuickBooks Online is a capability, not a priced module. Connected
-      <a href="/modules/email">Email</a> is available when enabled; we’ll confirm setup on a walkthrough.
+      <a href="/modules/email">Email</a> and
+      <a href="/modules/sms">SMS</a> are distinct modules; we’ll confirm setup on a walkthrough.
     </p>
   </section>
   <section class="pricing_form fv-card">
@@ -316,7 +317,7 @@
           />
           <label for="counterMod" class="check-box"> </label></td
         >
-        <td class="nameCol">Counter / POS</td>
+        <td class="nameCol">Counter</td>
         <td class="priceCol">+$400/yr</td>
         <td class="descCol"
           >Register selling, promotions, memberships, loyalty, and stored value</td
@@ -334,7 +335,7 @@
           />
           <label for="purchasingMod" class="check-box"> </label></td
         >
-        <td class="nameCol">Purchasing & Adv. Inventory</td>
+        <td class="nameCol">Purchasing</td>
         <td class="priceCol">+$400/yr</td>
         <td class="descCol">POs, requests, receiving, vendor bills, and paylists</td>
       </tr>
@@ -347,7 +348,7 @@
           />
           <label for="todoMod" class="check-box"> </label></td
         >
-        <td class="nameCol">To-dos</td>
+        <td class="nameCol">To-Dos</td>
         <td class="priceCol">Free</td>
         <td class="descCol">Shared task lists with statuses, notes, and attachments</td>
       </tr>
@@ -436,7 +437,7 @@
           />
           <label for="huddleMod" class="check-box"> </label></td
         >
-        <td class="nameCol">Production Meeting</td>
+        <td class="nameCol">Production Meetings</td>
         <td class="priceCol">+$150/yr</td>
         <td class="descCol"
           >Huddle and shop-floor meeting workflows</td
@@ -529,6 +530,22 @@
         <td class="priceCol">Talk to us</td>
         <td class="descCol"
           >Connected employee mailboxes (Google, Microsoft, or IMAP)—priced at setup, not in this calculator</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper"></td>
+        <td class="nameCol"><a href="/modules/ai">AI</a></td>
+        <td class="priceCol">Metered credits</td>
+        <td class="descCol"
+          >Ask FullVue — permission-aware answers from your data; billed as AI credits, not in this calculator</td
+        >
+      </tr>
+      <tr>
+        <td class="checkbox-wrapper"></td>
+        <td class="nameCol"><a href="/modules/sms">SMS</a></td>
+        <td class="priceCol">Talk to us</td>
+        <td class="descCol"
+          >Consented job texts, review invites, and optional AI receptionist—priced at setup, not in this calculator</td
         >
       </tr>
       </tbody>

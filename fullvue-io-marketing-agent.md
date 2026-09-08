@@ -61,6 +61,7 @@ Canonical deployment module slugs and display titles live in **`client/src/share
 | Module slug | User-facing name | What it covers (from product structure) |
 |-------------|------------------|----------------------------------------|
 | **core** | Core | Base platform: company settings, locations, users/permissions, customers & vendors, **jobs** (tasks, materials, mileage, extras, contractors, packages, audit states), inventory/parts, diary, PDF templates, announcements, global search, notifications, onboarding, data export |
+| **ai** | AI | Ask FullVue: permission-aware read/assist answers over live operational data; metered AI credits; **no write mode** |
 | **field** | Field | Daily field records (“road sheets”), field scheduling, job mileage, on-site **closeout** (photos + customer signature when configured) |
 | **sales** | Sales | Opportunities/surveys, quotes and quote plots, **customer-facing quote e-sign** (public, no login), quick estimates; ties into counter/POS when Counter is enabled |
 | **counter** | Counter | POS register, promotions, memberships, punch cards, promo codes, POS fees, stored value, loyalty |
@@ -229,7 +230,7 @@ Route names above match Vue router `name` values where noted—use devtools or `
 - **Banking:** file import only—do not claim Plaid/live bank feeds.
 - **Modules:** provisioned by FoundTech / deployment—not a self-serve module marketplace.
 - **Payments:** Merchant360 requires onboarding; do not imply instant card acceptance for every tenant on day one.
-- **Integrations** (QuickBooks, FoundTech Payments, connected email/SMS) are capabilities, not a standalone marketing “module page.”
+- **Integrations** (QuickBooks, FoundTech Payments) are capabilities, not standalone marketing module pages. **Email** and **SMS** are distinct deployment modules and should have module pages.
 
 ---
 
@@ -251,14 +252,14 @@ Refresh the **Screenshots and grabs** section when navigation or route names cha
 
 Configurable demo / deployment modules in-app (from `fullVueModules.ts`, `deploymentToggle: true` only):
 
-**Accounting**, **Assets**, **Attendance**, **Core**, **Counter**, **Email**, **Field**, **Human Resources**, **Production Meetings**, **Invoicing**, **Planner**, **Products**, **Purchasing**, **Rentals**, **Sales**, **SDS**, **SMS**, **Customer Support**, **Tether**, **To-Dos**
+**Accounting**, **AI**, **Assets**, **Attendance**, **Core**, **Counter**, **Email**, **Human Resources**, **Production Meetings**, **Invoicing**, **Planner**, **Products**, **Purchasing**, **Rentals**, **Field**, **Sales**, **SDS**, **SMS**, **Customer Support**, **Tether**, **To-Dos**
 
-Use for “try the areas that match your business” messaging on the marketing site.
+Use these **exact titles** on hub lists, pricing rows, and the trial fallback catalog.
 
-**Marketing-site exceptions:**
+**Marketing-site notes:**
 
-- Do **not** list **SMS** as a pickable / self-serve module on fullvue.io (hub, pricing, or a dedicated module page). SMS needs FoundTech support to set up. Industry or compare copy may still mention consented texting as a capability.
-- **Ask FullVue** is not a `FULL_VUE_MODULES` slug, but the marketing site treats it as a module page at **`/modules/ai`** (hub section + nav). Metered AI credits—not a priced checkbox on `/pricing`.
+- **SMS** (`sms`) — hub + `/modules/sms`. Do not invent a calculator price—use “Talk to us” until a posted rate exists.
+- **AI** (`ai`) — hub + `/modules/ai`. Assistant name Ask FullVue is fine in body copy. Metered AI credits—not a priced checkbox on `/pricing`.
 
 **Legacy reminder:** If older docs or env files list `equipment` or `itdb`, map both to **Assets** (`assets`). If they list `road` as a module slug, map to **Field** (`field`).
 

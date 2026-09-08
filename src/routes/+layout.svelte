@@ -1,5 +1,7 @@
 <script lang="ts">
   import Analytics from '$lib/analytics.svelte';
+  import ThemeToggle from '$lib/theme-toggle.svelte';
+  import { theme } from '$lib/theme.svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
   import type { Snippet } from 'svelte';
@@ -11,6 +13,12 @@
   let { children }: Props = $props();
 
   const isAppLauncher = $derived(page.data.isAppLauncher ?? false);
+
+  $effect(() => {
+    if (!browser) return;
+    // Heal SSR/HMR desync so chrome + ThemeShot match FOUC / localStorage.
+    theme.hydrate();
+  });
 
   $effect(() => {
     if (!browser) {
@@ -64,10 +72,30 @@
     integrations: 'Integrations',
     pricing: 'Pricing',
     erp: 'ERP',
-    ai: 'Ask FullVue',
+    ai: 'AI',
     trial: 'Free Trial',
     contact: 'Contact',
     company: 'Company',
+    accounting: 'Accounting',
+    assets: 'Assets',
+    attendance: 'Attendance',
+    counter: 'Counter',
+    email: 'Email',
+    hr: 'Human Resources',
+    invoicing: 'Invoicing',
+    planner: 'Planner',
+    products: 'Products',
+    purchasing: 'Purchasing',
+    rentals: 'Rentals',
+    field: 'Field',
+    sales: 'Sales',
+    sds: 'SDS',
+    sms: 'SMS',
+    support: 'Customer Support',
+    tether: 'Tether',
+    'to-dos': 'To-Dos',
+    'production-meeting': 'Production Meetings',
+    jobs: 'Core',
   };
 
   const breadcrumbLd = (pathname: string) => {
@@ -181,6 +209,9 @@
           >
         </li>
       {/each}
+      <li class="theme-slot">
+        <ThemeToggle />
+      </li>
     </ul>
   </div>
 </nav>
@@ -212,6 +243,9 @@
             >
           </li>
         {/each}
+        <li class="theme-slot">
+          <ThemeToggle />
+        </li>
       </div>
     </div>
   </div>
@@ -412,13 +446,23 @@
       top: 0;
       z-index: 97;
       border-bottom: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: rgba(23, 26, 31, 0.78);
+      background: var(--fv-nav-bg, rgba(23, 26, 31, 0.78));
       backdrop-filter: saturate(160%) blur(14px);
       -webkit-backdrop-filter: saturate(160%) blur(14px);
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.04) inset,
-        0 12px 40px rgba(0, 0, 0, 0.35);
+        0 12px 40px rgba(0, 0, 0, 0.18);
     }
+  }
+
+  .theme-slot {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-items .theme-slot {
+    justify-content: center;
+    padding: 0.75rem 1rem 1.25rem;
   }
 
   footer {
