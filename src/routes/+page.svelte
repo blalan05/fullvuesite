@@ -1,20 +1,10 @@
 <script>
   import { page } from '$app/state';
   import AppLauncher from '$lib/app-launcher.svelte';
+  import ShotCarousel from '$lib/shot-carousel.svelte';
+  import ThemeShot from '$lib/theme-shot.svelte';
 
   import logo from '$lib/logo.png';
-  import laptopShot from '$lib/laptop_core_cost_sheet.webp';
-  import mobileShot from '$lib/mobile_core_cost_sheet.webp';
-  import coreJobs from '$lib/core-jobs.webp';
-  import coreCustomers from '$lib/core-customers.webp';
-  import fieldShot from '$lib/field.webp';
-  import salesShot from '$lib/sales.webp';
-  import purchasingShot from '$lib/purchasing.webp';
-  import invoicingShot from '$lib/invoicing.webp';
-  import hrShot from '$lib/hr.webp';
-  import sdsShot from '$lib/sds.webp';
-  import todosShot from '$lib/to-dos.webp';
-  import huddleShot from '$lib/production_meeting.webp';
 
   const demoVideos = [
     { id: 'S18ptA8cySc', title: 'Jobs and core workflows' },
@@ -24,16 +14,34 @@
   ];
 
   const screenshots = [
-    { src: coreJobs, alt: 'FullVue jobs dashboard listing active jobs with status and customer context', caption: 'Jobs' },
-    { src: coreCustomers, alt: 'FullVue customers dashboard with contact and site details', caption: 'Customers' },
-    { src: fieldShot, alt: 'FullVue field view with road sheets and job schedule for crews', caption: 'Field' },
-    { src: salesShot, alt: 'FullVue sales pipeline with opportunities and quotes', caption: 'Sales' },
-    { src: purchasingShot, alt: 'FullVue purchase orders tied to vendors and inventory', caption: 'Purchasing' },
-    { src: invoicingShot, alt: 'FullVue invoice built from recorded job data', caption: 'Invoicing' },
-    { src: hrShot, alt: 'FullVue human resources records and reports', caption: 'HR' },
-    { src: sdsShot, alt: 'FullVue safety data sheet library with search', caption: 'SDS' },
-    { src: todosShot, alt: 'FullVue to-do lists tracking team follow-ups', caption: 'To-dos' },
-    { src: huddleShot, alt: 'FullVue production meeting view with live pipeline', caption: 'Production meetings' }
+    { slug: 'landing', alt: 'FullVue home dashboard with widgets for jobs, invoices, and AR', caption: 'Home' },
+    { slug: 'search', alt: 'FullVue global search open across jobs and records', caption: 'Search' },
+    { slug: 'jobs', alt: 'FullVue jobs dashboard listing active jobs with status and customer context', caption: 'Jobs' },
+    { slug: 'job', alt: 'FullVue job detail with tasks, time, and materials', caption: 'Job detail' },
+    { slug: 'customer', alt: 'FullVue customer record with jobs and contact context', caption: 'Customers' },
+    { slug: 'scheduling', alt: 'FullVue job schedule view for crew coordination', caption: 'Schedule' },
+    { slug: 'field', alt: 'FullVue field / road sheet for on-site work', caption: 'Field' },
+    { slug: 'sales', alt: 'FullVue sales pipeline with opportunities', caption: 'Sales' },
+    { slug: 'quotes', alt: 'FullVue quotes list for proposals and e-sign', caption: 'Quotes' },
+    { slug: 'customer-quote', alt: 'Customer-facing quote signing page', caption: 'Quote sign' },
+    { slug: 'purchasing', alt: 'FullVue purchasing workflow tied to vendors and stock', caption: 'Purchasing' },
+    { slug: 'purchase-request', alt: 'FullVue purchase request queue', caption: 'Purchase requests' },
+    { slug: 'purchasing-order', alt: 'FullVue purchase order with lines and totals', caption: 'Purchase orders' },
+    { slug: 'vendor', alt: 'FullVue vendor record with purchasing history', caption: 'Vendors' },
+    { slug: 'inventory', alt: 'FullVue inventory dashboard for parts and stock', caption: 'Inventory' },
+    { slug: 'products', alt: 'FullVue products catalog with serialized trailer units', caption: 'Products' },
+    { slug: 'counter', alt: 'FullVue counter / point of sale register', caption: 'Counter' },
+    { slug: 'assets', alt: 'FullVue assets register for equipment and assignments', caption: 'Assets' },
+    { slug: 'field-fleet-inspections', alt: 'FullVue fleet inspection checklist for a service truck', caption: 'Fleet inspections' },
+    { slug: 'attendance', alt: 'FullVue attendance and staff scheduling', caption: 'Attendance' },
+    { slug: 'tether', alt: 'FullVue Tether messaging channels', caption: 'Tether' },
+    { slug: 'sms-settings', alt: 'FullVue SMS settings for consented customer texting', caption: 'SMS' },
+    { slug: 'sds', alt: 'FullVue SDS library previewing a safety data sheet', caption: 'SDS' },
+    { slug: 'huddle', alt: 'FullVue production meeting huddle with jobs by department', caption: 'Production Meetings' },
+    { slug: 'todos', alt: 'FullVue to-do with tasks, notes, and owner', caption: 'To-Dos' },
+    { slug: 'accounting', alt: 'FullVue accounting dashboard with ledger, AR, AP, and reports', caption: 'Accounting' },
+    { slug: 'qbo', alt: 'FullVue QuickBooks Online connection with one-way push mappings', caption: 'QuickBooks Online' },
+    { slug: 'ai', alt: 'Ask FullVue answering a question about purchase orders', caption: 'AI' }
   ];
 </script>
 
@@ -44,50 +52,111 @@
   <section class="hero fv-card">
     <div class="hero-copy">
       <p class="hero-eyebrow">Operations software for owners who run jobs, crews, and the books</p>
-      <h1>Run sales, jobs, field work, billing, and purchasing in one place</h1>
+      <h1>Run operations in FullVue. Close the books in QuickBooks. Ask AI about the rest.</h1>
       <p class="hero-lead fv-muted">
-        FullVue replaces scattered spreadsheets and disconnected tools with a single operational system—from
-        opportunities and quotes through scheduling, invoicing, counter/POS, inventory buying, assets, messaging, time,
-        and HR. Connect <strong><a href="/integrations/quickbooks">QuickBooks Online</a></strong> when you want invoices and bills reflected in your accounting.
+        FullVue connects sales, jobs, field work, purchasing, invoicing, and payments in one system—then pushes invoices,
+        bills, and payments one-way to
+        <strong><a href="/integrations/quickbooks">QuickBooks Online</a></strong>
+        for your accountant.
+        <strong><a href="/modules/ai">Ask FullVue</a></strong>
+        answers questions about your data without silently changing it.
       </p>
       <div class="hero-cta">
-        <a href="/pricing" class="fv-btn fv-btn--primary">See pricing</a>
-        <a href="/contact" class="fv-btn fv-btn--ghost">Schedule a demo</a>
+        <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
+        <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
+        <a href="/contact" class="fv-btn fv-btn--ghost">Contact us</a>
       </div>
       <ul class="hero-points" aria-label="What FullVue helps with">
-        <li>Quote and schedule work without losing context</li>
-        <li>Invoice from job data; tighten labor and materials visibility</li>
-        <li>Purchasing, assets, and counter flows tied to real operations</li>
-        <li>Tether and Planner reduce coordination outside the system</li>
-        <li>Role-based permissions so teams see only what they need</li>
+        <li>QuickBooks Online — one-way push, not two-way sync theater</li>
+        <li>Ask FullVue — permission-aware answers from your live data</li>
+        <li>Jobs, field, invoicing, and payments on the same record</li>
+        <li>Modules that match your business—not a suite you never use</li>
       </ul>
     </div>
     <div class="hero-visual">
       <img class="hero-logo" src={logo} alt="FullVue" width="280" />
       <div class="device-stack">
         <div class="pc_demo_container">
-          <img src={laptopShot} alt="FullVue job cost sheet on a laptop showing labor, materials, and margin" loading="lazy" />
+          <ThemeShot
+            slug="landing"
+            device="desktop"
+            alt="FullVue home dashboard on desktop"
+            loading="eager"
+            class="hero-shot"
+          />
         </div>
         <div class="mobile_demo_container">
-          <img src={mobileShot} alt="FullVue cost sheet on a phone for crews in the field" loading="lazy" />
+          <ThemeShot
+            slug="jobs"
+            device="phone"
+            alt="FullVue jobs list on a phone"
+            loading="eager"
+            class="hero-shot"
+          />
         </div>
       </div>
     </div>
   </section>
 
   <section class="strip">
-    <h2 class="strip-title">Less swivel-chairing between apps</h2>
+    <h2 class="strip-title">Too many tools, not enough truth</h2>
     <p class="strip-text fv-muted">
-      Built for businesses that sell work, dispatch crews, stock parts, and still need counter-ready flows—without
-      maintaining five different subscriptions.
+      When quotes live in one place, schedules in another, and invoices somewhere else, margin disappears in the gaps.
+      FullVue keeps the job as the spine—from opportunity to cash—and keeps your accountant and your team out of retyping hell.
     </p>
+  </section>
+
+  <section class="flagship-grid">
+    <article class="flagship fv-card flagship--shot">
+      <p class="flagship-eyebrow">Flagship</p>
+      <h2>Your accountant stays in QuickBooks. You stay in FullVue.</h2>
+      <p class="fv-muted">
+        Connect QuickBooks Online and push invoices, credit memos, bills, and payments one-way into QBO. Jobs, purchase
+        orders, and inventory stay where work happens. No two-way sync theater—just the cash documents your books need.
+      </p>
+      <div class="flagship-shot">
+        <ThemeShot slug="qbo" alt="FullVue QuickBooks Online connection with one-way push mappings" />
+      </div>
+      <a href="/integrations/quickbooks" class="fv-btn fv-btn--ghost">See how QuickBooks connects</a>
+    </article>
+    <article class="flagship fv-card flagship--shot">
+      <p class="flagship-eyebrow">Flagship</p>
+      <h2>Ask your business a question—get an answer from your data.</h2>
+      <p class="fv-muted">
+        Ask FullVue is a permission-aware assistant that helps owners and managers find what’s in FullVue—jobs, sales,
+        reports, and more—plus assist-tier polish and table explanations. It does not rewrite invoices or post behind your
+        back. Metered with AI credits.
+      </p>
+      <div class="flagship-shot">
+        <ThemeShot slug="ai" alt="Ask FullVue answering a materials purchasing question" />
+      </div>
+      <a href="/modules/ai" class="fv-btn fv-btn--ghost">See Ask FullVue</a>
+    </article>
+  </section>
+
+  <section class="pillars fv-card">
+    <h2>How it works</h2>
+    <ol class="pillar-list">
+      <li>
+        <strong>Sell and schedule.</strong>
+        Quotes, e-sign, job schedules, and field road sheets in the same workspace.
+      </li>
+      <li>
+        <strong>Execute and bill.</strong>
+        Time, materials, closeout, invoices, and card pay links tied to the work.
+      </li>
+      <li>
+        <strong>Close and understand.</strong>
+        One-way QuickBooks Online push for the accountant; Ask FullVue when you need answers fast.
+      </li>
+    </ol>
   </section>
 
   <section class="demo_gallery">
     <header class="gallery-head">
       <h2>See the workflows your team lives in</h2>
       <p class="fv-muted">
-        Short videos and product grabs across jobs, sales, field service, billing, HR, compliance, and shop-floor rhythm.
+        Product grabs from the demo tenant—toggle light/dark in the nav to match how your team runs the app.
       </p>
     </header>
 
@@ -108,24 +177,16 @@
       {/each}
     </div>
 
-    <div class="shot-grid">
-      {#each screenshots as shot}
-        <figure class="shot-cell">
-          <img src={shot.src} alt={shot.alt} loading="lazy" />
-          <figcaption class="fv-muted">{shot.caption}</figcaption>
-        </figure>
-      {/each}
-    </div>
-
+    <ShotCarousel shots={screenshots} />
   </section>
 
   <section class="cta_bottom fv-card">
-    <h2>Want a walkthrough tuned to how you operate?</h2>
+    <h2>Ready to run it on your workflows?</h2>
     <p class="fv-muted">
-      Tell us how you quote, dispatch, buy parts, and pay people—we’ll map the modules that matter and show the handoff
-      to QuickBooks when you’re ready.
+      Start a 14-day free trial with auto-provisioned sample data for the modules you pick—no credit card. Prefer to talk first?
+      <a href="/contact">Contact us</a>.
     </p>
-    <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+    <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
   </section>
 </article>
 {/if}
@@ -161,17 +222,6 @@
   .hero-visual {
     position: relative;
     z-index: 1;
-  }
-
-  .hero::after {
-    content: '';
-    position: absolute;
-    inset: auto -25% -50% auto;
-    width: min(480px, 70%);
-    height: min(240px, 45%);
-    background: radial-gradient(ellipse at 100% 100%, rgba(130, 100, 180, 0.12), transparent 55%);
-    pointer-events: none;
-    z-index: 0;
   }
 
   .hero-copy h1 {
@@ -239,7 +289,7 @@
     margin: 0 auto;
     width: 88%;
     max-width: 520px;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
     overflow: hidden;
     border-radius: var(--fv-radius-md, 10px);
     border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
@@ -249,19 +299,19 @@
     position: absolute;
     right: 4%;
     bottom: -10%;
-    /* Height-driven sizing: the phone can never grow taller than the
-       stack, so it overlaps the laptop's corner but not the logo above. */
     height: 82%;
     width: auto;
-    aspect-ratio: 259/540;
+    aspect-ratio: 9/16;
     overflow: hidden;
     border-radius: var(--fv-radius-md, 10px);
     border: 1px solid var(--fv-border-strong, rgba(255, 255, 255, 0.14));
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
   }
 
-  .pc_demo_container img,
-  .mobile_demo_container img {
+  .pc_demo_container :global(.hero-shot),
+  .mobile_demo_container :global(.hero-shot),
+  .pc_demo_container :global(img),
+  .mobile_demo_container :global(img) {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -276,62 +326,100 @@
     border: 1px solid var(--fv-border-strong, rgba(255, 255, 255, 0.16));
     background: linear-gradient(
       165deg,
-      rgba(40, 48, 60, 0.65),
-      rgba(22, 25, 32, 0.96)
+      color-mix(in srgb, var(--fv-bg-elevated) 65%, transparent),
+      color-mix(in srgb, var(--fv-bg-page) 96%, transparent)
     );
     box-shadow:
       0 0 0 1px rgba(255, 255, 255, 0.04) inset,
-      0 20px 50px rgba(0, 0, 0, 0.32);
+      0 20px 50px rgba(0, 0, 0, 0.18);
     position: relative;
     overflow: hidden;
   }
 
-  .strip::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 12%;
-    right: 12%;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(140, 180, 228, 0.4),
-      transparent
-    );
-  }
-
   .strip-title {
     margin: 0 0 var(--fv-space-2, 8px);
-    position: relative;
-    z-index: 1;
   }
 
   .strip-text {
-    position: relative;
-    z-index: 1;
     margin: 0 auto;
     max-width: 62ch;
+  }
+
+  .flagship-grid {
+    display: grid;
+    gap: var(--fv-space-4, 16px);
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .flagship {
+    padding: var(--fv-space-5, 24px);
+
+    h2 {
+      margin: 0 0 var(--fv-space-3, 12px);
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0 0 var(--fv-space-4, 16px);
+      max-width: 56ch;
+    }
+  }
+
+  .flagship-eyebrow {
+    margin: 0 0 var(--fv-space-2, 8px);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--fv-accent-hover, #5485b8);
+  }
+
+  .flagship-shot {
+    margin: 0 0 var(--fv-space-4, 16px);
+    border-radius: var(--fv-radius-md, 10px);
+    overflow: hidden;
+    border: 1px solid var(--fv-border);
+
+    :global(img) {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .pillars {
+    padding: var(--fv-space-5, 24px);
+
+    h2 {
+      margin: 0 0 var(--fv-space-3, 12px);
+      text-align: center;
+    }
+  }
+
+  .pillar-list {
+    margin: 0 auto;
+    padding-left: 1.2rem;
+    max-width: 68ch;
+    display: flex;
+    flex-direction: column;
+    gap: var(--fv-space-3, 12px);
+
+    li {
+      color: var(--fv-text-muted, #b8c0cc);
+    }
+
+    strong {
+      color: var(--fv-text, #f4f6f8);
+    }
   }
 
   .demo_gallery {
     position: relative;
     padding-top: var(--fv-space-2, 8px);
-
-    &::before {
-      content: '';
-      display: block;
-      height: 1px;
-      max-width: 120px;
-      margin: 0 auto var(--fv-space-5, 24px);
-      border-radius: 2px;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(140, 180, 228, 0.45),
-        transparent
-      );
-    }
 
     .gallery-head {
       text-align: center;
@@ -362,9 +450,7 @@
       border-radius: var(--fv-radius-lg, 14px);
       overflow: hidden;
       border: 1px solid var(--fv-border-strong, rgba(255, 255, 255, 0.14));
-      box-shadow:
-        0 0 0 1px rgba(255, 255, 255, 0.05) inset,
-        0 24px 60px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
 
       iframe {
         display: block;
@@ -374,42 +460,7 @@
       }
     }
 
-    .shot-grid {
-      display: grid;
-      gap: var(--fv-space-4, 16px);
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-
-      @media (min-width: 720px) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      @media (min-width: 1080px) {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-      }
-    }
-
-    .shot-cell {
-      margin: 0;
-
-      img {
-        display: block;
-        width: 100%;
-        aspect-ratio: 16/10;
-        object-fit: cover;
-        object-position: top left;
-        border-radius: var(--fv-radius-md, 10px);
-        border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      }
-
-      figcaption {
-        margin-top: var(--fv-space-2, 8px);
-        font-size: 0.85rem;
-        text-align: center;
-      }
-    }
   }
-
-  
 
   .cta_bottom {
     text-align: center;
@@ -433,7 +484,6 @@
     }
 
     .hero-visual {
-      position: relative;
       padding-top: var(--fv-space-4, 16px);
     }
 

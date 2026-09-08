@@ -1,8 +1,8 @@
 export function load() {
   return {
-    pageTitle: 'Counter / POS',
+    pageTitle: 'Counter',
     metaTitle: 'Counter & point-of-sale module | FullVue',
     metaDescription:
-      'Register-style selling with promotions, memberships, punch cards, loyalty, stored value, and POS fees—alongside traditional sales and job workflows.',
+      'FullVue Counter adds POS checkout, promotions, memberships, loyalty, and stored value.',
   };
 }

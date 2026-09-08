@@ -8,7 +8,7 @@
     <h1>FullVue vs Jobber: an honest comparison</h1>
     <p class="lead fv-muted">Jobber is excellent software with years of polish and thousands of happy users — if you run a residential service business that quotes, schedules, and invoices, it may be exactly what you need. FullVue is built for a different shop: the one that also carries inventory, cuts purchase orders, sells over a counter, or checks out equipment. Here's the honest side-by-side, including where Jobber beats us.</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
       <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
     </div>
@@ -96,11 +96,11 @@
   <section class="fv-card section">
     <h2>See it with your own workflow</h2>
     <p class="fv-muted">
-      Tell us how you quote, run work, and bill today — we'll walk the same loop through FullVue and you can
-      judge the fit yourself.
+      Start a free 14-day trial—your workspace is provisioned automatically with sample data for the modules you pick.
+      Prefer to talk first? <a href="/contact">Contact us</a>.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
     </div>
   </section>

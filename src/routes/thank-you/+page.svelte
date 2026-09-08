@@ -20,9 +20,9 @@
       Your note goes straight to the team that builds FullVue, not a ticket queue. While you wait, here's more worth a look:
     </p>
     <div class="thanks-links">
-      <a class="fv-btn fv-btn--primary" href="/modules">Explore the modules</a>
+      <a class="fv-btn fv-btn--primary" href="/trial">Start free trial</a>
+      <a class="fv-btn" href="/modules">Explore the modules</a>
       <a class="fv-btn" href="/pricing">See pricing</a>
-      <a class="fv-btn" href="/company">Meet the company</a>
     </div>
   </section>
 </article>

@@ -8,7 +8,7 @@
     <h1>Computer repair shop software built around parts, not phones</h1>
     <p class="lead fv-muted">Most repair shop software was built through the lens of cell phone repair — and you feel it the day you try to run a computer shop, an IT-services storefront, or a custom-build bench on it. FullVue starts where your money actually lives: the parts on your shelves, the machines on your bench, and the customer at your counter. One system, priced by team size, built and supported by a veteran-owned team in Appleton, Wisconsin.</p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
       <a href="/modules" class="fv-btn fv-btn--ghost">Explore modules</a>
     </div>
@@ -80,11 +80,11 @@
   <section class="fv-card section">
     <h2>See it with your own workflow</h2>
     <p class="fv-muted">
-      Tell us how you quote, run work, and bill today — we'll walk the same loop through FullVue and you can
-      judge the fit yourself.
+      Start a free 14-day trial—your workspace is provisioned automatically with sample data for the modules you pick.
+      Prefer to talk first? <a href="/contact">Contact us</a>.
     </p>
     <div class="cta-row">
-      <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+      <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
       <a href="/pricing" class="fv-btn fv-btn--ghost">See pricing</a>
     </div>
   </section>

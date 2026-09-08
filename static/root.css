@@ -1,7 +1,8 @@
 /* Fonts load via <link> tags in app.html (preconnect + parallel fetch)
    instead of a serial @import chain here. */
 
-:root {
+:root,
+html[data-theme='dark'] {
   --fv-bg-page: #171a1f;
   --fv-bg-elevated: #1e232b;
   --fv-bg-card: #262c36;
@@ -21,6 +22,10 @@
   --fv-accent-muted: rgba(65, 106, 152, 0.42);
   --fv-glow-accent: rgba(92, 142, 196, 0.22);
   --fv-focus-ring: #9ec0e8;
+  --fv-nav-bg: rgba(23, 26, 31, 0.78);
+  --fv-field-bg: rgba(12, 14, 18, 0.55);
+  --fv-field-bg-focus: rgba(12, 14, 18, 0.75);
+  --fv-card-shadow: 0 16px 48px rgba(0, 0, 0, 0.42);
   --fv-radius-sm: 6px;
   --fv-radius-md: 10px;
   --fv-radius-lg: 14px;
@@ -34,6 +39,36 @@
   --fv-max-content: 1120px;
   --fv-font-body: 'IBM Plex Sans', system-ui, sans-serif;
   --fv-font-display: 'Lexend', var(--fv-font-body);
+  --fv-page-glow-1: rgba(65, 106, 152, 0.18);
+  --fv-page-glow-2: rgba(120, 90, 180, 0.07);
+}
+
+html[data-theme='light'] {
+  --fv-bg-page: #f0f3f7;
+  --fv-bg-elevated: #ffffff;
+  --fv-bg-card: #ffffff;
+  --fv-bg-card-shine: linear-gradient(
+    155deg,
+    rgba(65, 106, 152, 0.08) 0%,
+    rgba(255, 255, 255, 0.98) 38%,
+    rgba(255, 255, 255, 0.98) 62%,
+    rgba(65, 106, 152, 0.05) 100%
+  );
+  --fv-border: rgba(20, 30, 45, 0.08);
+  --fv-border-strong: rgba(20, 30, 45, 0.16);
+  --fv-text: #1a2330;
+  --fv-text-muted: #5a6678;
+  --fv-accent: #3a6290;
+  --fv-accent-hover: #2f5a8c;
+  --fv-accent-muted: rgba(65, 106, 152, 0.2);
+  --fv-glow-accent: rgba(65, 106, 152, 0.12);
+  --fv-focus-ring: #416a98;
+  --fv-nav-bg: rgba(255, 255, 255, 0.86);
+  --fv-field-bg: rgba(255, 255, 255, 0.9);
+  --fv-field-bg-focus: #ffffff;
+  --fv-card-shadow: 0 16px 40px rgba(30, 45, 70, 0.1);
+  --fv-page-glow-1: rgba(65, 106, 152, 0.1);
+  --fv-page-glow-2: rgba(120, 90, 180, 0.04);
 }
 
 *,
@@ -52,8 +87,8 @@ html {
 body {
   background-color: var(--fv-bg-page);
   background-image:
-    radial-gradient(ellipse 85% 55% at 15% -5%, rgba(65, 106, 152, 0.18), transparent 45%),
-    radial-gradient(ellipse 70% 50% at 95% 15%, rgba(120, 90, 180, 0.07), transparent 42%),
+    radial-gradient(ellipse 85% 55% at 15% -5%, var(--fv-page-glow-1), transparent 45%),
+    radial-gradient(ellipse 70% 50% at 95% 15%, var(--fv-page-glow-2), transparent 42%),
     radial-gradient(
       ellipse 120% 80% at 50% -20%,
       var(--fv-accent-muted),
@@ -124,6 +159,10 @@ a:not([class]) {
 }
 
 a:not([class]):hover {
+  color: var(--fv-accent);
+}
+
+html[data-theme='dark'] a:not([class]):hover {
   color: #c5daf4;
 }
 
@@ -241,8 +280,15 @@ main.site-main {
   border-radius: var(--fv-radius-lg);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.04) inset,
-    0 16px 48px rgba(0, 0, 0, 0.42),
+    var(--fv-card-shadow),
     0 0 100px -40px var(--fv-glow-accent);
+}
+
+html[data-theme='light'] .fv-card {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.65) inset,
+    var(--fv-card-shadow),
+    0 0 80px -48px var(--fv-glow-accent);
 }
 
 /* Subtle top edge light */
@@ -269,7 +315,7 @@ main.site-main {
   max-width: 100%;
   padding: 0.65rem 0.85rem;
   border-radius: var(--fv-radius-sm);
-  background: rgba(12, 14, 18, 0.55);
+  background: var(--fv-field-bg);
   border: 1px solid var(--fv-border-strong);
   color: var(--fv-text);
   transition:
@@ -279,16 +325,16 @@ main.site-main {
 }
 
 .fv-field::placeholder {
-  color: rgba(180, 190, 204, 0.55);
+  color: color-mix(in srgb, var(--fv-text-muted) 70%, transparent);
 }
 
 .fv-field:hover {
-  border-color: rgba(255, 255, 255, 0.22);
+  border-color: color-mix(in srgb, var(--fv-text) 22%, transparent);
 }
 
 .fv-field:focus {
   outline: none;
   border-color: var(--fv-accent-hover);
   box-shadow: 0 0 0 3px rgba(65, 106, 152, 0.28);
-  background: rgba(12, 14, 18, 0.75);
+  background: var(--fv-field-bg-focus);
 }

@@ -38,7 +38,9 @@
       </div>
       <div class="pillar">
         <h3>Cash &amp; counter</h3>
-        <p class="fv-muted">Invoicing aligned with jobs and sales; Counter/POS-style selling where you need it.</p>
+        <p class="fv-muted">
+          Invoicing aligned with jobs and sales; pay-by-link after merchant onboarding; Counter/POS-style selling where you need it.
+        </p>
       </div>
       <div class="pillar">
         <h3>Purchasing &amp; inventory</h3>
@@ -53,8 +55,8 @@
       <div class="pillar">
         <h3>Operations depth</h3>
         <p class="fv-muted">
-          Support tickets, unified Assets, Rentals, SDS, production meetings, to-dos, Tether messaging, and Planner
-          calendars—plus a customer portal for invited contacts. Pick what matches your business.
+          Support tickets, unified Assets, Rentals, SDS, production meetings, to-dos, Tether messaging, Planner
+          calendars, and connected Email—plus a customer portal for invited contacts. Pick what matches your business.
         </p>
       </div>
     </div>
@@ -64,11 +66,13 @@
   </section>
 
   <section class="erp-section erp-section--alt fv-card">
-    <h2>Accounting and QuickBooks Online</h2>
+    <h2>Accounting choice: in-app ledger and/or QuickBooks Online</h2>
     <p>
-      FullVue is positioned around running operations day-to-day. For organizations that keep their books in
-      <strong>QuickBooks Online</strong>, FullVue supports connecting that accounting layer—for example pushing invoices
-      and bills—so finance stays where your accountant expects it while work stays connected to jobs.
+      Enable <a href="/modules/accounting">Accounting</a> when you want an in-app general ledger—chart of accounts,
+      journals, AR/AP, file-based bank import, and financial reports. Teams that keep the accountant in
+      <strong>QuickBooks Online</strong> can also
+      <a href="/integrations/quickbooks">push invoices, credit memos, bills, and payments one-way</a>
+      so books close in QBO while jobs, POs, and inventory stay in FullVue. Same close story, two depths—not two-way sync.
     </p>
   </section>
 
@@ -95,15 +99,19 @@
       Start with the <a href="/pricing">pricing page</a> — base prices and bracket math are visible, no email gate.
       Then pick modules on the <a href="/modules">modules page</a> for the places you’re leaking time or margin:
       most shops begin with quotes, jobs, time, and invoicing, and add purchasing, inventory, or counter sales when
-      they’re ready. And if reading isn’t the fastest way to decide, <a href="/contact">schedule a walkthrough</a> —
-      we’ll run your actual workflow through it, end to end.
+      they’re ready. And if reading isn’t the fastest way to decide,
+      <a href="/trial">start a free 14-day trial</a>
+      — your workspace is provisioned automatically with sample data for the modules you pick.
     </p>
   </section>
 
   <section class="cta fv-card">
     <h2>See FullVue against your workflows</h2>
-    <p class="fv-muted">Walk through quotes → jobs → field → billing → purchasing with your terminology.</p>
-    <a href="/contact" class="fv-btn fv-btn--primary">Schedule a demo</a>
+    <p class="fv-muted">
+      Start a free trial and walk quotes → jobs → field → billing → purchasing with sample data—or
+      <a href="/contact">contact us</a> with questions first.
+    </p>
+    <a href="/trial" class="fv-btn fv-btn--primary">Start free trial</a>
   </section>
 </article>
 

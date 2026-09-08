@@ -12,9 +12,9 @@
     <h1>{page.status === 404 ? "That page doesn't exist." : 'Something went wrong.'}</h1>
     <p class="lead fv-muted">Here's where most people are headed:</p>
     <div class="error-links">
-      <a class="fv-btn fv-btn--primary" href="/modules">Explore the modules</a>
+      <a class="fv-btn fv-btn--primary" href="/trial">Start free trial</a>
+      <a class="fv-btn" href="/modules">Explore the modules</a>
       <a class="fv-btn" href="/pricing">See pricing</a>
-      <a class="fv-btn" href="/industries">Find your industry</a>
       <a class="fv-btn" href="/contact">Contact us</a>
     </div>
   </section>

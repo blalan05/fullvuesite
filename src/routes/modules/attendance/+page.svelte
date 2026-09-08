@@ -1,17 +1,23 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
-  <h1>Attendance</h1>
+  <h1>Time and schedules that can face the job clock</h1>
   <p class="lead">
-    Punches and schedules need to reconcile with job time before payroll runs—not after disputes in a group chat.
+    Attendance covers punches, schedules, absences, and payroll-period reporting—so labor data is captured where work is
+    managed.
   </p>
   <div class="col_container">
-    <div class="video_container attendance-shot"></div>
+    <div class="video_container product-shot">
+      <ThemeShot slug="attendance" alt="FullVue attendance and staff scheduling view" />
+    </div>
     <div class="module_summary">
-      <p><strong>Outcome:</strong> Time punches, schedules, and payroll-period attendance reporting sit beside HR so leadership compares clock time to job time—and exports payroll-ready reports for your bookkeeper or payroll provider.</p>
       <ul>
-        <li>Time punches including quick in/out from navigation</li>
-        <li>Week rosters, shift swaps, availability, and PTO accruals</li>
-        <li>Payroll-period attendance reporting</li>
-        <li>Works alongside the Human Resources module</li>
+        <li>Clock in and out from the app (including nav In/Out)</li>
+        <li>Manage schedules, shifts, and absences</li>
+        <li>Report attendance by payroll period</li>
+        <li>Compare workforce time against job time where your reports support it</li>
       </ul>
     </div>
   </div>
@@ -39,15 +45,16 @@
 
     .video_container {
       width: 100%;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 16 / 10;
       border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
       border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: var(--fv-bg-elevated, #252a32);
 
-      &.attendance-shot {
-        background: url('$lib/payroll.webp');
-        background-size: cover;
-        background-position: top left;
+      :global(img) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top left;
       }
     }
   }

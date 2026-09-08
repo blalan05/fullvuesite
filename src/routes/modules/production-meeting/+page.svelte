@@ -1,10 +1,20 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
-    <h1>Production Meeting</h1>
+    <h1>Production meetings with an operational rhythm</h1>
   <div class="col_container">
-    <div class="video_container"></div>
+    <div class="video_container product-shot">
+      <ThemeShot slug="huddle" alt="FullVue production meeting huddle with jobs by department" />
+    </div>
     <div class="module_summary">
+      <p>Production Meetings (Huddle) structure huddle workflows so shop-floor and ops standups stay tied to how work actually runs.</p>
       <ul>
-        <li>Improve communication before, during, and after regular meetings</li>
+        <li>Run production meeting workflows in-product</li>
+        <li>Keep standup structure consistent across days and crews</li>
+        <li>Reduce “we talked about it” with a durable meeting habit</li>
+        <li>Pair with jobs and to-dos for follow-through</li>
       </ul>
     </div>
   </div>
@@ -40,9 +50,17 @@
     }
     .video_container {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      background: url('$lib/production_meeting.webp');
-      background-size: cover;
+      aspect-ratio: 16 / 10;
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
   h4 {

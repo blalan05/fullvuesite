@@ -3,6 +3,6 @@ export function load() {
     pageTitle: 'Purchasing',
     metaTitle: 'Purchasing & inventory module | FullVue',
     metaDescription:
-      'Issue POs, manage vendors and bills, and keep inventory aligned with jobs so crews bill what they truly consumed.',
+      'FullVue Purchasing handles POs, requests, receiving, vendor bills, and paylists.',
   };
 }

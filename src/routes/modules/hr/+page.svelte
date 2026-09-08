@@ -1,12 +1,14 @@
 <section class="module_container">
-    <h1>Human Resources</h1>
+    <h1>Employee HR records beside the people who run the work</h1>
   <div class="col_container">
     <div class="video_container"></div>
     <div class="module_summary">
+      <p>Human Resources holds benefits, employee HR data, reviews, and HR reports—so people data is not stranded outside operations.</p>
       <ul>
-        <li>Benefits</li>
-        <li>Pay Rates and Employee Performance Reviews</li>
-        <li>Document kudos reports and write-ups so they can be addressed timely</li>
+        <li>Maintain employee HR profiles and benefits information</li>
+        <li>Run reviews and HR reporting when enabled</li>
+        <li>Keep workforce data under the same permissions model as the rest of FullVue</li>
+        <li>Pair with Attendance for a fuller people + time story</li>
       </ul>
     </div>
   </div>

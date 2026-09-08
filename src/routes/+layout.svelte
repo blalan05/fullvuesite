@@ -1,5 +1,7 @@
 <script lang="ts">
   import Analytics from '$lib/analytics.svelte';
+  import ThemeToggle from '$lib/theme-toggle.svelte';
+  import { theme } from '$lib/theme.svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
   import type { Snippet } from 'svelte';
@@ -11,6 +13,12 @@
   let { children }: Props = $props();
 
   const isAppLauncher = $derived(page.data.isAppLauncher ?? false);
+
+  $effect(() => {
+    if (!browser) return;
+    // Heal SSR/HMR desync so chrome + ThemeShot match FOUC / localStorage.
+    theme.hydrate();
+  });
 
   $effect(() => {
     if (!browser) {
@@ -40,6 +48,7 @@
     { title: 'Home', link: '/' },
     { title: 'What is ERP?', link: '/erp' },
     { title: 'Modules', link: '/modules' },
+    { title: 'Ask FullVue', link: '/modules/ai' },
     { title: 'Industries', link: '/industries' },
     { title: 'Pricing', link: '/pricing' },
     { title: 'Free Trial', link: '/trial' },
@@ -63,8 +72,30 @@
     integrations: 'Integrations',
     pricing: 'Pricing',
     erp: 'ERP',
+    ai: 'AI',
+    trial: 'Free Trial',
     contact: 'Contact',
     company: 'Company',
+    accounting: 'Accounting',
+    assets: 'Assets',
+    attendance: 'Attendance',
+    counter: 'Counter',
+    email: 'Email',
+    hr: 'Human Resources',
+    invoicing: 'Invoicing',
+    planner: 'Planner',
+    products: 'Products',
+    purchasing: 'Purchasing',
+    rentals: 'Rentals',
+    field: 'Field',
+    sales: 'Sales',
+    sds: 'SDS',
+    sms: 'SMS',
+    support: 'Customer Support',
+    tether: 'Tether',
+    'to-dos': 'To-Dos',
+    'production-meeting': 'Production Meetings',
+    jobs: 'Core',
   };
 
   const breadcrumbLd = (pathname: string) => {
@@ -146,7 +177,7 @@
           operatingSystem: 'Web, Android',
           url: 'https://fullvue.io',
           description:
-            'Modular ERP for small time-and-materials businesses: quotes with e-signing, jobs, scheduling, invoicing, purchasing, inventory, counter/POS, attendance, and QuickBooks Online sync.',
+            'Modular ERP for small time-and-materials businesses: jobs, field, invoicing, purchasing, counter/POS, attendance, one-way QuickBooks Online push, and Ask FullVue AI.',
           offers: {
             '@type': 'Offer',
             price: '1500',
@@ -178,6 +209,9 @@
           >
         </li>
       {/each}
+      <li class="theme-slot">
+        <ThemeToggle />
+      </li>
     </ul>
   </div>
 </nav>
@@ -209,6 +243,9 @@
             >
           </li>
         {/each}
+        <li class="theme-slot">
+          <ThemeToggle />
+        </li>
       </div>
     </div>
   </div>
@@ -224,6 +261,7 @@
   <span class="ml-2">— veteran-owned, built in Appleton, WI</span>
   <a href="/company" title="About the company" class="ml-2">Company</a>
   <a href="/integrations/quickbooks" title="QuickBooks Online integration" class="ml-2">QuickBooks</a>
+  <a href="/modules/ai" title="Ask FullVue AI" class="ml-2">Ask FullVue</a>
   <a href="/compare/jobber" title="FullVue vs Jobber" class="ml-2">vs Jobber</a>
   <a href="/compare/repairshopr" title="FullVue vs RepairShopr" class="ml-2">vs RepairShopr</a>
   <a href="/privacypolicy" title="Privacy Policy" class="ml-2">Privacy Policy</a>
@@ -408,13 +446,23 @@
       top: 0;
       z-index: 97;
       border-bottom: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
-      background: rgba(23, 26, 31, 0.78);
+      background: var(--fv-nav-bg, rgba(23, 26, 31, 0.78));
       backdrop-filter: saturate(160%) blur(14px);
       -webkit-backdrop-filter: saturate(160%) blur(14px);
       box-shadow:
         0 1px 0 rgba(255, 255, 255, 0.04) inset,
-        0 12px 40px rgba(0, 0, 0, 0.35);
+        0 12px 40px rgba(0, 0, 0, 0.18);
     }
+  }
+
+  .theme-slot {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-items .theme-slot {
+    justify-content: center;
+    padding: 0.75rem 1rem 1.25rem;
   }
 
   footer {

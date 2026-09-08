@@ -1,14 +1,24 @@
+<script>
+  import ThemeShot from '$lib/theme-shot.svelte';
+</script>
+
 <section class="module_container">
-    <h1>Safety Data Sheets</h1>
+    <h1>Safety data sheets where the team already works</h1>
   <div class="col_container">
+    <div class="product-shot">
+      <ThemeShot slug="sds" alt="FullVue SDS library previewing a safety data sheet" />
+    </div>
     <div class="video_container">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jg24D6ihl7s?si=5o81yhqNLj3bSPNk&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
     <div class="module_summary">
+      <p>SDS keeps safety data sheets searchable in FullVue so hazmat documentation is not buried in a shared drive.</p>
       <ul>
-        <li>Store Safety Data Sheets in the app</li>
-        <li>More accessible, searchable and easier to keep up-to-date</li>
+        <li>Maintain an SDS library with tags for fast lookup</li>
+        <li>Give operations and field teams one place to find sheets</li>
+        <li>Support compliance-minded workflows without a separate binder app</li>
+        <li>Use selectively for verticals that handle hazardous materials</li>
       </ul>
     </div>
 </section>
@@ -21,6 +31,20 @@
     .video_container {
       width: 100%;
       aspect-ratio: 16 / 9;
+    }
+
+    .product-shot {
+      margin-bottom: var(--fv-space-4, 16px);
+      border-radius: var(--fv-radius-md, 10px);
+      overflow: hidden;
+      border: 1px solid var(--fv-border, rgba(255, 255, 255, 0.08));
+
+      :global(img) {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top left;
+      }
     }
   }
 </style>

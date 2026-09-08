@@ -1,8 +1,8 @@
 export function load() {
   return {
-    pageTitle: 'Production Meeting',
-    metaTitle: 'Production meetings module | FullVue',
+    pageTitle: 'Production Meetings',
+    metaTitle: 'Production Meetings module | FullVue',
     metaDescription:
-      'Structure shop-floor or leadership huddles with notes before, during, and after meetings so commitments leave an audit trail.',
+      'FullVue Production Meetings structure huddle and shop-floor meeting workflows.',
   };
 }

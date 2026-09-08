@@ -1,8 +1,8 @@
 export function load() {
   return {
-    pageTitle: 'Core (Jobs)',
+    pageTitle: 'Core',
     metaTitle: 'Jobs & Core Module — Job Costing Hub | FullVue',
     metaDescription:
-      'Centralize customers, locations, labor, materials, departments, and margin views so invoicing and purchasing trace back to real jobs.',
+      'FullVue Core centralizes jobs, customers, vendors, inventory, permissions, and company settings.',
   };
 }
