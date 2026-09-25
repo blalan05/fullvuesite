@@ -37,7 +37,10 @@
       return;
     }
 
-    if ('serviceWorker' in navigator) {
+    const host = location.hostname;
+    const launcherOrigin =
+      host.startsWith('app.') || host === 'localhost' || host.endsWith('.localhost');
+    if (launcherOrigin && 'serviceWorker' in navigator && navigator.onLine !== false) {
       navigator.serviceWorker.register('/sw.js').catch(() => {
         // Installability is best-effort; ignore registration failures.
       });

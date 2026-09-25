@@ -6,10 +6,15 @@
 	import logo from '$lib/logo.png';
 	import {
 		clearTenant,
-		getRememberedTenant,
+		getLastTenantHost,
+		goToLastTenant,
 		goToTenant,
+		normalizeSubdomainInput,
+		parseLastTenantHost,
+		rememberLastTenantHost,
 		rememberTenant,
-		resolveTenant
+		resolveTenant,
+		TENANT_DOMAIN
 	} from '$lib/app-launcher';
 
 	type View = 'loading' | 'redirecting' | 'form';
@@ -20,8 +25,17 @@
 	let errorMessage = $state('');
 	let submitting = $state(false);
 	let stripSignedOutQueued = $state(false);
+	let offline = $state(false);
 
 	const canContinue = $derived(subdomain.trim().length > 0 && !submitting);
+
+	function lastTenantHost(): string | null {
+		return getLastTenantHost();
+	}
+
+	function hostFromSlug(slug: string): string | null {
+		return parseLastTenantHost(`${normalizeSubdomainInput(slug)}.${TENANT_DOMAIN}`);
+	}
 
 	function stripSignedOutFromUrl() {
 		if (!stripSignedOutQueued) {
@@ -35,6 +49,7 @@
 		}
 
 		url.searchParams.delete('signedOut');
+		url.searchParams.set('pick', '1');
 
 		try {
 			replaceState(url, {});
@@ -67,6 +82,26 @@
 		submitting = true;
 
 		try {
+			const host = hostFromSlug(subdomain);
+			if (!host) {
+				errorMessage =
+					"We couldn't find that company. Check the subdomain with your administrator.";
+				return;
+			}
+
+			if (!navigator.onLine) {
+				const known = lastTenantHost();
+				if (known && known === host) {
+					rememberLastTenantHost(host);
+					goToLastTenant(host);
+					return;
+				}
+
+				errorMessage =
+					'This company has to be opened once while you are online before it works offline.';
+				return;
+			}
+
 			const tenant = await resolveTenant(subdomain);
 
 			if (!tenant) {
@@ -78,7 +113,9 @@
 			rememberTenant(tenant.slug, tenant.name);
 			goToTenant(tenant.slug);
 		} catch {
-			errorMessage = 'Something went wrong. Please try again.';
+			errorMessage = navigator.onLine
+				? 'Something went wrong. Please try again.'
+				: 'This company has to be opened once while you are online before it works offline.';
 		} finally {
 			submitting = false;
 		}
@@ -111,52 +148,40 @@
 			return;
 		}
 
-		let cancelled = false;
-
-		(async () => {
-			if (forceForm) {
-				if (params.has('pick')) {
-					clearTenant();
-					subdomain = '';
-					signedOutNotice = false;
-				}
-
-				view = 'form';
-				return;
-			}
-
-			const remembered = getRememberedTenant();
-
-			if (!remembered) {
+		if (forceForm) {
+			if (params.has('pick') && !signedOut) {
+				clearTenant();
 				subdomain = '';
-				view = 'form';
-				return;
 			}
 
-			view = 'redirecting';
-			const tenant = await resolveTenant(remembered.slug);
-
-			if (cancelled) {
-				return;
-			}
-
-			if (tenant) {
-				goToTenant(tenant.slug);
-				return;
-			}
-
-			clearTenant();
-			subdomain = '';
 			view = 'form';
-		})();
+			return;
+		}
 
-		return () => {
-			cancelled = true;
-		};
+		const host = lastTenantHost();
+
+		if (host) {
+			view = 'redirecting';
+			goToLastTenant(host);
+			return;
+		}
+
+		subdomain = '';
+		view = 'form';
 	});
 
 	onMount(() => {
+		const syncOnline = () => {
+			offline = navigator.onLine === false;
+		};
+		syncOnline();
+		window.addEventListener('online', syncOnline);
+		window.addEventListener('offline', syncOnline);
 		stripSignedOutFromUrl();
+		return () => {
+			window.removeEventListener('online', syncOnline);
+			window.removeEventListener('offline', syncOnline);
+		};
 	});
 
 	afterNavigate(() => {
@@ -176,6 +201,11 @@
 	{:else if view === 'redirecting'}
 		<div class="launcher-card" role="status" aria-live="polite">
 			<p class="launcher-status">Opening your company…</p>
+			{#if offline}
+				<p class="launcher-notice" role="status">
+					If your company does not open, connect once while online so it can be saved for offline use.
+				</p>
+			{/if}
 			<button type="button" class="launcher-link" onclick={handleSwitchCompany}>
 				Switch company
 			</button>
@@ -186,6 +216,10 @@
 
 			{#if signedOutNotice}
 				<p class="launcher-notice" role="status">Signed out. Enter your company subdomain to continue.</p>
+			{:else if offline}
+				<p class="launcher-notice" role="status">
+					You are offline. A company has to be opened once while online before FullVue can reopen it here.
+				</p>
 			{/if}
 
 			<form class="launcher-form" onsubmit={handleSubmit}>

@@ -8,6 +8,7 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "offline_enabled": true,
   "display_override": ["standalone"],
   "orientation": "any",
   "theme_color": "#417505",
